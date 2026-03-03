@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-03-03T18:45:34.637297+00:00",
+  "updated_at": "2026-03-03T18:50:43.973069+00:00",
   "snapshot": {
-    "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-    "as_of": "2026-03-03T18:45:32.985668Z",
+    "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+    "as_of": "2026-03-03T18:50:42.829706Z",
     "market_data": [
       {
         "symbol": "BTC",
         "timeframe": "1h",
-        "price": 65806.7181,
-        "volume": 5806283.38,
-        "funding_rate": 0.000472,
-        "open_interest": 42321157.9,
-        "as_of": "2026-03-03T18:45:32.986147Z"
+        "price": 65883.5177,
+        "volume": 557555.49,
+        "funding_rate": 0.013467,
+        "open_interest": 67330214.57,
+        "as_of": "2026-03-03T18:50:42.830114Z"
       },
       {
         "symbol": "ETH",
         "timeframe": "1h",
-        "price": 3543.0868,
-        "volume": 1746252.41,
-        "funding_rate": -0.00807,
-        "open_interest": 94655078.57,
-        "as_of": "2026-03-03T18:45:32.986924Z"
+        "price": 3494.6101,
+        "volume": 4807467.54,
+        "funding_rate": -0.000985,
+        "open_interest": 104989570.3,
+        "as_of": "2026-03-03T18:50:42.830689Z"
       },
       {
         "symbol": "SOL",
         "timeframe": "1h",
-        "price": 144.2037,
-        "volume": 5719011.01,
-        "funding_rate": -0.00432,
-        "open_interest": 61240177.61,
-        "as_of": "2026-03-03T18:45:32.987411Z"
+        "price": 143.8543,
+        "volume": 3611743.71,
+        "funding_rate": 0.021916,
+        "open_interest": 58470486.3,
+        "as_of": "2026-03-03T18:50:42.831097Z"
       }
     ],
     "orderbooks": [
@@ -37,174 +37,174 @@
         "symbol": "BTC",
         "bids": [
           {
-            "price": 64980.4273,
-            "size": 34068.22
+            "price": 64995.2907,
+            "size": 26876.11
           },
           {
-            "price": 64973.927,
-            "size": 21101.55
+            "price": 64988.7901,
+            "size": 8310.09
           },
           {
-            "price": 64967.4267,
-            "size": 39520.32
+            "price": 64982.2896,
+            "size": 17378.91
           },
           {
-            "price": 64960.9264,
-            "size": 8969.08
+            "price": 64975.789,
+            "size": 16701.58
           },
           {
-            "price": 64954.4261,
-            "size": 13021.38
+            "price": 64969.2884,
+            "size": 35718.93
           }
         ],
         "asks": [
           {
-            "price": 65025.4383,
-            "size": 26343.91
+            "price": 65015.8988,
+            "size": 44390.75
           },
           {
-            "price": 65031.9386,
-            "size": 40030.51
+            "price": 65022.3993,
+            "size": 44020.54
           },
           {
-            "price": 65038.4389,
-            "size": 26509.62
+            "price": 65028.8999,
+            "size": 35557.84
           },
           {
-            "price": 65044.9392,
-            "size": 40782.97
+            "price": 65035.4005,
+            "size": 28612.0
           },
           {
-            "price": 65051.4395,
-            "size": 5571.78
+            "price": 65041.901,
+            "size": 34390.06
           }
         ],
-        "spread_bps": 4.9245,
-        "as_of": "2026-03-03T18:45:32.986378Z"
+        "spread_bps": 1.1702,
+        "as_of": "2026-03-03T18:50:42.830327Z"
       },
       {
         "symbol": "ETH",
         "bids": [
           {
-            "price": 3508.8939,
-            "size": 7028.8
+            "price": 3500.0172,
+            "size": 31948.51
           },
           {
-            "price": 3508.5429,
-            "size": 43691.37
+            "price": 3499.6671,
+            "size": 6413.19
           },
           {
-            "price": 3508.1919,
-            "size": 28206.65
+            "price": 3499.317,
+            "size": 21108.12
           },
           {
-            "price": 3507.8409,
-            "size": 28814.14
+            "price": 3498.967,
+            "size": 8164.76
           },
           {
-            "price": 3507.4899,
-            "size": 40946.98
+            "price": 3498.6169,
+            "size": 6330.66
           }
         ],
         "asks": [
           {
-            "price": 3510.9215,
-            "size": 14532.1
+            "price": 3501.293,
+            "size": 17504.94
           },
           {
-            "price": 3511.2725,
-            "size": 33059.94
+            "price": 3501.6431,
+            "size": 27389.06
           },
           {
-            "price": 3511.6234,
-            "size": 24320.26
+            "price": 3501.9932,
+            "size": 7020.92
           },
           {
-            "price": 3511.9744,
-            "size": 38052.51
+            "price": 3502.3432,
+            "size": 18504.99
           },
           {
-            "price": 3512.3254,
-            "size": 5843.5
+            "price": 3502.6933,
+            "size": 5295.69
           }
         ],
-        "spread_bps": 3.7767,
-        "as_of": "2026-03-03T18:45:32.987044Z"
+        "spread_bps": 1.6447,
+        "as_of": "2026-03-03T18:50:42.830758Z"
       },
       {
         "symbol": "SOL",
         "bids": [
           {
-            "price": 143.0451,
-            "size": 25165.92
+            "price": 151.1146,
+            "size": 12559.56
           },
           {
-            "price": 143.0308,
-            "size": 33090.17
+            "price": 151.0995,
+            "size": 40812.65
           },
           {
-            "price": 143.0165,
-            "size": 34916.71
+            "price": 151.0843,
+            "size": 32968.83
           },
           {
-            "price": 143.0022,
-            "size": 29991.51
+            "price": 151.0692,
+            "size": 5695.06
           },
           {
-            "price": 142.9879,
-            "size": 15696.31
+            "price": 151.0541,
+            "size": 20860.34
           }
         ],
         "asks": [
           {
-            "price": 143.105,
-            "size": 37501.02
+            "price": 151.1986,
+            "size": 6420.15
           },
           {
-            "price": 143.1193,
-            "size": 8433.54
+            "price": 151.2137,
+            "size": 21299.36
           },
           {
-            "price": 143.1336,
-            "size": 30484.32
+            "price": 151.2288,
+            "size": 34058.58
           },
           {
-            "price": 143.1479,
-            "size": 19320.0
+            "price": 151.244,
+            "size": 9424.91
           },
           {
-            "price": 143.1622,
-            "size": 8582.92
+            "price": 151.2591,
+            "size": 25919.11
           }
         ],
-        "spread_bps": 2.184,
-        "as_of": "2026-03-03T18:45:32.987578Z"
+        "spread_bps": 3.5589,
+        "as_of": "2026-03-03T18:50:42.831163Z"
       }
     ],
     "liquidations": [
       {
         "symbol": "BTC",
         "window": "1h",
-        "long_liq_usd": 7036161.07,
-        "short_liq_usd": 7969073.19,
-        "total_liq_usd": 15005234.27,
-        "as_of": "2026-03-03T18:45:32.986644Z"
+        "long_liq_usd": 1726463.0,
+        "short_liq_usd": 1356284.58,
+        "total_liq_usd": 3082747.58,
+        "as_of": "2026-03-03T18:50:42.830500Z"
       },
       {
         "symbol": "ETH",
         "window": "1h",
-        "long_liq_usd": 998276.17,
-        "short_liq_usd": 3630171.51,
-        "total_liq_usd": 4628447.68,
-        "as_of": "2026-03-03T18:45:32.987239Z"
+        "long_liq_usd": 7243706.55,
+        "short_liq_usd": 7756565.78,
+        "total_liq_usd": 15000272.33,
+        "as_of": "2026-03-03T18:50:42.830941Z"
       },
       {
         "symbol": "SOL",
         "window": "1h",
-        "long_liq_usd": 1290026.43,
-        "short_liq_usd": 2474323.18,
-        "total_liq_usd": 3764349.61,
-        "as_of": "2026-03-03T18:45:32.988121Z"
+        "long_liq_usd": 7630269.54,
+        "short_liq_usd": 7766149.35,
+        "total_liq_usd": 15396418.89,
+        "as_of": "2026-03-03T18:50:42.831310Z"
       }
     ],
     "news": [
@@ -213,30 +213,30 @@
         "headline": "Stablecoin circulation edges higher this week",
         "sentiment": -0.164,
         "url": "https://example.com/news/2",
-        "published_at": "2026-03-03T18:30:32.988337Z"
+        "published_at": "2026-03-03T18:35:42.831477Z"
       }
     ],
     "social_sentiment": [
       {
         "symbol": "BTC",
         "platform": "x",
-        "score": 0.567,
-        "mentions": 48868,
-        "as_of": "2026-03-03T18:45:32.986782Z"
+        "score": -0.388,
+        "mentions": 47902,
+        "as_of": "2026-03-03T18:50:42.830561Z"
       },
       {
         "symbol": "ETH",
         "platform": "x",
-        "score": -0.272,
-        "mentions": 49164,
-        "as_of": "2026-03-03T18:45:32.987303Z"
+        "score": -0.709,
+        "mentions": 30710,
+        "as_of": "2026-03-03T18:50:42.830995Z"
       },
       {
         "symbol": "SOL",
         "platform": "x",
-        "score": -0.566,
-        "mentions": 19825,
-        "as_of": "2026-03-03T18:45:32.988203Z"
+        "score": -0.923,
+        "mentions": 40550,
+        "as_of": "2026-03-03T18:50:42.831367Z"
       }
     ],
     "onchain_metrics": [
@@ -245,21 +245,21 @@
         "active_addresses": 1372253,
         "exchange_netflow": -34009.0,
         "mvrv": 3.248,
-        "as_of": "2026-03-03T18:45:32.986852Z"
+        "as_of": "2026-03-03T18:50:42.830618Z"
       },
       {
         "symbol": "ETH",
         "active_addresses": 850752,
         "exchange_netflow": 32336.91,
         "mvrv": 2.086,
-        "as_of": "2026-03-03T18:45:32.987355Z"
+        "as_of": "2026-03-03T18:50:42.831046Z"
       },
       {
         "symbol": "SOL",
         "active_addresses": 1479523,
         "exchange_netflow": 38713.78,
         "mvrv": 1.527,
-        "as_of": "2026-03-03T18:45:32.988268Z"
+        "as_of": "2026-03-03T18:50:42.831418Z"
       }
     ],
     "macro_indicators": [
@@ -268,7 +268,7 @@
         "dxy": 103.344,
         "us10y": 4.172,
         "spx_fut": 4811.99,
-        "as_of": "2026-03-03T18:45:32.988475Z"
+        "as_of": "2026-03-03T18:50:42.831538Z"
       }
     ],
     "failures": [],
@@ -282,11 +282,11 @@
         "output": {
           "symbol": "BTC",
           "timeframe": "1h",
-          "price": 65806.7181,
-          "volume": 5806283.38,
-          "funding_rate": 0.000472,
-          "open_interest": 42321157.9,
-          "as_of": "2026-03-03T18:45:32.986147Z"
+          "price": 65883.5177,
+          "volume": 557555.49,
+          "funding_rate": 0.013467,
+          "open_interest": 67330214.57,
+          "as_of": "2026-03-03T18:50:42.830114Z"
         }
       },
       {
@@ -298,50 +298,50 @@
           "symbol": "BTC",
           "bids": [
             {
-              "price": 64980.4273,
-              "size": 34068.22
+              "price": 64995.2907,
+              "size": 26876.11
             },
             {
-              "price": 64973.927,
-              "size": 21101.55
+              "price": 64988.7901,
+              "size": 8310.09
             },
             {
-              "price": 64967.4267,
-              "size": 39520.32
+              "price": 64982.2896,
+              "size": 17378.91
             },
             {
-              "price": 64960.9264,
-              "size": 8969.08
+              "price": 64975.789,
+              "size": 16701.58
             },
             {
-              "price": 64954.4261,
-              "size": 13021.38
+              "price": 64969.2884,
+              "size": 35718.93
             }
           ],
           "asks": [
             {
-              "price": 65025.4383,
-              "size": 26343.91
+              "price": 65015.8988,
+              "size": 44390.75
             },
             {
-              "price": 65031.9386,
-              "size": 40030.51
+              "price": 65022.3993,
+              "size": 44020.54
             },
             {
-              "price": 65038.4389,
-              "size": 26509.62
+              "price": 65028.8999,
+              "size": 35557.84
             },
             {
-              "price": 65044.9392,
-              "size": 40782.97
+              "price": 65035.4005,
+              "size": 28612.0
             },
             {
-              "price": 65051.4395,
-              "size": 5571.78
+              "price": 65041.901,
+              "size": 34390.06
             }
           ],
-          "spread_bps": 4.9245,
-          "as_of": "2026-03-03T18:45:32.986378Z"
+          "spread_bps": 1.1702,
+          "as_of": "2026-03-03T18:50:42.830327Z"
         }
       },
       {
@@ -353,10 +353,10 @@
         "output": {
           "symbol": "BTC",
           "window": "1h",
-          "long_liq_usd": 7036161.07,
-          "short_liq_usd": 7969073.19,
-          "total_liq_usd": 15005234.27,
-          "as_of": "2026-03-03T18:45:32.986644Z"
+          "long_liq_usd": 1726463.0,
+          "short_liq_usd": 1356284.58,
+          "total_liq_usd": 3082747.58,
+          "as_of": "2026-03-03T18:50:42.830500Z"
         }
       },
       {
@@ -367,9 +367,9 @@
         "output": {
           "symbol": "BTC",
           "platform": "x",
-          "score": 0.567,
-          "mentions": 48868,
-          "as_of": "2026-03-03T18:45:32.986782Z"
+          "score": -0.388,
+          "mentions": 47902,
+          "as_of": "2026-03-03T18:50:42.830561Z"
         }
       },
       {
@@ -382,7 +382,7 @@
           "active_addresses": 1372253,
           "exchange_netflow": -34009.0,
           "mvrv": 3.248,
-          "as_of": "2026-03-03T18:45:32.986852Z"
+          "as_of": "2026-03-03T18:50:42.830618Z"
         }
       },
       {
@@ -394,11 +394,11 @@
         "output": {
           "symbol": "ETH",
           "timeframe": "1h",
-          "price": 3543.0868,
-          "volume": 1746252.41,
-          "funding_rate": -0.00807,
-          "open_interest": 94655078.57,
-          "as_of": "2026-03-03T18:45:32.986924Z"
+          "price": 3494.6101,
+          "volume": 4807467.54,
+          "funding_rate": -0.000985,
+          "open_interest": 104989570.3,
+          "as_of": "2026-03-03T18:50:42.830689Z"
         }
       },
       {
@@ -410,50 +410,50 @@
           "symbol": "ETH",
           "bids": [
             {
-              "price": 3508.8939,
-              "size": 7028.8
+              "price": 3500.0172,
+              "size": 31948.51
             },
             {
-              "price": 3508.5429,
-              "size": 43691.37
+              "price": 3499.6671,
+              "size": 6413.19
             },
             {
-              "price": 3508.1919,
-              "size": 28206.65
+              "price": 3499.317,
+              "size": 21108.12
             },
             {
-              "price": 3507.8409,
-              "size": 28814.14
+              "price": 3498.967,
+              "size": 8164.76
             },
             {
-              "price": 3507.4899,
-              "size": 40946.98
+              "price": 3498.6169,
+              "size": 6330.66
             }
           ],
           "asks": [
             {
-              "price": 3510.9215,
-              "size": 14532.1
+              "price": 3501.293,
+              "size": 17504.94
             },
             {
-              "price": 3511.2725,
-              "size": 33059.94
+              "price": 3501.6431,
+              "size": 27389.06
             },
             {
-              "price": 3511.6234,
-              "size": 24320.26
+              "price": 3501.9932,
+              "size": 7020.92
             },
             {
-              "price": 3511.9744,
-              "size": 38052.51
+              "price": 3502.3432,
+              "size": 18504.99
             },
             {
-              "price": 3512.3254,
-              "size": 5843.5
+              "price": 3502.6933,
+              "size": 5295.69
             }
           ],
-          "spread_bps": 3.7767,
-          "as_of": "2026-03-03T18:45:32.987044Z"
+          "spread_bps": 1.6447,
+          "as_of": "2026-03-03T18:50:42.830758Z"
         }
       },
       {
@@ -465,10 +465,10 @@
         "output": {
           "symbol": "ETH",
           "window": "1h",
-          "long_liq_usd": 998276.17,
-          "short_liq_usd": 3630171.51,
-          "total_liq_usd": 4628447.68,
-          "as_of": "2026-03-03T18:45:32.987239Z"
+          "long_liq_usd": 7243706.55,
+          "short_liq_usd": 7756565.78,
+          "total_liq_usd": 15000272.33,
+          "as_of": "2026-03-03T18:50:42.830941Z"
         }
       },
       {
@@ -479,9 +479,9 @@
         "output": {
           "symbol": "ETH",
           "platform": "x",
-          "score": -0.272,
-          "mentions": 49164,
-          "as_of": "2026-03-03T18:45:32.987303Z"
+          "score": -0.709,
+          "mentions": 30710,
+          "as_of": "2026-03-03T18:50:42.830995Z"
         }
       },
       {
@@ -494,7 +494,7 @@
           "active_addresses": 850752,
           "exchange_netflow": 32336.91,
           "mvrv": 2.086,
-          "as_of": "2026-03-03T18:45:32.987355Z"
+          "as_of": "2026-03-03T18:50:42.831046Z"
         }
       },
       {
@@ -506,11 +506,11 @@
         "output": {
           "symbol": "SOL",
           "timeframe": "1h",
-          "price": 144.2037,
-          "volume": 5719011.01,
-          "funding_rate": -0.00432,
-          "open_interest": 61240177.61,
-          "as_of": "2026-03-03T18:45:32.987411Z"
+          "price": 143.8543,
+          "volume": 3611743.71,
+          "funding_rate": 0.021916,
+          "open_interest": 58470486.3,
+          "as_of": "2026-03-03T18:50:42.831097Z"
         }
       },
       {
@@ -522,50 +522,50 @@
           "symbol": "SOL",
           "bids": [
             {
-              "price": 143.0451,
-              "size": 25165.92
+              "price": 151.1146,
+              "size": 12559.56
             },
             {
-              "price": 143.0308,
-              "size": 33090.17
+              "price": 151.0995,
+              "size": 40812.65
             },
             {
-              "price": 143.0165,
-              "size": 34916.71
+              "price": 151.0843,
+              "size": 32968.83
             },
             {
-              "price": 143.0022,
-              "size": 29991.51
+              "price": 151.0692,
+              "size": 5695.06
             },
             {
-              "price": 142.9879,
-              "size": 15696.31
+              "price": 151.0541,
+              "size": 20860.34
             }
           ],
           "asks": [
             {
-              "price": 143.105,
-              "size": 37501.02
+              "price": 151.1986,
+              "size": 6420.15
             },
             {
-              "price": 143.1193,
-              "size": 8433.54
+              "price": 151.2137,
+              "size": 21299.36
             },
             {
-              "price": 143.1336,
-              "size": 30484.32
+              "price": 151.2288,
+              "size": 34058.58
             },
             {
-              "price": 143.1479,
-              "size": 19320.0
+              "price": 151.244,
+              "size": 9424.91
             },
             {
-              "price": 143.1622,
-              "size": 8582.92
+              "price": 151.2591,
+              "size": 25919.11
             }
           ],
-          "spread_bps": 2.184,
-          "as_of": "2026-03-03T18:45:32.987578Z"
+          "spread_bps": 3.5589,
+          "as_of": "2026-03-03T18:50:42.831163Z"
         }
       },
       {
@@ -577,10 +577,10 @@
         "output": {
           "symbol": "SOL",
           "window": "1h",
-          "long_liq_usd": 1290026.43,
-          "short_liq_usd": 2474323.18,
-          "total_liq_usd": 3764349.61,
-          "as_of": "2026-03-03T18:45:32.988121Z"
+          "long_liq_usd": 7630269.54,
+          "short_liq_usd": 7766149.35,
+          "total_liq_usd": 15396418.89,
+          "as_of": "2026-03-03T18:50:42.831310Z"
         }
       },
       {
@@ -591,9 +591,9 @@
         "output": {
           "symbol": "SOL",
           "platform": "x",
-          "score": -0.566,
-          "mentions": 19825,
-          "as_of": "2026-03-03T18:45:32.988203Z"
+          "score": -0.923,
+          "mentions": 40550,
+          "as_of": "2026-03-03T18:50:42.831367Z"
         }
       },
       {
@@ -606,7 +606,7 @@
           "active_addresses": 1479523,
           "exchange_netflow": 38713.78,
           "mvrv": 1.527,
-          "as_of": "2026-03-03T18:45:32.988268Z"
+          "as_of": "2026-03-03T18:50:42.831418Z"
         }
       },
       {
@@ -619,7 +619,7 @@
           "headline": "Stablecoin circulation edges higher this week",
           "sentiment": -0.164,
           "url": "https://example.com/news/2",
-          "published_at": "2026-03-03T18:30:32.988337Z"
+          "published_at": "2026-03-03T18:35:42.831477Z"
         }
       },
       {
@@ -632,7 +632,7 @@
           "dxy": 103.344,
           "us10y": 4.172,
           "spx_fut": 4811.99,
-          "as_of": "2026-03-03T18:45:32.988475Z"
+          "as_of": "2026-03-03T18:50:42.831538Z"
         }
       }
     ],
@@ -640,592 +640,393 @@
       "skill_calls": 17,
       "skill_success": 17,
       "skill_failures": 0,
-      "tick_duration_ms": 3.47,
-      "snapshot_size_bytes": 7992
+      "tick_duration_ms": 2.27,
+      "snapshot_size_bytes": 7990
     }
   },
   "portfolios": [
     {
       "portfolio_id": "analyst_aggressive",
-      "updated_at": "2026-03-03T18:45:34.149507Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99475.192511,
-      "realized_pnl_usd": -459.359988,
-      "unrealized_pnl_usd": 528.431338,
-      "total_fees_usd": 65.447501,
-      "equity_usd": 100003.623849,
-      "trade_count": 9,
+      "updated_at": "2026-03-03T18:50:43.614931Z",
+      "initial_balance_usd": 100.0,
+      "cash_balance_usd": 99.991939,
+      "realized_pnl_usd": 0.0,
+      "unrealized_pnl_usd": -0.012807,
+      "total_fees_usd": 0.008061,
+      "equity_usd": 99.979132,
+      "trade_count": 1,
       "positions": {
-        "ETH": {
-          "symbol": "ETH",
-          "net_quantity": 17.21250474,
-          "avg_entry_price": 3510.634506,
-          "mark_price": 3543.0868,
-          "notional_exposure_usd": 60985.398339,
-          "unrealized_pnl_usd": 558.585264
-        },
         "SOL": {
           "symbol": "SOL",
-          "net_quantity": -141.21454087,
-          "avg_entry_price": 146.633505,
-          "mark_price": 144.2037,
-          "notional_exposure_usd": 20363.659287,
-          "unrealized_pnl_usd": 343.123797
-        },
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": -0.33097824,
-          "avg_entry_price": 64678.916696,
-          "mark_price": 65806.7181,
-          "notional_exposure_usd": 21780.591737,
-          "unrealized_pnl_usd": -373.277724
+          "net_quantity": -0.14018208,
+          "avg_entry_price": 143.762941,
+          "mark_price": 143.8543,
+          "notional_exposure_usd": 20.165795,
+          "unrealized_pnl_usd": -0.012807
         }
       }
     },
     {
       "portfolio_id": "analyst_defensive",
-      "updated_at": "2026-03-03T18:45:34.369941Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99632.711847,
-      "realized_pnl_usd": -324.139342,
-      "unrealized_pnl_usd": -5.748176,
-      "total_fees_usd": 43.148811,
-      "equity_usd": 99626.963671,
-      "trade_count": 9,
+      "updated_at": "2026-03-03T18:50:43.616288Z",
+      "initial_balance_usd": 100.0,
+      "cash_balance_usd": 99.995202,
+      "realized_pnl_usd": 0.0,
+      "unrealized_pnl_usd": -0.004892,
+      "total_fees_usd": 0.004798,
+      "equity_usd": 99.99031,
+      "trade_count": 1,
       "positions": {
         "ETH": {
           "symbol": "ETH",
-          "net_quantity": 6.80241195,
-          "avg_entry_price": 3512.317174,
-          "mark_price": 3543.0868,
-          "notional_exposure_usd": 24101.535988,
-          "unrealized_pnl_usd": 209.307672
-        },
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": -0.18895409,
-          "avg_entry_price": 64668.580008,
-          "mark_price": 65806.7181,
-          "notional_exposure_usd": 12434.448534,
-          "unrealized_pnl_usd": -215.055847
+          "net_quantity": -0.00343386,
+          "avg_entry_price": 3493.185516,
+          "mark_price": 3494.6101,
+          "notional_exposure_usd": 12.000002,
+          "unrealized_pnl_usd": -0.004892
         }
       }
     },
     {
       "portfolio_id": "analyst_quant",
-      "updated_at": "2026-03-03T18:45:34.449646Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99483.886105,
-      "realized_pnl_usd": -450.709315,
-      "unrealized_pnl_usd": 530.420778,
-      "total_fees_usd": 65.40458,
-      "equity_usd": 100014.306882,
-      "trade_count": 9,
+      "updated_at": "2026-03-03T18:50:43.615942Z",
+      "initial_balance_usd": 100.0,
+      "cash_balance_usd": 99.991939,
+      "realized_pnl_usd": 0.0,
+      "unrealized_pnl_usd": -0.012815,
+      "total_fees_usd": 0.008061,
+      "equity_usd": 99.979124,
+      "trade_count": 1,
       "positions": {
-        "ETH": {
-          "symbol": "ETH",
-          "net_quantity": 17.16625211,
-          "avg_entry_price": 3511.410545,
-          "mark_price": 3543.0868,
-          "notional_exposure_usd": 60821.521256,
-          "unrealized_pnl_usd": 543.762579
-        },
         "SOL": {
           "symbol": "SOL",
-          "net_quantity": -141.20184433,
-          "avg_entry_price": 146.704269,
-          "mark_price": 144.2037,
-          "notional_exposure_usd": 20361.828399,
-          "unrealized_pnl_usd": 353.084955
-        },
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": -0.33098063,
-          "avg_entry_price": 64699.623839,
-          "mark_price": 65806.7181,
-          "notional_exposure_usd": 21780.749015,
-          "unrealized_pnl_usd": -366.426756
+          "net_quantity": -0.14018208,
+          "avg_entry_price": 143.762885,
+          "mark_price": 143.8543,
+          "notional_exposure_usd": 20.165795,
+          "unrealized_pnl_usd": -0.012815
         }
       }
     },
     {
       "portfolio_id": "analyst_swing",
-      "updated_at": "2026-03-03T18:45:34.209296Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99474.070333,
-      "realized_pnl_usd": -462.432326,
-      "unrealized_pnl_usd": 475.600038,
-      "total_fees_usd": 63.497341,
-      "equity_usd": 99949.670371,
-      "trade_count": 9,
-      "positions": {
-        "ETH": {
-          "symbol": "ETH",
-          "net_quantity": 16.02104235,
-          "avg_entry_price": 3510.583167,
-          "mark_price": 3543.0868,
-          "notional_exposure_usd": 56763.943673,
-          "unrealized_pnl_usd": 520.742081
-        },
-        "SOL": {
-          "symbol": "SOL",
-          "net_quantity": -136.47104911,
-          "avg_entry_price": 146.630132,
-          "mark_price": 144.2037,
-          "notional_exposure_usd": 19679.630225,
-          "unrealized_pnl_usd": 331.137721
-        },
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": -0.33126241,
-          "avg_entry_price": 64670.821747,
-          "mark_price": 65806.7181,
-          "notional_exposure_usd": 21799.292032,
-          "unrealized_pnl_usd": -376.279763
-        }
-      }
-    },
-    {
-      "portfolio_id": "cli_persist",
-      "updated_at": "2026-03-03T17:09:09.689821Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99999.228947,
+      "updated_at": "2026-03-03T18:50:43.708187Z",
+      "initial_balance_usd": 100.0,
+      "cash_balance_usd": 99.992001,
       "realized_pnl_usd": 0.0,
-      "unrealized_pnl_usd": -1.329393,
-      "total_fees_usd": 0.771053,
-      "equity_usd": 99997.899554,
-      "trade_count": 2,
-      "positions": {
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": 0.03,
-          "avg_entry_price": 64254.396886,
-          "mark_price": 64210.0838,
-          "notional_exposure_usd": 1926.302514,
-          "unrealized_pnl_usd": -1.329393
-        }
-      }
-    },
-    {
-      "portfolio_id": "sandbox",
-      "updated_at": "2026-03-03T17:07:49.667503Z",
-      "initial_balance_usd": 100000.0,
-      "cash_balance_usd": 99998.714908,
-      "realized_pnl_usd": 0.0,
-      "unrealized_pnl_usd": -2.225051,
-      "total_fees_usd": 1.285092,
-      "equity_usd": 99996.489857,
+      "unrealized_pnl_usd": -0.001498,
+      "total_fees_usd": 0.007999,
+      "equity_usd": 99.990503,
       "trade_count": 1,
       "positions": {
-        "BTC": {
-          "symbol": "BTC",
-          "net_quantity": 0.05,
-          "avg_entry_price": 64254.584814,
-          "mark_price": 64210.0838,
-          "notional_exposure_usd": 3210.50419,
-          "unrealized_pnl_usd": -2.225051
+        "SOL": {
+          "symbol": "SOL",
+          "net_quantity": -0.13902956,
+          "avg_entry_price": 143.843528,
+          "mark_price": 143.8543,
+          "notional_exposure_usd": 20.0,
+          "unrealized_pnl_usd": -0.001498
         }
       }
     }
   ],
   "competition": {
-    "updated_at": "2026-03-03T18:45:34.512778+00:00",
-    "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+    "updated_at": "2026-03-03T18:50:43.920734+00:00",
+    "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
     "analyst_count": 4,
     "worker_results": [
       {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.20165795500732167,
+          "leverage": 2.0165795500732164,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.148821Z"
+          "created_at": "2026-03-03T18:50:43.614447Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_aggressive",
-          "client_order_id": "1a6774ac978c47fda4a5c7b24f347668",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.25241271,
-          "reference_price": 65806.7181,
-          "executed_price": 65809.766275,
-          "notional_usd": 16611.22145,
-          "fee_paid_usd": 6.644489,
-          "slippage_bps": 0.463201,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "45a61c0b0d1a4daeae6cbe997cf8a2f8",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.14018208,
+          "reference_price": 143.8543,
+          "executed_price": 143.762941,
+          "notional_usd": 20.152988,
+          "fee_paid_usd": 0.008061,
+          "slippage_bps": 6.350797,
+          "leverage": 2.0165795500732164,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.149316Z"
+          "executed_at": "2026-03-03T18:50:43.614836Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-03T18:45:34.149507Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99475.192511,
-          "realized_pnl_usd": -459.359988,
-          "unrealized_pnl_usd": 528.431338,
-          "total_fees_usd": 65.447501,
-          "equity_usd": 100003.623849,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.614931Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.991939,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.012807,
+          "total_fees_usd": 0.008061,
+          "equity_usd": 99.979132,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 17.21250474,
-              "avg_entry_price": 3510.634506,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 60985.398339,
-              "unrealized_pnl_usd": 558.585264
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -141.21454087,
-              "avg_entry_price": 146.633505,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 20363.659287,
-              "unrealized_pnl_usd": 343.123797
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33097824,
-              "avg_entry_price": 64678.916696,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21780.591737,
-              "unrealized_pnl_usd": -373.277724
+              "net_quantity": -0.14018208,
+              "avg_entry_price": 143.762941,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.165795,
+              "unrealized_pnl_usd": -0.012807
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.173565Z"
+        "updated_at": "2026-03-03T18:50:43.623035Z"
       },
       {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "ETH",
           "allocation_pct": 0.12,
           "leverage": 1.5,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "confidence": 0.8295452516192245,
+          "reason": "heuristic score=-0.380 on ETH",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.368206Z"
+          "created_at": "2026-03-03T18:50:43.615873Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_defensive",
-          "client_order_id": "4ef9cfd390394b65be1fdc32323e2d41",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.18168544,
-          "reference_price": 65806.7181,
-          "executed_price": 65821.064457,
-          "notional_usd": 11958.729057,
-          "fee_paid_usd": 4.783492,
-          "slippage_bps": 2.180075,
+          "client_order_id": "857f3dc1e689473392c738524c13dbc9",
+          "symbol": "ETH",
+          "side": "sell",
+          "quantity": 0.00343386,
+          "reference_price": 3494.6101,
+          "executed_price": 3493.185516,
+          "notional_usd": 11.99511,
+          "fee_paid_usd": 0.004798,
+          "slippage_bps": 4.076518,
           "leverage": 1.5,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.369070Z"
+          "executed_at": "2026-03-03T18:50:43.616196Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-03T18:45:34.369941Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99632.711847,
-          "realized_pnl_usd": -324.139342,
-          "unrealized_pnl_usd": -5.748176,
-          "total_fees_usd": 43.148811,
-          "equity_usd": 99626.963671,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.616288Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.995202,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.004892,
+          "total_fees_usd": 0.004798,
+          "equity_usd": 99.99031,
+          "trade_count": 1,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 6.80241195,
-              "avg_entry_price": 3512.317174,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 24101.535988,
-              "unrealized_pnl_usd": 209.307672
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.18895409,
-              "avg_entry_price": 64668.580008,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 12434.448534,
-              "unrealized_pnl_usd": -215.055847
+              "net_quantity": -0.00343386,
+              "avg_entry_price": 3493.185516,
+              "mark_price": 3494.6101,
+              "notional_exposure_usd": 12.000002,
+              "unrealized_pnl_usd": -0.004892
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.472909Z"
+        "updated_at": "2026-03-03T18:50:43.623810Z"
       },
       {
         "analyst_id": "swing",
         "portfolio_id": "analyst_swing",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.2,
+          "leverage": 2.0,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.208637Z"
+          "created_at": "2026-03-03T18:50:43.707696Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_swing",
-          "client_order_id": "636b1c742d1145a08943674b7245f146",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.2522786,
-          "reference_price": 65806.7181,
-          "executed_price": 65813.014862,
-          "notional_usd": 16603.215251,
-          "fee_paid_usd": 6.641286,
-          "slippage_bps": 0.956857,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "2fc4e074418f41c0b19090501698c014",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.13902956,
+          "reference_price": 143.8543,
+          "executed_price": 143.843528,
+          "notional_usd": 19.998502,
+          "fee_paid_usd": 0.007999,
+          "slippage_bps": 0.748814,
+          "leverage": 2.0,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.209121Z"
+          "executed_at": "2026-03-03T18:50:43.708077Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_swing",
-          "updated_at": "2026-03-03T18:45:34.209296Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99474.070333,
-          "realized_pnl_usd": -462.432326,
-          "unrealized_pnl_usd": 475.600038,
-          "total_fees_usd": 63.497341,
-          "equity_usd": 99949.670371,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.708187Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.992001,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.001498,
+          "total_fees_usd": 0.007999,
+          "equity_usd": 99.990503,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 16.02104235,
-              "avg_entry_price": 3510.583167,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 56763.943673,
-              "unrealized_pnl_usd": 520.742081
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -136.47104911,
-              "avg_entry_price": 146.630132,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 19679.630225,
-              "unrealized_pnl_usd": 331.137721
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33126241,
-              "avg_entry_price": 64670.821747,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21799.292032,
-              "unrealized_pnl_usd": -376.279763
+              "net_quantity": -0.13902956,
+              "avg_entry_price": 143.843528,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.0,
+              "unrealized_pnl_usd": -0.001498
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.290658Z"
+        "updated_at": "2026-03-03T18:50:43.901208Z"
       },
       {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.20165795500732167,
+          "leverage": 2.0,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.449122Z"
+          "created_at": "2026-03-03T18:50:43.615475Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_quant",
-          "client_order_id": "b3b474a627544c8f8f3d19dee624bc8d",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.2524462,
-          "reference_price": 65806.7181,
-          "executed_price": 65820.004005,
-          "notional_usd": 16616.009895,
-          "fee_paid_usd": 6.646404,
-          "slippage_bps": 2.018928,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "ebff49910eb846fdbe4b7fd576df2eb4",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.14018208,
+          "reference_price": 143.8543,
+          "executed_price": 143.762885,
+          "notional_usd": 20.15298,
+          "fee_paid_usd": 0.008061,
+          "slippage_bps": 6.354694,
+          "leverage": 2.0,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.449538Z"
+          "executed_at": "2026-03-03T18:50:43.615851Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-03T18:45:34.449646Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99483.886105,
-          "realized_pnl_usd": -450.709315,
-          "unrealized_pnl_usd": 530.420778,
-          "total_fees_usd": 65.40458,
-          "equity_usd": 100014.306882,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.615942Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.991939,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.012815,
+          "total_fees_usd": 0.008061,
+          "equity_usd": 99.979124,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 17.16625211,
-              "avg_entry_price": 3511.410545,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 60821.521256,
-              "unrealized_pnl_usd": 543.762579
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -141.20184433,
-              "avg_entry_price": 146.704269,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 20361.828399,
-              "unrealized_pnl_usd": 353.084955
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33098063,
-              "avg_entry_price": 64699.623839,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21780.749015,
-              "unrealized_pnl_usd": -366.426756
+              "net_quantity": -0.14018208,
+              "avg_entry_price": 143.762885,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.165795,
+              "unrealized_pnl_usd": -0.012815
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.482379Z"
+        "updated_at": "2026-03-03T18:50:43.624800Z"
       }
     ],
     "ranking": [
       {
-        "analyst_id": "quant",
-        "display_name": "Analyst Quant",
-        "portfolio_id": "analyst_quant",
-        "equity_usd": 100014.306882,
-        "trade_count": 9,
-        "realized_pnl_usd": -450.709315,
-        "unrealized_pnl_usd": 530.420778,
-        "rank": 1
-      },
-      {
-        "analyst_id": "aggressive",
-        "display_name": "Analyst Aggressive",
-        "portfolio_id": "analyst_aggressive",
-        "equity_usd": 100003.623849,
-        "trade_count": 9,
-        "realized_pnl_usd": -459.359988,
-        "unrealized_pnl_usd": 528.431338,
-        "rank": 2
-      },
-      {
         "analyst_id": "swing",
         "display_name": "Analyst Swing",
         "portfolio_id": "analyst_swing",
-        "equity_usd": 99949.670371,
-        "trade_count": 9,
-        "realized_pnl_usd": -462.432326,
-        "unrealized_pnl_usd": 475.600038,
-        "rank": 3
+        "equity_usd": 99.990503,
+        "trade_count": 1,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.001498,
+        "rank": 1
       },
       {
         "analyst_id": "defensive",
         "display_name": "Analyst Defensive",
         "portfolio_id": "analyst_defensive",
-        "equity_usd": 99626.963671,
-        "trade_count": 9,
-        "realized_pnl_usd": -324.139342,
-        "unrealized_pnl_usd": -5.748176,
+        "equity_usd": 99.99031,
+        "trade_count": 1,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.004892,
+        "rank": 2
+      },
+      {
+        "analyst_id": "aggressive",
+        "display_name": "Analyst Aggressive",
+        "portfolio_id": "analyst_aggressive",
+        "equity_usd": 99.979132,
+        "trade_count": 1,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.012807,
+        "rank": 3
+      },
+      {
+        "analyst_id": "quant",
+        "display_name": "Analyst Quant",
+        "portfolio_id": "analyst_quant",
+        "equity_usd": 99.979124,
+        "trade_count": 1,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.012815,
         "rank": 4
       }
     ]
   },
   "market_history": [
     {
-      "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
-      "as_of": "2026-03-03T17:35:56.838965+00:00",
+      "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+      "as_of": "2026-03-03T18:50:42.829706+00:00",
       "prices": {
-        "BTC": 64642.0897,
-        "ETH": 3449.7771,
-        "SOL": 142.9651
-      }
-    },
-    {
-      "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-      "as_of": "2026-03-03T17:37:29.582986+00:00",
-      "prices": {
-        "BTC": 64786.2761,
-        "ETH": 3534.9527,
-        "SOL": 146.3008
-      }
-    },
-    {
-      "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-      "as_of": "2026-03-03T18:08:37.249296+00:00",
-      "prices": {
-        "BTC": 65457.9961,
-        "ETH": 3511.9624,
-        "SOL": 146.0111
-      }
-    },
-    {
-      "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-      "as_of": "2026-03-03T18:08:40.199291+00:00",
-      "prices": {
-        "BTC": 65457.9961,
-        "ETH": 3511.9624,
-        "SOL": 146.0111
-      }
-    },
-    {
-      "tick_id": "451abd84b6fd4a1191463df937223589",
-      "as_of": "2026-03-03T18:36:14.677238+00:00",
-      "prices": {
-        "BTC": 64278.0322,
-        "ETH": 3469.9101,
-        "SOL": 142.8363
-      }
-    },
-    {
-      "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-      "as_of": "2026-03-03T18:45:32.985668+00:00",
-      "prices": {
-        "BTC": 65806.7181,
-        "ETH": 3543.0868,
-        "SOL": 144.2037
+        "BTC": 65883.5177,
+        "ETH": 3494.6101,
+        "SOL": 143.8543
       }
     }
   ],
@@ -1237,462 +1038,145 @@
       "latest_result": {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.20165795500732167,
+          "leverage": 2.0165795500732164,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.148821Z"
+          "created_at": "2026-03-03T18:50:43.614447Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_aggressive",
-          "client_order_id": "1a6774ac978c47fda4a5c7b24f347668",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.25241271,
-          "reference_price": 65806.7181,
-          "executed_price": 65809.766275,
-          "notional_usd": 16611.22145,
-          "fee_paid_usd": 6.644489,
-          "slippage_bps": 0.463201,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "45a61c0b0d1a4daeae6cbe997cf8a2f8",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.14018208,
+          "reference_price": 143.8543,
+          "executed_price": 143.762941,
+          "notional_usd": 20.152988,
+          "fee_paid_usd": 0.008061,
+          "slippage_bps": 6.350797,
+          "leverage": 2.0165795500732164,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.149316Z"
+          "executed_at": "2026-03-03T18:50:43.614836Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-03T18:45:34.149507Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99475.192511,
-          "realized_pnl_usd": -459.359988,
-          "unrealized_pnl_usd": 528.431338,
-          "total_fees_usd": 65.447501,
-          "equity_usd": 100003.623849,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.614931Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.991939,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.012807,
+          "total_fees_usd": 0.008061,
+          "equity_usd": 99.979132,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 17.21250474,
-              "avg_entry_price": 3510.634506,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 60985.398339,
-              "unrealized_pnl_usd": 558.585264
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -141.21454087,
-              "avg_entry_price": 146.633505,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 20363.659287,
-              "unrealized_pnl_usd": 343.123797
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33097824,
-              "avg_entry_price": 64678.916696,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21780.591737,
-              "unrealized_pnl_usd": -373.277724
+              "net_quantity": -0.14018208,
+              "avg_entry_price": 143.762941,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.165795,
+              "unrealized_pnl_usd": -0.012807
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.173565Z"
+        "updated_at": "2026-03-03T18:50:43.623035Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_aggressive",
-        "updated_at": "2026-03-03T18:45:34.149507Z",
-        "initial_balance_usd": 100000.0,
-        "cash_balance_usd": 99475.192511,
-        "realized_pnl_usd": -459.359988,
-        "unrealized_pnl_usd": 528.431338,
-        "total_fees_usd": 65.447501,
-        "equity_usd": 100003.623849,
-        "trade_count": 9,
+        "updated_at": "2026-03-03T18:50:43.614931Z",
+        "initial_balance_usd": 100.0,
+        "cash_balance_usd": 99.991939,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.012807,
+        "total_fees_usd": 0.008061,
+        "equity_usd": 99.979132,
+        "trade_count": 1,
         "positions": {
-          "ETH": {
-            "symbol": "ETH",
-            "net_quantity": 17.21250474,
-            "avg_entry_price": 3510.634506,
-            "mark_price": 3543.0868,
-            "notional_exposure_usd": 60985.398339,
-            "unrealized_pnl_usd": 558.585264
-          },
           "SOL": {
             "symbol": "SOL",
-            "net_quantity": -141.21454087,
-            "avg_entry_price": 146.633505,
-            "mark_price": 144.2037,
-            "notional_exposure_usd": 20363.659287,
-            "unrealized_pnl_usd": 343.123797
-          },
-          "BTC": {
-            "symbol": "BTC",
-            "net_quantity": -0.33097824,
-            "avg_entry_price": 64678.916696,
-            "mark_price": 65806.7181,
-            "notional_exposure_usd": 21780.591737,
-            "unrealized_pnl_usd": -373.277724
+            "net_quantity": -0.14018208,
+            "avg_entry_price": 143.762941,
+            "mark_price": 143.8543,
+            "notional_exposure_usd": 20.165795,
+            "unrealized_pnl_usd": -0.012807
           }
         }
       },
       "decisions": [
         {
-          "ts": "2026-03-03T17:35:58.430821+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.624637+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
           "decision": {
             "analyst_id": "aggressive",
             "portfolio_id": "analyst_aggressive",
-            "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+            "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
             "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.1887352092869607,
-            "leverage": 1.8873520928696066,
-            "confidence": 0.8936760464348034,
-            "reason": "heuristic score=-0.444 on BTC",
+            "symbol": "SOL",
+            "allocation_pct": 0.20165795500732167,
+            "leverage": 2.0165795500732164,
+            "confidence": 0.9582897750366084,
+            "reason": "heuristic score=-0.508 on SOL",
             "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:35:58.331912Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.541482+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-            "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.18875227928696067,
-            "leverage": 1.8875227928696066,
-            "confidence": 0.8937613964348033,
-            "reason": "heuristic score=-0.444 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:37:30.519963Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.751811+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:38.723493Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.458752+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:40.407518Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.011380+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "451abd84b6fd4a1191463df937223589",
-            "action": "short",
-            "symbol": "ETH",
-            "allocation_pct": 0.1401393486019826,
-            "leverage": 1.4013934860198258,
-            "confidence": 0.650696743009913,
-            "reason": "heuristic score=-0.201 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:36:15.899983Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.175701+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-            "action": "long",
-            "symbol": "BTC",
-            "allocation_pct": 0.16608618677052064,
-            "leverage": 1.6608618677052065,
-            "confidence": 0.7804309338526032,
-            "reason": "heuristic score=0.330 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:45:34.148821Z"
+            "created_at": "2026-03-03T18:50:43.614447Z"
           }
         }
       ],
       "trades": [
         {
-          "ts": "2026-03-03T17:35:58.433035+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.627825+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
           "transition": "entry",
           "position_before_qty": 0.0,
-          "position_after_qty": -0.29121765,
+          "position_after_qty": -0.14018208,
           "decision_action": "short",
-          "decision_confidence": 0.8936760464348034,
-          "decision_reason": "heuristic score=-0.444 on BTC",
+          "decision_confidence": 0.9582897750366084,
+          "decision_reason": "heuristic score=-0.508 on SOL",
           "fill": {
             "portfolio_id": "analyst_aggressive",
-            "client_order_id": "15b6e0286e0a46f19a8400a3dc788903",
-            "symbol": "BTC",
+            "client_order_id": "45a61c0b0d1a4daeae6cbe997cf8a2f8",
+            "symbol": "SOL",
             "side": "sell",
-            "quantity": 0.29121765,
-            "reference_price": 64642.0897,
-            "executed_price": 64600.721672,
-            "notional_usd": 18812.870353,
-            "fee_paid_usd": 7.525148,
-            "slippage_bps": 6.39955,
-            "leverage": 1.8873520928696066,
+            "quantity": 0.14018208,
+            "reference_price": 143.8543,
+            "executed_price": 143.762941,
+            "notional_usd": 20.152988,
+            "fee_paid_usd": 0.008061,
+            "slippage_bps": 6.350797,
+            "leverage": 2.0165795500732164,
             "dry_run": true,
-            "executed_at": "2026-03-03T17:35:58.332352Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.550382+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "transition": "add",
-          "position_before_qty": -0.29121765,
-          "position_after_qty": -0.58339095,
-          "decision_action": "short",
-          "decision_confidence": 0.8937613964348033,
-          "decision_reason": "heuristic score=-0.444 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_aggressive",
-            "client_order_id": "40952c1771f84043ae314e332647f38f",
-            "symbol": "BTC",
-            "side": "sell",
-            "quantity": 0.2921733,
-            "reference_price": 64786.2761,
-            "executed_price": 64756.855958,
-            "notional_usd": 18920.224303,
-            "fee_paid_usd": 7.56809,
-            "slippage_bps": 4.541107,
-            "leverage": 1.8875227928696066,
-            "dry_run": true,
-            "executed_at": "2026-03-03T17:37:30.520357Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.754570+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "transition": "add",
-          "position_before_qty": 12.60997733,
-          "position_after_qty": 16.92775422,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_aggressive",
-            "client_order_id": "e51fbfb711b74af0ae0f010b9ef8c6ed",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.31777689,
-            "reference_price": 3511.9624,
-            "executed_price": 3512.234523,
-            "notional_usd": 15165.045054,
-            "fee_paid_usd": 6.066018,
-            "slippage_bps": 0.774845,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:38.723985Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.460388+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "transition": "add",
-          "position_before_qty": 16.92775422,
-          "position_after_qty": 21.24521729,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_aggressive",
-            "client_order_id": "e85e4a2e3d2d4bf5a0ca9a5bd8186711",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.31746307,
-            "reference_price": 3511.9624,
-            "executed_price": 3513.166442,
-            "notional_usd": 15167.966373,
-            "fee_paid_usd": 6.067187,
-            "slippage_bps": 3.428403,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:40.408628Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.014892+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "transition": "reduce",
-          "position_before_qty": 21.24521729,
-          "position_after_qty": 17.21250474,
-          "decision_action": "short",
-          "decision_confidence": 0.650696743009913,
-          "decision_reason": "heuristic score=-0.201 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_aggressive",
-            "client_order_id": "f5c5f9e03402445abb247795d8bb7cda",
-            "symbol": "ETH",
-            "side": "sell",
-            "quantity": 4.03271255,
-            "reference_price": 3469.9101,
-            "executed_price": 3467.50741,
-            "notional_usd": 13983.460648,
-            "fee_paid_usd": 5.593384,
-            "slippage_bps": 6.924359,
-            "leverage": 1.4013934860198258,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:36:15.900445Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.178030+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "transition": "reduce",
-          "position_before_qty": -0.58339095,
-          "position_after_qty": -0.33097824,
-          "decision_action": "long",
-          "decision_confidence": 0.7804309338526032,
-          "decision_reason": "heuristic score=0.330 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_aggressive",
-            "client_order_id": "1a6774ac978c47fda4a5c7b24f347668",
-            "symbol": "BTC",
-            "side": "buy",
-            "quantity": 0.25241271,
-            "reference_price": 65806.7181,
-            "executed_price": 65809.766275,
-            "notional_usd": 16611.22145,
-            "fee_paid_usd": 6.644489,
-            "slippage_bps": 0.463201,
-            "leverage": 1.6608618677052065,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:45:34.149316Z"
+            "executed_at": "2026-03-03T18:50:43.614836Z"
           }
         }
       ],
       "equity_history": [
         {
-          "ts": "2026-03-03T17:35:58.431917+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.626697+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "equity_usd": 99722.906239,
-          "cash_balance_usd": 99966.491667,
+          "equity_usd": 99.979132,
+          "cash_balance_usd": 99.991939,
           "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -243.585428,
-          "trade_count": 4
-        },
-        {
-          "ts": "2026-03-03T17:37:30.549379+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "equity_usd": 100267.765785,
-          "cash_balance_usd": 99958.923577,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": 308.842208,
-          "trade_count": 5
-        },
-        {
-          "ts": "2026-03-03T18:08:38.752985+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "equity_usd": 99619.652122,
-          "cash_balance_usd": 99952.857559,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -333.205437,
-          "trade_count": 6
-        },
-        {
-          "ts": "2026-03-03T18:08:40.459574+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "equity_usd": 99608.386528,
-          "cash_balance_usd": 99946.790372,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -338.403844,
-          "trade_count": 7
-        },
-        {
-          "ts": "2026-03-03T18:36:16.013567+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "equity_usd": 99836.401723,
-          "cash_balance_usd": 99767.277807,
-          "realized_pnl_usd": -173.919181,
-          "unrealized_pnl_usd": 69.123916,
-          "trade_count": 8
-        },
-        {
-          "ts": "2026-03-03T18:45:34.176868+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "aggressive",
-          "portfolio_id": "analyst_aggressive",
-          "equity_usd": 100003.623849,
-          "cash_balance_usd": 99475.192511,
-          "realized_pnl_usd": -459.359988,
-          "unrealized_pnl_usd": 528.431338,
-          "trade_count": 9
+          "unrealized_pnl_usd": -0.012807,
+          "trade_count": 1
         }
       ]
     },
@@ -1703,446 +1187,145 @@
       "latest_result": {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "ETH",
           "allocation_pct": 0.12,
           "leverage": 1.5,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "confidence": 0.8295452516192245,
+          "reason": "heuristic score=-0.380 on ETH",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.368206Z"
+          "created_at": "2026-03-03T18:50:43.615873Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_defensive",
-          "client_order_id": "4ef9cfd390394b65be1fdc32323e2d41",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.18168544,
-          "reference_price": 65806.7181,
-          "executed_price": 65821.064457,
-          "notional_usd": 11958.729057,
-          "fee_paid_usd": 4.783492,
-          "slippage_bps": 2.180075,
+          "client_order_id": "857f3dc1e689473392c738524c13dbc9",
+          "symbol": "ETH",
+          "side": "sell",
+          "quantity": 0.00343386,
+          "reference_price": 3494.6101,
+          "executed_price": 3493.185516,
+          "notional_usd": 11.99511,
+          "fee_paid_usd": 0.004798,
+          "slippage_bps": 4.076518,
           "leverage": 1.5,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.369070Z"
+          "executed_at": "2026-03-03T18:50:43.616196Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-03T18:45:34.369941Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99632.711847,
-          "realized_pnl_usd": -324.139342,
-          "unrealized_pnl_usd": -5.748176,
-          "total_fees_usd": 43.148811,
-          "equity_usd": 99626.963671,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.616288Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.995202,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.004892,
+          "total_fees_usd": 0.004798,
+          "equity_usd": 99.99031,
+          "trade_count": 1,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 6.80241195,
-              "avg_entry_price": 3512.317174,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 24101.535988,
-              "unrealized_pnl_usd": 209.307672
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.18895409,
-              "avg_entry_price": 64668.580008,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 12434.448534,
-              "unrealized_pnl_usd": -215.055847
+              "net_quantity": -0.00343386,
+              "avg_entry_price": 3493.185516,
+              "mark_price": 3494.6101,
+              "notional_exposure_usd": 12.000002,
+              "unrealized_pnl_usd": -0.004892
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.472909Z"
+        "updated_at": "2026-03-03T18:50:43.623810Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_defensive",
-        "updated_at": "2026-03-03T18:45:34.369941Z",
-        "initial_balance_usd": 100000.0,
-        "cash_balance_usd": 99632.711847,
-        "realized_pnl_usd": -324.139342,
-        "unrealized_pnl_usd": -5.748176,
-        "total_fees_usd": 43.148811,
-        "equity_usd": 99626.963671,
-        "trade_count": 9,
+        "updated_at": "2026-03-03T18:50:43.616288Z",
+        "initial_balance_usd": 100.0,
+        "cash_balance_usd": 99.995202,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.004892,
+        "total_fees_usd": 0.004798,
+        "equity_usd": 99.99031,
+        "trade_count": 1,
         "positions": {
           "ETH": {
             "symbol": "ETH",
-            "net_quantity": 6.80241195,
-            "avg_entry_price": 3512.317174,
-            "mark_price": 3543.0868,
-            "notional_exposure_usd": 24101.535988,
-            "unrealized_pnl_usd": 209.307672
-          },
-          "BTC": {
-            "symbol": "BTC",
-            "net_quantity": -0.18895409,
-            "avg_entry_price": 64668.580008,
-            "mark_price": 65806.7181,
-            "notional_exposure_usd": 12434.448534,
-            "unrealized_pnl_usd": -215.055847
+            "net_quantity": -0.00343386,
+            "avg_entry_price": 3493.185516,
+            "mark_price": 3494.6101,
+            "notional_exposure_usd": 12.000002,
+            "unrealized_pnl_usd": -0.004892
           }
         }
       },
       "decisions": [
         {
-          "ts": "2026-03-03T17:35:58.638479+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.625705+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
           "decision": {
             "analyst_id": "defensive",
             "portfolio_id": "analyst_defensive",
-            "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
-            "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.12,
-            "leverage": 1.5,
-            "confidence": 0.8936760464348034,
-            "reason": "heuristic score=-0.444 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:35:58.502008Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.926520+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-            "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.12,
-            "leverage": 1.5,
-            "confidence": 0.8937613964348033,
-            "reason": "heuristic score=-0.444 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:37:30.660851Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.767733+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.12,
-            "leverage": 1.5,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:38.730791Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.457802+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.12,
-            "leverage": 1.5,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:40.408594Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:15.872558+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "451abd84b6fd4a1191463df937223589",
+            "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
             "action": "short",
             "symbol": "ETH",
             "allocation_pct": 0.12,
-            "leverage": 1.4013934860198258,
-            "confidence": 0.650696743009913,
-            "reason": "heuristic score=-0.201 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:36:15.842707Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.474828+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-            "action": "long",
-            "symbol": "BTC",
-            "allocation_pct": 0.12,
             "leverage": 1.5,
-            "confidence": 0.7804309338526032,
-            "reason": "heuristic score=0.330 on BTC",
+            "confidence": 0.8295452516192245,
+            "reason": "heuristic score=-0.380 on ETH",
             "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:45:34.368206Z"
+            "created_at": "2026-03-03T18:50:43.615873Z"
           }
         }
       ],
       "trades": [
         {
-          "ts": "2026-03-03T17:35:58.640906+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.635242+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
           "transition": "entry",
           "position_before_qty": 0.0,
-          "position_after_qty": -0.18529294,
+          "position_after_qty": -0.00343386,
           "decision_action": "short",
-          "decision_confidence": 0.8936760464348034,
-          "decision_reason": "heuristic score=-0.444 on BTC",
+          "decision_confidence": 0.8295452516192245,
+          "decision_reason": "heuristic score=-0.380 on ETH",
           "fill": {
             "portfolio_id": "analyst_defensive",
-            "client_order_id": "824279f158484f3a982c3f99521b03b2",
-            "symbol": "BTC",
-            "side": "sell",
-            "quantity": 0.18529294,
-            "reference_price": 64642.0897,
-            "executed_price": 64590.498423,
-            "notional_usd": 11968.163349,
-            "fee_paid_usd": 4.787265,
-            "slippage_bps": 7.981066,
-            "leverage": 1.5,
-            "dry_run": true,
-            "executed_at": "2026-03-03T17:35:58.502360Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.929642+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "transition": "add",
-          "position_before_qty": -0.18529294,
-          "position_after_qty": -0.37063953,
-          "decision_action": "short",
-          "decision_confidence": 0.8937613964348033,
-          "decision_reason": "heuristic score=-0.444 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_defensive",
-            "client_order_id": "2d8e62c5177f43c781c16855b469286c",
-            "symbol": "BTC",
-            "side": "sell",
-            "quantity": 0.18534659,
-            "reference_price": 64786.2761,
-            "executed_price": 64746.638991,
-            "notional_usd": 12000.568751,
-            "fee_paid_usd": 4.800228,
-            "slippage_bps": 6.118134,
-            "leverage": 1.5,
-            "dry_run": true,
-            "executed_at": "2026-03-03T17:37:30.661299Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.769746+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "transition": "add",
-          "position_before_qty": 3.43608642,
-          "position_after_qty": 6.84361223,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_defensive",
-            "client_order_id": "f3766b1364e24c72a55bc94eb16c34f1",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 3.40752581,
-            "reference_price": 3511.9624,
-            "executed_price": 3514.671821,
-            "notional_usd": 11976.334943,
-            "fee_paid_usd": 4.790534,
-            "slippage_bps": 7.714834,
-            "leverage": 1.5,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:38.731263Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.459554+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "transition": "add",
-          "position_before_qty": 6.84361223,
-          "position_after_qty": 10.25065889,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_defensive",
-            "client_order_id": "101ea1f3a36d493fa21d880e93a7720e",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 3.40704666,
-            "reference_price": 3511.9624,
-            "executed_price": 3513.164916,
-            "notional_usd": 11969.516793,
-            "fee_paid_usd": 4.787807,
-            "slippage_bps": 3.424057,
-            "leverage": 1.5,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:40.409244Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:15.874714+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "transition": "reduce",
-          "position_before_qty": 10.25065889,
-          "position_after_qty": 6.80241195,
-          "decision_action": "short",
-          "decision_confidence": 0.650696743009913,
-          "decision_reason": "heuristic score=-0.201 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_defensive",
-            "client_order_id": "1dea6a8f722a48a5be57dcf05fd19650",
+            "client_order_id": "857f3dc1e689473392c738524c13dbc9",
             "symbol": "ETH",
             "side": "sell",
-            "quantity": 3.44824694,
-            "reference_price": 3469.9101,
-            "executed_price": 3469.541398,
-            "notional_usd": 11963.835508,
-            "fee_paid_usd": 4.785534,
-            "slippage_bps": 1.06257,
-            "leverage": 1.4013934860198258,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:36:15.843209Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.476811+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "transition": "reduce",
-          "position_before_qty": -0.37063953,
-          "position_after_qty": -0.18895409,
-          "decision_action": "long",
-          "decision_confidence": 0.7804309338526032,
-          "decision_reason": "heuristic score=0.330 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_defensive",
-            "client_order_id": "4ef9cfd390394b65be1fdc32323e2d41",
-            "symbol": "BTC",
-            "side": "buy",
-            "quantity": 0.18168544,
-            "reference_price": 65806.7181,
-            "executed_price": 65821.064457,
-            "notional_usd": 11958.729057,
-            "fee_paid_usd": 4.783492,
-            "slippage_bps": 2.180075,
+            "quantity": 0.00343386,
+            "reference_price": 3494.6101,
+            "executed_price": 3493.185516,
+            "notional_usd": 11.99511,
+            "fee_paid_usd": 0.004798,
+            "slippage_bps": 4.076518,
             "leverage": 1.5,
             "dry_run": true,
-            "executed_at": "2026-03-03T18:45:34.369070Z"
+            "executed_at": "2026-03-03T18:50:43.616196Z"
           }
         }
       ],
       "equity_history": [
         {
-          "ts": "2026-03-03T17:35:58.639710+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.633810+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "equity_usd": 99800.009745,
-          "cash_balance_usd": 100013.550525,
-          "realized_pnl_usd": 32.751741,
-          "unrealized_pnl_usd": -213.54078,
-          "trade_count": 4
-        },
-        {
-          "ts": "2026-03-03T17:37:30.927940+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "equity_usd": 100053.816914,
-          "cash_balance_usd": 100008.750297,
-          "realized_pnl_usd": 32.751741,
-          "unrealized_pnl_usd": 45.066617,
-          "trade_count": 5
-        },
-        {
-          "ts": "2026-03-03T18:08:38.768792+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "equity_usd": 99711.831316,
-          "cash_balance_usd": 100003.959763,
-          "realized_pnl_usd": 32.751741,
-          "unrealized_pnl_usd": -292.128447,
-          "trade_count": 6
-        },
-        {
-          "ts": "2026-03-03T18:08:40.458708+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "equity_usd": 99702.946482,
-          "cash_balance_usd": 99999.171956,
-          "realized_pnl_usd": 32.751741,
-          "unrealized_pnl_usd": -296.225474,
-          "trade_count": 7
-        },
-        {
-          "ts": "2026-03-03T18:36:15.873613+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "equity_usd": 99703.167052,
-          "cash_balance_usd": 99846.884983,
-          "realized_pnl_usd": -114.749698,
-          "unrealized_pnl_usd": -143.717931,
-          "trade_count": 8
-        },
-        {
-          "ts": "2026-03-03T18:45:34.475867+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "defensive",
-          "portfolio_id": "analyst_defensive",
-          "equity_usd": 99626.963671,
-          "cash_balance_usd": 99632.711847,
-          "realized_pnl_usd": -324.139342,
-          "unrealized_pnl_usd": -5.748176,
-          "trade_count": 9
+          "equity_usd": 99.99031,
+          "cash_balance_usd": 99.995202,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.004892,
+          "trade_count": 1
         }
       ]
     },
@@ -2153,462 +1336,145 @@
       "latest_result": {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.20165795500732167,
+          "leverage": 2.0,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.449122Z"
+          "created_at": "2026-03-03T18:50:43.615475Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_quant",
-          "client_order_id": "b3b474a627544c8f8f3d19dee624bc8d",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.2524462,
-          "reference_price": 65806.7181,
-          "executed_price": 65820.004005,
-          "notional_usd": 16616.009895,
-          "fee_paid_usd": 6.646404,
-          "slippage_bps": 2.018928,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "ebff49910eb846fdbe4b7fd576df2eb4",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.14018208,
+          "reference_price": 143.8543,
+          "executed_price": 143.762885,
+          "notional_usd": 20.15298,
+          "fee_paid_usd": 0.008061,
+          "slippage_bps": 6.354694,
+          "leverage": 2.0,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.449538Z"
+          "executed_at": "2026-03-03T18:50:43.615851Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-03T18:45:34.449646Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99483.886105,
-          "realized_pnl_usd": -450.709315,
-          "unrealized_pnl_usd": 530.420778,
-          "total_fees_usd": 65.40458,
-          "equity_usd": 100014.306882,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.615942Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.991939,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.012815,
+          "total_fees_usd": 0.008061,
+          "equity_usd": 99.979124,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 17.16625211,
-              "avg_entry_price": 3511.410545,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 60821.521256,
-              "unrealized_pnl_usd": 543.762579
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -141.20184433,
-              "avg_entry_price": 146.704269,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 20361.828399,
-              "unrealized_pnl_usd": 353.084955
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33098063,
-              "avg_entry_price": 64699.623839,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21780.749015,
-              "unrealized_pnl_usd": -366.426756
+              "net_quantity": -0.14018208,
+              "avg_entry_price": 143.762885,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.165795,
+              "unrealized_pnl_usd": -0.012815
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.482379Z"
+        "updated_at": "2026-03-03T18:50:43.624800Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_quant",
-        "updated_at": "2026-03-03T18:45:34.449646Z",
-        "initial_balance_usd": 100000.0,
-        "cash_balance_usd": 99483.886105,
-        "realized_pnl_usd": -450.709315,
-        "unrealized_pnl_usd": 530.420778,
-        "total_fees_usd": 65.40458,
-        "equity_usd": 100014.306882,
-        "trade_count": 9,
+        "updated_at": "2026-03-03T18:50:43.615942Z",
+        "initial_balance_usd": 100.0,
+        "cash_balance_usd": 99.991939,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.012815,
+        "total_fees_usd": 0.008061,
+        "equity_usd": 99.979124,
+        "trade_count": 1,
         "positions": {
-          "ETH": {
-            "symbol": "ETH",
-            "net_quantity": 17.16625211,
-            "avg_entry_price": 3511.410545,
-            "mark_price": 3543.0868,
-            "notional_exposure_usd": 60821.521256,
-            "unrealized_pnl_usd": 543.762579
-          },
           "SOL": {
             "symbol": "SOL",
-            "net_quantity": -141.20184433,
-            "avg_entry_price": 146.704269,
-            "mark_price": 144.2037,
-            "notional_exposure_usd": 20361.828399,
-            "unrealized_pnl_usd": 353.084955
-          },
-          "BTC": {
-            "symbol": "BTC",
-            "net_quantity": -0.33098063,
-            "avg_entry_price": 64699.623839,
-            "mark_price": 65806.7181,
-            "notional_exposure_usd": 21780.749015,
-            "unrealized_pnl_usd": -366.426756
+            "net_quantity": -0.14018208,
+            "avg_entry_price": 143.762885,
+            "mark_price": 143.8543,
+            "notional_exposure_usd": 20.165795,
+            "unrealized_pnl_usd": -0.012815
           }
         }
       },
       "decisions": [
         {
-          "ts": "2026-03-03T17:35:58.431868+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.626611+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
           "decision": {
             "analyst_id": "quant",
             "portfolio_id": "analyst_quant",
-            "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+            "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
             "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.1887352092869607,
-            "leverage": 1.8873520928696066,
-            "confidence": 0.8936760464348034,
-            "reason": "heuristic score=-0.444 on BTC",
+            "symbol": "SOL",
+            "allocation_pct": 0.20165795500732167,
+            "leverage": 2.0,
+            "confidence": 0.9582897750366084,
+            "reason": "heuristic score=-0.508 on SOL",
             "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:35:58.413206Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.538505+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-            "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.18875227928696067,
-            "leverage": 1.8875227928696066,
-            "confidence": 0.8937613964348033,
-            "reason": "heuristic score=-0.444 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:37:30.521406Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.930562+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:38.803747Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.470962+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:40.428462Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.008702+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "451abd84b6fd4a1191463df937223589",
-            "action": "short",
-            "symbol": "ETH",
-            "allocation_pct": 0.1401393486019826,
-            "leverage": 1.4013934860198258,
-            "confidence": 0.650696743009913,
-            "reason": "heuristic score=-0.201 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:36:15.965602Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.484250+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-            "action": "long",
-            "symbol": "BTC",
-            "allocation_pct": 0.16608618677052064,
-            "leverage": 1.6608618677052065,
-            "confidence": 0.7804309338526032,
-            "reason": "heuristic score=0.330 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:45:34.449122Z"
+            "created_at": "2026-03-03T18:50:43.615475Z"
           }
         }
       ],
       "trades": [
         {
-          "ts": "2026-03-03T17:35:58.439759+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.628940+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
           "transition": "entry",
           "position_before_qty": 0.0,
-          "position_after_qty": -0.29122997,
+          "position_after_qty": -0.14018208,
           "decision_action": "short",
-          "decision_confidence": 0.8936760464348034,
-          "decision_reason": "heuristic score=-0.444 on BTC",
+          "decision_confidence": 0.9582897750366084,
+          "decision_reason": "heuristic score=-0.508 on SOL",
           "fill": {
             "portfolio_id": "analyst_quant",
-            "client_order_id": "54c381634c904115915cbe7a696c75e1",
-            "symbol": "BTC",
+            "client_order_id": "ebff49910eb846fdbe4b7fd576df2eb4",
+            "symbol": "SOL",
             "side": "sell",
-            "quantity": 0.29122997,
-            "reference_price": 64642.0897,
-            "executed_price": 64627.641524,
-            "notional_usd": 18821.506102,
-            "fee_paid_usd": 7.528602,
-            "slippage_bps": 2.235103,
-            "leverage": 1.8873520928696066,
+            "quantity": 0.14018208,
+            "reference_price": 143.8543,
+            "executed_price": 143.762885,
+            "notional_usd": 20.15298,
+            "fee_paid_usd": 0.008061,
+            "slippage_bps": 6.354694,
+            "leverage": 2.0,
             "dry_run": true,
-            "executed_at": "2026-03-03T17:35:58.413585Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.548213+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "transition": "add",
-          "position_before_qty": -0.29122997,
-          "position_after_qty": -0.58342683,
-          "decision_action": "short",
-          "decision_confidence": 0.8937613964348033,
-          "decision_reason": "heuristic score=-0.444 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_quant",
-            "client_order_id": "5081c3f36cf94a2190569072eb708ecf",
-            "symbol": "BTC",
-            "side": "sell",
-            "quantity": 0.29219686,
-            "reference_price": 64786.2761,
-            "executed_price": 64771.367962,
-            "notional_usd": 18925.990336,
-            "fee_paid_usd": 7.570396,
-            "slippage_bps": 2.301126,
-            "leverage": 1.8875227928696066,
-            "dry_run": true,
-            "executed_at": "2026-03-03T17:37:30.521818Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.932724+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "transition": "add",
-          "position_before_qty": 12.56291628,
-          "position_after_qty": 16.88127299,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_quant",
-            "client_order_id": "9a823c52cedc42c1b8bface16afe4f79",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.31835671,
-            "reference_price": 3511.9624,
-            "executed_price": 3512.490636,
-            "notional_usd": 15168.187505,
-            "fee_paid_usd": 6.067275,
-            "slippage_bps": 1.504104,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:38.804159Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.472963+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "transition": "add",
-          "position_before_qty": 16.88127299,
-          "position_after_qty": 21.19926789,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_quant",
-            "client_order_id": "b3e022f0a34147d6a3fc820ddc6cf823",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.3179949,
-            "reference_price": 3511.9624,
-            "executed_price": 3514.716567,
-            "notional_usd": 15176.528212,
-            "fee_paid_usd": 6.070611,
-            "slippage_bps": 7.842246,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:40.429015Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.010624+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "transition": "reduce",
-          "position_before_qty": 21.19926789,
-          "position_after_qty": 17.16625211,
-          "decision_action": "short",
-          "decision_confidence": 0.650696743009913,
-          "decision_reason": "heuristic score=-0.201 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_quant",
-            "client_order_id": "7de3244e031f4f878f8f37e19c9a4848",
-            "symbol": "ETH",
-            "side": "sell",
-            "quantity": 4.03301578,
-            "reference_price": 3469.9101,
-            "executed_price": 3469.785714,
-            "notional_usd": 13993.70054,
-            "fee_paid_usd": 5.59748,
-            "slippage_bps": 0.358469,
-            "leverage": 1.4013934860198258,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:36:15.966081Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.486270+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "transition": "reduce",
-          "position_before_qty": -0.58342683,
-          "position_after_qty": -0.33098063,
-          "decision_action": "long",
-          "decision_confidence": 0.7804309338526032,
-          "decision_reason": "heuristic score=0.330 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_quant",
-            "client_order_id": "b3b474a627544c8f8f3d19dee624bc8d",
-            "symbol": "BTC",
-            "side": "buy",
-            "quantity": 0.2524462,
-            "reference_price": 65806.7181,
-            "executed_price": 65820.004005,
-            "notional_usd": 16616.009895,
-            "fee_paid_usd": 6.646404,
-            "slippage_bps": 2.018928,
-            "leverage": 1.6608618677052065,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:45:34.449538Z"
+            "executed_at": "2026-03-03T18:50:43.615851Z"
           }
         }
       ],
       "equity_history": [
         {
-          "ts": "2026-03-03T17:35:58.438707+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.627913+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "equity_usd": 99734.961208,
-          "cash_balance_usd": 99966.547586,
+          "equity_usd": 99.979124,
+          "cash_balance_usd": 99.991939,
           "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -231.586378,
-          "trade_count": 4
-        },
-        {
-          "ts": "2026-03-03T17:37:30.547233+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "equity_usd": 100280.090239,
-          "cash_balance_usd": 99958.97719,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": 321.113049,
-          "trade_count": 5
-        },
-        {
-          "ts": "2026-03-03T18:08:38.931595+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "equity_usd": 99631.923343,
-          "cash_balance_usd": 99952.909915,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -320.986572,
-          "trade_count": 6
-        },
-        {
-          "ts": "2026-03-03T18:08:40.471946+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "equity_usd": 99613.960252,
-          "cash_balance_usd": 99946.839304,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -332.879052,
-          "trade_count": 7
-        },
-        {
-          "ts": "2026-03-03T18:36:16.009728+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "equity_usd": 99853.093352,
-          "cash_balance_usd": 99773.368224,
-          "realized_pnl_usd": -167.8736,
-          "unrealized_pnl_usd": 79.725129,
-          "trade_count": 8
-        },
-        {
-          "ts": "2026-03-03T18:45:34.485267+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "quant",
-          "portfolio_id": "analyst_quant",
-          "equity_usd": 100014.306882,
-          "cash_balance_usd": 99483.886105,
-          "realized_pnl_usd": -450.709315,
-          "unrealized_pnl_usd": 530.420778,
-          "trade_count": 9
+          "unrealized_pnl_usd": -0.012815,
+          "trade_count": 1
         }
       ]
     },
@@ -2619,462 +1485,145 @@
       "latest_result": {
         "analyst_id": "swing",
         "portfolio_id": "analyst_swing",
-        "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
+        "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
         "status": "ok",
         "message": "worker completed",
         "decision": {
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "action": "long",
-          "symbol": "BTC",
-          "allocation_pct": 0.16608618677052064,
-          "leverage": 1.6608618677052065,
-          "confidence": 0.7804309338526032,
-          "reason": "heuristic score=0.330 on BTC",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
+          "action": "short",
+          "symbol": "SOL",
+          "allocation_pct": 0.2,
+          "leverage": 2.0,
+          "confidence": 0.9582897750366084,
+          "reason": "heuristic score=-0.508 on SOL",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-03T18:45:34.208637Z"
+          "created_at": "2026-03-03T18:50:43.707696Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_swing",
-          "client_order_id": "636b1c742d1145a08943674b7245f146",
-          "symbol": "BTC",
-          "side": "buy",
-          "quantity": 0.2522786,
-          "reference_price": 65806.7181,
-          "executed_price": 65813.014862,
-          "notional_usd": 16603.215251,
-          "fee_paid_usd": 6.641286,
-          "slippage_bps": 0.956857,
-          "leverage": 1.6608618677052065,
+          "client_order_id": "2fc4e074418f41c0b19090501698c014",
+          "symbol": "SOL",
+          "side": "sell",
+          "quantity": 0.13902956,
+          "reference_price": 143.8543,
+          "executed_price": 143.843528,
+          "notional_usd": 19.998502,
+          "fee_paid_usd": 0.007999,
+          "slippage_bps": 0.748814,
+          "leverage": 2.0,
           "dry_run": true,
-          "executed_at": "2026-03-03T18:45:34.209121Z"
+          "executed_at": "2026-03-03T18:50:43.708077Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_swing",
-          "updated_at": "2026-03-03T18:45:34.209296Z",
-          "initial_balance_usd": 100000.0,
-          "cash_balance_usd": 99474.070333,
-          "realized_pnl_usd": -462.432326,
-          "unrealized_pnl_usd": 475.600038,
-          "total_fees_usd": 63.497341,
-          "equity_usd": 99949.670371,
-          "trade_count": 9,
+          "updated_at": "2026-03-03T18:50:43.708187Z",
+          "initial_balance_usd": 100.0,
+          "cash_balance_usd": 99.992001,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": -0.001498,
+          "total_fees_usd": 0.007999,
+          "equity_usd": 99.990503,
+          "trade_count": 1,
           "positions": {
-            "ETH": {
-              "symbol": "ETH",
-              "net_quantity": 16.02104235,
-              "avg_entry_price": 3510.583167,
-              "mark_price": 3543.0868,
-              "notional_exposure_usd": 56763.943673,
-              "unrealized_pnl_usd": 520.742081
-            },
             "SOL": {
               "symbol": "SOL",
-              "net_quantity": -136.47104911,
-              "avg_entry_price": 146.630132,
-              "mark_price": 144.2037,
-              "notional_exposure_usd": 19679.630225,
-              "unrealized_pnl_usd": 331.137721
-            },
-            "BTC": {
-              "symbol": "BTC",
-              "net_quantity": -0.33126241,
-              "avg_entry_price": 64670.821747,
-              "mark_price": 65806.7181,
-              "notional_exposure_usd": 21799.292032,
-              "unrealized_pnl_usd": -376.279763
+              "net_quantity": -0.13902956,
+              "avg_entry_price": 143.843528,
+              "mark_price": 143.8543,
+              "notional_exposure_usd": 20.0,
+              "unrealized_pnl_usd": -0.001498
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-03T18:45:34.290658Z"
+        "updated_at": "2026-03-03T18:50:43.901208Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_swing",
-        "updated_at": "2026-03-03T18:45:34.209296Z",
-        "initial_balance_usd": 100000.0,
-        "cash_balance_usd": 99474.070333,
-        "realized_pnl_usd": -462.432326,
-        "unrealized_pnl_usd": 475.600038,
-        "total_fees_usd": 63.497341,
-        "equity_usd": 99949.670371,
-        "trade_count": 9,
+        "updated_at": "2026-03-03T18:50:43.708187Z",
+        "initial_balance_usd": 100.0,
+        "cash_balance_usd": 99.992001,
+        "realized_pnl_usd": 0.0,
+        "unrealized_pnl_usd": -0.001498,
+        "total_fees_usd": 0.007999,
+        "equity_usd": 99.990503,
+        "trade_count": 1,
         "positions": {
-          "ETH": {
-            "symbol": "ETH",
-            "net_quantity": 16.02104235,
-            "avg_entry_price": 3510.583167,
-            "mark_price": 3543.0868,
-            "notional_exposure_usd": 56763.943673,
-            "unrealized_pnl_usd": 520.742081
-          },
           "SOL": {
             "symbol": "SOL",
-            "net_quantity": -136.47104911,
-            "avg_entry_price": 146.630132,
-            "mark_price": 144.2037,
-            "notional_exposure_usd": 19679.630225,
-            "unrealized_pnl_usd": 331.137721
-          },
-          "BTC": {
-            "symbol": "BTC",
-            "net_quantity": -0.33126241,
-            "avg_entry_price": 64670.821747,
-            "mark_price": 65806.7181,
-            "notional_exposure_usd": 21799.292032,
-            "unrealized_pnl_usd": -376.279763
+            "net_quantity": -0.13902956,
+            "avg_entry_price": 143.843528,
+            "mark_price": 143.8543,
+            "notional_exposure_usd": 20.0,
+            "unrealized_pnl_usd": -0.001498
           }
         }
       },
       "decisions": [
         {
-          "ts": "2026-03-03T17:35:58.278555+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.902702+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
           "decision": {
             "analyst_id": "swing",
             "portfolio_id": "analyst_swing",
-            "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+            "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
             "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.1887352092869607,
-            "leverage": 1.8873520928696066,
-            "confidence": 0.8936760464348034,
-            "reason": "heuristic score=-0.444 on BTC",
+            "symbol": "SOL",
+            "allocation_pct": 0.2,
+            "leverage": 2.0,
+            "confidence": 0.9582897750366084,
+            "reason": "heuristic score=-0.508 on SOL",
             "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:35:58.263454Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.541189+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "decision": {
-            "analyst_id": "swing",
-            "portfolio_id": "analyst_swing",
-            "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-            "action": "short",
-            "symbol": "BTC",
-            "allocation_pct": 0.18875227928696067,
-            "leverage": 1.8875227928696066,
-            "confidence": 0.8937613964348033,
-            "reason": "heuristic score=-0.444 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T17:37:30.519963Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.930610+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "decision": {
-            "analyst_id": "swing",
-            "portfolio_id": "analyst_swing",
-            "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:38.795251Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.461170+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "decision": {
-            "analyst_id": "swing",
-            "portfolio_id": "analyst_swing",
-            "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-            "action": "long",
-            "symbol": "ETH",
-            "allocation_pct": 0.15220659425573319,
-            "leverage": 1.5220659425573317,
-            "confidence": 0.7110329712786659,
-            "reason": "heuristic score=0.261 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:08:40.432372Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.202002+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "decision": {
-            "analyst_id": "swing",
-            "portfolio_id": "analyst_swing",
-            "tick_id": "451abd84b6fd4a1191463df937223589",
-            "action": "short",
-            "symbol": "ETH",
-            "allocation_pct": 0.1401393486019826,
-            "leverage": 1.4013934860198258,
-            "confidence": 0.650696743009913,
-            "reason": "heuristic score=-0.201 on ETH",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:36:16.031751Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.292343+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "decision": {
-            "analyst_id": "swing",
-            "portfolio_id": "analyst_swing",
-            "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-            "action": "long",
-            "symbol": "BTC",
-            "allocation_pct": 0.16608618677052064,
-            "leverage": 1.6608618677052065,
-            "confidence": 0.7804309338526032,
-            "reason": "heuristic score=0.330 on BTC",
-            "source": "heuristic_fallback",
-            "created_at": "2026-03-03T18:45:34.208637Z"
+            "created_at": "2026-03-03T18:50:43.707696Z"
           }
         }
       ],
       "trades": [
         {
-          "ts": "2026-03-03T17:35:58.281577+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.904651+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
           "transition": "entry",
           "position_before_qty": 0.0,
-          "position_after_qty": -0.29141826,
+          "position_after_qty": -0.13902956,
           "decision_action": "short",
-          "decision_confidence": 0.8936760464348034,
-          "decision_reason": "heuristic score=-0.444 on BTC",
+          "decision_confidence": 0.9582897750366084,
+          "decision_reason": "heuristic score=-0.508 on SOL",
           "fill": {
             "portfolio_id": "analyst_swing",
-            "client_order_id": "03d4ca37be0840f0ab9a346fd382195d",
-            "symbol": "BTC",
+            "client_order_id": "2fc4e074418f41c0b19090501698c014",
+            "symbol": "SOL",
             "side": "sell",
-            "quantity": 0.29141826,
-            "reference_price": 64642.0897,
-            "executed_price": 64599.140736,
-            "notional_usd": 18825.369191,
-            "fee_paid_usd": 7.530148,
-            "slippage_bps": 6.644118,
-            "leverage": 1.8873520928696066,
+            "quantity": 0.13902956,
+            "reference_price": 143.8543,
+            "executed_price": 143.843528,
+            "notional_usd": 19.998502,
+            "fee_paid_usd": 0.007999,
+            "slippage_bps": 0.748814,
+            "leverage": 2.0,
             "dry_run": true,
-            "executed_at": "2026-03-03T17:35:58.263912Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T17:37:30.549814+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "transition": "add",
-          "position_before_qty": -0.29141826,
-          "position_after_qty": -0.58354101,
-          "decision_action": "short",
-          "decision_confidence": 0.8937613964348033,
-          "decision_reason": "heuristic score=-0.444 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_swing",
-            "client_order_id": "ef3c6727e7ef456c825c981143243a5c",
-            "symbol": "BTC",
-            "side": "sell",
-            "quantity": 0.29212275,
-            "reference_price": 64786.2761,
-            "executed_price": 64742.329891,
-            "notional_usd": 18912.707449,
-            "fee_paid_usd": 7.565083,
-            "slippage_bps": 6.783259,
-            "leverage": 1.8875227928696066,
-            "dry_run": true,
-            "executed_at": "2026-03-03T17:37:30.520357Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:38.932943+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "transition": "add",
-          "position_before_qty": 11.41975475,
-          "position_after_qty": 15.73771796,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_swing",
-            "client_order_id": "704d6b23bb62469792c5372665ae6160",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.31796321,
-            "reference_price": 3511.9624,
-            "executed_price": 3514.73859,
-            "notional_usd": 15176.511926,
-            "fee_paid_usd": 6.070605,
-            "slippage_bps": 7.904955,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:38.795859Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:08:40.463341+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "transition": "add",
-          "position_before_qty": 15.73771796,
-          "position_after_qty": 20.05489854,
-          "decision_action": "long",
-          "decision_confidence": 0.7110329712786659,
-          "decision_reason": "heuristic score=0.261 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_swing",
-            "client_order_id": "fd3110b5175c4288b6591ac1f28cbc3a",
-            "symbol": "ETH",
-            "side": "buy",
-            "quantity": 4.31718058,
-            "reference_price": 3511.9624,
-            "executed_price": 3513.244867,
-            "notional_usd": 15167.312514,
-            "fee_paid_usd": 6.066925,
-            "slippage_bps": 3.651711,
-            "leverage": 1.5220659425573317,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:08:40.432807Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:36:16.207107+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "transition": "reduce",
-          "position_before_qty": 20.05489854,
-          "position_after_qty": 16.02104235,
-          "decision_action": "short",
-          "decision_confidence": 0.650696743009913,
-          "decision_reason": "heuristic score=-0.201 on ETH",
-          "fill": {
-            "portfolio_id": "analyst_swing",
-            "client_order_id": "d6bf41e6727649aba9f88dea1bbac0a6",
-            "symbol": "ETH",
-            "side": "sell",
-            "quantity": 4.03385619,
-            "reference_price": 3469.9101,
-            "executed_price": 3467.378492,
-            "notional_usd": 13986.906192,
-            "fee_paid_usd": 5.594762,
-            "slippage_bps": 7.29589,
-            "leverage": 1.4013934860198258,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:36:16.032171Z"
-          }
-        },
-        {
-          "ts": "2026-03-03T18:45:34.294238+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "transition": "reduce",
-          "position_before_qty": -0.58354101,
-          "position_after_qty": -0.33126241,
-          "decision_action": "long",
-          "decision_confidence": 0.7804309338526032,
-          "decision_reason": "heuristic score=0.330 on BTC",
-          "fill": {
-            "portfolio_id": "analyst_swing",
-            "client_order_id": "636b1c742d1145a08943674b7245f146",
-            "symbol": "BTC",
-            "side": "buy",
-            "quantity": 0.2522786,
-            "reference_price": 65806.7181,
-            "executed_price": 65813.014862,
-            "notional_usd": 16603.215251,
-            "fee_paid_usd": 6.641286,
-            "slippage_bps": 0.956857,
-            "leverage": 1.6608618677052065,
-            "dry_run": true,
-            "executed_at": "2026-03-03T18:45:34.209121Z"
+            "executed_at": "2026-03-03T18:50:43.708077Z"
           }
         }
       ],
       "equity_history": [
         {
-          "ts": "2026-03-03T17:35:58.279846+00:00",
-          "tick_id": "44d8630feb844041b5cc0a78ae8d4c40",
+          "ts": "2026-03-03T18:50:43.903656+00:00",
+          "tick_id": "6dc0d2a2c231438abf214dc75f66e5f9",
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
-          "equity_usd": 99791.139604,
-          "cash_balance_usd": 99968.44132,
+          "equity_usd": 99.990503,
+          "cash_balance_usd": 99.992001,
           "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -177.301716,
-          "trade_count": 4
-        },
-        {
-          "ts": "2026-03-03T17:37:30.547215+00:00",
-          "tick_id": "ff7cae6dc91146bba105f30dec8c95e4",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "equity_usd": 100246.176268,
-          "cash_balance_usd": 99960.876237,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": 285.300031,
-          "trade_count": 5
-        },
-        {
-          "ts": "2026-03-03T18:08:38.931914+00:00",
-          "tick_id": "bfb08973739a4202af1163038ebfa1fb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "equity_usd": 99613.134085,
-          "cash_balance_usd": 99954.805632,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -341.671547,
-          "trade_count": 6
-        },
-        {
-          "ts": "2026-03-03T18:08:40.462464+00:00",
-          "tick_id": "2c3ae61d7591449f97e40169558ea7a7",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "equity_usd": 99601.530511,
-          "cash_balance_usd": 99948.738707,
-          "realized_pnl_usd": 0.0,
-          "unrealized_pnl_usd": -347.208196,
-          "trade_count": 7
-        },
-        {
-          "ts": "2026-03-03T18:36:16.205029+00:00",
-          "tick_id": "451abd84b6fd4a1191463df937223589",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "equity_usd": 99864.194613,
-          "cash_balance_usd": 99768.862499,
-          "realized_pnl_usd": -174.281446,
-          "unrealized_pnl_usd": 95.332113,
-          "trade_count": 8
-        },
-        {
-          "ts": "2026-03-03T18:45:34.293312+00:00",
-          "tick_id": "0e45a07c0de14ebda2881dc3fd4ef6eb",
-          "analyst_id": "swing",
-          "portfolio_id": "analyst_swing",
-          "equity_usd": 99949.670371,
-          "cash_balance_usd": 99474.070333,
-          "realized_pnl_usd": -462.432326,
-          "unrealized_pnl_usd": 475.600038,
-          "trade_count": 9
+          "unrealized_pnl_usd": -0.001498,
+          "trade_count": 1
         }
       ]
     }
