@@ -3,381 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cortex Analyst Board</title>
+    <title>Cortex - Analyst Monitor</title>
     <style>
-      :root {
-        --bg: #e9eff1;
-        --panel: #ffffff;
-        --panel-soft: #f5f8f9;
-        --text: #10212e;
-        --muted: #5a6a76;
-        --line: #cfdae1;
-        --accent: #0f766e;
-        --accent-soft: #d8f4ef;
-        --danger: #b4232d;
-        --danger-soft: #fde9eb;
-        --chip: #eff4f7;
-        --shadow: 0 8px 24px rgba(9, 24, 39, 0.08);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        color: var(--text);
-        background:
-          radial-gradient(circle at 92% -10%, #d3efe7 0%, rgba(211, 239, 231, 0.1) 36%),
-          radial-gradient(circle at -20% 20%, #f0e6d1 0%, rgba(240, 230, 209, 0.1) 36%),
-          var(--bg);
-      }
-
-      .layout {
-        max-width: 1480px;
-        margin: 0 auto;
-        padding: 16px;
-        display: grid;
-        gap: 12px;
-        grid-template-columns: 440px minmax(0, 1fr);
-      }
-
-      .panel {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .panel-head {
-        padding: 12px 14px;
-        border-bottom: 1px solid var(--line);
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 8px;
-      }
-
-      .title {
-        margin: 0;
-        font-size: 1.15rem;
-      }
-
-      .muted {
-        color: var(--muted);
-      }
-
-      .mono {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      }
-
-      .table-wrap {
-        overflow-x: auto;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        text-align: left;
-        font-size: 0.78rem;
-        padding: 8px;
-        border-bottom: 1px solid var(--line);
-        white-space: nowrap;
-      }
-
-      th {
-        background: #f3f8fa;
-        color: #314654;
-      }
-
-      tr:last-child td {
-        border-bottom: none;
-      }
-
-      #ranking-body tr {
-        cursor: pointer;
-      }
-
-      #ranking-body tr:hover {
-        background: #f7fbfc;
-      }
-
-      #ranking-body tr.selected {
-        background: var(--accent-soft);
-      }
-
-      .pos {
-        color: var(--accent);
-      }
-
-      .neg {
-        color: var(--danger);
-      }
-
-      .chip {
-        display: inline-block;
-        border-radius: 999px;
-        border: 1px solid var(--line);
-        background: var(--chip);
-        padding: 3px 8px;
-        font-size: 0.72rem;
-      }
-
-      .detail-wrap {
-        padding: 12px;
-      }
-
-      .empty {
-        border: 1px dashed var(--line);
-        border-radius: 12px;
-        padding: 20px;
-        color: var(--muted);
-      }
-
-      .detail-head {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-
-      .detail-name {
-        margin: 0;
-        font-size: 1.2rem;
-      }
-
-      .summary {
-        display: grid;
-        gap: 8px;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        margin-bottom: 10px;
-      }
-
-      .card {
-        background: var(--panel-soft);
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 8px;
-      }
-
-      .card .k {
-        font-size: 0.69rem;
-        color: var(--muted);
-      }
-
-      .card .v {
-        margin-top: 2px;
-        font-size: 0.95rem;
-        font-weight: 700;
-      }
-
-      .grid {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 10px;
-      }
-
-      .block {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        overflow: hidden;
-      }
-
-      .block-head {
-        background: #f3f8fa;
-        border-bottom: 1px solid var(--line);
-        padding: 8px 10px;
-        font-size: 0.82rem;
-        font-weight: 700;
-      }
-
-      .chart {
-        width: 100%;
-        height: 250px;
-      }
-
-      .trades-table tr {
-        cursor: pointer;
-      }
-
-      .trades-table tr:hover {
-        background: #f7fbfc;
-      }
-
-      .trades-table tr.active {
-        background: #e7f6f2;
-      }
-
-      .side-buy {
-        color: var(--accent);
-        font-weight: 700;
-      }
-
-      .side-sell {
-        color: var(--danger);
-        font-weight: 700;
-      }
-      .focus {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        padding: 10px;
-        background: #fcfefe;
-      }
-
-      .focus-meta {
-        display: grid;
-        gap: 6px;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        margin-bottom: 8px;
-      }
-
-      .focus-reason {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #f8fbfc;
-        padding: 8px;
-        font-size: 0.79rem;
-        margin-bottom: 8px;
-        white-space: pre-wrap;
-      }
-
-      .foot {
-        max-width: 1480px;
-        margin: 0 auto;
-        padding: 0 16px 14px;
-        color: var(--muted);
-        font-size: 0.73rem;
-      }
-
-      @media (max-width: 1200px) {
-        .layout {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 760px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-      }
+      :root { --bg:#edf2f4; --panel:#fff; --soft:#f5f8fa; --text:#152630; --muted:#5d6f79; --line:#d0dce3; --accent:#0e7c66; --danger:#b3263a; --warn:#b66a10; --shadow:0 10px 28px rgba(10,28,42,.08);}
+      *{box-sizing:border-box}
+      body{margin:0;font-family:"Space Grotesk","Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at 105% -10%,#d5eee5 0%,rgba(213,238,229,.1) 34%),radial-gradient(circle at -30% 20%,#f2e7d2 0%,rgba(242,231,210,.1) 34%),var(--bg)}
+      .top{max-width:1560px;margin:0 auto;padding:14px 18px 4px;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+      .title{margin:0;font-size:1.28rem}.sub{margin-top:4px;font-size:.82rem;color:var(--muted)}.updated{font-size:.82rem;color:var(--muted)}
+      .layout{max-width:1560px;margin:0 auto;padding:10px 18px 16px;display:grid;grid-template-columns:460px minmax(0,1fr);gap:14px}
+      .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+      .head{padding:11px 14px;border-bottom:1px solid var(--line);font-size:.85rem;font-weight:700;color:#324957;background:#f4f8fb;border-radius:16px 16px 0 0}
+      .inner{padding:10px 12px 12px}.muted{color:var(--muted)}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .grid{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}.card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:8px}
+      .k{color:var(--muted);font-size:.69rem}.v{margin-top:2px;font-size:.96rem;font-weight:700}
+      .pos{color:var(--accent)}.neg{color:var(--danger)}.warn{color:var(--warn)}
+      .table{overflow-x:auto} table{width:100%;border-collapse:collapse} th,td{padding:8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;font-size:.78rem}
+      th{background:#f3f8fa;color:#334958} tr:last-child td{border-bottom:none}
+      #ranking-body tr{cursor:pointer}#ranking-body tr:hover{background:#f7fcfe}#ranking-body tr.selected{background:#daf4ee}
+      .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:.71rem;background:#eff4f8}
+      .empty{border:1px dashed var(--line);border-radius:12px;padding:22px;color:var(--muted)}
+      .dhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+      .dname{margin:0;font-size:1.2rem}.dgrid{display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-bottom:10px}
+      .block{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:10px}.bhead{background:#f3f8fa;border-bottom:1px solid var(--line);padding:8px 10px;font-size:.82rem;font-weight:700}
+      .bbody{padding:10px}.chart{width:100%;height:280px}
+      .alloc{display:grid;grid-template-columns:180px minmax(0,1fr);gap:10px;align-items:start}
+      .pie{width:180px;height:180px;border-radius:50%;border:1px solid var(--line);position:relative;margin:0 auto;box-shadow:inset 0 0 0 1px rgba(255,255,255,.65)}
+      .pie:after{content:"";position:absolute;inset:46px;border-radius:50%;background:var(--panel);border:1px solid var(--line)}
+      .pc{position:absolute;inset:46px;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;z-index:2;font-size:.69rem;color:var(--muted)}
+      .pc strong{color:var(--text);font-size:.9rem}.alloc-table th,.alloc-table td{font-size:.74rem;padding:6px}.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+      .trades tr{cursor:pointer}.trades tr:hover{background:#f7fbfc}.trades tr.active{background:#e6f4f0}
+      .buy{color:var(--accent);font-weight:700}.sell{color:var(--danger);font-weight:700}
+      .focus{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fcfefe}.fgrid{display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-bottom:10px}
+      .ftext{border:1px solid var(--line);border-radius:10px;padding:8px;background:#f8fbfd}.ftext h4{margin:0 0 6px;font-size:.77rem}.ftext .body{white-space:pre-wrap;font-size:.78rem;line-height:1.35}
+      details{margin-top:8px}details summary{cursor:pointer;font-size:.76rem;color:var(--muted)}pre{margin:6px 0 0;border:1px solid var(--line);border-radius:8px;background:#f4f8fa;padding:8px;overflow-x:auto;max-height:220px;font-size:.72rem}
+      .foot{max-width:1560px;margin:0 auto;padding:0 18px 14px;font-size:.72rem;color:var(--muted)}
+      @media (max-width:1240px){.layout{grid-template-columns:1fr}}
+      @media (max-width:920px){.dgrid,.fgrid,.alloc{grid-template-columns:1fr}}
     </style>
   </head>
   <body>
-    <div class="layout">
+    <header class="top">
+      <div>
+        <h1 class="title">Cortex Analyst Monitor</h1>
+        <div class="sub">Clear ranking, allocation mix, and trade-level decision context</div>
+      </div>
+      <div class="updated" id="updated-at">Loading...</div>
+    </header>
+
+    <main class="layout">
       <section class="panel">
-        <div class="panel-head">
-          <h1 class="title">Classement Analysts</h1>
-          <div class="muted" id="updated-at">Chargement...</div>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Analyst</th>
-                <th>Equity</th>
-                <th>Return</th>
-                <th>Trades</th>
-                <th>Open</th>
-                <th>Last</th>
-                <th>Conf</th>
-              </tr>
-            </thead>
-            <tbody id="ranking-body"></tbody>
-          </table>
+        <div class="head">Global Overview</div>
+        <div class="inner">
+          <div id="global-kpis" class="grid" style="margin-bottom:10px;"></div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th><th>Analyst</th><th>Equity</th><th>Return</th><th>Open Risk</th><th>Trades</th><th>Last Decision</th><th>Confidence</th>
+                </tr>
+              </thead>
+              <tbody id="ranking-body"></tbody>
+            </table>
+          </div>
         </div>
       </section>
 
       <section class="panel">
-        <div class="detail-wrap">
-          <div class="empty" id="detail-empty">Selectionne un analyste pour voir son portefeuille, ses trades, et le detail de chaque decision.</div>
-
+        <div class="inner">
+          <div class="empty" id="detail-empty">Select an analyst to view portfolio allocation, open positions, trade history, and Codex explanation.</div>
           <div id="detail-root" style="display:none;">
-            <div class="detail-head">
+            <div class="dhead">
               <div>
-                <h2 class="detail-name" id="detail-name">-</h2>
+                <h2 class="dname" id="detail-name">-</h2>
                 <div class="muted" id="detail-sub">-</div>
               </div>
-              <div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
                 <span class="chip" id="detail-rank">Rank -</span>
+                <span class="chip" id="detail-last">Decision -</span>
               </div>
             </div>
 
-            <div class="summary" id="summary-grid"></div>
+            <div id="summary-grid" class="grid" style="margin-bottom:10px;"></div>
 
-            <div class="grid">
+            <div class="dgrid">
               <div class="block">
-                <div class="block-head">Trades En Cours (Open Positions)</div>
-                <div class="table-wrap">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Symbol</th>
-                        <th>Side</th>
-                        <th>Qty</th>
-                        <th>Avg Entry</th>
-                        <th>Mark</th>
-                        <th>Notional</th>
-                        <th>uPnL</th>
-                      </tr>
-                    </thead>
-                    <tbody id="positions-body"></tbody>
-                  </table>
+                <div class="bhead">Portfolio Allocation</div>
+                <div class="bbody">
+                  <div class="alloc">
+                    <div style="position:relative;width:180px">
+                      <div id="allocation-pie" class="pie"></div>
+                      <div id="allocation-center" class="pc"></div>
+                    </div>
+                    <div class="table">
+                      <table class="alloc-table">
+                        <thead><tr><th>Bucket</th><th>$</th><th>Mix %</th><th>% Equity</th></tr></thead>
+                        <tbody id="allocation-body"></tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
-
               <div class="block">
-                <div class="block-head">Equity Portfolio</div>
+                <div class="bhead">Equity Curve</div>
                 <div id="equity-chart" class="chart"></div>
               </div>
             </div>
 
-            <div class="block" style="margin-bottom:10px;">
-              <div class="block-head">Historique Trades (clique pour voir la reflexion)</div>
-              <div class="table-wrap">
-                <table class="trades-table">
-                  <thead>
-                    <tr>
-                      <th>Time</th>
-                      <th>Symbol</th>
-                      <th>Side</th>
-                      <th>Transition</th>
-                      <th>Qty</th>
-                      <th>Price</th>
-                      <th>Notional</th>
-                      <th>Fee</th>
-                    </tr>
-                  </thead>
+            <div class="block">
+              <div class="bhead">Open Positions</div>
+              <div class="table">
+                <table>
+                  <thead><tr><th>Symbol</th><th>Side</th><th>Qty</th><th>Mark</th><th>Notional</th><th>% Equity</th><th>uPnL</th></tr></thead>
+                  <tbody id="positions-body"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="bhead">Trade History (click for deep dive)</div>
+              <div class="table">
+                <table class="trades">
+                  <thead><tr><th>Time</th><th>Symbol</th><th>Side</th><th>Transition</th><th>Allocation</th><th>Conf</th><th>Price</th><th>Notional</th><th>Fee</th></tr></thead>
                   <tbody id="trades-body"></tbody>
                 </table>
               </div>
             </div>
 
             <div class="focus" id="trade-focus" style="display:none;">
-              <div class="focus-meta" id="trade-meta"></div>
-              <div class="focus-reason" id="trade-reason">-</div>
+              <div id="trade-meta" class="grid" style="margin-bottom:10px;"></div>
+              <div class="fgrid">
+                <div class="ftext"><h4>Decision Summary</h4><div class="body" id="trade-reason">-</div></div>
+                <div class="ftext">
+                  <h4>Codex Explanation</h4>
+                  <div class="body" id="trade-codex">-</div>
+                  <div class="muted" id="trade-codex-meta" style="margin-top:8px;font-size:.73rem;"></div>
+                </div>
+              </div>
               <div id="trade-chart" class="chart"></div>
+              <details>
+                <summary>Show raw Codex JSON payload</summary>
+                <pre id="trade-codex-json">No payload</pre>
+              </details>
             </div>
           </div>
         </div>
       </section>
-    </div>
+    </main>
 
-    <div class="foot">Source: <span class="mono">dashboard/data/system_state.json</span> | Refresh: 30s | Perf: un seul analyste/graph actif a la fois</div>
+    <div class="foot">Source: <span class="mono">dashboard/data/system_state.json</span> | Refresh: 30s | Charts rendered only for selected analyst</div>
 
     <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
     <script>
       const REFRESH_MS = 30000;
-      const TRADE_HISTORY_LIMIT = 120;
-      const TRADE_CHART_WINDOW = 140;
+      const TRADE_HISTORY_LIMIT = 140;
+      const TRADE_WINDOW_POINTS = 120;
+      const ALLOCATION_COLORS = ["#0e7c66", "#2a9d8f", "#26547c", "#6a4c93", "#d97706", "#5b8f29", "#b3263a", "#577590", "#7a7f9a"];
 
       let stateCache = null;
       let selectedAnalystId = null;
@@ -385,97 +165,40 @@
       let equityChart = null;
       let tradeChart = null;
 
-      function esc(value) {
-        return String(value ?? "-")
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/\"/g, "&quot;")
-          .replace(/'/g, "&#39;");
-      }
-
-      function toNum(v) {
-        const n = Number(v);
-        return Number.isFinite(n) ? n : null;
-      }
-
-      function fmtNumber(v, digits = 2) {
-        const n = toNum(v);
-        if (n === null) return "-";
-        return n.toLocaleString(undefined, {
-          minimumFractionDigits: digits,
-          maximumFractionDigits: digits,
-        });
-      }
-
-      function fmtMoney(v, digits = 2) {
-        const n = toNum(v);
-        if (n === null) return "-";
-        return "$" + fmtNumber(n, digits);
-      }
-
-      function fmtSignedMoney(v, digits = 2) {
-        const n = toNum(v);
-        if (n === null) return "-";
-        const sign = n > 0 ? "+" : "";
-        return sign + "$" + fmtNumber(n, digits);
-      }
-
-      function fmtPct(v, digits = 2) {
-        const n = toNum(v);
-        if (n === null) return "-";
-        return n.toFixed(digits) + "%";
-      }
-
-      function fmtSignedPct(v, digits = 2) {
-        const n = toNum(v);
-        if (n === null) return "-";
-        const sign = n > 0 ? "+" : "";
-        return sign + n.toFixed(digits) + "%";
-      }
-
-      function fmtTs(ts) {
+      const esc = (v) => String(v ?? "-").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+      const num = (v) => Number.isFinite(Number(v)) ? Number(v) : null;
+      const fmtN = (v, d = 2) => num(v) === null ? "-" : Number(v).toLocaleString(undefined, { minimumFractionDigits: d, maximumFractionDigits: d });
+      const fmtM = (v, d = 2) => num(v) === null ? "-" : "$" + fmtN(v, d);
+      const fmtSM = (v, d = 2) => num(v) === null ? "-" : `${Number(v) > 0 ? "+" : ""}$${fmtN(v, d)}`;
+      const fmtP = (v, d = 2) => num(v) === null ? "-" : `${Number(v).toFixed(d)}%`;
+      const fmtSP = (v, d = 2) => num(v) === null ? "-" : `${Number(v) > 0 ? "+" : ""}${Number(v).toFixed(d)}%`;
+      const cssSign = (v) => num(v) === null || Number(v) === 0 ? "" : Number(v) > 0 ? "pos" : "neg";
+      const toUnix = (ts) => { const t = new Date(ts).getTime(); return Number.isFinite(t) ? Math.floor(t / 1000) : null; };
+      const fmtTs = (ts) => {
         if (!ts) return "-";
         const d = new Date(ts);
         if (Number.isNaN(d.getTime())) return String(ts);
-        return d.toLocaleString("fr-FR", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit",
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: false,
-        });
-      }
-
-      function toUnix(ts) {
-        const t = new Date(ts).getTime();
-        if (!Number.isFinite(t)) return null;
-        return Math.floor(t / 1000);
-      }
-
-      function signedClass(value) {
-        const n = toNum(value);
-        if (n === null || n === 0) return "";
-        return n > 0 ? "pos" : "neg";
-      }
+        return d.toLocaleString("fr-FR", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+      };
 
       function nonZeroPositions(portfolio) {
-        const rows = Object.values(portfolio?.positions || {});
-        return rows.filter((p) => Math.abs(toNum(p?.net_quantity) || 0) > 0);
+        return Object.values(portfolio?.positions || {}).filter((p) => Math.abs(num(p?.net_quantity) || 0) > 0);
       }
-
-      function createTradeKey(trade) {
-        const fill = trade?.fill || {};
-        return [trade?.tick_id || "", fill.symbol || "", fill.executed_at || trade?.ts || "", fill.side || "", fill.quantity || ""].join("|");
+      function tradeKey(t) {
+        const f = t?.fill || {};
+        return [t?.tick_id || "", f.symbol || "", f.executed_at || t?.ts || "", f.side || "", f.quantity || ""].join("|");
+      }
+      function byId(data, analystId) {
+        return (data.agent_views || []).find((v) => v.analyst_id === analystId) || null;
+      }
+      function rankById(rows, analystId) {
+        return rows.find((r) => r.analyst_id === analystId) || null;
       }
 
       function buildRankingRows(data) {
         const views = data.agent_views || [];
         const viewById = new Map(views.map((v) => [v.analyst_id, v]));
-
-        const ranking = (data.competition?.ranking || []).length
+        const raw = (data.competition?.ranking || []).length
           ? (data.competition?.ranking || []).slice()
           : views.map((v) => ({
               analyst_id: v.analyst_id,
@@ -483,387 +206,364 @@
               portfolio_id: v.portfolio_id,
               equity_usd: v.portfolio?.equity_usd,
               trade_count: v.portfolio?.trade_count || 0,
-              realized_pnl_usd: v.portfolio?.realized_pnl_usd,
-              unrealized_pnl_usd: v.portfolio?.unrealized_pnl_usd,
             }));
-
-        ranking.sort((a, b) => (toNum(b.equity_usd) || -Infinity) - (toNum(a.equity_usd) || -Infinity));
-
-        return ranking.map((row, idx) => {
-          const view = viewById.get(row.analyst_id) || {};
-          const portfolio = view.portfolio || {};
-          const initial = toNum(portfolio.initial_balance_usd);
-          const equity = toNum(row.equity_usd);
+        raw.sort((a, b) => (num(b.equity_usd) || -Infinity) - (num(a.equity_usd) || -Infinity));
+        return raw.map((r, i) => {
+          const view = viewById.get(r.analyst_id) || {};
+          const p = view.portfolio || {};
+          const initial = num(p.initial_balance_usd);
+          const equity = num(r.equity_usd);
           const ret = initial && equity !== null ? ((equity - initial) / initial) * 100 : null;
-          const openCount = nonZeroPositions(portfolio).length;
-          const decision = view.latest_result?.decision || {};
-
-          return {
-            ...row,
-            rank: row.rank || idx + 1,
-            return_pct: ret,
-            open_positions: openCount,
-            last_action: decision.action || "-",
-            last_symbol: decision.symbol || "",
-            confidence: decision.confidence,
-          };
+          const pos = nonZeroPositions(p);
+          const gross = pos.reduce((s, x) => s + Math.abs(num(x.notional_exposure_usd) || 0), 0);
+          const risk = equity && equity > 0 ? (gross / equity) * 100 : null;
+          const d = view.latest_result?.decision || {};
+          return { ...r, rank: r.rank || i + 1, return_pct: ret, open_positions: pos.length, risk_pct: risk, last_action: d.action || "-", last_symbol: d.symbol || "", confidence: d.confidence };
         });
       }
 
-      function getViewById(data, analystId) {
-        return (data.agent_views || []).find((v) => v.analyst_id === analystId) || null;
-      }
-
-      function getRankingById(rankingRows, analystId) {
-        return rankingRows.find((r) => r.analyst_id === analystId) || null;
-      }
-
-      function renderRanking(rankingRows) {
-        const body = document.getElementById("ranking-body");
-        body.innerHTML = "";
-
-        if (!rankingRows.length) {
-          body.innerHTML = '<tr><td colspan="8" class="muted">Aucune donnee ranking</td></tr>';
+      function renderGlobal(rows) {
+        const root = document.getElementById("global-kpis");
+        if (!rows.length) {
+          root.innerHTML = '<div class="card"><div class="k">Status</div><div class="v">No data</div></div>';
           return;
         }
+        const totalEq = rows.reduce((s, r) => s + (num(r.equity_usd) || 0), 0);
+        const avgRet = rows.reduce((s, r) => s + (num(r.return_pct) || 0), 0) / rows.length;
+        const leader = rows[0];
+        const openCount = rows.reduce((s, r) => s + (r.open_positions || 0), 0);
+        const avgRisk = rows.reduce((s, r) => s + (num(r.risk_pct) || 0), 0) / rows.length;
+        const cards = [
+          ["Total Equity", fmtM(totalEq), cssSign(avgRet)],
+          ["Average Return", fmtSP(avgRet), cssSign(avgRet)],
+          ["Leader", esc(leader.display_name || leader.analyst_id || "-"), ""],
+          ["Open Positions", String(openCount), openCount > 0 ? "warn" : ""],
+          ["Average Risk", fmtP(avgRisk, 1), avgRisk > 100 ? "warn" : ""],
+        ];
+        root.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`).join("");
+      }
 
-        for (const row of rankingRows) {
+      function renderRanking(rows) {
+        const body = document.getElementById("ranking-body");
+        body.innerHTML = "";
+        if (!rows.length) {
+          body.innerHTML = '<tr><td colspan="8" class="muted">No ranking data</td></tr>';
+          return;
+        }
+        for (const row of rows) {
           const tr = document.createElement("tr");
-          if (row.analyst_id === selectedAnalystId) {
-            tr.classList.add("selected");
-          }
+          if (row.analyst_id === selectedAnalystId) tr.classList.add("selected");
           tr.innerHTML = `
             <td><strong>${row.rank || "-"}</strong></td>
             <td>${esc(row.display_name || row.analyst_id || "-")}</td>
-            <td class="${signedClass(row.return_pct)}">${fmtMoney(row.equity_usd)}</td>
-            <td class="${signedClass(row.return_pct)}">${fmtSignedPct(row.return_pct, 2)}</td>
+            <td class="${cssSign(row.return_pct)}">${fmtM(row.equity_usd)}</td>
+            <td class="${cssSign(row.return_pct)}">${fmtSP(row.return_pct, 2)}</td>
+            <td class="${row.risk_pct > 100 ? "warn" : ""}">${fmtP(row.risk_pct, 1)}</td>
             <td>${row.trade_count || 0}</td>
-            <td>${row.open_positions || 0}</td>
             <td>${esc(String(row.last_action || "-").toUpperCase())} ${esc(row.last_symbol || "")}</td>
-            <td>${row.confidence === undefined ? "-" : fmtPct((toNum(row.confidence) || 0) * 100, 1)}</td>
-          `;
-          tr.addEventListener("click", () => {
-            selectedAnalystId = row.analyst_id;
-            selectedTradeKey = null;
-            renderAll();
-          });
+            <td>${row.confidence === undefined ? "-" : fmtP((num(row.confidence) || 0) * 100, 1)}</td>`;
+          tr.addEventListener("click", () => { selectedAnalystId = row.analyst_id; selectedTradeKey = null; renderAll(); });
           body.appendChild(tr);
         }
       }
 
-      function renderSummaryCards(portfolio) {
+      function renderSummary(view, portfolio) {
         const root = document.getElementById("summary-grid");
-        const initial = toNum(portfolio.initial_balance_usd) || 0;
-        const equity = toNum(portfolio.equity_usd) || 0;
+        const initial = num(portfolio.initial_balance_usd) || 0;
+        const equity = num(portfolio.equity_usd) || 0;
+        const cash = num(portfolio.cash_balance_usd) || 0;
+        const gross = nonZeroPositions(portfolio).reduce((s, p) => s + Math.abs(num(p.notional_exposure_usd) || 0), 0);
+        const risk = equity > 0 ? (gross / equity) * 100 : null;
         const ret = initial > 0 ? ((equity - initial) / initial) * 100 : null;
-
+        const d = view.latest_result?.decision || {};
         const cards = [
-          ["Equity", fmtMoney(portfolio.equity_usd), signedClass(equity - initial)],
-          ["Return", fmtSignedPct(ret, 2), signedClass(ret)],
-          ["Cash", fmtMoney(portfolio.cash_balance_usd), ""],
-          ["Realized", fmtSignedMoney(portfolio.realized_pnl_usd), signedClass(portfolio.realized_pnl_usd)],
-          ["Unrealized", fmtSignedMoney(portfolio.unrealized_pnl_usd), signedClass(portfolio.unrealized_pnl_usd)],
-          ["Fees", fmtMoney(portfolio.total_fees_usd), ""],
-          ["Trades", String(portfolio.trade_count || 0), ""],
-          ["Updated", fmtTs(portfolio.updated_at), ""],
+          ["Equity", fmtM(portfolio.equity_usd), cssSign(ret)],
+          ["Return", fmtSP(ret, 2), cssSign(ret)],
+          ["Cash", fmtM(cash), ""],
+          ["Gross Exposure", fmtM(gross), ""],
+          ["Risk / Equity", fmtP(risk, 1), risk > 100 ? "warn" : ""],
+          ["Realized PnL", fmtSM(portfolio.realized_pnl_usd), cssSign(portfolio.realized_pnl_usd)],
+          ["Unrealized PnL", fmtSM(portfolio.unrealized_pnl_usd), cssSign(portfolio.unrealized_pnl_usd)],
+          ["Last Decision", `${String(d.action || "-").toUpperCase()} ${d.symbol || ""}`, d.action === "short" ? "neg" : d.action === "long" ? "pos" : ""],
         ];
+        root.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
+      }
 
-        root.innerHTML = cards
-          .map(([k, v, cls]) => `<div class="card"><div class="k">${k}</div><div class="v ${cls}">${esc(v)}</div></div>`)
-          .join("");
+      function buildAllocation(portfolio) {
+        const equity = num(portfolio?.equity_usd) || 0;
+        const rows = [];
+        const cash = Math.max(0, num(portfolio?.cash_balance_usd) || 0);
+        if (cash > 0) rows.push({ label: "Cash", amount: cash, signed: cash });
+        for (const p of nonZeroPositions(portfolio)) {
+          const qty = num(p.net_quantity) || 0;
+          const mark = num(p.mark_price) || 0;
+          const signed = qty * mark;
+          const amt = Math.abs(num(p.notional_exposure_usd) || signed);
+          rows.push({ label: `${p.symbol} ${qty >= 0 ? "long" : "short"}`, amount: amt, signed });
+        }
+        const total = rows.reduce((s, r) => s + r.amount, 0);
+        const gross = nonZeroPositions(portfolio).reduce((s, p) => s + Math.abs(num(p.notional_exposure_usd) || 0), 0);
+        return rows.map((r, i) => ({ ...r, color: ALLOCATION_COLORS[i % ALLOCATION_COLORS.length], mix_pct: total > 0 ? (r.amount / total) * 100 : 0, equity_pct: equity > 0 ? (r.signed / equity) * 100 : null, total, gross }));
+      }
+
+      function renderAllocation(portfolio) {
+        const pie = document.getElementById("allocation-pie");
+        const center = document.getElementById("allocation-center");
+        const body = document.getElementById("allocation-body");
+        body.innerHTML = "";
+        const rows = buildAllocation(portfolio);
+        if (!rows.length || rows[0].total <= 0) {
+          pie.style.background = "#e8eff3";
+          center.innerHTML = "<strong>No allocation</strong><span>portfolio is flat</span>";
+          body.innerHTML = '<tr><td colspan="4" class="muted">No allocation data</td></tr>';
+          return;
+        }
+        let cur = 0;
+        const parts = [];
+        for (const r of rows) {
+          const end = cur + r.mix_pct;
+          parts.push(`${r.color} ${cur.toFixed(3)}% ${end.toFixed(3)}%`);
+          cur = end;
+        }
+        pie.style.background = `conic-gradient(${parts.join(", ")})`;
+        center.innerHTML = `<strong>${fmtM(rows[0].gross)}</strong><span>gross exposure</span>`;
+        for (const r of rows) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `<td><span class="sw" style="background:${r.color}"></span>${esc(r.label)}</td><td>${fmtM(r.amount)}</td><td>${fmtP(r.mix_pct,1)}</td><td class="${cssSign(r.equity_pct)}">${fmtSP(r.equity_pct,1)}</td>`;
+          body.appendChild(tr);
+        }
       }
 
       function renderPositions(portfolio) {
         const body = document.getElementById("positions-body");
         body.innerHTML = "";
-        const positions = nonZeroPositions(portfolio).sort(
-          (a, b) => Math.abs(toNum(b.notional_exposure_usd) || 0) - Math.abs(toNum(a.notional_exposure_usd) || 0)
-        );
-
-        if (!positions.length) {
-          body.innerHTML = '<tr><td colspan="7" class="muted">Aucune position ouverte</td></tr>';
+        const equity = num(portfolio.equity_usd) || 0;
+        const rows = nonZeroPositions(portfolio).sort((a, b) => Math.abs(num(b.notional_exposure_usd) || 0) - Math.abs(num(a.notional_exposure_usd) || 0));
+        if (!rows.length) {
+          body.innerHTML = '<tr><td colspan="7" class="muted">No open positions</td></tr>';
           return;
         }
-
-        for (const pos of positions) {
-          const qty = toNum(pos.net_quantity) || 0;
-          const side = qty > 0 ? "LONG" : "SHORT";
+        for (const p of rows) {
+          const qty = num(p.net_quantity) || 0;
+          const eqPct = equity > 0 ? ((qty * (num(p.mark_price) || 0)) / equity) * 100 : null;
           const tr = document.createElement("tr");
-          tr.innerHTML = `
-            <td>${esc(pos.symbol || "-")}</td>
-            <td class="${qty > 0 ? "pos" : "neg"}">${side}</td>
-            <td>${fmtNumber(pos.net_quantity, 6)}</td>
-            <td>${fmtMoney(pos.avg_entry_price, 4)}</td>
-            <td>${fmtMoney(pos.mark_price, 4)}</td>
-            <td>${fmtMoney(pos.notional_exposure_usd)}</td>
-            <td class="${signedClass(pos.unrealized_pnl_usd)}">${fmtSignedMoney(pos.unrealized_pnl_usd)}</td>
-          `;
+          tr.innerHTML = `<td>${esc(p.symbol || "-")}</td><td class="${qty > 0 ? "pos" : "neg"}">${qty > 0 ? "LONG" : "SHORT"}</td><td>${fmtN(qty,6)}</td><td>${fmtM(p.mark_price,4)}</td><td>${fmtM(p.notional_exposure_usd)}</td><td class="${cssSign(eqPct)}">${fmtSP(eqPct,1)}</td><td class="${cssSign(p.unrealized_pnl_usd)}">${fmtSM(p.unrealized_pnl_usd)}</td>`;
           body.appendChild(tr);
         }
       }
 
-      function buildEquitySeries(view) {
-        const rows = view.equity_history || [];
+      function buildEqSeries(view) {
         const out = [];
-        for (const row of rows) {
-          const t = toUnix(row.ts);
-          const v = toNum(row.equity_usd);
+        for (const r of view.equity_history || []) {
+          const t = toUnix(r.ts);
+          const v = num(r.equity_usd);
           if (t !== null && v !== null) out.push({ time: t, value: v });
         }
         out.sort((a, b) => a.time - b.time);
         return out;
       }
 
-      function renderEquityChart(view) {
-        const container = document.getElementById("equity-chart");
-        if (!window.LightweightCharts) {
-          container.innerHTML = '<div class="empty">Lightweight Charts indisponible</div>';
-          return;
-        }
-
-        if (equityChart) {
-          equityChart.remove();
-          equityChart = null;
-        }
-
-        equityChart = LightweightCharts.createChart(container, {
-          width: container.clientWidth || 420,
-          height: container.clientHeight || 250,
-          layout: { background: { color: "#ffffff" }, textColor: "#475b67" },
-          rightPriceScale: { borderColor: "#d3dde4" },
-          timeScale: { borderColor: "#d3dde4", timeVisible: true },
-          grid: { vertLines: { color: "#eef4f7" }, horzLines: { color: "#eef4f7" } },
-        });
-
-        const series = equityChart.addAreaSeries({
-          topColor: "rgba(15, 118, 110, 0.3)",
-          bottomColor: "rgba(15, 118, 110, 0.04)",
-          lineColor: "#0f766e",
-          lineWidth: 2,
-        });
-
-        const data = buildEquitySeries(view);
-        if (data.length) {
-          series.setData(data);
-          equityChart.timeScale().fitContent();
-        }
+      function renderEquity(view) {
+        const c = document.getElementById("equity-chart");
+        if (!window.LightweightCharts) { c.innerHTML = '<div class="empty">Chart library unavailable</div>'; return; }
+        if (equityChart) { equityChart.remove(); equityChart = null; }
+        equityChart = LightweightCharts.createChart(c, { width: c.clientWidth || 420, height: c.clientHeight || 280, layout: { background: { color: "#fff" }, textColor: "#4d606e" }, rightPriceScale: { borderColor: "#d3dde4" }, timeScale: { borderColor: "#d3dde4", timeVisible: true }, grid: { vertLines: { color: "#ecf2f6" }, horzLines: { color: "#ecf2f6" } } });
+        const s = equityChart.addAreaSeries({ topColor: "rgba(14,124,102,.3)", bottomColor: "rgba(14,124,102,.03)", lineColor: "#0e7c66", lineWidth: 2 });
+        const d = buildEqSeries(view);
+        if (d.length) { s.setData(d); equityChart.timeScale().fitContent(); }
       }
-      function buildPriceSeriesWindow(marketHistory, symbol, targetUnix) {
-        const all = [];
+
+      function priceWindow(marketHistory, trades, symbol, targetUnix) {
+        const market = [];
         for (const row of marketHistory || []) {
           const t = toUnix(row.as_of);
-          const v = toNum(row?.prices?.[symbol]);
-          if (t !== null && v !== null) {
-            all.push({ time: t, value: v });
-          }
+          const v = num(row?.prices?.[symbol]);
+          if (t !== null && v !== null) market.push({ time: t, value: v });
         }
-        all.sort((a, b) => a.time - b.time);
-        if (!all.length) return all;
-        if (targetUnix === null) return all.slice(-TRADE_CHART_WINDOW * 2);
-
-        let bestIdx = 0;
-        let bestDist = Number.POSITIVE_INFINITY;
-        for (let i = 0; i < all.length; i += 1) {
-          const dist = Math.abs(all[i].time - targetUnix);
-          if (dist < bestDist) {
-            bestDist = dist;
-            bestIdx = i;
+        market.sort((a, b) => a.time - b.time);
+        let series = market;
+        if (series.length < 3) {
+          const synthetic = [];
+          for (const tr of trades || []) {
+            const f = tr.fill || {};
+            if (f.symbol !== symbol) continue;
+            const t = toUnix(f.executed_at || tr.ts);
+            const v = num(f.executed_price);
+            if (t !== null && v !== null) synthetic.push({ time: t, value: v });
           }
+          synthetic.sort((a, b) => a.time - b.time);
+          series = synthetic;
         }
-
-        const start = Math.max(0, bestIdx - TRADE_CHART_WINDOW);
-        const end = Math.min(all.length, bestIdx + TRADE_CHART_WINDOW);
-        return all.slice(start, end);
+        if (!series.length) return [];
+        if (targetUnix === null) return series.slice(-TRADE_WINDOW_POINTS * 2);
+        let best = 0, dist = Number.POSITIVE_INFINITY;
+        for (let i = 0; i < series.length; i += 1) {
+          const d = Math.abs(series[i].time - targetUnix);
+          if (d < dist) { dist = d; best = i; }
+        }
+        const start = Math.max(0, best - TRADE_WINDOW_POINTS);
+        const end = Math.min(series.length, best + TRADE_WINDOW_POINTS);
+        return series.slice(start, end);
       }
 
-      function renderTradeFocus(view, trade, decisionByTick, marketHistory) {
-        const focus = document.getElementById("trade-focus");
-        const meta = document.getElementById("trade-meta");
-        const reason = document.getElementById("trade-reason");
-        const chartEl = document.getElementById("trade-chart");
-
-        if (!trade) {
-          focus.style.display = "none";
-          return;
+      function codexExplanation(decisionRow, trade, fallback) {
+        if (String(trade?.decision_explanation || "").trim()) return String(trade.decision_explanation).trim();
+        const codex = decisionRow?.codex || {};
+        if (String(codex.explanation || "").trim()) return String(codex.explanation).trim();
+        const payload = codex.response_payload || {};
+        const parts = [];
+        if (payload.reason) parts.push(String(payload.reason));
+        const a = payload.analysis;
+        if (a && typeof a === "object") {
+          if (a.thesis) parts.push(`Thesis: ${a.thesis}`);
+          if (a.signals) parts.push(`Signals: ${Array.isArray(a.signals) ? a.signals.join("; ") : String(a.signals)}`);
+          if (a.risk) parts.push(`Risk: ${a.risk}`);
+          if (a.invalidation) parts.push(`Invalidation: ${a.invalidation}`);
         }
+        return parts.length ? parts.join("\n\n") : (fallback || "No explanation available");
+      }
+
+      function renderTradeFocus(view, trade, byTick, marketHistory) {
+        const root = document.getElementById("trade-focus");
+        const meta = document.getElementById("trade-meta");
+        const reasonEl = document.getElementById("trade-reason");
+        const codexEl = document.getElementById("trade-codex");
+        const codexMeta = document.getElementById("trade-codex-meta");
+        const codexJson = document.getElementById("trade-codex-json");
+        const chartEl = document.getElementById("trade-chart");
+        if (!trade) { root.style.display = "none"; return; }
 
         const fill = trade.fill || {};
-        const decision = decisionByTick.get(trade.tick_id) || {};
+        const drow = byTick.get(trade.tick_id) || {};
+        const decision = drow.decision || {};
         const side = String(fill.side || "-").toUpperCase();
-        const sideClass = side === "BUY" ? "side-buy" : side === "SELL" ? "side-sell" : "";
-        const decisionReason = trade.decision_reason || decision.reason || "No reason available";
+        const symbol = fill.symbol || decision.symbol || "-";
+        const px = num(fill.executed_price);
+        const qty = num(fill.quantity) || 0;
+        const conf = trade.decision_confidence ?? decision.confidence;
+        const tokens = drow?.codex?.token_usage ?? trade.codex_token_usage ?? null;
+        const logPath = drow?.codex?.log_path || "";
+        const mark = num((view.portfolio?.positions || {})[symbol]?.mark_price);
+        const pnl = px !== null && mark !== null ? (mark - px) * qty * (side === "BUY" ? 1 : -1) : null;
+        const cards = [
+          ["Trade", `${side} ${symbol}`, side === "BUY" ? "pos" : side === "SELL" ? "neg" : ""],
+          ["Transition", trade.transition || "-", ""],
+          ["Executed", fmtTs(fill.executed_at || trade.ts), ""],
+          ["Price", fmtM(px, 4), ""],
+          ["Quantity", fmtN(qty, 6), ""],
+          ["Notional", fmtM(fill.notional_usd), ""],
+          ["Confidence", conf === undefined ? "-" : fmtP((num(conf) || 0) * 100, 1), ""],
+          ["PnL vs Mark", fmtSM(pnl), cssSign(pnl)],
+        ];
+        meta.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
 
-        meta.innerHTML = `
-          <div class="card"><div class="k">Trade</div><div class="v ${sideClass}">${side} ${esc(fill.symbol || "-")}</div></div>
-          <div class="card"><div class="k">Transition</div><div class="v">${esc(trade.transition || "-")}</div></div>
-          <div class="card"><div class="k">Executed</div><div class="v">${fmtTs(fill.executed_at || trade.ts)}</div></div>
-          <div class="card"><div class="k">Quantity</div><div class="v">${fmtNumber(fill.quantity, 6)}</div></div>
-          <div class="card"><div class="k">Price</div><div class="v">${fmtMoney(fill.executed_price, 4)}</div></div>
-          <div class="card"><div class="k">Confidence</div><div class="v">${trade.decision_confidence === undefined ? "-" : fmtPct((toNum(trade.decision_confidence) || 0) * 100, 1)}</div></div>
-        `;
+        const fallback = trade.decision_reason || decision.reason || "No decision reason";
+        reasonEl.textContent = fallback;
+        codexEl.textContent = codexExplanation(drow, trade, fallback);
+        codexMeta.textContent = [tokens !== null && tokens !== undefined ? `Tokens: ${tokens}` : "", logPath ? `Log: ${logPath}` : ""].filter(Boolean).join(" | ");
+        codexJson.textContent = drow?.codex?.response_payload ? JSON.stringify(drow.codex.response_payload, null, 2) : "No payload";
+        root.style.display = "block";
 
-        reason.textContent = decisionReason;
-        focus.style.display = "block";
-
-        if (!window.LightweightCharts) {
-          chartEl.innerHTML = '<div class="empty">Lightweight Charts indisponible</div>';
-          return;
+        if (!window.LightweightCharts) { chartEl.innerHTML = '<div class="empty">Chart library unavailable</div>'; return; }
+        if (tradeChart) { tradeChart.remove(); tradeChart = null; }
+        tradeChart = LightweightCharts.createChart(chartEl, { width: chartEl.clientWidth || 600, height: chartEl.clientHeight || 280, layout: { background: { color: "#fff" }, textColor: "#4d606e" }, rightPriceScale: { borderColor: "#d3dde4" }, timeScale: { borderColor: "#d3dde4", timeVisible: true }, grid: { vertLines: { color: "#ecf2f6" }, horzLines: { color: "#ecf2f6" } } });
+        const s = tradeChart.addLineSeries({ color: "#26547c", lineWidth: 2 });
+        const allTrades = view.trades || [];
+        const tUnix = toUnix(fill.executed_at || trade.ts);
+        const data = priceWindow(marketHistory, allTrades, symbol, tUnix);
+        if (!data.length) { chartEl.innerHTML = '<div class="empty">No market history for this symbol in selected window</div>'; return; }
+        s.setData(data); tradeChart.timeScale().fitContent();
+        if (px !== null && typeof s.createPriceLine === "function") s.createPriceLine({ price: px, color: side === "BUY" ? "#0e7c66" : "#b3263a", lineWidth: 1, lineStyle: 2, axisLabelVisible: true, title: "entry" });
+        const minT = data[0].time, maxT = data[data.length - 1].time;
+        const marks = [];
+        for (const row of allTrades) {
+          const f = row.fill || {};
+          if (f.symbol !== symbol) continue;
+          const t = toUnix(f.executed_at || row.ts);
+          if (t === null || t < minT || t > maxT) continue;
+          const sSide = String(f.side || "").toUpperCase();
+          const selected = tradeKey(row) === tradeKey(trade);
+          marks.push({ time: t, position: sSide === "BUY" ? "belowBar" : "aboveBar", color: sSide === "BUY" ? "#0e7c66" : "#b3263a", shape: sSide === "BUY" ? "arrowUp" : "arrowDown", text: selected ? `${sSide} selected` : sSide });
         }
-
-        if (tradeChart) {
-          tradeChart.remove();
-          tradeChart = null;
-        }
-
-        tradeChart = LightweightCharts.createChart(chartEl, {
-          width: chartEl.clientWidth || 500,
-          height: chartEl.clientHeight || 250,
-          layout: { background: { color: "#ffffff" }, textColor: "#475b67" },
-          rightPriceScale: { borderColor: "#d3dde4" },
-          timeScale: { borderColor: "#d3dde4", timeVisible: true },
-          grid: { vertLines: { color: "#eef4f7" }, horzLines: { color: "#eef4f7" } },
-        });
-
-        const series = tradeChart.addLineSeries({ color: "#0f766e", lineWidth: 2 });
-        const tradeUnix = toUnix(fill.executed_at || trade.ts);
-        const symbol = fill.symbol || decision.symbol || "BTC";
-        const data = buildPriceSeriesWindow(marketHistory, symbol, tradeUnix);
-
-        if (data.length) {
-          series.setData(data);
-          if (typeof series.setMarkers === "function" && tradeUnix !== null) {
-            series.setMarkers([
-              {
-                time: tradeUnix,
-                position: side === "BUY" ? "belowBar" : "aboveBar",
-                color: side === "BUY" ? "#0f766e" : "#b4232d",
-                shape: side === "BUY" ? "arrowUp" : "arrowDown",
-                text: side,
-              },
-            ]);
-          }
-          tradeChart.timeScale().fitContent();
-        }
+        if (typeof s.setMarkers === "function") s.setMarkers(marks);
       }
 
       function renderTrades(view, marketHistory) {
         const body = document.getElementById("trades-body");
         body.innerHTML = "";
-
         const trades = (view.trades || []).slice(-TRADE_HISTORY_LIMIT).reverse();
-        const decisionByTick = new Map((view.decisions || []).map((row) => [row.tick_id, row.decision || {}]));
-
+        const byTick = new Map((view.decisions || []).map((r) => [r.tick_id, r]));
         if (!trades.length) {
-          body.innerHTML = '<tr><td colspan="8" class="muted">Aucun trade execute</td></tr>';
-          renderTradeFocus(view, null, decisionByTick, marketHistory);
+          body.innerHTML = '<tr><td colspan="9" class="muted">No executed trade yet</td></tr>';
+          renderTradeFocus(view, null, byTick, marketHistory);
           return;
         }
-
-        for (const trade of trades) {
-          const fill = trade.fill || {};
-          const tradeKey = createTradeKey(trade);
-          const tr = document.createElement("tr");
-          if (tradeKey === selectedTradeKey) {
-            tr.classList.add("active");
-          }
-
+        for (const trd of trades) {
+          const fill = trd.fill || {};
+          const drow = byTick.get(trd.tick_id) || {};
+          const decision = drow.decision || {};
+          const key = tradeKey(trd);
           const side = String(fill.side || "-").toUpperCase();
-          const sideClass = side === "BUY" ? "side-buy" : side === "SELL" ? "side-sell" : "";
-          tr.innerHTML = `
-            <td>${fmtTs(fill.executed_at || trade.ts)}</td>
-            <td>${esc(fill.symbol || "-")}</td>
-            <td class="${sideClass}">${side}</td>
-            <td>${esc(trade.transition || "-")}</td>
-            <td>${fmtNumber(fill.quantity, 6)}</td>
-            <td>${fmtMoney(fill.executed_price, 4)}</td>
-            <td>${fmtMoney(fill.notional_usd)}</td>
-            <td>${fmtMoney(fill.fee_paid_usd, 4)}</td>
-          `;
-          tr.addEventListener("click", () => {
-            selectedTradeKey = tradeKey;
-            renderAll();
-          });
-          body.appendChild(tr);
+          const row = document.createElement("tr");
+          if (key === selectedTradeKey) row.classList.add("active");
+          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td>${esc(trd.transition || "-")}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
+          row.addEventListener("click", () => { selectedTradeKey = key; renderAll(); });
+          body.appendChild(row);
         }
-
-        const selectedTrade = trades.find((t) => createTradeKey(t) === selectedTradeKey) || null;
-        renderTradeFocus(view, selectedTrade, decisionByTick, marketHistory);
+        const selected = trades.find((x) => tradeKey(x) === selectedTradeKey) || trades[0];
+        if (selected && !selectedTradeKey) selectedTradeKey = tradeKey(selected);
+        renderTradeFocus(view, selected, byTick, marketHistory);
       }
-      function renderSelectedAnalyst(data, rankingRows) {
+
+      function renderSelected(data, rows) {
         const empty = document.getElementById("detail-empty");
         const root = document.getElementById("detail-root");
-
-        if (!selectedAnalystId) {
-          empty.style.display = "block";
-          root.style.display = "none";
-          return;
-        }
-
-        const view = getViewById(data, selectedAnalystId);
-        const row = getRankingById(rankingRows, selectedAnalystId);
-        if (!view || !row) {
-          empty.style.display = "block";
-          root.style.display = "none";
-          return;
-        }
-
+        if (!selectedAnalystId) { empty.style.display = "block"; root.style.display = "none"; return; }
+        const view = byId(data, selectedAnalystId);
+        const rank = rankById(rows, selectedAnalystId);
+        if (!view || !rank) { empty.style.display = "block"; root.style.display = "none"; return; }
+        const p = view.portfolio || {};
+        const d = view.latest_result?.decision || {};
         empty.style.display = "none";
         root.style.display = "block";
-
-        const portfolio = view.portfolio || {};
         document.getElementById("detail-name").textContent = view.display_name || view.analyst_id || "-";
-        document.getElementById("detail-sub").innerHTML = `id: <span class="mono">${esc(view.analyst_id || "-")}</span> | portfolio: <span class="mono">${esc(view.portfolio_id || portfolio.portfolio_id || "-")}</span> | tick: <span class="mono">${esc(view.latest_result?.tick_id || "-")}</span>`;
-        document.getElementById("detail-rank").textContent = `Rank #${row.rank || "-"}`;
-
-        renderSummaryCards(portfolio);
-        renderPositions(portfolio);
-        renderEquityChart(view);
+        document.getElementById("detail-sub").innerHTML = `id: <span class="mono">${esc(view.analyst_id || "-")}</span> | portfolio: <span class="mono">${esc(view.portfolio_id || p.portfolio_id || "-")}</span> | tick: <span class="mono">${esc(view.latest_result?.tick_id || data.competition?.tick_id || "-")}</span>`;
+        document.getElementById("detail-rank").textContent = `Rank #${rank.rank || "-"}`;
+        document.getElementById("detail-last").textContent = `Decision ${String(d.action || "-").toUpperCase()} ${d.symbol || ""}`;
+        renderSummary(view, p);
+        renderAllocation(p);
+        renderPositions(p);
+        renderEquity(view);
         renderTrades(view, data.market_history || []);
       }
 
       function renderAll() {
         if (!stateCache) return;
-        const rankingRows = buildRankingRows(stateCache);
-
-        if (!selectedAnalystId && rankingRows.length) {
-          selectedAnalystId = rankingRows[0].analyst_id;
-        }
-
-        if (selectedAnalystId && !rankingRows.some((r) => r.analyst_id === selectedAnalystId)) {
-          selectedAnalystId = rankingRows.length ? rankingRows[0].analyst_id : null;
-          selectedTradeKey = null;
-        }
-
-        renderRanking(rankingRows);
-        renderSelectedAnalyst(stateCache, rankingRows);
+        const rows = buildRankingRows(stateCache);
+        renderGlobal(rows);
+        if (!selectedAnalystId && rows.length) selectedAnalystId = rows[0].analyst_id;
+        if (selectedAnalystId && !rows.some((r) => r.analyst_id === selectedAnalystId)) { selectedAnalystId = rows.length ? rows[0].analyst_id : null; selectedTradeKey = null; }
+        renderRanking(rows);
+        renderSelected(stateCache, rows);
       }
 
       async function loadState() {
         try {
           const res = await fetch("./data/system_state.json", { cache: "no-store" });
-          if (!res.ok) {
-            document.getElementById("updated-at").textContent = "Etat introuvable";
-            return;
-          }
+          if (!res.ok) { document.getElementById("updated-at").textContent = "State file not found"; return; }
           stateCache = await res.json();
           const updated = fmtTs(stateCache.updated_at);
           const tick = stateCache.snapshot?.tick_id || stateCache.competition?.tick_id || "-";
           document.getElementById("updated-at").textContent = `${updated} | tick ${tick}`;
           renderAll();
         } catch (err) {
-          document.getElementById("updated-at").textContent = `Erreur: ${err.message}`;
+          document.getElementById("updated-at").textContent = `Load error: ${err.message}`;
         }
       }
 
       window.addEventListener("resize", () => {
-        if (equityChart) {
-          const c = document.getElementById("equity-chart");
-          equityChart.resize(c.clientWidth || 420, c.clientHeight || 250);
-        }
-        if (tradeChart) {
-          const c = document.getElementById("trade-chart");
-          tradeChart.resize(c.clientWidth || 500, c.clientHeight || 250);
-        }
+        if (equityChart) { const c = document.getElementById("equity-chart"); equityChart.resize(c.clientWidth || 420, c.clientHeight || 280); }
+        if (tradeChart) { const c = document.getElementById("trade-chart"); tradeChart.resize(c.clientWidth || 600, c.clientHeight || 280); }
       });
 
       loadState();
@@ -871,4 +571,3 @@
     </script>
   </body>
 </html>
-
