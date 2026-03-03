@@ -3,385 +3,1166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cortex Dashboard</title>
+    <title>Cortex Control Room</title>
     <style>
       :root {
-        --bg: #eef5f7;
-        --panel: #ffffff;
-        --text: #0d1b2a;
-        --muted: #516074;
-        --accent: #0f766e;
-        --accent-soft: #d7f6f0;
-        --border: #d2d9e3;
-        --danger: #b91c1c;
-        --success: #0f766e;
+        --bg: #e7eef0;
+        --surface: #ffffff;
+        --surface-soft: #f4f8f9;
+        --text: #10212e;
+        --muted: #5d6d78;
+        --accent: #117864;
+        --accent-soft: #d8f2ec;
+        --danger: #b4232d;
+        --danger-soft: #fde8ea;
+        --warning: #9a6200;
+        --warning-soft: #fff4dc;
+        --border: #ccd8df;
+        --shadow: 0 8px 26px rgba(9, 24, 39, 0.07);
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        font-family: "Space Grotesk", "Segoe UI", sans-serif;
         color: var(--text);
-        background: radial-gradient(circle at top right, #dff3ee 0%, var(--bg) 45%);
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 90% -10%, #d2efe8 0%, rgba(210, 239, 232, 0.12) 35%),
+          radial-gradient(circle at -20% 20%, #f2e8d4 0%, rgba(242, 232, 212, 0.12) 38%),
+          var(--bg);
       }
+
       .wrap {
-        max-width: 1260px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 24px;
       }
-      .topbar {
+
+      .hero {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        gap: 16px;
+        align-items: flex-start;
+        gap: 14px;
         flex-wrap: wrap;
+        margin-bottom: 16px;
       }
+
       h1 {
         margin: 0;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
+        letter-spacing: 0.01em;
       }
-      .tag {
+
+      h2 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .mode {
         display: inline-block;
-        margin-left: 8px;
-        padding: 3px 10px;
+        margin-left: 10px;
+        padding: 4px 10px;
         border-radius: 999px;
         background: var(--accent-soft);
         color: var(--accent);
-        font-size: 0.75rem;
-        font-weight: 700;
+        border: 1px solid #b8e6dd;
+        font-size: 0.74rem;
+        vertical-align: middle;
       }
+
       .muted {
         color: var(--muted);
       }
-      .grid {
-        display: grid;
-        gap: 14px;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        margin-top: 16px;
+
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       }
-      .card {
-        background: var(--panel);
+
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--border);
+        background: #f7fafc;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.74rem;
+      }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .status::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      .kpi-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        margin-bottom: 14px;
+      }
+
+      .kpi {
+        background: var(--surface);
         border: 1px solid var(--border);
         border-radius: 14px;
-        padding: 14px;
+        padding: 12px;
+        box-shadow: var(--shadow);
       }
-      .card h2 {
-        margin: 0 0 10px;
+
+      .kpi .label {
+        font-size: 0.76rem;
         color: var(--muted);
-        font-size: 0.88rem;
+        margin-bottom: 6px;
       }
-      .metric {
-        font-size: 1.2rem;
+
+      .kpi .value {
+        font-size: 1.08rem;
         font-weight: 700;
       }
+
+      .pos {
+        color: var(--accent);
+      }
+
+      .neg {
+        color: var(--danger);
+      }
+
+      .panel-grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 1.1fr 1fr;
+        margin-bottom: 14px;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .panel-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+      }
+
       table {
         width: 100%;
         border-collapse: collapse;
       }
+
       th,
       td {
         text-align: left;
         padding: 8px;
         border-bottom: 1px solid var(--border);
-        font-size: 0.86rem;
+        font-size: 0.79rem;
+        white-space: nowrap;
       }
-      .section {
-        margin-top: 16px;
+
+      th {
+        background: #f3f8fa;
+        font-weight: 700;
+        color: #344552;
       }
-      .agents {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-        gap: 14px;
+
+      tr:last-child td {
+        border-bottom: none;
       }
-      .agent-head {
+
+      .metric-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 2px 7px;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        border: 1px solid transparent;
+      }
+
+      .chip-good {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-color: #bee7de;
+      }
+
+      .chip-bad {
+        background: var(--danger-soft);
+        color: var(--danger);
+        border-color: #f6c5cc;
+      }
+
+      .chip-warn {
+        background: var(--warning-soft);
+        color: var(--warning);
+        border-color: #ffe4ab;
+      }
+
+      .section-title {
+        margin: 2px 0 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+        flex-wrap: wrap;
       }
-      .agent-head h3 {
+
+      .agents {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 1fr;
+      }
+
+      .agent {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .agent-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: flex-start;
+        margin-bottom: 8px;
+      }
+
+      .agent-name {
         margin: 0;
-        font-size: 1.02rem;
+        font-size: 1.1rem;
       }
-      .pill {
-        padding: 2px 8px;
+
+      .rank-badge {
+        background: #0f1f2d;
+        color: #e8f1f3;
         border-radius: 999px;
-        background: #f4f7ff;
-        border: 1px solid #cfd9f8;
+        padding: 4px 9px;
         font-size: 0.72rem;
       }
-      .chart {
-        width: 100%;
-        height: 220px;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        margin-top: 10px;
-      }
-      .trade-buy {
-        color: var(--success);
-        font-weight: 700;
-      }
-      .trade-sell {
-        color: var(--danger);
-        font-weight: 700;
-      }
-      .summary-row {
+
+      .agent-kpis {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
-        margin-top: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        margin-bottom: 10px;
       }
-      .summary-box {
+
+      .mini {
         border: 1px solid var(--border);
         border-radius: 10px;
+        background: var(--surface-soft);
         padding: 8px;
       }
-      .summary-box .k {
-        font-size: 0.75rem;
+
+      .mini .k {
+        font-size: 0.69rem;
         color: var(--muted);
       }
-      .summary-box .v {
+
+      .mini .v {
+        margin-top: 2px;
         font-size: 0.95rem;
         font-weight: 700;
       }
-      @media (max-width: 720px) {
-        .summary-row {
+
+      .decision {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #f7fafb;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .decision-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .action {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .action-long {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+
+      .action-short {
+        background: var(--danger-soft);
+        color: var(--danger);
+      }
+      .action-hold {
+        background: #eef3f6;
+        color: #475a67;
+      }
+
+      .decision-meta {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.74rem;
+      }
+
+      .decision-reason {
+        margin-top: 6px;
+        font-size: 0.8rem;
+      }
+
+      .agent-grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1.15fr 0.85fr;
+        margin-bottom: 10px;
+      }
+
+      .chart-box,
+      .table-box {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #ffffff;
+        padding: 8px;
+      }
+
+      .chart-title,
+      .table-title {
+        margin: 0 0 8px;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      .chart {
+        width: 100%;
+        height: 220px;
+      }
+
+      .dual {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10px;
+      }
+
+      .empty {
+        color: var(--muted);
+        font-size: 0.8rem;
+        padding: 10px;
+      }
+
+      .foot {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 0.74rem;
+      }
+
+      @media (max-width: 1100px) {
+        .panel-grid {
           grid-template-columns: 1fr;
+        }
+
+        .agent-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .wrap {
+          padding: 14px;
+        }
+
+        h1 {
+          font-size: 1.45rem;
+        }
+
+        .dual {
+          grid-template-columns: 1fr;
+        }
+
+        th,
+        td {
+          font-size: 0.74rem;
+          padding: 7px;
         }
       }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <div class="topbar">
-        <h1>Cortex Market Lab <span class="tag">Dry Run</span></h1>
-        <div class="muted" id="updated-at">Loading...</div>
-      </div>
+      <header class="hero">
+        <div>
+          <h1>Cortex Control Room <span class="mode">Dry Run</span></h1>
+          <div class="muted" id="updated-at">Loading state...</div>
+        </div>
+        <div class="pill status" id="health-pill">System online</div>
+      </header>
 
-      <div class="grid">
-        <div class="card">
-          <h2>Tick ID</h2>
-          <div class="metric" id="tick-id">-</div>
+      <section class="kpi-grid">
+        <div class="kpi">
+          <div class="label">Tick ID</div>
+          <div class="value mono" id="kpi-tick">-</div>
         </div>
-        <div class="card">
-          <h2>Skills Success</h2>
-          <div class="metric" id="skills-success">-</div>
+        <div class="kpi">
+          <div class="label">Analysts actifs</div>
+          <div class="value" id="kpi-analysts">-</div>
         </div>
-        <div class="card">
-          <h2>Tick Duration (ms)</h2>
-          <div class="metric" id="tick-duration">-</div>
+        <div class="kpi">
+          <div class="label">Equity totale</div>
+          <div class="value" id="kpi-equity">-</div>
         </div>
-        <div class="card">
-          <h2>Analysts</h2>
-          <div class="metric" id="analyst-count">-</div>
+        <div class="kpi">
+          <div class="label">PnL systeme</div>
+          <div class="value" id="kpi-system-pnl">-</div>
         </div>
-      </div>
+        <div class="kpi">
+          <div class="label">Exposure brute</div>
+          <div class="value" id="kpi-exposure">-</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Confiance moyenne</div>
+          <div class="value" id="kpi-confidence">-</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Skills success</div>
+          <div class="value" id="kpi-skills">-</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Tick duration</div>
+          <div class="value" id="kpi-duration">-</div>
+        </div>
+      </section>
 
-      <div class="card section">
-        <h2>Competition Ranking</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Analyst</th>
-              <th>Portfolio</th>
-              <th>Equity</th>
-              <th>Trades</th>
-            </tr>
-          </thead>
-          <tbody id="ranking-body"></tbody>
-        </table>
-      </div>
+      <section class="panel-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Market Pulse</h2>
+            <div class="muted" id="market-updated">-</div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Price</th>
+                  <th>Funding</th>
+                  <th>Open Interest</th>
+                  <th>Volume</th>
+                  <th>Spread (bps)</th>
+                  <th>Social</th>
+                  <th>Liq 1h</th>
+                </tr>
+              </thead>
+              <tbody id="market-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Competition Ranking</h2>
+            <div class="muted">Classement live</div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Analyst</th>
+                  <th>Equity</th>
+                  <th>Return</th>
+                  <th>Realized</th>
+                  <th>Unrealized</th>
+                  <th>Open Pos</th>
+                  <th>Trades</th>
+                  <th>Last Action</th>
+                  <th>Conf.</th>
+                </tr>
+              </thead>
+              <tbody id="ranking-body"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
 
-      <div class="section">
-        <h2>Agent Details</h2>
-        <div class="agents" id="agent-cards"></div>
-      </div>
+      <section>
+        <div class="section-title">
+          <h2>Analyst Monitoring</h2>
+          <div class="muted" id="agents-meta">-</div>
+        </div>
+        <div class="agents" id="agents-root"></div>
+      </section>
+
+      <div class="foot">Source: <span class="mono">dashboard/data/system_state.json</span> | Auto-refresh: 30s</div>
     </div>
 
     <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
     <script>
-      function toNum(v, digits = 2) {
-        if (v === null || v === undefined || Number.isNaN(Number(v))) return "-";
-        return Number(v).toFixed(digits);
+      const chartRegistry = [];
+
+      function clearCharts() {
+        while (chartRegistry.length) {
+          const item = chartRegistry.pop();
+          try {
+            item.chart.remove();
+          } catch (_err) {
+            // Ignore chart disposal errors.
+          }
+        }
+      }
+
+      function registerChart(chart, container) {
+        chartRegistry.push({ chart, container });
+      }
+
+      function resizeCharts() {
+        for (const item of chartRegistry) {
+          const width = item.container.clientWidth || 320;
+          const height = item.container.clientHeight || 220;
+          item.chart.resize(width, height);
+        }
+      }
+
+      window.addEventListener("resize", resizeCharts);
+
+      function esc(value) {
+        return String(value ?? "-")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/\"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function toNum(v) {
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      }
+
+      function fmtNumber(v, digits = 2) {
+        const n = toNum(v);
+        if (n === null) return "-";
+        return n.toLocaleString(undefined, {
+          minimumFractionDigits: digits,
+          maximumFractionDigits: digits,
+        });
+      }
+
+      function fmtMoney(v, digits = 2) {
+        const n = toNum(v);
+        if (n === null) return "-";
+        return "$" + fmtNumber(n, digits);
+      }
+
+      function fmtSignedMoney(v, digits = 2) {
+        const n = toNum(v);
+        if (n === null) return "-";
+        const sign = n > 0 ? "+" : "";
+        return sign + "$" + fmtNumber(n, digits);
+      }
+
+      function fmtPct(v, digits = 2) {
+        const n = toNum(v);
+        if (n === null) return "-";
+        return n.toFixed(digits) + "%";
+      }
+      function fmtSignedPct(v, digits = 2) {
+        const n = toNum(v);
+        if (n === null) return "-";
+        const sign = n > 0 ? "+" : "";
+        return sign + n.toFixed(digits) + "%";
+      }
+
+      function fmtTs(ts) {
+        if (!ts) return "-";
+        const d = new Date(ts);
+        if (Number.isNaN(d.getTime())) return esc(ts);
+        return d.toLocaleString("fr-FR", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        });
       }
 
       function toUnix(ts) {
-        const value = new Date(ts).getTime();
-        if (!Number.isFinite(value)) return null;
-        return Math.floor(value / 1000);
+        const d = new Date(ts).getTime();
+        if (!Number.isFinite(d)) return null;
+        return Math.floor(d / 1000);
       }
 
-      function pickChartSymbol(view) {
-        const latestDecision = view.latest_result?.decision;
-        if (latestDecision?.symbol) return latestDecision.symbol;
-        const trades = view.trades || [];
-        if (trades.length > 0 && trades[trades.length - 1].fill?.symbol) return trades[trades.length - 1].fill.symbol;
+      function safeId(value) {
+        return String(value || "id").replace(/[^a-zA-Z0-9_-]/g, "_");
+      }
+
+      function clsSigned(value) {
+        const n = toNum(value);
+        if (n === null || n === 0) return "";
+        return n > 0 ? "pos" : "neg";
+      }
+
+      function indexBy(items, key) {
+        const map = new Map();
+        for (const item of items || []) {
+          const k = item?.[key];
+          if (k !== undefined && k !== null) {
+            map.set(k, item);
+          }
+        }
+        return map;
+      }
+
+      function nonZeroPositions(portfolio) {
+        const positions = Object.values(portfolio?.positions || {});
+        return positions.filter((p) => Math.abs(toNum(p?.net_quantity) || 0) > 0);
+      }
+
+      function pickTrackedSymbol(view) {
+        const latestDecisionSymbol = view?.latest_result?.decision?.symbol;
+        if (latestDecisionSymbol) return latestDecisionSymbol;
+
+        const positions = nonZeroPositions(view?.portfolio || {});
+        if (positions.length) {
+          positions.sort((a, b) => Math.abs(b.notional_exposure_usd || 0) - Math.abs(a.notional_exposure_usd || 0));
+          return positions[0].symbol || "BTC";
+        }
+
+        const trades = view?.trades || [];
+        for (let i = trades.length - 1; i >= 0; i -= 1) {
+          const sym = trades[i]?.fill?.symbol;
+          if (sym) return sym;
+        }
         return "BTC";
       }
 
       function buildPriceSeries(marketHistory, symbol) {
         const out = [];
         for (const row of marketHistory || []) {
-          const value = row?.prices?.[symbol];
+          const value = toNum(row?.prices?.[symbol]);
           const time = toUnix(row?.as_of);
-          if (value !== undefined && time !== null) {
-            out.push({ time, value: Number(value) });
+          if (value !== null && time !== null) {
+            out.push({ time, value });
           }
         }
+        out.sort((a, b) => a.time - b.time);
+        return out;
+      }
+
+      function buildEquitySeries(equityHistory) {
+        const out = [];
+        for (const row of equityHistory || []) {
+          const value = toNum(row?.equity_usd);
+          const time = toUnix(row?.ts);
+          if (value !== null && time !== null) {
+            out.push({ time, value });
+          }
+        }
+        out.sort((a, b) => a.time - b.time);
         return out;
       }
 
       function buildTradeMarkers(trades, symbol) {
         const markers = [];
-        for (const tradeEvent of trades || []) {
-          const fill = tradeEvent?.fill;
+        for (const row of trades || []) {
+          const fill = row?.fill;
           if (!fill || fill.symbol !== symbol) continue;
-          const time = toUnix(fill.executed_at || tradeEvent.ts);
+          const time = toUnix(fill.executed_at || row.ts);
           if (time === null) continue;
-          const isBuy = fill.side === "buy";
+          const isBuy = (fill.side || "").toLowerCase() === "buy";
           markers.push({
             time,
             position: isBuy ? "belowBar" : "aboveBar",
-            color: isBuy ? "#0f766e" : "#b91c1c",
+            color: isBuy ? "#117864" : "#b4232d",
             shape: isBuy ? "arrowUp" : "arrowDown",
-            text: `${fill.side.toUpperCase()} ${tradeEvent.transition || "trade"}`,
+            text: (fill.side || "trade").toUpperCase(),
           });
         }
+        markers.sort((a, b) => a.time - b.time);
         return markers;
       }
 
-      function renderRanking(data) {
-        const body = document.getElementById("ranking-body");
-        body.innerHTML = "";
-        const ranking = data.competition?.ranking || [];
-        for (const rowData of ranking) {
-          const row = document.createElement("tr");
-          row.innerHTML = `
-            <td>${rowData.rank ?? "-"}</td>
-            <td>${rowData.display_name ?? rowData.analyst_id ?? "-"}</td>
-            <td>${rowData.portfolio_id ?? "-"}</td>
-            <td>${toNum(rowData.equity_usd)}</td>
-            <td>${rowData.trade_count ?? "-"}</td>
-          `;
-          body.appendChild(row);
+      function setText(id, value, className = "") {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = value;
+        if (className) {
+          el.className = "value " + className;
+        } else {
+          el.className = "value";
+        }
+      }
+      function renderGlobal(data) {
+        const snapshot = data.snapshot || {};
+        const kpis = snapshot.system_kpis || {};
+        const portfolios = data.portfolios || [];
+        const views = data.agent_views || [];
+
+        let totalInitial = 0;
+        let totalEquity = 0;
+        let grossExposure = 0;
+        const confidence = [];
+
+        for (const portfolio of portfolios) {
+          totalInitial += toNum(portfolio.initial_balance_usd) || 0;
+          totalEquity += toNum(portfolio.equity_usd) || 0;
+          for (const pos of Object.values(portfolio.positions || {})) {
+            grossExposure += Math.abs(toNum(pos.notional_exposure_usd) || 0);
+          }
+        }
+
+        for (const view of views) {
+          const c = toNum(view?.latest_result?.decision?.confidence);
+          if (c !== null) confidence.push(c);
+        }
+
+        const avgConf = confidence.length
+          ? confidence.reduce((acc, cur) => acc + cur, 0) / confidence.length
+          : null;
+
+        const systemPnl = totalEquity - totalInitial;
+
+        setText("kpi-tick", snapshot.tick_id || "-");
+        setText("kpi-analysts", String(data.competition?.analyst_count || views.length || 0));
+        setText("kpi-equity", fmtMoney(totalEquity), clsSigned(systemPnl));
+        setText("kpi-system-pnl", fmtSignedMoney(systemPnl), clsSigned(systemPnl));
+        setText("kpi-exposure", fmtMoney(grossExposure));
+        setText(
+          "kpi-confidence",
+          avgConf === null ? "-" : fmtPct(avgConf * 100),
+          avgConf !== null ? (avgConf >= 0.6 ? "pos" : "") : ""
+        );
+        setText("kpi-skills", `${kpis.skill_success || 0}/${kpis.skill_calls || 0}`);
+        setText("kpi-duration", kpis.tick_duration_ms === undefined ? "-" : `${fmtNumber(kpis.tick_duration_ms, 2)} ms`);
+
+        const updatedAt = fmtTs(data.updated_at);
+        const asOf = fmtTs(snapshot.as_of);
+        document.getElementById("updated-at").textContent = `Updated: ${updatedAt} | Snapshot: ${asOf}`;
+
+        const failures = toNum(kpis.skill_failures) || 0;
+        const health = document.getElementById("health-pill");
+        if (failures > 0) {
+          health.textContent = `System degraded (${failures} failures)`;
+          health.className = "pill status chip-bad";
+        } else {
+          health.textContent = "System online";
+          health.className = "pill status chip-good";
         }
       }
 
+      function renderMarket(snapshot) {
+        const body = document.getElementById("market-body");
+        body.innerHTML = "";
+
+        const market = snapshot.market_data || [];
+        const orderbookBySymbol = indexBy(snapshot.orderbooks || [], "symbol");
+        const liqBySymbol = indexBy(snapshot.liquidations || [], "symbol");
+        const socialBySymbol = indexBy(snapshot.social_sentiment || [], "symbol");
+
+        if (!market.length) {
+          body.innerHTML = '<tr><td colspan="8" class="empty">No market data</td></tr>';
+          document.getElementById("market-updated").textContent = "-";
+          return;
+        }
+
+        market
+          .slice()
+          .sort((a, b) => String(a.symbol || "").localeCompare(String(b.symbol || "")))
+          .forEach((row) => {
+            const symbol = row.symbol || "-";
+            const ob = orderbookBySymbol.get(symbol) || {};
+            const liq = liqBySymbol.get(symbol) || {};
+            const social = socialBySymbol.get(symbol) || {};
+            const socialScore = toNum(social.score);
+            const socialClass = socialScore === null ? "" : socialScore > 0 ? "pos" : socialScore < 0 ? "neg" : "";
+
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td><strong>${esc(symbol)}</strong></td>
+              <td>${fmtMoney(row.price, 4)}</td>
+              <td>${fmtPct((toNum(row.funding_rate) || 0) * 100, 3)}</td>
+              <td>${fmtMoney(row.open_interest, 0)}</td>
+              <td>${fmtMoney(row.volume, 0)}</td>
+              <td>${fmtNumber(ob.spread_bps, 2)}</td>
+              <td class="${socialClass}">${socialScore === null ? "-" : socialScore.toFixed(3)}</td>
+              <td>${fmtMoney(liq.total_liq_usd, 0)}</td>
+            `;
+            body.appendChild(tr);
+          });
+
+        document.getElementById("market-updated").textContent = `as_of ${fmtTs(snapshot.as_of)}`;
+      }
+      function renderRanking(data) {
+        const body = document.getElementById("ranking-body");
+        body.innerHTML = "";
+
+        const viewsById = new Map((data.agent_views || []).map((v) => [v.analyst_id, v]));
+        const ranking = (data.competition?.ranking || []).slice().sort((a, b) => (a.rank || 999) - (b.rank || 999));
+
+        if (!ranking.length) {
+          body.innerHTML = '<tr><td colspan="10" class="empty">No ranking available</td></tr>';
+          return;
+        }
+
+        for (const row of ranking) {
+          const view = viewsById.get(row.analyst_id) || {};
+          const portfolio = view.portfolio || {};
+          const openPos = nonZeroPositions(portfolio).length;
+          const initial = toNum(portfolio.initial_balance_usd);
+          const equity = toNum(row.equity_usd);
+          const ret = initial && equity !== null ? ((equity - initial) / initial) * 100 : null;
+          const decision = view.latest_result?.decision || {};
+
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><strong>${row.rank || "-"}</strong></td>
+            <td>${esc(row.display_name || row.analyst_id || "-")}</td>
+            <td class="${clsSigned(ret)}">${fmtMoney(row.equity_usd)}</td>
+            <td class="${clsSigned(ret)}">${fmtSignedPct(ret)}</td>
+            <td class="${clsSigned(row.realized_pnl_usd)}">${fmtSignedMoney(row.realized_pnl_usd)}</td>
+            <td class="${clsSigned(row.unrealized_pnl_usd)}">${fmtSignedMoney(row.unrealized_pnl_usd)}</td>
+            <td>${openPos}</td>
+            <td>${row.trade_count || 0}</td>
+            <td>${esc((decision.action || "-").toUpperCase())} ${esc(decision.symbol || "")}</td>
+            <td>${decision.confidence === undefined ? "-" : fmtPct((toNum(decision.confidence) || 0) * 100, 1)}</td>
+          `;
+          body.appendChild(tr);
+        }
+      }
+
+      function actionClass(action) {
+        const act = String(action || "").toLowerCase();
+        if (act === "long" || act === "buy") return "action-long";
+        if (act === "short" || act === "sell") return "action-short";
+        return "action-hold";
+      }
+
+      function createBaseChart(container) {
+        const chart = LightweightCharts.createChart(container, {
+          width: container.clientWidth || 320,
+          height: container.clientHeight || 220,
+          layout: {
+            background: { color: "#ffffff" },
+            textColor: "#475b67",
+          },
+          rightPriceScale: { borderColor: "#d3dde4" },
+          timeScale: {
+            borderColor: "#d3dde4",
+            timeVisible: true,
+          },
+          grid: {
+            vertLines: { color: "#eef4f7" },
+            horzLines: { color: "#eef4f7" },
+          },
+          crosshair: {
+            vertLine: { color: "#aab9c3" },
+            horzLine: { color: "#aab9c3" },
+          },
+        });
+        registerChart(chart, container);
+        return chart;
+      }
+
+      function renderPriceChart(container, seriesData, markers) {
+        if (!window.LightweightCharts || !container || !seriesData.length) {
+          container.innerHTML = '<div class="empty">Not enough market history for chart</div>';
+          return;
+        }
+        const chart = createBaseChart(container);
+        const series = chart.addLineSeries({ color: "#117864", lineWidth: 2 });
+        series.setData(seriesData);
+        if (typeof series.setMarkers === "function") {
+          series.setMarkers(markers);
+        }
+        chart.timeScale().fitContent();
+      }
+
+      function renderEquityChart(container, seriesData) {
+        if (!window.LightweightCharts || !container || !seriesData.length) {
+          container.innerHTML = '<div class="empty">No equity history yet</div>';
+          return;
+        }
+        const chart = createBaseChart(container);
+        const series = chart.addAreaSeries({
+          topColor: "rgba(17, 120, 100, 0.32)",
+          bottomColor: "rgba(17, 120, 100, 0.02)",
+          lineColor: "#117864",
+          lineWidth: 2,
+        });
+        series.setData(seriesData);
+        chart.timeScale().fitContent();
+      }
       function renderAgentCards(data) {
-        const root = document.getElementById("agent-cards");
+        const root = document.getElementById("agents-root");
         root.innerHTML = "";
 
         const marketHistory = data.market_history || [];
-        const views = data.agent_views || [];
+        const ranking = data.competition?.ranking || [];
+        const rankById = new Map(ranking.map((r) => [r.analyst_id, r.rank || 999]));
+
+        const views = (data.agent_views || [])
+          .slice()
+          .sort((a, b) => (rankById.get(a.analyst_id) || 999) - (rankById.get(b.analyst_id) || 999));
+
+        document.getElementById("agents-meta").textContent = `${views.length} analysts | ${fmtTs(data.updated_at)}`;
+
+        if (!views.length) {
+          root.innerHTML = '<div class="panel"><div class="empty">No analyst views available</div></div>';
+          return;
+        }
 
         for (const view of views) {
-          const analystId = view.analyst_id;
-          const displayName = view.display_name || view.latest_result?.decision?.analyst_id || analystId;
+          const analystId = view.analyst_id || "unknown";
+          const displayName = view.display_name || analystId;
+          const sid = safeId(analystId);
+          const latest = view.latest_result || {};
+          const decision = latest.decision || {};
           const portfolio = view.portfolio || {};
-          const latestResult = view.latest_result || {};
-          const decision = latestResult.decision || {};
-          const trades = view.trades || [];
-          const recentTrades = trades.slice(-5).reverse();
+          const positions = nonZeroPositions(portfolio);
+          const decisions = (view.decisions || []).slice(-6).reverse();
+          const trades = (view.trades || []).slice(-10).reverse();
+          const trackedSymbol = pickTrackedSymbol(view);
 
-          const card = document.createElement("div");
-          card.className = "card";
+          const initial = toNum(portfolio.initial_balance_usd) || 0;
+          const equity = toNum(portfolio.equity_usd) || 0;
+          const ret = initial > 0 ? ((equity - initial) / initial) * 100 : null;
+
+          const card = document.createElement("article");
+          card.className = "agent";
           card.innerHTML = `
             <div class="agent-head">
-              <h3>${displayName}</h3>
-              <span class="pill">${view.portfolio_id || "-"}</span>
+              <div>
+                <h3 class="agent-name">${esc(displayName)}</h3>
+                <div class="muted">id: <span class="mono">${esc(analystId)}</span> | portfolio: <span class="mono">${esc(view.portfolio_id || portfolio.portfolio_id || "-")}</span></div>
+              </div>
+              <div class="rank-badge">Rank #${rankById.get(analystId) || "-"}</div>
             </div>
-            <div class="summary-row">
-              <div class="summary-box"><div class="k">Equity</div><div class="v">${toNum(portfolio.equity_usd)}</div></div>
-              <div class="summary-box"><div class="k">Trades</div><div class="v">${portfolio.trade_count ?? 0}</div></div>
-              <div class="summary-box"><div class="k">Decision</div><div class="v">${decision.action || "hold"}</div></div>
+
+            <div class="agent-kpis">
+              <div class="mini"><div class="k">Equity</div><div class="v ${clsSigned(equity - initial)}">${fmtMoney(portfolio.equity_usd)}</div></div>
+              <div class="mini"><div class="k">Return</div><div class="v ${clsSigned(ret)}">${fmtSignedPct(ret)}</div></div>
+              <div class="mini"><div class="k">Cash</div><div class="v">${fmtMoney(portfolio.cash_balance_usd)}</div></div>
+              <div class="mini"><div class="k">Realized</div><div class="v ${clsSigned(portfolio.realized_pnl_usd)}">${fmtSignedMoney(portfolio.realized_pnl_usd)}</div></div>
+              <div class="mini"><div class="k">Unrealized</div><div class="v ${clsSigned(portfolio.unrealized_pnl_usd)}">${fmtSignedMoney(portfolio.unrealized_pnl_usd)}</div></div>
+              <div class="mini"><div class="k">Fees</div><div class="v">${fmtMoney(portfolio.total_fees_usd)}</div></div>
             </div>
-            <div class="muted" style="margin-top:8px">${decision.reason || "No reason"}</div>
-            <div id="chart-${analystId}" class="chart"></div>
-            <table style="margin-top:10px">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th>Symbol</th>
-                  <th>Side</th>
-                  <th>Type</th>
-                  <th>Price</th>
-                  <th>Qty</th>
-                </tr>
-              </thead>
-              <tbody id="trades-${analystId}"></tbody>
-            </table>
+
+            <div class="decision">
+              <div class="decision-top">
+                <span class="action ${actionClass(decision.action)}">${esc((decision.action || "hold").toUpperCase())} ${esc(decision.symbol || "")}</span>
+                <span class="metric-chip chip-warn">conf ${decision.confidence === undefined ? "-" : fmtPct((toNum(decision.confidence) || 0) * 100, 1)}</span>
+              </div>
+              <div class="decision-meta">
+                alloc ${decision.allocation_pct === undefined ? "-" : fmtPct((toNum(decision.allocation_pct) || 0) * 100, 2)} |
+                lev ${decision.leverage === undefined ? "-" : fmtNumber(decision.leverage, 2) + "x"} |
+                source ${esc(decision.source || "-")} |
+                created ${fmtTs(decision.created_at)}
+              </div>
+              <div class="decision-reason">${esc(decision.reason || "No reason provided")}</div>
+            </div>
+
+            <div class="dual">
+              <div class="chart-box">
+                <div class="chart-title">Price chart (${esc(trackedSymbol)}) + trade markers</div>
+                <div class="chart" id="chart-price-${sid}"></div>
+              </div>
+              <div class="chart-box">
+                <div class="chart-title">Equity curve</div>
+                <div class="chart" id="chart-equity-${sid}"></div>
+              </div>
+            </div>
+            <div class="agent-grid">
+              <div class="table-box">
+                <div class="table-title">Open positions</div>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Symbol</th>
+                        <th>Side</th>
+                        <th>Qty</th>
+                        <th>Avg Entry</th>
+                        <th>Mark</th>
+                        <th>Notional</th>
+                        <th>uPnL</th>
+                      </tr>
+                    </thead>
+                    <tbody id="positions-${sid}"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="table-box">
+                <div class="table-title">Recent decisions</div>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Time</th>
+                        <th>Action</th>
+                        <th>Symbol</th>
+                        <th>Alloc</th>
+                        <th>Lev</th>
+                        <th>Conf</th>
+                      </tr>
+                    </thead>
+                    <tbody id="decisions-${sid}"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-box">
+              <div class="table-title">Recent trades</div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Symbol</th>
+                      <th>Side</th>
+                      <th>Transition</th>
+                      <th>Qty</th>
+                      <th>Exec Price</th>
+                      <th>Notional</th>
+                      <th>Fee</th>
+                      <th>Slippage</th>
+                    </tr>
+                  </thead>
+                  <tbody id="trades-${sid}"></tbody>
+                </table>
+              </div>
+            </div>
           `;
           root.appendChild(card);
 
-          const tradeBody = card.querySelector(`#trades-${analystId}`);
-          if (recentTrades.length === 0) {
-            const row = document.createElement("tr");
-            row.innerHTML = `<td colspan="6" class="muted">No trades yet</td>`;
-            tradeBody.appendChild(row);
+          const positionsBody = card.querySelector(`#positions-${sid}`);
+          if (!positions.length) {
+            positionsBody.innerHTML = '<tr><td colspan="7" class="empty">No open positions</td></tr>';
           } else {
-            for (const tr of recentTrades) {
-              const fill = tr.fill || {};
+            for (const pos of positions) {
+              const qty = toNum(pos.net_quantity) || 0;
+              const side = qty > 0 ? "LONG" : "SHORT";
               const row = document.createElement("tr");
-              const klass = fill.side === "buy" ? "trade-buy" : "trade-sell";
               row.innerHTML = `
-                <td>${(fill.executed_at || tr.ts || "-").replace("T", " ").slice(0, 19)}</td>
-                <td>${fill.symbol || "-"}</td>
-                <td class="${klass}">${(fill.side || "-").toUpperCase()}</td>
-                <td>${tr.transition || "-"}</td>
-                <td>${toNum(fill.executed_price, 4)}</td>
-                <td>${toNum(fill.quantity, 6)}</td>
+                <td>${esc(pos.symbol || "-")}</td>
+                <td class="${qty > 0 ? "pos" : "neg"}">${side}</td>
+                <td>${fmtNumber(pos.net_quantity, 6)}</td>
+                <td>${fmtMoney(pos.avg_entry_price, 4)}</td>
+                <td>${fmtMoney(pos.mark_price, 4)}</td>
+                <td>${fmtMoney(pos.notional_exposure_usd)}</td>
+                <td class="${clsSigned(pos.unrealized_pnl_usd)}">${fmtSignedMoney(pos.unrealized_pnl_usd)}</td>
               `;
-              tradeBody.appendChild(row);
+              positionsBody.appendChild(row);
+            }
+          }
+
+          const decisionsBody = card.querySelector(`#decisions-${sid}`);
+          if (!decisions.length) {
+            decisionsBody.innerHTML = '<tr><td colspan="6" class="empty">No decisions logged</td></tr>';
+          } else {
+            for (const row of decisions) {
+              const d = row.decision || {};
+              const tr = document.createElement("tr");
+              tr.innerHTML = `
+                <td>${fmtTs(row.ts || d.created_at)}</td>
+                <td>${esc((d.action || "-").toUpperCase())}</td>
+                <td>${esc(d.symbol || "-")}</td>
+                <td>${d.allocation_pct === undefined ? "-" : fmtPct((toNum(d.allocation_pct) || 0) * 100, 2)}</td>
+                <td>${d.leverage === undefined ? "-" : fmtNumber(d.leverage, 2) + "x"}</td>
+                <td>${d.confidence === undefined ? "-" : fmtPct((toNum(d.confidence) || 0) * 100, 1)}</td>
+              `;
+              decisionsBody.appendChild(tr);
+            }
+          }
+          const tradesBody = card.querySelector(`#trades-${sid}`);
+          if (!trades.length) {
+            tradesBody.innerHTML = '<tr><td colspan="9" class="empty">No trades executed</td></tr>';
+          } else {
+            for (const row of trades) {
+              const fill = row.fill || {};
+              const side = String(fill.side || "-").toLowerCase();
+              const sideClass = side === "buy" ? "pos" : side === "sell" ? "neg" : "";
+              const tr = document.createElement("tr");
+              tr.innerHTML = `
+                <td>${fmtTs(fill.executed_at || row.ts)}</td>
+                <td>${esc(fill.symbol || "-")}</td>
+                <td class="${sideClass}">${esc(side.toUpperCase() || "-")}</td>
+                <td>${esc(row.transition || "-")}</td>
+                <td>${fmtNumber(fill.quantity, 6)}</td>
+                <td>${fmtMoney(fill.executed_price, 4)}</td>
+                <td>${fmtMoney(fill.notional_usd)}</td>
+                <td>${fmtMoney(fill.fee_paid_usd, 4)}</td>
+                <td>${fill.slippage_bps === undefined ? "-" : fmtNumber(fill.slippage_bps, 2) + " bps"}</td>
+              `;
+              tradesBody.appendChild(tr);
             }
           }
 
           if (window.LightweightCharts) {
-            const chartEl = card.querySelector(`#chart-${analystId}`);
-            const chart = LightweightCharts.createChart(chartEl, {
-              layout: {
-                background: { color: "#ffffff" },
-                textColor: "#334155",
-              },
-              rightPriceScale: { borderColor: "#d1d5db" },
-              timeScale: { borderColor: "#d1d5db" },
-              grid: {
-                vertLines: { color: "#eef2f7" },
-                horzLines: { color: "#eef2f7" },
-              },
-            });
+            const priceContainer = card.querySelector(`#chart-price-${sid}`);
+            const equityContainer = card.querySelector(`#chart-equity-${sid}`);
 
-            const symbol = pickChartSymbol(view);
-            const dataSeries = buildPriceSeries(marketHistory, symbol);
-            const series = chart.addLineSeries({ color: "#0f766e", lineWidth: 2 });
-            series.setData(dataSeries);
-            const markers = buildTradeMarkers(trades, symbol);
-            series.setMarkers(markers);
-            chart.timeScale().fitContent();
+            const priceSeries = buildPriceSeries(marketHistory, trackedSymbol);
+            const markers = buildTradeMarkers(view.trades || [], trackedSymbol);
+            const equitySeries = buildEquitySeries(view.equity_history || []);
+
+            renderPriceChart(priceContainer, priceSeries, markers);
+            renderEquityChart(equityContainer, equitySeries);
           }
         }
+
+        resizeCharts();
       }
 
       async function loadState() {
-        const res = await fetch("./data/system_state.json", { cache: "no-store" });
-        if (!res.ok) {
-          document.getElementById("updated-at").textContent = "No exported state found.";
-          return;
+        try {
+          const res = await fetch("./data/system_state.json", { cache: "no-store" });
+          if (!res.ok) {
+            document.getElementById("updated-at").textContent = "No exported state found.";
+            return;
+          }
+          const data = await res.json();
+          clearCharts();
+          renderGlobal(data);
+          renderMarket(data.snapshot || {});
+          renderRanking(data);
+          renderAgentCards(data);
+        } catch (err) {
+          document.getElementById("updated-at").textContent = `State load failed: ${err.message}`;
         }
-        const data = await res.json();
-        const snapshot = data.snapshot;
-        const kpis = snapshot?.system_kpis || {};
-
-        document.getElementById("updated-at").textContent = `Updated: ${data.updated_at || "-"}`;
-        document.getElementById("tick-id").textContent = snapshot?.tick_id || "-";
-        document.getElementById("skills-success").textContent = `${kpis.skill_success || 0}/${kpis.skill_calls || 0}`;
-        document.getElementById("tick-duration").textContent = kpis.tick_duration_ms ?? "-";
-        document.getElementById("analyst-count").textContent = data.competition?.analyst_count ?? (data.agent_views || []).length;
-
-        renderRanking(data);
-        renderAgentCards(data);
       }
 
       loadState();
-      setInterval(loadState, 10000);
+      setInterval(loadState, 30000);
     </script>
   </body>
 </html>
+
