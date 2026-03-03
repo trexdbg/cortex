@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortex Dashboard</title>
+    <style>
+      :root {
+        --bg: #eef5f7;
+        --panel: #ffffff;
+        --text: #0d1b2a;
+        --muted: #516074;
+        --accent: #0f766e;
+        --accent-soft: #d7f6f0;
+        --border: #d2d9e3;
+        --danger: #b91c1c;
+        --success: #0f766e;
+      }
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top right, #dff3ee 0%, var(--bg) 45%);
+      }
+      .wrap {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.7rem;
+      }
+      .tag {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 3px 10px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-top: 16px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px;
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .metric {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid var(--border);
+        font-size: 0.86rem;
+      }
+      .section {
+        margin-top: 16px;
+      }
+      .agents {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 14px;
+      }
+      .agent-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+      }
+      .agent-head h3 {
+        margin: 0;
+        font-size: 1.02rem;
+      }
+      .pill {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: #f4f7ff;
+        border: 1px solid #cfd9f8;
+        font-size: 0.72rem;
+      }
+      .chart {
+        width: 100%;
+        height: 220px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      .trade-buy {
+        color: var(--success);
+        font-weight: 700;
+      }
+      .trade-sell {
+        color: var(--danger);
+        font-weight: 700;
+      }
+      .summary-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .summary-box {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px;
+      }
+      .summary-box .k {
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      .summary-box .v {
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+      @media (max-width: 720px) {
+        .summary-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <h1>Cortex Market Lab <span class="tag">Dry Run</span></h1>
+        <div class="muted" id="updated-at">Loading...</div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Tick ID</h2>
+          <div class="metric" id="tick-id">-</div>
+        </div>
+        <div class="card">
+          <h2>Skills Success</h2>
+          <div class="metric" id="skills-success">-</div>
+        </div>
+        <div class="card">
+          <h2>Tick Duration (ms)</h2>
+          <div class="metric" id="tick-duration">-</div>
+        </div>
+        <div class="card">
+          <h2>Analysts</h2>
+          <div class="metric" id="analyst-count">-</div>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h2>Competition Ranking</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Analyst</th>
+              <th>Portfolio</th>
+              <th>Equity</th>
+              <th>Trades</th>
+            </tr>
+          </thead>
+          <tbody id="ranking-body"></tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Agent Details</h2>
+        <div class="agents" id="agent-cards"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script>
+      function toNum(v, digits = 2) {
+        if (v === null || v === undefined || Number.isNaN(Number(v))) return "-";
+        return Number(v).toFixed(digits);
+      }
+
+      function toUnix(ts) {
+        const value = new Date(ts).getTime();
+        if (!Number.isFinite(value)) return null;
+        return Math.floor(value / 1000);
+      }
+
+      function pickChartSymbol(view) {
+        const latestDecision = view.latest_result?.decision;
+        if (latestDecision?.symbol) return latestDecision.symbol;
+        const trades = view.trades || [];
+        if (trades.length > 0 && trades[trades.length - 1].fill?.symbol) return trades[trades.length - 1].fill.symbol;
+        return "BTC";
+      }
+
+      function buildPriceSeries(marketHistory, symbol) {
+        const out = [];
+        for (const row of marketHistory || []) {
+          const value = row?.prices?.[symbol];
+          const time = toUnix(row?.as_of);
+          if (value !== undefined && time !== null) {
+            out.push({ time, value: Number(value) });
+          }
+        }
+        return out;
+      }
+
+      function buildTradeMarkers(trades, symbol) {
+        const markers = [];
+        for (const tradeEvent of trades || []) {
+          const fill = tradeEvent?.fill;
+          if (!fill || fill.symbol !== symbol) continue;
+          const time = toUnix(fill.executed_at || tradeEvent.ts);
+          if (time === null) continue;
+          const isBuy = fill.side === "buy";
+          markers.push({
+            time,
+            position: isBuy ? "belowBar" : "aboveBar",
+            color: isBuy ? "#0f766e" : "#b91c1c",
+            shape: isBuy ? "arrowUp" : "arrowDown",
+            text: `${fill.side.toUpperCase()} ${tradeEvent.transition || "trade"}`,
+          });
+        }
+        return markers;
+      }
+
+      function renderRanking(data) {
+        const body = document.getElementById("ranking-body");
+        body.innerHTML = "";
+        const ranking = data.competition?.ranking || [];
+        for (const rowData of ranking) {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${rowData.rank ?? "-"}</td>
+            <td>${rowData.display_name ?? rowData.analyst_id ?? "-"}</td>
+            <td>${rowData.portfolio_id ?? "-"}</td>
+            <td>${toNum(rowData.equity_usd)}</td>
+            <td>${rowData.trade_count ?? "-"}</td>
+          `;
+          body.appendChild(row);
+        }
+      }
+
+      function renderAgentCards(data) {
+        const root = document.getElementById("agent-cards");
+        root.innerHTML = "";
+
+        const marketHistory = data.market_history || [];
+        const views = data.agent_views || [];
+
+        for (const view of views) {
+          const analystId = view.analyst_id;
+          const displayName = view.display_name || view.latest_result?.decision?.analyst_id || analystId;
+          const portfolio = view.portfolio || {};
+          const latestResult = view.latest_result || {};
+          const decision = latestResult.decision || {};
+          const trades = view.trades || [];
+          const recentTrades = trades.slice(-5).reverse();
+
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <div class="agent-head">
+              <h3>${displayName}</h3>
+              <span class="pill">${view.portfolio_id || "-"}</span>
+            </div>
+            <div class="summary-row">
+              <div class="summary-box"><div class="k">Equity</div><div class="v">${toNum(portfolio.equity_usd)}</div></div>
+              <div class="summary-box"><div class="k">Trades</div><div class="v">${portfolio.trade_count ?? 0}</div></div>
+              <div class="summary-box"><div class="k">Decision</div><div class="v">${decision.action || "hold"}</div></div>
+            </div>
+            <div class="muted" style="margin-top:8px">${decision.reason || "No reason"}</div>
+            <div id="chart-${analystId}" class="chart"></div>
+            <table style="margin-top:10px">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Symbol</th>
+                  <th>Side</th>
+                  <th>Type</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                </tr>
+              </thead>
+              <tbody id="trades-${analystId}"></tbody>
+            </table>
+          `;
+          root.appendChild(card);
+
+          const tradeBody = card.querySelector(`#trades-${analystId}`);
+          if (recentTrades.length === 0) {
+            const row = document.createElement("tr");
+            row.innerHTML = `<td colspan="6" class="muted">No trades yet</td>`;
+            tradeBody.appendChild(row);
+          } else {
+            for (const tr of recentTrades) {
+              const fill = tr.fill || {};
+              const row = document.createElement("tr");
+              const klass = fill.side === "buy" ? "trade-buy" : "trade-sell";
+              row.innerHTML = `
+                <td>${(fill.executed_at || tr.ts || "-").replace("T", " ").slice(0, 19)}</td>
+                <td>${fill.symbol || "-"}</td>
+                <td class="${klass}">${(fill.side || "-").toUpperCase()}</td>
+                <td>${tr.transition || "-"}</td>
+                <td>${toNum(fill.executed_price, 4)}</td>
+                <td>${toNum(fill.quantity, 6)}</td>
+              `;
+              tradeBody.appendChild(row);
+            }
+          }
+
+          if (window.LightweightCharts) {
+            const chartEl = card.querySelector(`#chart-${analystId}`);
+            const chart = LightweightCharts.createChart(chartEl, {
+              layout: {
+                background: { color: "#ffffff" },
+                textColor: "#334155",
+              },
+              rightPriceScale: { borderColor: "#d1d5db" },
+              timeScale: { borderColor: "#d1d5db" },
+              grid: {
+                vertLines: { color: "#eef2f7" },
+                horzLines: { color: "#eef2f7" },
+              },
+            });
+
+            const symbol = pickChartSymbol(view);
+            const dataSeries = buildPriceSeries(marketHistory, symbol);
+            const series = chart.addLineSeries({ color: "#0f766e", lineWidth: 2 });
+            series.setData(dataSeries);
+            const markers = buildTradeMarkers(trades, symbol);
+            series.setMarkers(markers);
+            chart.timeScale().fitContent();
+          }
+        }
+      }
+
+      async function loadState() {
+        const res = await fetch("./data/system_state.json", { cache: "no-store" });
+        if (!res.ok) {
+          document.getElementById("updated-at").textContent = "No exported state found.";
+          return;
+        }
+        const data = await res.json();
+        const snapshot = data.snapshot;
+        const kpis = snapshot?.system_kpis || {};
+
+        document.getElementById("updated-at").textContent = `Updated: ${data.updated_at || "-"}`;
+        document.getElementById("tick-id").textContent = snapshot?.tick_id || "-";
+        document.getElementById("skills-success").textContent = `${kpis.skill_success || 0}/${kpis.skill_calls || 0}`;
+        document.getElementById("tick-duration").textContent = kpis.tick_duration_ms ?? "-";
+        document.getElementById("analyst-count").textContent = data.competition?.analyst_count ?? (data.agent_views || []).length;
+
+        renderRanking(data);
+        renderAgentCards(data);
+      }
+
+      loadState();
+      setInterval(loadState, 10000);
+    </script>
+  </body>
+</html>
