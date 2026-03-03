@@ -1,8 +1,9 @@
 ﻿const REFRESH_MS = 30000;
       const TRADE_HISTORY_LIMIT = 140;
-      const TRADE_WINDOW_BEFORE_POINTS = 160;
-      const TRADE_WINDOW_AFTER_POINTS = 60;
-      const TRADE_CONTEXT_BARS = 12;
+      const TRADE_WINDOW_BEFORE_POINTS = 30;
+      const TRADE_WINDOW_AFTER_POINTS = 5;
+      const TRADE_CONTEXT_BEFORE_BARS = 30;
+      const TRADE_CONTEXT_AFTER_BARS = 5;
       const ALLOCATION_COLORS = ["#0e7c66", "#2a9d8f", "#26547c", "#6a4c93", "#d97706", "#5b8f29", "#b3263a", "#577590", "#7a7f9a"];
 
       let stateCache = null;
@@ -381,8 +382,8 @@
         let postMovePct = null;
         const selected = closes[selectedIndex];
         if (selected && selected.value > 0) {
-          const preIndex = Math.max(0, selectedIndex - TRADE_CONTEXT_BARS);
-          const postIndex = Math.min(closes.length - 1, selectedIndex + TRADE_CONTEXT_BARS);
+          const preIndex = Math.max(0, selectedIndex - TRADE_CONTEXT_BEFORE_BARS);
+          const postIndex = Math.min(closes.length - 1, selectedIndex + TRADE_CONTEXT_AFTER_BARS);
           const preRef = closes[preIndex];
           const postRef = closes[postIndex];
           if (preRef && preRef.value > 0) {
@@ -455,8 +456,8 @@
           ["PnL vs Mark", fmtSM(pnl), cssSign(pnl)],
           ["Bougies avant", String(windowData.barsBefore), ""],
           ["Bougies apres", String(windowData.barsAfter), ""],
-          [`Contexte -${TRADE_CONTEXT_BARS}`, fmtSP(windowData.preMovePct, 2), cssSign(windowData.preMovePct)],
-          [`Contexte +${TRADE_CONTEXT_BARS}`, fmtSP(windowData.postMovePct, 2), cssSign(windowData.postMovePct)],
+          [`Contexte -${TRADE_CONTEXT_BEFORE_BARS}`, fmtSP(windowData.preMovePct, 2), cssSign(windowData.preMovePct)],
+          [`Contexte +${TRADE_CONTEXT_AFTER_BARS}`, fmtSP(windowData.postMovePct, 2), cssSign(windowData.postMovePct)],
         ];
         meta.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
 
