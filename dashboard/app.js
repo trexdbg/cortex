@@ -217,17 +217,30 @@
         const equity = num(portfolio?.equity_usd) || 0;
         const rows = [];
         const cash = Math.max(0, num(portfolio?.cash_balance_usd) || 0);
-        if (cash > 0) rows.push({ label: "Cash", amount: cash, signed: cash });
+        if (cash > 0) rows.push({ label: "Cash libre", amount: cash, gross_exposure: 0 });
         for (const p of nonZeroPositions(portfolio)) {
           const qty = num(p.net_quantity) || 0;
           const mark = num(p.mark_price) || 0;
-          const signed = qty * mark;
-          const amt = Math.abs(num(p.notional_exposure_usd) || signed);
-          rows.push({ label: `${p.symbol} ${qty >= 0 ? "long" : "short"}`, amount: amt, signed });
+          const signedNotional = qty * mark;
+          const notional = Math.abs(num(p.notional_exposure_usd) || signedNotional);
+          const leverage = Math.max(1, num(p.leverage) || 1);
+          const margin = notional / leverage;
+          rows.push({
+            label: `${p.symbol} ${qty >= 0 ? "long" : "short"} (x${leverage.toFixed(2)})`,
+            amount: margin,
+            gross_exposure: notional,
+          });
         }
         const total = rows.reduce((s, r) => s + r.amount, 0);
         const gross = nonZeroPositions(portfolio).reduce((s, p) => s + Math.abs(num(p.notional_exposure_usd) || 0), 0);
-        return rows.map((r, i) => ({ ...r, color: ALLOCATION_COLORS[i % ALLOCATION_COLORS.length], mix_pct: total > 0 ? (r.amount / total) * 100 : 0, equity_pct: equity > 0 ? (r.signed / equity) * 100 : null, total, gross }));
+        return rows.map((r, i) => ({
+          ...r,
+          color: ALLOCATION_COLORS[i % ALLOCATION_COLORS.length],
+          mix_pct: total > 0 ? (r.amount / total) * 100 : 0,
+          equity_pct: equity > 0 ? (r.amount / equity) * 100 : null,
+          total,
+          gross,
+        }));
       }
 
       function renderAllocation(portfolio) {
@@ -253,7 +266,7 @@
         center.innerHTML = `<strong>${fmtM(rows[0].gross)}</strong><span>gross exposure</span>`;
         for (const r of rows) {
           const tr = document.createElement("tr");
-          tr.innerHTML = `<td><span class="sw" style="background:${r.color}"></span>${esc(r.label)}</td><td>${fmtM(r.amount)}</td><td>${fmtP(r.mix_pct,1)}</td><td class="${cssSign(r.equity_pct)}">${fmtSP(r.equity_pct,1)}</td>`;
+          tr.innerHTML = `<td><span class="sw" style="background:${r.color}"></span>${esc(r.label)}</td><td>${fmtM(r.amount)}</td><td>${fmtP(r.mix_pct,1)}</td><td>${fmtP(r.equity_pct,1)}</td>`;
           body.appendChild(tr);
         }
       }
