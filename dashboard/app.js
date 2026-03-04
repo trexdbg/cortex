@@ -36,6 +36,27 @@
         if (Number.isNaN(d.getTime())) return String(ts);
         return d.toLocaleString("fr-FR", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
       };
+      const positionSideFromQty = (qty) => {
+        const q = num(qty) || 0;
+        if (q > 0) return "LONG";
+        if (q < 0) return "SHORT";
+        return "FLAT";
+      };
+      const positionSideClass = (side) => side === "LONG" ? "pos" : side === "SHORT" ? "neg" : "warn";
+      const tradeLifecycle = (trade) => {
+        const transition = String(trade?.transition || "").toLowerCase();
+        const beforeQty = num(trade?.position_before_qty) || 0;
+        const afterQty = num(trade?.position_after_qty) || 0;
+        const beforeAbs = Math.abs(beforeQty);
+        const afterAbs = Math.abs(afterQty);
+        if (transition === "exit" || (beforeAbs > 0 && afterAbs === 0)) return { label: "CLOTURE", cls: "warn" };
+        if (transition === "flip") return { label: "INVERSION", cls: "warn" };
+        if (transition === "reduce") return { label: "PARTIELLE", cls: "warn" };
+        if (transition === "entry") return { label: "OUVERTURE", cls: "pos" };
+        if (transition === "add") return { label: "RENFORT", cls: "pos" };
+        if (transition === "unchanged") return { label: "INCHANGE", cls: "" };
+        return { label: transition ? transition.toUpperCase() : "-", cls: "" };
+      };
 
       function nonZeroPositions(portfolio) {
         return Object.values(portfolio?.positions || {}).filter((p) => Math.abs(num(p?.net_quantity) || 0) > 0);
@@ -114,13 +135,15 @@
         const social = snapshot?.social_sentiment || [];
 
         if (!market.length) {
-          marketBody.innerHTML = '<tr><td colspan="4" class="muted">Aucune market data</td></tr>';
+          marketBody.innerHTML = '<tr><td colspan="5" class="muted">Aucune market data</td></tr>';
         } else {
           for (const row of market.slice(0, 8)) {
+            const change24h = num(row.price_change_24h_pct);
             const tr = document.createElement("tr");
             tr.innerHTML = `
               <td>${esc(row.symbol || "-")}</td>
               <td>${fmtM(row.price, 2)}</td>
+              <td class="${cssSign(change24h)}">${fmtSP(change24h, 2)}</td>
               <td class="${cssSign((num(row.funding_rate) || 0) * 100)}">${fmtSP((num(row.funding_rate) || 0) * 100, 4)}</td>
               <td>${fmtN(row.open_interest, 0)}</td>
             `;
@@ -450,6 +473,11 @@
         const decision = drow.decision || {};
         const side = String(fill.side || "-").toUpperCase();
         const symbol = fill.symbol || decision.symbol || "-";
+        const beforeQty = num(trade.position_before_qty) || 0;
+        const afterQty = num(trade.position_after_qty) || 0;
+        const posBefore = positionSideFromQty(beforeQty);
+        const posAfter = positionSideFromQty(afterQty);
+        const lifecycle = tradeLifecycle(trade);
         const px = num(fill.executed_price);
         const qty = num(fill.quantity) || 0;
         const conf = trade.decision_confidence ?? decision.confidence;
@@ -459,7 +487,9 @@
         const pnl = px !== null && mark !== null ? (mark - px) * qty * (side === "BUY" ? 1 : -1) : null;
         const windowData = buildTradeWindowData(marketHistory, view.trades || [], symbol, toUnix(fill.executed_at || trade.ts));
         const cards = [
-          ["Trade", `${side} ${symbol}`, side === "BUY" ? "pos" : side === "SELL" ? "neg" : ""],
+          ["Ordre", `${side} ${symbol}`, side === "BUY" ? "pos" : side === "SELL" ? "neg" : ""],
+          ["Position", `${posBefore} -> ${posAfter}`, positionSideClass(posAfter)],
+          ["Etat", lifecycle.label, lifecycle.cls],
           ["Transition", trade.transition || "-", ""],
           ["Executed", fmtTs(fill.executed_at || trade.ts), ""],
           ["Price", fmtM(px, 4), ""],
@@ -537,7 +567,7 @@
         const trades = (view.trades || []).slice(-TRADE_HISTORY_LIMIT).reverse();
         const byTick = new Map((view.decisions || []).map((r) => [r.tick_id, r]));
         if (!trades.length) {
-          body.innerHTML = '<tr><td colspan="9" class="muted">No executed trade yet</td></tr>';
+          body.innerHTML = '<tr><td colspan="11" class="muted">No executed trade yet</td></tr>';
           renderTradeFocus(view, null, byTick, marketHistory);
           return;
         }
@@ -547,9 +577,14 @@
           const decision = drow.decision || {};
           const key = tradeKey(trd);
           const side = String(fill.side || "-").toUpperCase();
+          const beforeQty = num(trd.position_before_qty) || 0;
+          const afterQty = num(trd.position_after_qty) || 0;
+          const posBefore = positionSideFromQty(beforeQty);
+          const posAfter = positionSideFromQty(afterQty);
+          const lifecycle = tradeLifecycle(trd);
           const row = document.createElement("tr");
           if (key === selectedTradeKey) row.classList.add("active");
-          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td>${esc(trd.transition || "-")}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
+          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td class="${positionSideClass(posAfter)}">${posBefore} -> ${posAfter}</td><td class="${lifecycle.cls}">${lifecycle.label}</td><td>${esc(String(trd.transition || "-").toUpperCase())}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
           row.addEventListener("click", () => { selectedTradeKey = key; renderAll(); });
           body.appendChild(row);
         }

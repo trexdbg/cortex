@@ -40,6 +40,7 @@
                     <tr>
                       <th>Symbole</th>
                       <th>Prix</th>
+                      <th>24h</th>
                       <th>Funding</th>
                       <th>Open Interest</th>
                     </tr>
@@ -48,7 +49,7 @@
                 </table>
               </div>
 
-              <div class="mini-grid">
+              <div class="mini-stack">
                 <div class="mini-card">
                   <h4>Dernieres News</h4>
                   <ul id="news-feed" class="news-feed"></ul>
@@ -130,7 +131,7 @@
               <div class="bhead">Trade History (click for deep dive)</div>
               <div class="table">
                 <table class="trades">
-                  <thead><tr><th>Time</th><th>Symbol</th><th>Side</th><th>Transition</th><th>Allocation</th><th>Conf</th><th>Price</th><th>Notional</th><th>Fee</th></tr></thead>
+                  <thead><tr><th>Time</th><th>Symbol</th><th>Ordre</th><th>Position</th><th>Etat</th><th>Transition</th><th>Allocation</th><th>Conf</th><th>Price</th><th>Notional</th><th>Fee</th></tr></thead>
                   <tbody id="trades-body"></tbody>
                 </table>
               </div>
@@ -156,6 +157,38 @@
         </div>
       </section>
     </main>
+
+    <section class="panel glossary-panel">
+      <div class="head">Glossaire rapide</div>
+      <div class="inner">
+        <div class="gloss-grid">
+          <div class="gloss-card">
+            <h4>Funding</h4>
+            <p>Taux periodique des perpetual futures. Funding positif = les LONG paient les SHORT, funding negatif = les SHORT paient les LONG.</p>
+          </div>
+          <div class="gloss-card">
+            <h4>Open Interest</h4>
+            <p>Valeur totale des contrats ouverts (ici convertie en USD). Plus l&apos;OI est eleve, plus le marche est engage et potentiellement sensible aux liquidations.</p>
+          </div>
+          <div class="gloss-card">
+            <h4>Ordre vs Position</h4>
+            <p><strong>Ordre</strong> = BUY/SELL execute. <strong>Position</strong> = exposition nette LONG/SHORT avant et apres le trade.</p>
+          </div>
+          <div class="gloss-card">
+            <h4>Transition</h4>
+            <p><strong>entry</strong> ouverture, <strong>add</strong> renfort, <strong>reduce</strong> reduction partielle, <strong>exit</strong> cloture, <strong>flip</strong> inversion LONG/SHORT.</p>
+          </div>
+          <div class="gloss-card">
+            <h4>Allocation</h4>
+            <p>Part de capital engagee sur la decision du tick. Une allocation de 20% signifie que 20% de l&apos;equity est cible pour ce trade.</p>
+          </div>
+          <div class="gloss-card">
+            <h4>Confidence</h4>
+            <p>Score interne de conviction (0 a 1). Plus le score est haut, plus l&apos;analyste estime que le setup est robuste.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="foot">Source: <span class="mono">dashboard/data/system_state.json</span> | Refresh: 30s | Charts rendered only for selected analyst</div>
 
