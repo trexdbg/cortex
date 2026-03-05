@@ -190,6 +190,28 @@
         }
       }
 
+      function formatLlmJournalResult(row) {
+        const payload = row.codex_response_payload && typeof row.codex_response_payload === "object"
+          ? row.codex_response_payload
+          : null;
+        const firstOrder = payload && Array.isArray(payload.orders) && payload.orders.length
+          ? payload.orders[0]
+          : null;
+        const symbol = String(
+          row.decision_symbol ??
+          firstOrder?.symbol ??
+          "-"
+        ).trim() || "-";
+        const reasonRaw =
+          row.decision_reason ??
+          row.codex_explanation ??
+          payload?.reason ??
+          firstOrder?.reason ??
+          "-";
+        const reason = String(reasonRaw).replace(/\s+/g, " ").trim() || "-";
+        return `[${symbol};${reason}]`;
+      }
+
       function renderLlmJournal(data) {
         const body = document.getElementById("llm-journal-body");
         if (!body) return;
@@ -208,13 +230,7 @@
             row.codex_input_token_usage ?? null,
             row.codex_output_token_usage ?? null
           ) || "-";
-          let llmResult = "";
-          if (row.codex_response_payload && typeof row.codex_response_payload === "object") {
-            llmResult = JSON.stringify(row.codex_response_payload, null, 2);
-          }
-          if (!llmResult) {
-            llmResult = String(row.codex_explanation || row.decision_reason || "-");
-          }
+          const llmResult = formatLlmJournalResult(row);
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td>${fmtTs(row.ts)}</td>
