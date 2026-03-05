@@ -223,6 +223,15 @@
           "-"
         );
         const fallbackAction = String(row.decision_action || "hold").trim().toUpperCase() || "HOLD";
+        const llmSkillsUsed =
+          Boolean(row.llm_skill_news_sentiment_used) ||
+          Boolean(row.llm_skill_json_format_guard_used) ||
+          Boolean(row.llm_skill_both_used);
+        const hasTokenUsage =
+          row.codex_token_usage !== null && row.codex_token_usage !== undefined ||
+          row.codex_input_token_usage !== null && row.codex_input_token_usage !== undefined ||
+          row.codex_output_token_usage !== null && row.codex_output_token_usage !== undefined;
+        const hasLlmAnalysis = Boolean(payload) || llmSkillsUsed || hasTokenUsage;
 
         const explicitOrders = [];
         const explicitBySymbol = new Map();
@@ -255,6 +264,15 @@
         if (!symbolsForDecision.length) {
           const decisionSymbol = normalizeSymbol(row.decision_symbol);
           if (decisionSymbol) symbolsForDecision.push(decisionSymbol);
+        }
+        if (!symbolsForDecision.length) {
+          for (const s of [row.symbol, row.last_symbol]) pushUnique(symbolsForDecision, s);
+        }
+
+        if (!hasLlmAnalysis && symbolsForDecision.length) {
+          const perSymbol = symbolsForDecision.map((symbol) => `[${symbol};${fallbackAction};signaux_nuls (pas d'analyse LLM)]`);
+          lines.push(`decisions_par_symbole: ${perSymbol.join(" | ")}`);
+          return lines.join("\n");
         }
 
         if (symbolsForDecision.length) {
