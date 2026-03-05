@@ -352,26 +352,58 @@
           body.innerHTML = '<tr><td colspan="4" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
           return;
         }
-        for (const row of rows) {
-          const detail = llmDetail(data, row.analyst_id, row.tick_id);
-          const workerOutput = prettyJson(
-            detail?.worker_output ?? row.codex_response_payload ?? null,
-            "Aucun output worker"
-          );
+        const shortReason = (value, maxChars = 220) => {
+          const text = cleanText(String(value || "").replace(/\s+/g, " ").trim());
+          if (!text) return "-";
+          if (text.length <= maxChars) return text;
+          return `${text.slice(0, maxChars - 3).trim()}...`;
+        };
+        const pickSymbol = (row, detail) => {
+          const candidates = [];
+          const add = (value) => {
+            const token = String(value || "").trim().toUpperCase();
+            if (!token || token === "NULL" || token === "-") return;
+            if (!candidates.includes(token)) candidates.push(token);
+          };
+          add(row?.decision_symbol);
+          add(row?.symbol);
+          add(row?.last_symbol);
+          const workerOrders = Array.isArray(detail?.worker_orders) ? detail.worker_orders : [];
           const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
           const arbiterRejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
-          const arbiterDecision = (arbiterOrders.length || arbiterRejections.length)
-            ? prettyJson({
-                orders: arbiterOrders,
-                rejections: arbiterRejections,
-              }, "{}")
-            : "Aucune decision arbitre pour cet analyste sur ce tick";
+          if (workerOrders[0]) add(workerOrders[0].symbol);
+          if (arbiterOrders[0]) add(arbiterOrders[0].symbol);
+          if (arbiterRejections[0]) add(arbiterRejections[0].symbol);
+          if (Array.isArray(row?.llm_signal_assets_top) && row.llm_signal_assets_top.length) {
+            add(row.llm_signal_assets_top[0]);
+          }
+          return candidates[0] || "-";
+        };
+        const workerReasonFor = (row, detail, symbol) => {
+          const wanted = String(symbol || "").trim().toUpperCase();
+          const workerOrders = Array.isArray(detail?.worker_orders) ? detail.worker_orders : [];
+          const bySymbol = workerOrders.find((item) => String(item?.symbol || "").trim().toUpperCase() === wanted);
+          const anyOrder = workerOrders[0];
+          const raw = (
+            bySymbol?.reason ||
+            anyOrder?.reason ||
+            row?.decision_reason ||
+            row?.codex_explanation ||
+            "Aucune raison worker"
+          );
+          return shortReason(raw);
+        };
+        for (const row of rows) {
+          const detail = llmDetail(data, row.analyst_id, row.tick_id);
+          const symbol = pickSymbol(row, detail);
+          const workerReason = workerReasonFor(row, detail, symbol);
+          const arbiterReason = shortReason(findArbiterReason(detail, symbol), 240);
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td>${fmtTs(row.ts)}</td>
-            <td>${esc(row.analyst_id || "-")}</td>
-            <td><pre class="llm-result-pre">${esc(workerOutput)}</pre></td>
-            <td><pre class="llm-result-pre">${esc(arbiterDecision)}</pre></td>
+            <td>${esc(symbol)}</td>
+            <td>${esc(workerReason)}</td>
+            <td>${esc(arbiterReason)}</td>
           `;
           tr.addEventListener("click", () => {
             if (!row.analyst_id) return;
