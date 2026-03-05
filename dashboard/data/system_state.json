@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T19:45:32.566525+00:00",
+  "updated_at": "2026-03-05T20:24:04.793925+00:00",
   "snapshot": {
     "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
     "as_of": "2026-03-05T19:45:02.035226Z",
@@ -21098,5 +21098,1130 @@
         ]
       }
     }
-  ]
+  ],
+  "llm_detail_index": {
+    "aggressive|f4e44d794cb34439acdeea02d8fbead9": {
+      "analyst_id": "aggressive",
+      "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
+      "worker_ts": "2026-03-05T13:30:33.826403+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_13-30-33_2503_tokens.txt",
+      "worker_prompt": "A=aggressive T=f4e44d794cb34439acdeea02d8fbead9 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"DOGE\",-0.12,\"s\",-0.375,0.458,41.2,-0.237,-9.8e-05,182340366.8],[\"AVAX\",0.077,\"l\",-0.211,0.296,47.1,0.006,-3.6e-05,82906639.52]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"u\",\"v\":\"l\",\"r6\":-0.56,\"r24\":0.494,\"rsi\":45.3,\"eg\":0.035},\"sent\":{\"sc\":-0.046,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, names new US CEO\"],[-1.0,\"www.coind...\",\"Crypto-friendly fintech giant Revolut files for U.S. banking license\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.8,\"reason\":\"Cooldown; r6=-0.56% et RSI=45.3, momentum insuffisant.\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.77,\"reason\":\"Cooldown; sentiment sc=-0.046 et tr=f, risque directionnel eleve.\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.75,\"reason\":\"Cooldown; r24=0.494% mais r6=-0.56%, signal mixte.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.8,
+          "reason": "Cooldown; r6=-0.56% et RSI=45.3, momentum insuffisant."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.77,
+          "reason": "Cooldown; sentiment sc=-0.046 et tr=f, risque directionnel eleve."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.75,
+          "reason": "Cooldown; r24=0.494% mais r6=-0.56%, signal mixte."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|d427ccdcb6cd4731a55b054a7731328b": {
+      "analyst_id": "aggressive",
+      "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
+      "worker_ts": "2026-03-05T14:18:19.693783+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_14-18-19_2234_tokens.txt",
+      "worker_prompt": "A=aggressive T=d427ccdcb6cd4731a55b054a7731328b actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.324,\"s\",-1.446,0.325,22.2,-0.027,-0.000123,858395414.46],[\"DOGE\",-0.318,\"s\",-1.361,0.495,18.4,-0.398,-0.000102,179697716.41]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":-0.636,\"r24\":0.831,\"rsi\":21.1,\"eg\":-0.042},\"sent\":{\"sc\":-0.204,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, appoints new US CEO\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "- Hold only on `BTC` given the RSI is 21.1 (oversold) so we wait for a clearer bounce before allocating capital; allocation is 0% with 1x leverage.",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.0,
+          "reason": "Format guard fallback."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|2d5bfbd77f594dfea43f4f30e9234794": {
+      "analyst_id": "aggressive",
+      "tick_id": "2d5bfbd77f594dfea43f4f30e9234794",
+      "worker_ts": "2026-03-05T15:01:21.185828+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_15-01-21_13650_tokens.txt",
+      "worker_prompt": "A=aggressive T=2d5bfbd77f594dfea43f4f30e9234794 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\nObligatoire: appelle le skill json_format_guard pour valider le JSON avant la sortie finale.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"AVAX\",0.293,\"l\",0.955,0.294,63.0,0.033,-1.4e-05,84008097.09],[\"DOGE\",0.204,\"l\",0.569,0.494,44.7,-0.4,-9.5e-05,180993270.45]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":0.157,\"r24\":0.026,\"rsi\":45.2,\"eg\":-0.076},\"sent\":{\"sc\":-0.163,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[0.0,\"cointeleg...\",\"Here\\u2019s what happened in crypto today\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"Cardano can now be used to pay at 137 Spar stores across Switzerland\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.333,\"bias\":\"bearish\",\"confidence\":0.93,\"top\":[{\"s\":-1.0,\"h\":\"CoinDesk 20 performance update: Stellar (XLM)...\"},{\"s\":0.0,\"h\":\"Here\\u2019s what happened in crypto today\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.5,\n      \"reason\": \"Sentiment -0.16 + RSI 45; manual guard due to skill limit.\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"notes\": \"Unable to invoke deterministic/LLM skills; json_format_guard could not run.\"\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.5,
+          "reason": "Sentiment -0.16 + RSI 45; manual guard due to skill limit."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|f98208273ffe4d4cb07f6ae2f1a0d800": {
+      "analyst_id": "aggressive",
+      "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
+      "worker_ts": "2026-03-05T15:45:26.853926+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_15-45-26_2756_tokens.txt",
+      "worker_prompt": "A=aggressive T=f98208273ffe4d4cb07f6ae2f1a0d800 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"ETH\",-0.443,\"s\",-1.756,0.617,29.9,-0.576,-2.1e-05,4321998348.9],[\"BTC\",-0.39,\"s\",-1.517,0.519,30.1,-0.411,1e-06,6216724811.75]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.517,\"r24\":-1.57,\"rsi\":30.1,\"eg\":-0.411},\"sent\":{\"sc\":-0.017,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":0.0,\"bias\":\"neutral\",\"confidence\":0.0,\"top\":[]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"BTC RSI 30.1 and 24h -1.57%; wait for clearer momentum\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0,\"leverage\":1.0,\"confidence\":0.42,\"reason\":\"ETH 24h -1.756% and score -0.443; stay flat until bias flips\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "BTC RSI 30.1 and 24h -1.57%; wait for clearer momentum"
+        },
+        {
+          "action": "hold",
+          "symbol": "ETH",
+          "allocation_pct": 0,
+          "leverage": 1.0,
+          "confidence": 0.42,
+          "reason": "ETH 24h -1.756% and score -0.443; stay flat until bias flips"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|701b6424a7e44d97a246ab15ef492fac": {
+      "analyst_id": "aggressive",
+      "tick_id": "701b6424a7e44d97a246ab15ef492fac",
+      "worker_ts": "2026-03-05T16:30:12.489368+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_16-30-12_2292_tokens.txt",
+      "worker_prompt": "A=aggressive T=701b6424a7e44d97a246ab15ef492fac actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.389,\"s\",-1.493,0.82,29.0,-0.797,-0.000107,816232902.21],[\"BTC\",-0.344,\"s\",-1.118,0.579,28.7,-0.596,-8e-06,6129278592.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.118,\"r24\":-3.154,\"rsi\":28.7,\"eg\":-0.596},\"sent\":{\"sc\":-0.021,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-0.021,\"shared_llm\",\"news=0.000 reddit=-0.047 combined=-0.021\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.021,\"bias\":\"neutral\",\"confidence\":0.49,\"top\":[{\"s\":-0.021,\"h\":\"news=0.000 reddit=-0.047 combined=-0.021\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.49,\n      \"reason\": \"sentiment score -0.021 + RSI 28.7 near oversold\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.49,
+          "reason": "sentiment score -0.021 + RSI 28.7 near oversold"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|a299ac426ba14f62a633cfd23be41f57": {
+      "analyst_id": "aggressive",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "worker_ts": "2026-03-05T17:00:41.706552+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_17-00-41_2428_tokens.txt",
+      "worker_prompt": "A=aggressive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"AVAX\",-0.184,\"s\",-0.425,0.525,45.8,-0.267,2e-06,81306571.64],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Combined news score -0.07 and RSI 35.3 show weak momentum\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|227f960b01304e1c9ba5f4e7910d8c89": {
+      "analyst_id": "aggressive",
+      "tick_id": "227f960b01304e1c9ba5f4e7910d8c89",
+      "worker_ts": "2026-03-05T17:45:15.904421+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_17-45-15_2288_tokens.txt",
+      "worker_prompt": "A=aggressive T=227f960b01304e1c9ba5f4e7910d8c89 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"DOGE\",-0.33,\"s\",-0.47,0.398,31.1,-0.797,-3.9e-05,173989721.32],[\"AVAX\",-0.322,\"s\",-0.428,0.491,36.0,-0.394,-2.3e-05,80756383.05]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.161,\"r24\":-2.79,\"rsi\":30.9,\"eg\":-0.636},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0,\"leverage\":1,\"confidence\":0.54,\"reason\":\"Sentiment -0.07 neutral with RSI 30.9; cooldown for stability\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0,
+          "leverage": 1,
+          "confidence": 0.54,
+          "reason": "Sentiment -0.07 neutral with RSI 30.9; cooldown for stability"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|df4f4f89347b4c73b7c13854193e971d": {
+      "analyst_id": "aggressive",
+      "tick_id": "df4f4f89347b4c73b7c13854193e971d",
+      "worker_ts": "2026-03-05T18:30:18.593712+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_18-30-18_2881_tokens.txt",
+      "worker_prompt": "A=aggressive T=df4f4f89347b4c73b7c13854193e971d actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"ETH\",-0.349,\"s\",-0.514,0.438,38.8,-0.704,1.2e-05,4134181944.84],[\"BTC\",-0.341,\"s\",-0.497,0.378,34.0,-0.628,-8e-06,6014811042.57]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.497,\"r24\":-2.86,\"rsi\":34.0,\"eg\":-0.628},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Score -0.07 from shared_llm news/reddit mix signals weak bearish tilt.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "Score -0.07 from shared_llm news/reddit mix signals weak bearish tilt."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|a7c64268fc9c43b1ac67118a20b8cfce": {
+      "analyst_id": "aggressive",
+      "tick_id": "a7c64268fc9c43b1ac67118a20b8cfce",
+      "worker_ts": "2026-03-05T19:00:40.305226+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_19-00-40_2351_tokens.txt",
+      "worker_prompt": "A=aggressive T=a7c64268fc9c43b1ac67118a20b8cfce actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BTC\",-0.054,\"s\",0.216,0.267,41.3,-0.551,-8e-06,6017631181.41],[\"DOGE\",0.037,\"l\",0.677,0.274,42.8,-0.595,-3.4e-05,174348211.22]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.216,\"r24\":-2.283,\"rsi\":41.3,\"eg\":-0.551},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.35,\"reason\":\"news sentiment -0.31 combined remains bearish; wait for reversal\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.35,
+          "reason": "news sentiment -0.31 combined remains bearish; wait for reversal"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "aggressive|c16602d4516e4e67a9d342cf4bb80883": {
+      "analyst_id": "aggressive",
+      "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+      "worker_ts": "2026-03-05T19:45:24.052097+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_19-45-24_3934_tokens.txt",
+      "worker_prompt": "A=aggressive T=c16602d4516e4e67a9d342cf4bb80883 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nprofil_analyste=# Agent Aggressive Role: - Aggressive crypto trader focusing on volatile assets. Risk profile: - High risk tolerance - Can use leverage up to profile cap - Accepts short-term drawdowns Time horizon: - Short horizon, reacts quickly to momentum and liquidations Capital rules: - Seek convex upside - Prioritize opportunities with clear directional edge - Avoid over-concentration in one symbol Allowed assets: - BTC, ETH, SOL, AVAX, ARB, OP, LINK, XRP, ADA, DOGE, BNB\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nShort autorise: action=short est permise sur symboles autorises quand signaux bearish nets.\nRespecte le profil de l'analyste (style risque/horizon) dans le choix long/short/hold.\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"AVAX\",0.137,\"l\",0.859,0.402,55.6,-0.131,-7.4e-05,81908885.49],[\"DOGE\",0.1,\"l\",0.977,0.312,57.6,-0.372,-4.4e-05,174141456.17]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.279,\"r24\":-2.003,\"rsi\":50.4,\"eg\":-0.437},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"short\",\"symbol\":\"DOGE\",\"allocation_pct\":0.25,\"leverage\":2.8,\"confidence\":0.68,\"reason\":\"combined sentiment -0.31 plus DOGE momentum -0.372 signals bearish acceleration\"},{\"action\":\"short\",\"symbol\":\"AVAX\",\"allocation_pct\":0.20,\"leverage\":2.0,\"confidence\":0.55,\"reason\":\"AVAX momentum -0.131 with market r24 -2.003 confirms downward pressure\"},{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.00,\"leverage\":1.0,\"confidence\":0.40,\"reason\":\"awaiting clearer momentum after 24h drop -2.003 and neutral RSI 50.4\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "short",
+          "symbol": "DOGE",
+          "allocation_pct": 0.25,
+          "leverage": 2.8,
+          "confidence": 0.68,
+          "reason": "combined sentiment -0.31 plus DOGE momentum -0.372 signals bearish acceleration"
+        },
+        {
+          "action": "short",
+          "symbol": "AVAX",
+          "allocation_pct": 0.2,
+          "leverage": 2.0,
+          "confidence": 0.55,
+          "reason": "AVAX momentum -0.131 with market r24 -2.003 confirms downward pressure"
+        },
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.4,
+          "reason": "awaiting clearer momentum after 24h drop -2.003 and neutral RSI 50.4"
+        }
+      ],
+      "arbiter_final_decision": {
+        "analyst_id": "aggressive",
+        "portfolio_id": "analyst_aggressive",
+        "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+        "action": "short",
+        "symbol": "DOGE",
+        "allocation_pct": 0.25,
+        "leverage": 2.8,
+        "confidence": 0.68,
+        "reason": "Momentum DOGE -0.372 et sentiment -0.31: acceleration baissiere",
+        "source": "trade_arbiter",
+        "created_at": "2026-03-05T19:45:32.373365+00:00"
+      },
+      "arbiter_orders": [
+        {
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "action": "short",
+          "symbol": "DOGE",
+          "allocation_pct": 0.25,
+          "leverage": 2.8,
+          "confidence": 0.68,
+          "reason": "Momentum DOGE -0.372 et sentiment -0.31: acceleration baissiere"
+        }
+      ],
+      "arbiter_status": "executed",
+      "arbiter_ts": "2026-03-05T19:45:32.383590+00:00"
+    },
+    "defensive|87e03576dc494f2daebffb82e5b55f34": {
+      "analyst_id": "defensive",
+      "tick_id": "87e03576dc494f2daebffb82e5b55f34",
+      "worker_ts": "2026-03-05T12:31:32.212119+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_12-31-32_1949_tokens.txt",
+      "worker_prompt": "A=defensive T=87e03576dc494f2daebffb82e5b55f34 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty calculee automatiquement depuis allocation_pct et prix; reason<=90c avec metrique concrete; aucun texte hors JSON.\nAjoute guard pour cooldown: mode=hold_only et stop_loss_pct (en %) utilises entre 2 appels LLM.\nSchema snapshot: t=[asset,side,px,notional,transition] (px=prix de trade).\nsnapshot={\"s\":[[\"ETH\",-0.127,\"s\",null,null,-1.5e-05,4503874891.99],[\"SOL\",-0.113,\"s\",null,null,-7.3e-05,873295305.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"r\":0.0},\"m\":{\"t\":\"x\",\"v\":\"x\"},\"sent\":{\"sc\":-0.053,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[0.0,\"These 4 Bitcoin charts say BTC price is forming a bottom\"],[1.0,\"Bitcoin takes aim at $74,000. Surprisingly, the dolla...\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.81,\"reason\":\"Cooldown actif (d=hold), sent.sc=-0.053: pas de nouveau risque.\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.79,\"reason\":\"Position ETH existante; cooldown actif et flux news mixte (n=2).\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.78,\"reason\":\"Position SOL existante; sent.sc negatif (-0.053), attente de confirmation.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.81,
+          "reason": "Cooldown actif (d=hold), sent.sc=-0.053: pas de nouveau risque."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.79,
+          "reason": "Position ETH existante; cooldown actif et flux news mixte (n=2)."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.78,
+          "reason": "Position SOL existante; sent.sc negatif (-0.053), attente de confirmation."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|f4e44d794cb34439acdeea02d8fbead9": {
+      "analyst_id": "defensive",
+      "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
+      "worker_ts": "2026-03-05T13:30:26.856814+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_13-30-26_2038_tokens.txt",
+      "worker_prompt": "A=defensive T=f4e44d794cb34439acdeea02d8fbead9 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BNB\",0.087,\"l\",-0.149,0.252,49.2,0.1,0.0,330807084.79],[\"SOL\",0.062,\"l\",-0.436,0.326,49.2,0.187,-0.000101,868530831.61]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"u\",\"v\":\"l\",\"r6\":-0.56,\"r24\":0.494,\"rsi\":45.3,\"eg\":0.035},\"sent\":{\"sc\":-0.046,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, names new US CEO\"],[-1.0,\"www.coind...\",\"Crypto-friendly fintech giant Revolut files for U.S. banking license\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.82,\"reason\":\"Cooldown: r6=-0.56%, RSI=45.3, sentiment=-0.046\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.82,
+          "reason": "Cooldown: r6=-0.56%, RSI=45.3, sentiment=-0.046"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|d427ccdcb6cd4731a55b054a7731328b": {
+      "analyst_id": "defensive",
+      "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
+      "worker_ts": "2026-03-05T14:18:18.608339+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_14-18-18_1864_tokens.txt",
+      "worker_prompt": "A=defensive T=d427ccdcb6cd4731a55b054a7731328b actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.324,\"s\",-1.446,0.325,22.2,-0.027,-0.000123,858395414.46],[\"ETH\",-0.303,\"s\",-1.102,0.282,20.8,-0.103,-3.1e-05,4444694343.46]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":-0.636,\"r24\":0.831,\"rsi\":21.1,\"eg\":-0.042},\"sent\":{\"sc\":-0.204,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, appoints new US CEO\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.0,
+          "reason": "Format guard fallback."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|2d5bfbd77f594dfea43f4f30e9234794": {
+      "analyst_id": "defensive",
+      "tick_id": "2d5bfbd77f594dfea43f4f30e9234794",
+      "worker_ts": "2026-03-05T15:01:09.746976+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_15-01-09_8612_tokens.txt",
+      "worker_prompt": "A=defensive T=2d5bfbd77f594dfea43f4f30e9234794 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\nObligatoire: appelle le skill json_format_guard pour valider le JSON avant la sortie finale.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"XRP\",0.432,\"l\",0.834,0.421,53.0,0.051,-4.8e-05,408993996.77],[\"SOL\",0.145,\"l\",0.154,0.561,43.1,-0.12,-0.000131,858384283.25]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":0.157,\"r24\":0.026,\"rsi\":45.2,\"eg\":-0.076},\"sent\":{\"sc\":-0.163,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[0.0,\"cointeleg...\",\"Here\\u2019s what happened in crypto today\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"Cardano can now be used to pay at 137 Spar stores across Switzerland\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.333,\"bias\":\"bearish\",\"confidence\":0.93,\"top\":[{\"s\":-1.0,\"h\":\"CoinDesk 20 performance update: Stellar (XLM)...\"},{\"s\":0.0,\"h\":\"Here\\u2019s what happened in crypto today\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.35,\n      \"reason\": \"Macro r24=0.026 & sentiment -0.163; cooling before reposition\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.35,
+          "reason": "Macro r24=0.026 & sentiment -0.163; cooling before reposition"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|f98208273ffe4d4cb07f6ae2f1a0d800": {
+      "analyst_id": "defensive",
+      "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
+      "worker_ts": "2026-03-05T15:45:25.870904+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_15-45-25_2534_tokens.txt",
+      "worker_prompt": "A=defensive T=f98208273ffe4d4cb07f6ae2f1a0d800 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"ETH\",-0.443,\"s\",-1.756,0.617,29.9,-0.576,-2.1e-05,4321998348.9],[\"BTC\",-0.39,\"s\",-1.517,0.519,30.1,-0.411,1e-06,6216724811.75]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.517,\"r24\":-1.57,\"rsi\":30.1,\"eg\":-0.411},\"sent\":{\"sc\":-0.017,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":0.0,\"bias\":\"neutral\",\"confidence\":0.0,\"top\":[]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"ETH\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.35,\n      \"reason\": \"Score -0.017 and RSI 30.1 suggest caution\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "ETH",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.35,
+          "reason": "Score -0.017 and RSI 30.1 suggest caution"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|701b6424a7e44d97a246ab15ef492fac": {
+      "analyst_id": "defensive",
+      "tick_id": "701b6424a7e44d97a246ab15ef492fac",
+      "worker_ts": "2026-03-05T16:30:13.796874+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_16-30-13_2229_tokens.txt",
+      "worker_prompt": "A=defensive T=701b6424a7e44d97a246ab15ef492fac actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.389,\"s\",-1.493,0.82,29.0,-0.797,-0.000107,816232902.21],[\"BTC\",-0.344,\"s\",-1.118,0.579,28.7,-0.596,-8e-06,6129278592.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.118,\"r24\":-3.154,\"rsi\":28.7,\"eg\":-0.596},\"sent\":{\"sc\":-0.021,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-0.021,\"shared_llm\",\"news=0.000 reddit=-0.047 combined=-0.021\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.021,\"bias\":\"neutral\",\"confidence\":0.49,\"top\":[{\"s\":-0.021,\"h\":\"news=0.000 reddit=-0.047 combined=-0.021\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.49,\"reason\":\"Combined sentiment score -0.021 signals indecisive crypto markets\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.49,
+          "reason": "Combined sentiment score -0.021 signals indecisive crypto markets"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|a299ac426ba14f62a633cfd23be41f57": {
+      "analyst_id": "defensive",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "worker_ts": "2026-03-05T17:00:42.250018+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_17-00-42_2277_tokens.txt",
+      "worker_prompt": "A=defensive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85],[\"BTC\",-0.162,\"s\",-0.23,0.601,35.3,-0.556,-1.3e-05,6127354760.89]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.54,\n      \"reason\": \"Sentiment score -0.07 neutral/bearish; maintain zero exposure\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|227f960b01304e1c9ba5f4e7910d8c89": {
+      "analyst_id": "defensive",
+      "tick_id": "227f960b01304e1c9ba5f4e7910d8c89",
+      "worker_ts": "2026-03-05T17:45:16.864638+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_17-45-16_2374_tokens.txt",
+      "worker_prompt": "A=defensive T=227f960b01304e1c9ba5f4e7910d8c89 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"XRP\",-0.299,\"s\",-0.206,0.538,36.8,-0.494,1.7e-05,397302396.95],[\"BTC\",-0.279,\"s\",-0.161,0.491,30.9,-0.636,-1.3e-05,6019497070.41]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.161,\"r24\":-2.79,\"rsi\":30.9,\"eg\":-0.636},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Neutral news score -0.07 with RSI 30.9 implies wait\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "Neutral news score -0.07 with RSI 30.9 implies wait"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|df4f4f89347b4c73b7c13854193e971d": {
+      "analyst_id": "defensive",
+      "tick_id": "df4f4f89347b4c73b7c13854193e971d",
+      "worker_ts": "2026-03-05T18:30:19.721514+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_18-30-19_2611_tokens.txt",
+      "worker_prompt": "A=defensive T=df4f4f89347b4c73b7c13854193e971d actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BNB\",-0.36,\"s\",-0.567,0.311,40.2,-0.345,0.0,322343334.93],[\"XRP\",-0.355,\"s\",-0.433,0.423,33.9,-0.507,4.1e-05,397381266.26]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.497,\"r24\":-2.86,\"rsi\":34.0,\"eg\":-0.628},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Sentiment -0.07/RSI 34 signals caution; pause BTC trades.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "Sentiment -0.07/RSI 34 signals caution; pause BTC trades."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|a7c64268fc9c43b1ac67118a20b8cfce": {
+      "analyst_id": "defensive",
+      "tick_id": "a7c64268fc9c43b1ac67118a20b8cfce",
+      "worker_ts": "2026-03-05T19:00:41.209808+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_19-00-41_2496_tokens.txt",
+      "worker_prompt": "A=defensive T=a7c64268fc9c43b1ac67118a20b8cfce actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BTC\",-0.054,\"s\",0.216,0.267,41.3,-0.551,-8e-06,6017631181.41],[\"BNB\",-0.037,\"s\",0.323,0.238,47.1,-0.268,0.0,323186693.43]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.216,\"r24\":-2.283,\"rsi\":41.3,\"eg\":-0.551},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.78,\n      \"reason\": \"Sentiment score -0.31 bearish; stay sidelined until clarity\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.78,
+          "reason": "Sentiment score -0.31 bearish; stay sidelined until clarity"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "defensive|c16602d4516e4e67a9d342cf4bb80883": {
+      "analyst_id": "defensive",
+      "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+      "worker_ts": "2026-03-05T19:45:15.425480+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_19-45-15_2399_tokens.txt",
+      "worker_prompt": "A=defensive T=c16602d4516e4e67a9d342cf4bb80883 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nprofil_analyste=# Agent Defensive Role: - Defensive portfolio manager focused on capital preservation. Risk profile: - Low risk tolerance - Minimal leverage - Prefers reducing exposure during uncertainty Time horizon: - Medium to long horizon Capital rules: - Protect downside first - Trade selectively and sparsely - Bias toward high-liquidity majors Allowed assets: - BTC, ETH, BNB, XRP\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nShort autorise: action=short est permise sur symboles autorises quand signaux bearish nets.\nRespecte le profil de l'analyste (style risque/horizon) dans le choix long/short/hold.\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",0.07,\"l\",0.851,0.32,57.2,-0.468,-9e-06,818922598.16],[\"BTC\",-0.054,\"s\",0.279,0.296,50.4,-0.437,-0.0,5997069116.38]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.279,\"r24\":-2.003,\"rsi\":50.4,\"eg\":-0.437},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.55,\"reason\":\"News sentiment -0.31 and RSI 50.4 keep BTC on hold for now\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.55,
+          "reason": "News sentiment -0.31 and RSI 50.4 keep BTC on hold for now"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": "executed",
+      "arbiter_ts": "2026-03-05T19:45:32.383590+00:00"
+    },
+    "mean_reversion|87e03576dc494f2daebffb82e5b55f34": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "87e03576dc494f2daebffb82e5b55f34",
+      "worker_ts": "2026-03-05T12:31:36.237840+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_12-31-36_2117_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=87e03576dc494f2daebffb82e5b55f34 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty calculee automatiquement depuis allocation_pct et prix; reason<=90c avec metrique concrete; aucun texte hors JSON.\nAjoute guard pour cooldown: mode=hold_only et stop_loss_pct (en %) utilises entre 2 appels LLM.\nSchema snapshot: t=[asset,side,px,notional,transition] (px=prix de trade).\nsnapshot={\"s\":[[\"ETH\",-0.127,\"s\",null,null,-1.5e-05,4503874891.99],[\"SOL\",-0.113,\"s\",null,null,-7.3e-05,873295305.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"r\":0.0},\"m\":{\"t\":\"x\",\"v\":\"x\"},\"sent\":{\"sc\":-0.053,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[0.0,\"These 4 Bitcoin charts say BTC price is forming a bottom\"],[1.0,\"Bitcoin takes aim at $74,000. Surprisingly, the dolla...\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.91,\"reason\":\"Cooldown actif; sentiment=-0.053 et aucun trade recent t=[]\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.9,\"reason\":\"Cooldown actif; score SOL=-0.113, pas de signal d'inversion confirme\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.91,
+          "reason": "Cooldown actif; sentiment=-0.053 et aucun trade recent t=[]"
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.9,
+          "reason": "Cooldown actif; score SOL=-0.113, pas de signal d'inversion confirme"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|f4e44d794cb34439acdeea02d8fbead9": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
+      "worker_ts": "2026-03-05T13:30:32.056025+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_13-30-32_2426_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=f4e44d794cb34439acdeea02d8fbead9 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",0.257,\"l\",0.319,0.298,65.9,0.386,-0.000189,83244917.65],[\"SOL\",0.062,\"l\",-0.436,0.326,49.2,0.187,-0.000101,868530831.61]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"u\",\"v\":\"l\",\"r6\":-0.56,\"r24\":0.494,\"rsi\":45.3,\"eg\":0.035},\"sent\":{\"sc\":-0.046,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, names new US CEO\"],[-1.0,\"www.coind...\",\"Crypto-friendly fintech giant Revolut files for U.S. banking license\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.68,\"reason\":\"z=-0.44, RSI=49.2: pas d'ecart extreme, attente.\"},{\"action\":\"hold\",\"symbol\":\"LINK\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.66,\"reason\":\"z=0.32, RSI=65.9: surachat modere, signal insuffisant.\"},{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.64,\"reason\":\"r6=-0.56% et RSI mkt=45.3: regime neutre, cooldown.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.68,
+          "reason": "z=-0.44, RSI=49.2: pas d'ecart extreme, attente."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.66,
+          "reason": "z=0.32, RSI=65.9: surachat modere, signal insuffisant."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.64,
+          "reason": "r6=-0.56% et RSI mkt=45.3: regime neutre, cooldown."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|d427ccdcb6cd4731a55b054a7731328b": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
+      "worker_ts": "2026-03-05T14:18:26.366357+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_14-18-26_2757_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=d427ccdcb6cd4731a55b054a7731328b actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.324,\"s\",-1.446,0.325,22.2,-0.027,-0.000123,858395414.46],[\"ETH\",-0.303,\"s\",-1.102,0.282,20.8,-0.103,-3.1e-05,4444694343.46]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":-0.636,\"r24\":0.831,\"rsi\":21.1,\"eg\":-0.042},\"sent\":{\"sc\":-0.204,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, appoints new US CEO\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\n  \"orders\": [],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"pf\": {\n    \"eq\": 100.0,\n    \"ca\": 100.0,\n    \"rp\": 0.0,\n    \"up\": 0.0,\n    \"gx\": 0.0,\n    \"r\": 0.0,\n    \"op\": 0,\n    \"tc\": 0\n  },\n  \"p\": [],\n  \"t\": [],\n  \"d\": [\n    [\n      \"hold\",\n      null,\n      0.0,\n      1.0,\n      \"RSI21.1 oversold; await bounce\"\n    ]\n  ]\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.0,
+          "reason": "Format guard fallback."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|2d5bfbd77f594dfea43f4f30e9234794": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "2d5bfbd77f594dfea43f4f30e9234794",
+      "worker_ts": "2026-03-05T15:00:28.052866+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_15-00-28_3218_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=2d5bfbd77f594dfea43f4f30e9234794 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\nObligatoire: appelle le skill json_format_guard pour valider le JSON avant la sortie finale.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"XRP\",0.432,\"l\",0.834,0.421,53.0,0.051,-4.8e-05,408993996.77],[\"LINK\",0.213,\"l\",0.213,0.391,51.3,0.134,-0.00016,82591663.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":0.157,\"r24\":0.026,\"rsi\":45.2,\"eg\":-0.076},\"sent\":{\"sc\":-0.163,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[0.0,\"cointeleg...\",\"Here\\u2019s what happened in crypto today\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"Cardano can now be used to pay at 137 Spar stores across Switzerland\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.333,\"bias\":\"bearish\",\"confidence\":0.93,\"top\":[{\"s\":-1.0,\"h\":\"CoinDesk 20 performance update: Stellar (XLM)...\"},{\"s\":0.0,\"h\":\"Here\\u2019s what happened in crypto today\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"XRP RSI 45.2 near neutral; wait for mean reversion signal\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "XRP RSI 45.2 near neutral; wait for mean reversion signal"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|f98208273ffe4d4cb07f6ae2f1a0d800": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
+      "worker_ts": "2026-03-05T15:45:25.853627+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_15-45-25_2290_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=f98208273ffe4d4cb07f6ae2f1a0d800 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"ETH\",-0.443,\"s\",-1.756,0.617,29.9,-0.576,-2.1e-05,4321998348.9],[\"BTC\",-0.39,\"s\",-1.517,0.519,30.1,-0.411,1e-06,6216724811.75]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.517,\"r24\":-1.57,\"rsi\":30.1,\"eg\":-0.411},\"sent\":{\"sc\":-0.017,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":0.0,\"bias\":\"neutral\",\"confidence\":0.0,\"top\":[]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.40,\"reason\":\"RSI 30.1 still below neutral; keep hold until momentum reverses.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.4,
+          "reason": "RSI 30.1 still below neutral; keep hold until momentum reverses."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|701b6424a7e44d97a246ab15ef492fac": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "701b6424a7e44d97a246ab15ef492fac",
+      "worker_ts": "2026-03-05T16:30:12.694679+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_16-30-12_2258_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=701b6424a7e44d97a246ab15ef492fac actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.389,\"s\",-1.493,0.82,29.0,-0.797,-0.000107,816232902.21],[\"BTC\",-0.344,\"s\",-1.118,0.579,28.7,-0.596,-8e-06,6129278592.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.118,\"r24\":-3.154,\"rsi\":28.7,\"eg\":-0.596},\"sent\":{\"sc\":-0.021,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-0.021,\"shared_llm\",\"news=0.000 reddit=-0.047 combined=-0.021\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.021,\"bias\":\"neutral\",\"confidence\":0.49,\"top\":[{\"s\":-0.021,\"h\":\"news=0.000 reddit=-0.047 combined=-0.021\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0,\"leverage\":1,\"confidence\":0.45,\"reason\":\"RSI 28.7 indicates oversold; keep holdings flat.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0,
+          "leverage": 1,
+          "confidence": 0.45,
+          "reason": "RSI 28.7 indicates oversold; keep holdings flat."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|a299ac426ba14f62a633cfd23be41f57": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "worker_ts": "2026-03-05T17:00:44.143039+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_17-00-44_2465_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news -0.07 + RSI 35.3 keep flat pending clearer trend\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|227f960b01304e1c9ba5f4e7910d8c89": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "227f960b01304e1c9ba5f4e7910d8c89",
+      "worker_ts": "2026-03-05T17:45:13.699415+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_17-45-13_2239_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=227f960b01304e1c9ba5f4e7910d8c89 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"XRP\",-0.299,\"s\",-0.206,0.538,36.8,-0.494,1.7e-05,397302396.95],[\"BTC\",-0.279,\"s\",-0.161,0.491,30.9,-0.636,-1.3e-05,6019497070.41]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.161,\"r24\":-2.79,\"rsi\":30.9,\"eg\":-0.636},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news sentiment -0.07 neutral; wait for clearer bias\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "news sentiment -0.07 neutral; wait for clearer bias"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|df4f4f89347b4c73b7c13854193e971d": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "df4f4f89347b4c73b7c13854193e971d",
+      "worker_ts": "2026-03-05T18:30:14.392202+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_18-30-14_2347_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=df4f4f89347b4c73b7c13854193e971d actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"XRP\",-0.355,\"s\",-0.433,0.423,33.9,-0.507,4.1e-05,397381266.26],[\"ETH\",-0.349,\"s\",-0.514,0.438,38.8,-0.704,1.2e-05,4134181944.84]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.497,\"r24\":-2.86,\"rsi\":34.0,\"eg\":-0.628},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0,\"leverage\":1,\"confidence\":0.54,\"reason\":\"Sentiment -0.07 (news+reddit) too weak to justify a trade\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0,
+          "leverage": 1,
+          "confidence": 0.54,
+          "reason": "Sentiment -0.07 (news+reddit) too weak to justify a trade"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|a7c64268fc9c43b1ac67118a20b8cfce": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "a7c64268fc9c43b1ac67118a20b8cfce",
+      "worker_ts": "2026-03-05T19:00:40.987550+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_19-00-40_2342_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=a7c64268fc9c43b1ac67118a20b8cfce actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.061,\"s\",0.548,0.354,41.9,-0.547,5.5e-05,78842255.52],[\"BTC\",-0.054,\"s\",0.216,0.267,41.3,-0.551,-8e-06,6017631181.41]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.216,\"r24\":-2.283,\"rsi\":41.3,\"eg\":-0.551},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.78,\"reason\":\"sentiment -0.31 vs RSI 41.3; signals stay sidelined.\"},{\"action\":\"hold\",\"symbol\":\"LINK\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.78,\"reason\":\"sentiment -0.31 and 41.3 RSI keep allocations on hold.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.78,
+          "reason": "sentiment -0.31 vs RSI 41.3; signals stay sidelined."
+        },
+        {
+          "action": "hold",
+          "symbol": "LINK",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.78,
+          "reason": "sentiment -0.31 and 41.3 RSI keep allocations on hold."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "mean_reversion|c16602d4516e4e67a9d342cf4bb80883": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+      "worker_ts": "2026-03-05T19:45:17.546340+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_19-45-17_2911_tokens.txt",
+      "worker_prompt": "A=mean_reversion T=c16602d4516e4e67a9d342cf4bb80883 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nprofil_analyste=# Agent Mean Reversion Role: - Contrarian trader focused on mean-reversion setups after stretched moves. Risk profile: - Medium-low risk tolerance - Avoids chasing breakouts - Uses moderate leverage only on statistically stretched conditions Time horizon: - Intra-day to multi-day reversion windows Capital rules: - Enter gradually on extension exhaustion - Reduce quickly if reversion fails - Prefer liquid pairs with clear over-extension signals Allowed assets: - BTC, ETH, SOL, LINK, BNB, XRP\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nShort autorise: action=short est permise sur symboles autorises quand signaux bearish nets.\nRespecte le profil de l'analyste (style risque/horizon) dans le choix long/short/hold.\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",0.07,\"l\",0.851,0.32,57.2,-0.468,-9e-06,818922598.16],[\"LINK\",0.067,\"l\",1.099,0.433,55.0,-0.323,8.6e-05,79006429.5]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.279,\"r24\":-2.003,\"rsi\":50.4,\"eg\":-0.437},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.42,\"reason\":\"news score -0.31; waiting for clearer mean-reversion stretch\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.42,
+          "reason": "news score -0.31; waiting for clearer mean-reversion stretch"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": "executed",
+      "arbiter_ts": "2026-03-05T19:45:32.383590+00:00"
+    },
+    "quant|87e03576dc494f2daebffb82e5b55f34": {
+      "analyst_id": "quant",
+      "tick_id": "87e03576dc494f2daebffb82e5b55f34",
+      "worker_ts": "2026-03-05T12:31:33.027730+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_12-31-33_1883_tokens.txt",
+      "worker_prompt": "A=quant T=87e03576dc494f2daebffb82e5b55f34 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty calculee automatiquement depuis allocation_pct et prix; reason<=90c avec metrique concrete; aucun texte hors JSON.\nAjoute guard pour cooldown: mode=hold_only et stop_loss_pct (en %) utilises entre 2 appels LLM.\nSchema snapshot: t=[asset,side,px,notional,transition] (px=prix de trade).\nsnapshot={\"s\":[[\"ETH\",-0.127,\"s\",null,null,-1.5e-05,4503874891.99],[\"SOL\",-0.113,\"s\",null,null,-7.3e-05,873295305.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"r\":0.0},\"m\":{\"t\":\"x\",\"v\":\"x\"},\"sent\":{\"sc\":-0.053,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[0.0,\"These 4 Bitcoin charts say BTC price is forming a bottom\"],[1.0,\"Bitcoin takes aim at $74,000. Surprisingly, the dolla...\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.94,\"reason\":\"Cooldown_guard actif; sentiment=-0.053, aucune nouvelle entree.\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.93,\"reason\":\"Cooldown_guard actif; flux news mixte (score 0.0/1.0), attente.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.94,
+          "reason": "Cooldown_guard actif; sentiment=-0.053, aucune nouvelle entree."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.93,
+          "reason": "Cooldown_guard actif; flux news mixte (score 0.0/1.0), attente."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|f4e44d794cb34439acdeea02d8fbead9": {
+      "analyst_id": "quant",
+      "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
+      "worker_ts": "2026-03-05T13:30:30.144304+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_13-30-30_2234_tokens.txt",
+      "worker_prompt": "A=quant T=f4e44d794cb34439acdeea02d8fbead9 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",0.257,\"l\",0.319,0.298,65.9,0.386,-0.000189,83244917.65],[\"BNB\",0.087,\"l\",-0.149,0.252,49.2,0.1,0.0,330807084.79]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"u\",\"v\":\"l\",\"r6\":-0.56,\"r24\":0.494,\"rsi\":45.3,\"eg\":0.035},\"sent\":{\"sc\":-0.046,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, names new US CEO\"],[-1.0,\"www.coind...\",\"Crypto-friendly fintech giant Revolut files for U.S. banking license\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"LINK\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.9,\"reason\":\"Cooldown d=3 holds; RSI 65.9>60, pas d'ajout.\"},{\"action\":\"hold\",\"symbol\":\"BNB\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.89,\"reason\":\"Cooldown d=3 holds; perf=-14.9% et RSI 49.2, attente.\"},{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.87,\"reason\":\"Cooldown d=3 holds; r6=-0.56% et sent=-0.046, neutre.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.9,
+          "reason": "Cooldown d=3 holds; RSI 65.9>60, pas d'ajout."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.89,
+          "reason": "Cooldown d=3 holds; perf=-14.9% et RSI 49.2, attente."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.87,
+          "reason": "Cooldown d=3 holds; r6=-0.56% et sent=-0.046, neutre."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|d427ccdcb6cd4731a55b054a7731328b": {
+      "analyst_id": "quant",
+      "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
+      "worker_ts": "2026-03-05T14:18:18.640862+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_14-18-18_1731_tokens.txt",
+      "worker_prompt": "A=quant T=d427ccdcb6cd4731a55b054a7731328b actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.324,\"s\",-1.446,0.325,22.2,-0.027,-0.000123,858395414.46],[\"ETH\",-0.303,\"s\",-1.102,0.282,20.8,-0.103,-3.1e-05,4444694343.46]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":-0.636,\"r24\":0.831,\"rsi\":21.1,\"eg\":-0.042},\"sent\":{\"sc\":-0.204,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-1.0,\"cointeleg...\",\"Revolut makes second attempt at US bank charter, appoints new US CEO\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"US Bitcoin reserve still has no plan to stack sats\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]]}",
+      "worker_output": "{\"orders\":[],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.0,
+          "reason": "Format guard fallback."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|2d5bfbd77f594dfea43f4f30e9234794": {
+      "analyst_id": "quant",
+      "tick_id": "2d5bfbd77f594dfea43f4f30e9234794",
+      "worker_ts": "2026-03-05T15:00:47.389017+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_15-00-47_5908_tokens.txt",
+      "worker_prompt": "A=quant T=2d5bfbd77f594dfea43f4f30e9234794 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\nObligatoire: appelle le skill json_format_guard pour valider le JSON avant la sortie finale.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",0.213,\"l\",0.213,0.391,51.3,0.134,-0.00016,82591663.85],[\"SOL\",0.145,\"l\",0.154,0.561,43.1,-0.12,-0.000131,858384283.25]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":0.157,\"r24\":0.026,\"rsi\":45.2,\"eg\":-0.076},\"sent\":{\"sc\":-0.163,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[0.0,\"cointeleg...\",\"Here\\u2019s what happened in crypto today\"],[-1.0,\"www.coind...\",\"CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly al...\"],[0.0,\"cointeleg...\",\"Cardano can now be used to pay at 137 Spar stores across Switzerland\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.333,\"bias\":\"bearish\",\"confidence\":0.93,\"top\":[{\"s\":-1.0,\"h\":\"CoinDesk 20 performance update: Stellar (XLM)...\"},{\"s\":0.0,\"h\":\"Here\\u2019s what happened in crypto today\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.35,\"reason\":\"Sentiment -0.163 & RSI 45.2 keep BTC sidelined until trend strengthens.\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.33,\"reason\":\"News skew -0.333 plus 24h return 0.026 argue for extra caution on ETH.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.35,
+          "reason": "Sentiment -0.163 & RSI 45.2 keep BTC sidelined until trend strengthens."
+        },
+        {
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.33,
+          "reason": "News skew -0.333 plus 24h return 0.026 argue for extra caution on ETH."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|f98208273ffe4d4cb07f6ae2f1a0d800": {
+      "analyst_id": "quant",
+      "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
+      "worker_ts": "2026-03-05T15:45:24.080231+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_15-45-24_2442_tokens.txt",
+      "worker_prompt": "A=quant T=f98208273ffe4d4cb07f6ae2f1a0d800 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"ETH\",-0.443,\"s\",-1.756,0.617,29.9,-0.576,-2.1e-05,4321998348.9],[\"BTC\",-0.39,\"s\",-1.517,0.519,30.1,-0.411,1e-06,6216724811.75]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.517,\"r24\":-1.57,\"rsi\":30.1,\"eg\":-0.411},\"sent\":{\"sc\":-0.017,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":0.0,\"bias\":\"neutral\",\"confidence\":0.0,\"top\":[]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.3,\"reason\":\"news sentiment -0.017 and RSI 30.1 show caution\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.3,\"reason\":\"ETH r6 -1.756 and sentiment -0.443 confirm weakness\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.3,
+          "reason": "news sentiment -0.017 and RSI 30.1 show caution"
+        },
+        {
+          "action": "hold",
+          "symbol": "ETH",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.3,
+          "reason": "ETH r6 -1.756 and sentiment -0.443 confirm weakness"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|701b6424a7e44d97a246ab15ef492fac": {
+      "analyst_id": "quant",
+      "tick_id": "701b6424a7e44d97a246ab15ef492fac",
+      "worker_ts": "2026-03-05T16:30:13.900454+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_16-30-13_2494_tokens.txt",
+      "worker_prompt": "A=quant T=701b6424a7e44d97a246ab15ef492fac actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.389,\"s\",-1.493,0.82,29.0,-0.797,-0.000107,816232902.21],[\"BTC\",-0.344,\"s\",-1.118,0.579,28.7,-0.596,-8e-06,6129278592.36]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-1.118,\"r24\":-3.154,\"rsi\":28.7,\"eg\":-0.596},\"sent\":{\"sc\":-0.021,\"tr\":\"f\",\"nb\":\"n\"},\"n\":[[-0.021,\"shared_llm\",\"news=0.000 reddit=-0.047 combined=-0.021\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.021,\"bias\":\"neutral\",\"confidence\":0.49,\"top\":[{\"s\":-0.021,\"h\":\"news=0.000 reddit=-0.047 combined=-0.021\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0,\"leverage\":1,\"confidence\":0.53,\"reason\":\"Sentiment -0.021 vs neutral; wait for clearer signal.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0,
+          "leverage": 1,
+          "confidence": 0.53,
+          "reason": "Sentiment -0.021 vs neutral; wait for clearer signal."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|a299ac426ba14f62a633cfd23be41f57": {
+      "analyst_id": "quant",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "worker_ts": "2026-03-05T17:00:45.142127+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_17-00-45_2934_tokens.txt",
+      "worker_prompt": "A=quant T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"sentiment -0.07 and RSI 35.3 imply cautious stance\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"p\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|227f960b01304e1c9ba5f4e7910d8c89": {
+      "analyst_id": "quant",
+      "tick_id": "227f960b01304e1c9ba5f4e7910d8c89",
+      "worker_ts": "2026-03-05T17:45:15.301683+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_17-45-15_2460_tokens.txt",
+      "worker_prompt": "A=quant T=227f960b01304e1c9ba5f4e7910d8c89 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BTC\",-0.279,\"s\",-0.161,0.491,30.9,-0.636,-1.3e-05,6019497070.41],[\"ETH\",-0.237,\"s\",-0.236,0.6,33.3,-0.729,6e-06,4160188389.73]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.161,\"r24\":-2.79,\"rsi\":30.9,\"eg\":-0.636},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.45,\n      \"reason\": \"Sentiment -0.07 & RSI 30.9 suggest waiting.\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "Sentiment -0.07 & RSI 30.9 suggest waiting."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|df4f4f89347b4c73b7c13854193e971d": {
+      "analyst_id": "quant",
+      "tick_id": "df4f4f89347b4c73b7c13854193e971d",
+      "worker_ts": "2026-03-05T18:30:15.355597+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_18-30-15_2400_tokens.txt",
+      "worker_prompt": "A=quant T=df4f4f89347b4c73b7c13854193e971d actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"BNB\",-0.36,\"s\",-0.567,0.311,40.2,-0.345,0.0,322343334.93],[\"ETH\",-0.349,\"s\",-0.514,0.438,38.8,-0.704,1.2e-05,4134181944.84]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.497,\"r24\":-2.86,\"rsi\":34.0,\"eg\":-0.628},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"News score -0.07 and RSI 34 signal caution, so stay on hold.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.54,
+          "reason": "News score -0.07 and RSI 34 signal caution, so stay on hold."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|a7c64268fc9c43b1ac67118a20b8cfce": {
+      "analyst_id": "quant",
+      "tick_id": "a7c64268fc9c43b1ac67118a20b8cfce",
+      "worker_ts": "2026-03-05T19:00:39.439374+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_19-00-39_2191_tokens.txt",
+      "worker_prompt": "A=quant T=a7c64268fc9c43b1ac67118a20b8cfce actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.061,\"s\",0.548,0.354,41.9,-0.547,5.5e-05,78842255.52],[\"BTC\",-0.054,\"s\",0.216,0.267,41.3,-0.551,-8e-06,6017631181.41]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.216,\"r24\":-2.283,\"rsi\":41.3,\"eg\":-0.551},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.78,\"reason\":\"Combined news score -0.31 shows bearish bias, stay flat.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.78,
+          "reason": "Combined news score -0.31 shows bearish bias, stay flat."
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": null,
+      "arbiter_ts": null
+    },
+    "quant|c16602d4516e4e67a9d342cf4bb80883": {
+      "analyst_id": "quant",
+      "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+      "worker_ts": "2026-03-05T19:45:14.777774+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_19-45-14_2457_tokens.txt",
+      "worker_prompt": "A=quant T=c16602d4516e4e67a9d342cf4bb80883 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nprofil_analyste=# Agent Quant Experimental Role: - Experimental quant-style allocator with strict risk caps. Risk profile: - Medium risk tolerance - Dynamic allocation but bounded risk Time horizon: - Mixed (intra-day to multi-day) Capital rules: - Use adaptive sizing from signal quality - Keep exposure diversified across allowed assets - Respect hard limits before performance chasing Allowed assets: - BTC, ETH, SOL, LINK, AVAX, XRP, ADA, DOGE, BNB\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nShort autorise: action=short est permise sur symboles autorises quand signaux bearish nets.\nRespecte le profil de l'analyste (style risque/horizon) dans le choix long/short/hold.\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",0.07,\"l\",0.851,0.32,57.2,-0.468,-9e-06,818922598.16],[\"LINK\",0.067,\"l\",1.099,0.433,55.0,-0.323,8.6e-05,79006429.5]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"l\",\"r6\":0.279,\"r24\":-2.003,\"rsi\":50.4,\"eg\":-0.437},\"sent\":{\"sc\":-0.31,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.31,\"shared_llm\",\"news=-0.470 reddit=-0.090 combined=-0.310\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"]],\"ls\":{\"ns\":{\"score\":-0.31,\"bias\":\"bearish\",\"confidence\":0.78,\"top\":[{\"s\":-0.31,\"h\":\"news=-0.470 reddit=-0.090 combined=-0.310\"}]},\"jf\":{\"required\":1,\"retry\":0}}}",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.65,\"reason\":\"sentiment -0.31 bearish; cooldown guard until regime shift\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.65,
+          "reason": "sentiment -0.31 bearish; cooldown guard until regime shift"
+        }
+      ],
+      "arbiter_final_decision": null,
+      "arbiter_orders": [],
+      "arbiter_status": "executed",
+      "arbiter_ts": "2026-03-05T19:45:32.383590+00:00"
+    }
+  },
+  "arbiter_detail_index": {
+    "c16602d4516e4e67a9d342cf4bb80883": {
+      "ts": "2026-03-05T19:45:32.383590+00:00",
+      "tick_id": "c16602d4516e4e67a9d342cf4bb80883",
+      "status": "executed",
+      "model": "gpt-5.3-codex",
+      "reasoning_effort": "high",
+      "token_usage": 1697,
+      "prompt_path": "data\\tmp\\trade_arbiter\\prompts\\prompt_2026-03-05_19-45-24_c16602d4516e4e67a9d342cf4bb80883.md",
+      "log_path": "data\\logs\\trade_arbiter\\2026-03-05_19-45-24_c16602d4516e4e67a9d342cf4bb80883.txt",
+      "prompt": "trade_arbiter tick=c16602d4516e4e67a9d342cf4bb80883\nTu es l'arbitre final des ordres multi-analystes.\nObjectif: retenir uniquement les meilleurs trades (qualite > quantite).\nContexte execution: Hyperliquid (perpetual futures), pas de spot.\nLong/short autorises. Raisonne en position nette par symbole.\nInterdiction: aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nN'utilise que les donnees du payload.\nRetourne strictement du JSON valide, sans texte autour.\n{\"orders\":[{\"analyst_id\":\"aggressive\",\"portfolio_id\":\"analyst_aggressive\",\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}]}\nRegles: max_orders=8; hold=>allocation_pct=0/leverage=1; reason concise avec signal concret.\npayload={\"tick_id\":\"c16602d4516e4e67a9d342cf4bb80883\",\"generated_at\":\"2026-03-05T19:45:24.087052+00:00\",\"execution_env\":{\"exchange\":\"hyperliquid\",\"market_type\":\"perpetual_futures\",\"supports_long_short\":true,\"supports_spot\":false,\"position_mode\":\"net_per_symbol\",\"order_type_default\":\"market\"},\"candidates\":[{\"analyst_id\":\"aggressive\",\"portfolio_id\":\"analyst_aggressive\",\"action\":\"short\",\"symbol\":\"AVAX\",\"allocation_pct\":0.2,\"leverage\":2.0,\"confidence\":0.55,\"reason\":\"AVAX momentum -0.131 with market r24 -2.003 confirms downward pressure\",\"source\":\"worker_decision\"},{\"analyst_id\":\"aggressive\",\"portfolio_id\":\"analyst_aggressive\",\"action\":\"short\",\"symbol\":\"DOGE\",\"allocation_pct\":0.25,\"leverage\":2.8,\"confidence\":0.68,\"reason\":\"combined sentiment -0.31 plus DOGE momentum -0.372 signals bearish acceleration\",\"source\":\"codex_orders\"}]}",
+      "output": "{\"orders\":[{\"analyst_id\":\"aggressive\",\"portfolio_id\":\"analyst_aggressive\",\"action\":\"short\",\"symbol\":\"DOGE\",\"allocation_pct\":0.25,\"leverage\":2.8,\"confidence\":0.68,\"reason\":\"Momentum DOGE -0.372 et sentiment -0.31: acceleration baissiere\"}]}",
+      "orders": [
+        {
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "action": "short",
+          "symbol": "DOGE",
+          "allocation_pct": 0.25,
+          "leverage": 2.8,
+          "confidence": 0.68,
+          "reason": "Momentum DOGE -0.372 et sentiment -0.31: acceleration baissiere"
+        }
+      ]
+    }
+  }
 }

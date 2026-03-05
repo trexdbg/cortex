@@ -140,16 +140,16 @@
             <div class="focus" id="trade-focus" style="display:none;">
               <div id="trade-meta" class="grid" style="margin-bottom:10px;"></div>
               <div class="fgrid">
-                <div class="ftext"><h4>Decision Summary</h4><div class="body" id="trade-reason">-</div></div>
+                <div class="ftext"><h4>Prompt Worker</h4><div class="body" id="trade-reason">-</div></div>
                 <div class="ftext">
-                  <h4>Codex Explanation</h4>
+                  <h4>Prompt Arbitre</h4>
                   <div class="body" id="trade-codex">-</div>
                   <div class="muted" id="trade-codex-meta" style="margin-top:8px;font-size:.73rem;"></div>
                 </div>
               </div>
               <div id="trade-chart" class="chart"></div>
               <details>
-                <summary>Show raw Codex JSON payload</summary>
+                <summary>Show raw worker / arbitre payload</summary>
                 <pre id="trade-codex-json">No payload</pre>
               </details>
             </div>
@@ -165,14 +165,10 @@
           <table class="llm-journal-table">
             <thead>
               <tr>
-                <th>Heure</th>
+                <th>Date / Heure</th>
                 <th>Analyste</th>
-                <th>Tick</th>
-                <th>Decision</th>
-                <th>Reasons</th>
-                <th>Tokens</th>
-                <th>Reasoning</th>
-                <th>Resultat LLM (complet)</th>
+                <th>Output Worker</th>
+                <th>Decision Arbitre</th>
               </tr>
             </thead>
             <tbody id="llm-journal-body"></tbody>

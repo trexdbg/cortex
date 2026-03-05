@@ -71,6 +71,35 @@
       function rankById(rows, analystId) {
         return rows.find((r) => r.analyst_id === analystId) || null;
       }
+      function detailKey(analystId, tickId) {
+        return `${String(analystId || "").trim()}|${String(tickId || "").trim()}`;
+      }
+      function llmDetail(data, analystId, tickId) {
+        return data?.llm_detail_index?.[detailKey(analystId, tickId)] || null;
+      }
+      function arbiterDetail(data, tickId) {
+        return data?.arbiter_detail_index?.[String(tickId || "").trim()] || null;
+      }
+      function prettyJson(value, fallback = "-") {
+        if (value === undefined || value === null) return fallback;
+        if (typeof value === "string") {
+          const text = value.trim();
+          if (!text) return fallback;
+          try {
+            return JSON.stringify(JSON.parse(text), null, 2);
+          } catch {
+            return text;
+          }
+        }
+        if (typeof value === "object") {
+          try {
+            return JSON.stringify(value, null, 2);
+          } catch {
+            return fallback;
+          }
+        }
+        return String(value);
+      }
 
       function buildRankingRows(data) {
         const views = data.agent_views || [];
@@ -305,29 +334,25 @@
         body.innerHTML = "";
         const rows = (data.llm_call_journal || []).slice(0, 160);
         if (!rows.length) {
-          body.innerHTML = '<tr><td colspan="8" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
+          body.innerHTML = '<tr><td colspan="4" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
           return;
         }
         for (const row of rows) {
-          const action = String(row.decision_action || "-").toUpperCase();
-          const source = row.decision_source ? ` (${row.decision_source})` : "";
-          const reasons = Array.isArray(row.llm_gate_reasons) ? row.llm_gate_reasons.join(", ") : "-";
-          const tokens = formatTokenUsageLabel(
-            row.codex_token_usage ?? null,
-            row.codex_input_token_usage ?? null,
-            row.codex_output_token_usage ?? null
-          ) || "-";
-          const llmResult = formatLlmJournalResult(row);
+          const detail = llmDetail(data, row.analyst_id, row.tick_id);
+          const workerOutput = prettyJson(
+            detail?.worker_output ?? row.codex_response_payload ?? null,
+            "Aucun output worker"
+          );
+          const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
+          const arbiterDecision = arbiterOrders.length
+            ? prettyJson(arbiterOrders, "[]")
+            : "Aucune decision arbitre pour cet analyste sur ce tick";
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td>${fmtTs(row.ts)}</td>
             <td>${esc(row.analyst_id || "-")}</td>
-            <td class="mono">${esc(row.tick_id || "-")}</td>
-            <td>${esc(action + source)}</td>
-            <td>${esc(reasons)}</td>
-            <td>${esc(tokens)}</td>
-            <td>${esc(row.codex_reasoning_effort || "-")}</td>
-            <td><pre class="llm-result-pre">${esc(llmResult)}</pre></td>
+            <td><pre class="llm-result-pre">${esc(workerOutput)}</pre></td>
+            <td><pre class="llm-result-pre">${esc(arbiterDecision)}</pre></td>
           `;
           tr.addEventListener("click", () => {
             if (!row.analyst_id) return;
@@ -621,7 +646,7 @@
         return "";
       }
 
-      function renderTradeFocus(view, trade, byTick, marketHistory) {
+      function renderTradeFocus(data, view, trade, byTick, marketHistory) {
         const root = document.getElementById("trade-focus");
         const meta = document.getElementById("trade-meta");
         const reasonEl = document.getElementById("trade-reason");
@@ -648,6 +673,8 @@
         const tokensInput = drow?.codex?.input_token_usage ?? trade.codex_input_token_usage ?? null;
         const tokensOutput = drow?.codex?.output_token_usage ?? trade.codex_output_token_usage ?? null;
         const logPath = drow?.codex?.log_path || "";
+        const detail = llmDetail(data, view?.analyst_id, trade.tick_id);
+        const arbiter = arbiterDetail(data, trade.tick_id);
         const mark = num((view.portfolio?.positions || {})[symbol]?.mark_price);
         const pnl = px !== null && mark !== null ? (mark - px) * qty * (side === "BUY" ? 1 : -1) : null;
         const windowData = buildTradeWindowData(marketHistory, view.trades || [], symbol, toUnix(fill.executed_at || trade.ts));
@@ -669,15 +696,29 @@
         ];
         meta.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
 
-        const fallback = trade.decision_reason || decision.reason || "No decision reason";
-        reasonEl.textContent = cleanText(fallback);
-        codexEl.textContent = cleanText(codexExplanation(drow, trade, fallback));
+        const workerPrompt = detail?.worker_prompt || "Aucun prompt worker LLM pour ce tick";
+        const arbiterPrompt = arbiter?.prompt || "Aucun prompt arbitre pour ce tick";
+        const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
+        reasonEl.textContent = cleanText(workerPrompt);
+        codexEl.textContent = cleanText(arbiterPrompt);
         codexMeta.textContent = [
           formatTokenUsageLabel(tokens, tokensInput, tokensOutput),
+          detail?.worker_log_path ? `Worker log: ${detail.worker_log_path}` : "",
           windowData.source === "market_history" ? "Source chart: market_history" : "Source chart: trades",
-          logPath ? `Log: ${logPath}` : "",
+          logPath ? `Decision log: ${logPath}` : "",
+          arbiter?.log_path ? `Arbitre log: ${arbiter.log_path}` : "",
+          arbiterOrders.length ? `Decision arbitre: ${arbiterOrders.length}` : "Aucune decision arbitre",
         ].filter(Boolean).join(" | ");
-        codexJson.textContent = drow?.codex?.response_payload ? JSON.stringify(drow.codex.response_payload, null, 2) : "No payload";
+        codexJson.textContent = [
+          "=== worker_output ===",
+          prettyJson(detail?.worker_output ?? drow?.codex?.response_payload ?? null, "Aucun output worker"),
+          "",
+          "=== arbiter_decision ===",
+          prettyJson(arbiterOrders.length ? arbiterOrders : null, "Aucune decision arbitre"),
+          "",
+          "=== arbiter_output ===",
+          prettyJson(arbiter?.output || null, "Aucun output arbitre"),
+        ].join("\n");
         root.style.display = "block";
 
         if (!window.LightweightCharts) { chartEl.innerHTML = '<div class="empty">Chart library unavailable</div>'; return; }
@@ -726,14 +767,14 @@
         if (typeof candleSeries.setMarkers === "function") candleSeries.setMarkers(marks);
       }
 
-      function renderTrades(view, marketHistory) {
+      function renderTrades(data, view, marketHistory) {
         const body = document.getElementById("trades-body");
         body.innerHTML = "";
         const trades = (view.trades || []).slice(-TRADE_HISTORY_LIMIT).reverse();
         const byTick = new Map((view.decisions || []).map((r) => [r.tick_id, r]));
         if (!trades.length) {
           body.innerHTML = '<tr><td colspan="11" class="muted">No executed trade yet</td></tr>';
-          renderTradeFocus(view, null, byTick, marketHistory);
+          renderTradeFocus(data, view, null, byTick, marketHistory);
           return;
         }
         for (const trd of trades) {
@@ -755,7 +796,7 @@
         }
         const selected = trades.find((x) => tradeKey(x) === selectedTradeKey) || trades[0];
         if (selected && !selectedTradeKey) selectedTradeKey = tradeKey(selected);
-        renderTradeFocus(view, selected, byTick, marketHistory);
+        renderTradeFocus(data, view, selected, byTick, marketHistory);
       }
 
       function renderSelected(data, rows) {
@@ -777,7 +818,7 @@
         renderAllocation(p);
         renderPositions(p);
         renderEquity(view);
-        renderTrades(view, data.market_history || []);
+        renderTrades(data, view, data.market_history || []);
       }
 
       function renderAll() {
