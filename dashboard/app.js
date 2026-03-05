@@ -196,7 +196,7 @@
         body.innerHTML = "";
         const rows = (data.llm_call_journal || []).slice(0, 160);
         if (!rows.length) {
-          body.innerHTML = '<tr><td colspan="7" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
+          body.innerHTML = '<tr><td colspan="8" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
           return;
         }
         for (const row of rows) {
@@ -208,6 +208,13 @@
             row.codex_input_token_usage ?? null,
             row.codex_output_token_usage ?? null
           ) || "-";
+          let llmResult = "";
+          if (row.codex_response_payload && typeof row.codex_response_payload === "object") {
+            llmResult = JSON.stringify(row.codex_response_payload, null, 2);
+          }
+          if (!llmResult) {
+            llmResult = String(row.codex_explanation || row.decision_reason || "-");
+          }
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td>${fmtTs(row.ts)}</td>
@@ -217,6 +224,7 @@
             <td>${esc(reasons)}</td>
             <td>${esc(tokens)}</td>
             <td>${esc(row.codex_reasoning_effort || "-")}</td>
+            <td><pre class="llm-result-pre">${esc(llmResult)}</pre></td>
           `;
           tr.addEventListener("click", () => {
             if (!row.analyst_id) return;

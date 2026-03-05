@@ -71,26 +71,6 @@
                   </div>
                 </div>
               </div>
-
-              <div class="mini-card" style="margin-top:10px;">
-                <h4>Journal appels LLM (3 jours)</h4>
-                <div class="table table-llm">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Heure</th>
-                        <th>Analyste</th>
-                        <th>Tick</th>
-                        <th>Decision</th>
-                        <th>Reasons</th>
-                        <th>Tokens</th>
-                        <th>Reasoning</th>
-                      </tr>
-                    </thead>
-                    <tbody id="llm-journal-body"></tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -177,6 +157,29 @@
         </div>
       </section>
     </main>
+
+    <section class="panel llm-journal-panel">
+      <div class="head">Journal appels LLM (3 jours)</div>
+      <div class="inner">
+        <div class="table table-llm table-llm-full">
+          <table class="llm-journal-table">
+            <thead>
+              <tr>
+                <th>Heure</th>
+                <th>Analyste</th>
+                <th>Tick</th>
+                <th>Decision</th>
+                <th>Reasons</th>
+                <th>Tokens</th>
+                <th>Reasoning</th>
+                <th>Resultat LLM (complet)</th>
+              </tr>
+            </thead>
+            <tbody id="llm-journal-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
     <section class="panel glossary-panel">
       <div class="head">Glossaire rapide</div>
