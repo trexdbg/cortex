@@ -1,178 +1,178 @@
 {
-  "updated_at": "2026-03-05T16:45:07.993180+00:00",
+  "updated_at": "2026-03-05T17:00:45.702504+00:00",
   "snapshot": {
-    "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
-    "as_of": "2026-03-05T16:45:02.010771Z",
+    "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+    "as_of": "2026-03-05T17:00:02.101575Z",
     "market_data": [
       {
         "symbol": "BTC",
         "timeframe": "15m",
-        "price": 71371.3,
-        "price_change_24h_pct": -2.416,
-        "volume": 76247.46,
-        "funding_rate": -1.1e-05,
-        "open_interest": 6143125632.24,
-        "ta_ret6_pct": 0.13,
-        "ta_ret24_pct": -2.749,
-        "ta_vol12_pct": 0.61,
-        "ta_rsi14": 36.1,
-        "ta_ema_gap_pct": -0.55,
+        "price": 71292.88,
+        "price_change_24h_pct": -2.71,
+        "volume": 59246.19,
+        "funding_rate": -1.3e-05,
+        "open_interest": 6127354760.89,
+        "ta_ret6_pct": -0.23,
+        "ta_ret24_pct": -2.593,
+        "ta_vol12_pct": 0.601,
+        "ta_rsi14": 35.3,
+        "ta_ema_gap_pct": -0.556,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.011535Z"
+        "as_of": "2026-03-05T17:00:02.104297Z"
       },
       {
         "symbol": "ETH",
         "timeframe": "15m",
-        "price": 2080.26,
-        "price_change_24h_pct": -3.066,
-        "volume": 123293.93,
-        "funding_rate": -4e-06,
-        "open_interest": 4212560273.02,
-        "ta_ret6_pct": 0.308,
-        "ta_ret24_pct": -3.52,
-        "ta_vol12_pct": 0.727,
-        "ta_rsi14": 35.9,
-        "ta_ema_gap_pct": -0.693,
+        "price": 2080.04,
+        "price_change_24h_pct": -2.89,
+        "volume": 63284.37,
+        "funding_rate": -1e-06,
+        "open_interest": 4211781305.76,
+        "ta_ret6_pct": -0.05,
+        "ta_ret24_pct": -3.299,
+        "ta_vol12_pct": 0.719,
+        "ta_rsi14": 36.8,
+        "ta_ema_gap_pct": -0.678,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.011939Z"
+        "as_of": "2026-03-05T17:00:02.394360Z"
       },
       {
         "symbol": "SOL",
         "timeframe": "15m",
-        "price": 88.89,
-        "price_change_24h_pct": -2.918,
-        "volume": 37356.49,
-        "funding_rate": -0.000103,
-        "open_interest": 818223207.22,
-        "ta_ret6_pct": -0.202,
-        "ta_ret24_pct": -4.058,
-        "ta_vol12_pct": 0.845,
-        "ta_rsi14": 34.1,
-        "ta_ema_gap_pct": -0.763,
+        "price": 88.94,
+        "price_change_24h_pct": -2.808,
+        "volume": 34313.02,
+        "funding_rate": -9.9e-05,
+        "open_interest": 820643904.85,
+        "ta_ret6_pct": -0.537,
+        "ta_ret24_pct": -3.703,
+        "ta_vol12_pct": 0.841,
+        "ta_rsi14": 36.4,
+        "ta_ema_gap_pct": -0.75,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012230Z"
+        "as_of": "2026-03-05T17:00:02.445764Z"
       },
       {
         "symbol": "LINK",
         "timeframe": "15m",
         "price": 9.19,
-        "price_change_24h_pct": -2.957,
+        "price_change_24h_pct": -3.062,
         "volume": 0.0,
-        "funding_rate": -6.6e-05,
-        "open_interest": 79220279.55,
-        "ta_ret6_pct": -0.109,
-        "ta_ret24_pct": -2.648,
-        "ta_vol12_pct": 0.666,
-        "ta_rsi14": 32.3,
-        "ta_ema_gap_pct": -0.516,
+        "funding_rate": -5.6e-05,
+        "open_interest": 79140941.18,
+        "ta_ret6_pct": -0.541,
+        "ta_ret24_pct": -2.545,
+        "ta_vol12_pct": 0.658,
+        "ta_rsi14": 34.5,
+        "ta_ema_gap_pct": -0.523,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012433Z"
+        "as_of": "2026-03-05T17:00:02.445952Z"
       },
       {
         "symbol": "AVAX",
         "timeframe": "15m",
         "price": 9.38,
-        "price_change_24h_pct": -2.292,
-        "volume": 814.28,
-        "funding_rate": 3e-06,
-        "open_interest": 81292970.64,
-        "ta_ret6_pct": 0.214,
-        "ta_ret24_pct": -1.883,
-        "ta_vol12_pct": 0.531,
-        "ta_rsi14": 44.0,
-        "ta_ema_gap_pct": -0.271,
+        "price_change_24h_pct": -2.088,
+        "volume": 0.0,
+        "funding_rate": 2e-06,
+        "open_interest": 81306571.64,
+        "ta_ret6_pct": -0.425,
+        "ta_ret24_pct": -1.471,
+        "ta_vol12_pct": 0.525,
+        "ta_rsi14": 45.8,
+        "ta_ema_gap_pct": -0.267,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012627Z"
+        "as_of": "2026-03-05T17:00:02.446116Z"
       },
       {
         "symbol": "XRP",
         "timeframe": "15m",
-        "price": 1.4124,
-        "price_change_24h_pct": -2.694,
-        "volume": 9172.68,
-        "funding_rate": -1.2e-05,
-        "open_interest": 399835398.08,
-        "ta_ret6_pct": 0.042,
-        "ta_ret24_pct": -2.445,
-        "ta_vol12_pct": 0.666,
-        "ta_rsi14": 41.0,
-        "ta_ema_gap_pct": -0.401,
+        "price": 1.411,
+        "price_change_24h_pct": -2.649,
+        "volume": 12325.27,
+        "funding_rate": -3e-06,
+        "open_interest": 400211081.46,
+        "ta_ret6_pct": -0.311,
+        "ta_ret24_pct": -2.333,
+        "ta_vol12_pct": 0.662,
+        "ta_rsi14": 41.1,
+        "ta_ema_gap_pct": -0.406,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012679Z"
+        "as_of": "2026-03-05T17:00:02.446279Z"
       },
       {
         "symbol": "ADA",
         "timeframe": "15m",
-        "price": 0.2693,
-        "price_change_24h_pct": -3.959,
-        "volume": 0.0,
-        "funding_rate": -0.000118,
-        "open_interest": 79484343.65,
-        "ta_ret6_pct": -0.517,
-        "ta_ret24_pct": -2.674,
-        "ta_vol12_pct": 0.718,
-        "ta_rsi14": 34.0,
-        "ta_ema_gap_pct": -0.558,
+        "price": 0.2688,
+        "price_change_24h_pct": -4.17,
+        "volume": 284.13,
+        "funding_rate": -0.000114,
+        "open_interest": 79692792.61,
+        "ta_ret6_pct": -1.031,
+        "ta_ret24_pct": -2.679,
+        "ta_vol12_pct": 0.711,
+        "ta_rsi14": 35.2,
+        "ta_ema_gap_pct": -0.592,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012733Z"
+        "as_of": "2026-03-05T17:00:02.446935Z"
       },
       {
         "symbol": "DOGE",
         "timeframe": "15m",
         "price": 0.0939,
-        "price_change_24h_pct": -4.651,
-        "volume": 8253.35,
-        "funding_rate": -5.7e-05,
-        "open_interest": 177720047.68,
-        "ta_ret6_pct": -0.392,
-        "ta_ret24_pct": -3.88,
-        "ta_vol12_pct": 0.579,
-        "ta_rsi14": 35.1,
-        "ta_ema_gap_pct": -0.716,
+        "price_change_24h_pct": -5.78,
+        "volume": 1948.5,
+        "funding_rate": -4.9e-05,
+        "open_interest": 177199150.58,
+        "ta_ret6_pct": -0.371,
+        "ta_ret24_pct": -3.722,
+        "ta_vol12_pct": 0.57,
+        "ta_rsi14": 39.8,
+        "ta_ema_gap_pct": -0.7,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012786Z"
+        "as_of": "2026-03-05T17:00:02.447128Z"
       },
       {
         "symbol": "BNB",
         "timeframe": "15m",
-        "price": 652.44,
-        "price_change_24h_pct": -1.075,
-        "volume": 8040.21,
+        "price": 652.57,
+        "price_change_24h_pct": -1.058,
+        "volume": 4933.44,
         "funding_rate": 0.0,
-        "open_interest": 326412084.86,
-        "ta_ret6_pct": 0.372,
-        "ta_ret24_pct": -1.734,
+        "open_interest": 326489430.6,
+        "ta_ret6_pct": 0.195,
+        "ta_ret24_pct": -1.48,
         "ta_vol12_pct": 0.428,
-        "ta_rsi14": 42.1,
-        "ta_ema_gap_pct": -0.241,
+        "ta_rsi14": 43.3,
+        "ta_ema_gap_pct": -0.223,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012839Z"
+        "as_of": "2026-03-05T17:00:02.447295Z"
       },
       {
         "symbol": "OP",
         "timeframe": "15m",
-        "price": 0.1255,
-        "price_change_24h_pct": -3.238,
+        "price": 0.1253,
+        "price_change_24h_pct": -3.392,
         "volume": 0.0,
-        "funding_rate": -0.000162,
-        "open_interest": 17805959.28,
-        "ta_ret6_pct": -1.259,
-        "ta_ret24_pct": -3.462,
-        "ta_vol12_pct": 0.807,
-        "ta_rsi14": 39.0,
-        "ta_ema_gap_pct": -0.6,
+        "funding_rate": -0.000158,
+        "open_interest": 17790439.56,
+        "ta_ret6_pct": -1.879,
+        "ta_ret24_pct": -3.168,
+        "ta_vol12_pct": 0.782,
+        "ta_rsi14": 39.8,
+        "ta_ema_gap_pct": -0.651,
         "ta_trend": "down",
         "ta_candles_count": 1000,
-        "as_of": "2026-03-05T16:45:02.012890Z"
+        "as_of": "2026-03-05T17:00:02.447459Z"
       }
     ],
     "orderbooks": [
@@ -180,491 +180,491 @@
         "symbol": "BTC",
         "bids": [
           {
-            "price": 71371.29,
-            "size": 0.56391
+            "price": 71312.19,
+            "size": 0.59415
           },
           {
-            "price": 71371.28,
-            "size": 0.00204
+            "price": 71312.18,
+            "size": 0.00197
           },
           {
-            "price": 71371.08,
+            "price": 71312.17,
             "size": 0.00016
           },
           {
-            "price": 71370.88,
+            "price": 71312.16,
             "size": 0.00016
           },
           {
-            "price": 71370.15,
+            "price": 71311.93,
             "size": 8e-05
           }
         ],
         "asks": [
           {
-            "price": 71371.3,
-            "size": 1.11294
+            "price": 71312.2,
+            "size": 2.86449
           },
           {
-            "price": 71371.31,
-            "size": 0.0005
+            "price": 71312.21,
+            "size": 0.13717
           },
           {
-            "price": 71371.65,
-            "size": 0.00016
+            "price": 71312.71,
+            "size": 0.00026
           },
           {
-            "price": 71371.73,
+            "price": 71312.8,
             "size": 8e-05
           },
           {
-            "price": 71372.0,
-            "size": 0.00106
+            "price": 71313.07,
+            "size": 0.00016
           }
         ],
         "spread_bps": 0.0014,
-        "as_of": "2026-03-05T16:45:02.011656Z"
+        "as_of": "2026-03-05T17:00:02.205433Z"
       },
       {
         "symbol": "ETH",
         "bids": [
           {
-            "price": 2080.25,
-            "size": 7.264
+            "price": 2080.32,
+            "size": 1.4812
           },
           {
-            "price": 2080.24,
-            "size": 0.1282
+            "price": 2080.31,
+            "size": 0.0825
           },
           {
-            "price": 2080.23,
-            "size": 0.0101
-          },
-          {
-            "price": 2080.22,
-            "size": 0.3793
-          },
-          {
-            "price": 2080.21,
-            "size": 0.0025
-          }
-        ],
-        "asks": [
-          {
-            "price": 2080.26,
-            "size": 5.724
-          },
-          {
-            "price": 2080.27,
-            "size": 0.015
-          },
-          {
-            "price": 2080.28,
+            "price": 2080.3,
             "size": 0.0076
           },
           {
             "price": 2080.29,
-            "size": 2.0564
+            "size": 0.3793
           },
           {
-            "price": 2080.3,
+            "price": 2080.28,
+            "size": 0.005
+          }
+        ],
+        "asks": [
+          {
+            "price": 2080.33,
+            "size": 29.7994
+          },
+          {
+            "price": 2080.35,
+            "size": 0.7621
+          },
+          {
+            "price": 2080.36,
+            "size": 0.7271
+          },
+          {
+            "price": 2080.37,
+            "size": 0.5841
+          },
+          {
+            "price": 2080.38,
             "size": 0.005
           }
         ],
         "spread_bps": 0.0481,
-        "as_of": "2026-03-05T16:45:02.011986Z"
+        "as_of": "2026-03-05T17:00:02.413757Z"
       },
       {
         "symbol": "SOL",
         "bids": [
           {
-            "price": 88.84,
-            "size": 61.374
+            "price": 88.92,
+            "size": 6.87
           },
           {
-            "price": 88.83,
-            "size": 780.82
+            "price": 88.91,
+            "size": 353.794
           },
           {
-            "price": 88.82,
-            "size": 2525.452
+            "price": 88.9,
+            "size": 589.802
           },
           {
-            "price": 88.81,
-            "size": 129.067
+            "price": 88.89,
+            "size": 676.59
           },
           {
-            "price": 88.8,
-            "size": 186.89
+            "price": 88.88,
+            "size": 1481.836
           }
         ],
         "asks": [
           {
-            "price": 88.85,
-            "size": 891.454
+            "price": 88.93,
+            "size": 778.363
           },
           {
-            "price": 88.86,
-            "size": 591.749
+            "price": 88.94,
+            "size": 879.105
           },
           {
-            "price": 88.87,
-            "size": 941.054
+            "price": 88.95,
+            "size": 539.397
           },
           {
-            "price": 88.88,
-            "size": 887.213
+            "price": 88.96,
+            "size": 569.167
           },
           {
-            "price": 88.89,
-            "size": 854.318
+            "price": 88.97,
+            "size": 580.554
           }
         ],
-        "spread_bps": 1.1256,
-        "as_of": "2026-03-05T16:45:02.012280Z"
+        "spread_bps": 1.1245,
+        "as_of": "2026-03-05T17:00:02.445819Z"
       },
       {
         "symbol": "LINK",
         "bids": [
           {
-            "price": 9.19,
-            "size": 1888.63
-          },
-          {
             "price": 9.18,
-            "size": 18634.18
+            "size": 2542.87
           },
           {
             "price": 9.17,
-            "size": 31955.47
+            "size": 11280.39
           },
           {
             "price": 9.16,
-            "size": 18675.63
+            "size": 15352.65
           },
           {
             "price": 9.15,
-            "size": 22081.38
+            "size": 12599.44
+          },
+          {
+            "price": 9.14,
+            "size": 7202.18
           }
         ],
         "asks": [
           {
+            "price": 9.19,
+            "size": 5891.09
+          },
+          {
             "price": 9.2,
-            "size": 8656.91
+            "size": 14580.67
           },
           {
             "price": 9.21,
-            "size": 12605.84
+            "size": 12846.81
           },
           {
             "price": 9.22,
-            "size": 10917.11
+            "size": 15801.29
           },
           {
             "price": 9.23,
-            "size": 26691.6
-          },
-          {
-            "price": 9.24,
-            "size": 12346.04
+            "size": 12219.77
           }
         ],
-        "spread_bps": 10.8755,
-        "as_of": "2026-03-05T16:45:02.012480Z"
+        "spread_bps": 10.8873,
+        "as_of": "2026-03-05T17:00:02.445994Z"
       },
       {
         "symbol": "AVAX",
         "bids": [
           {
-            "price": 9.38,
-            "size": 2410.08
-          },
-          {
             "price": 9.37,
-            "size": 7499.81
+            "size": 2431.0
           },
           {
             "price": 9.36,
-            "size": 8508.28
+            "size": 7774.52
           },
           {
             "price": 9.35,
-            "size": 17780.48
+            "size": 7297.15
           },
           {
             "price": 9.34,
-            "size": 17177.53
+            "size": 22411.12
+          },
+          {
+            "price": 9.33,
+            "size": 3504.55
           }
         ],
         "asks": [
           {
+            "price": 9.38,
+            "size": 2345.36
+          },
+          {
             "price": 9.39,
-            "size": 3651.32
+            "size": 8326.85
           },
           {
             "price": 9.4,
-            "size": 7845.49
+            "size": 10855.17
           },
           {
             "price": 9.41,
-            "size": 10473.36
+            "size": 18557.66
           },
           {
             "price": 9.42,
-            "size": 25003.16
-          },
-          {
-            "price": 9.43,
-            "size": 22120.84
+            "size": 15516.01
           }
         ],
-        "spread_bps": 10.6553,
-        "as_of": "2026-03-05T16:45:02.012639Z"
+        "spread_bps": 10.6667,
+        "as_of": "2026-03-05T17:00:02.446157Z"
       },
       {
         "symbol": "XRP",
         "bids": [
           {
-            "price": 1.4124,
-            "size": 13899.7
+            "price": 1.4111,
+            "size": 37534.2
           },
           {
-            "price": 1.4123,
-            "size": 21671.3
+            "price": 1.411,
+            "size": 86604.7
           },
           {
-            "price": 1.4122,
-            "size": 28373.2
+            "price": 1.4109,
+            "size": 2161.6
           },
           {
-            "price": 1.4121,
-            "size": 37411.7
+            "price": 1.4108,
+            "size": 11651.9
           },
           {
-            "price": 1.412,
-            "size": 56899.5
+            "price": 1.4107,
+            "size": 35086.1
           }
         ],
         "asks": [
           {
-            "price": 1.4125,
-            "size": 3162.0
+            "price": 1.4112,
+            "size": 777.1
           },
           {
-            "price": 1.4126,
-            "size": 2034.6
+            "price": 1.4113,
+            "size": 35.5
           },
           {
-            "price": 1.4127,
-            "size": 7819.9
+            "price": 1.4114,
+            "size": 2122.1
           },
           {
-            "price": 1.4128,
-            "size": 6447.2
+            "price": 1.4115,
+            "size": 19690.3
           },
           {
-            "price": 1.4129,
-            "size": 8686.2
+            "price": 1.4116,
+            "size": 28224.0
           }
         ],
-        "spread_bps": 0.708,
-        "as_of": "2026-03-05T16:45:02.012691Z"
+        "spread_bps": 0.7086,
+        "as_of": "2026-03-05T17:00:02.446317Z"
       },
       {
         "symbol": "ADA",
         "bids": [
           {
-            "price": 0.2692,
-            "size": 43948.4
-          },
-          {
-            "price": 0.2691,
-            "size": 113051.3
-          },
-          {
-            "price": 0.269,
-            "size": 139448.4
-          },
-          {
-            "price": 0.2689,
-            "size": 156113.9
-          },
-          {
             "price": 0.2688,
-            "size": 167005.5
+            "size": 10893.2
+          },
+          {
+            "price": 0.2687,
+            "size": 99224.4
+          },
+          {
+            "price": 0.2686,
+            "size": 434430.1
+          },
+          {
+            "price": 0.2685,
+            "size": 118922.2
+          },
+          {
+            "price": 0.2684,
+            "size": 58520.4
           }
         ],
         "asks": [
           {
+            "price": 0.2689,
+            "size": 84419.3
+          },
+          {
+            "price": 0.269,
+            "size": 97803.7
+          },
+          {
+            "price": 0.2691,
+            "size": 84570.7
+          },
+          {
+            "price": 0.2692,
+            "size": 175143.4
+          },
+          {
             "price": 0.2693,
-            "size": 17751.8
-          },
-          {
-            "price": 0.2694,
-            "size": 124266.4
-          },
-          {
-            "price": 0.2695,
-            "size": 257166.5
-          },
-          {
-            "price": 0.2696,
-            "size": 182529.1
-          },
-          {
-            "price": 0.2697,
-            "size": 290686.8
+            "size": 262508.6
           }
         ],
-        "spread_bps": 3.714,
-        "as_of": "2026-03-05T16:45:02.012746Z"
+        "spread_bps": 3.7195,
+        "as_of": "2026-03-05T17:00:02.446990Z"
       },
       {
         "symbol": "DOGE",
         "bids": [
           {
             "price": 0.0939,
-            "size": 93153.0
+            "size": 255676.0
           },
           {
             "price": 0.0939,
-            "size": 212167.0
+            "size": 255165.0
           },
           {
             "price": 0.0939,
-            "size": 691394.0
+            "size": 652967.0
           },
           {
             "price": 0.0939,
-            "size": 648445.0
+            "size": 500593.0
           },
           {
             "price": 0.0939,
-            "size": 563908.0
+            "size": 655395.0
           }
         ],
         "asks": [
           {
             "price": 0.0939,
-            "size": 230.0
+            "size": 52560.0
           },
           {
             "price": 0.0939,
-            "size": 33030.0
+            "size": 284.0
           },
           {
             "price": 0.0939,
-            "size": 227733.0
+            "size": 93148.0
           },
           {
             "price": 0.0939,
-            "size": 541856.0
+            "size": 226612.0
           },
           {
-            "price": 0.094,
-            "size": 188154.0
+            "price": 0.0939,
+            "size": 626713.0
           }
         ],
         "spread_bps": 0.0,
-        "as_of": "2026-03-05T16:45:02.012799Z"
+        "as_of": "2026-03-05T17:00:02.447164Z"
       },
       {
         "symbol": "BNB",
         "bids": [
           {
-            "price": 652.44,
-            "size": 5.161
+            "price": 652.56,
+            "size": 2.574
           },
           {
-            "price": 652.43,
-            "size": 0.928
+            "price": 652.55,
+            "size": 0.017
           },
           {
-            "price": 652.42,
-            "size": 0.928
+            "price": 652.54,
+            "size": 0.112
           },
           {
-            "price": 652.41,
+            "price": 652.53,
+            "size": 0.009
+          },
+          {
+            "price": 652.52,
             "size": 0.018
-          },
-          {
-            "price": 652.4,
-            "size": 0.027
           }
         ],
         "asks": [
           {
-            "price": 652.45,
-            "size": 20.575
+            "price": 652.57,
+            "size": 22.903
           },
           {
-            "price": 652.46,
-            "size": 1.662
+            "price": 652.58,
+            "size": 7.771
           },
           {
-            "price": 652.47,
-            "size": 9.211
+            "price": 652.59,
+            "size": 3.814
           },
           {
-            "price": 652.48,
-            "size": 4.09
+            "price": 652.6,
+            "size": 2.321
           },
           {
-            "price": 652.49,
-            "size": 0.018
+            "price": 652.61,
+            "size": 4.902
           }
         ],
-        "spread_bps": 0.1533,
-        "as_of": "2026-03-05T16:45:02.012852Z"
+        "spread_bps": 0.1532,
+        "as_of": "2026-03-05T17:00:02.447333Z"
       },
       {
         "symbol": "OP",
         "bids": [
           {
-            "price": 0.1255,
-            "size": 13536.32
-          },
-          {
-            "price": 0.1254,
-            "size": 54934.49
-          },
-          {
-            "price": 0.1253,
-            "size": 121226.09
-          },
-          {
             "price": 0.1252,
-            "size": 80734.25
+            "size": 15547.55
           },
           {
             "price": 0.1251,
-            "size": 92001.13
+            "size": 78610.24
+          },
+          {
+            "price": 0.125,
+            "size": 74646.7
+          },
+          {
+            "price": 0.1249,
+            "size": 118170.4
+          },
+          {
+            "price": 0.1248,
+            "size": 33266.45
           }
         ],
         "asks": [
           {
+            "price": 0.1253,
+            "size": 17648.14
+          },
+          {
+            "price": 0.1254,
+            "size": 58609.46
+          },
+          {
+            "price": 0.1255,
+            "size": 99132.63
+          },
+          {
             "price": 0.1256,
-            "size": 29627.08
+            "size": 50366.32
           },
           {
             "price": 0.1257,
-            "size": 72944.23
-          },
-          {
-            "price": 0.1258,
-            "size": 96497.75
-          },
-          {
-            "price": 0.1259,
-            "size": 98921.86
-          },
-          {
-            "price": 0.126,
-            "size": 28614.94
+            "size": 49148.75
           }
         ],
-        "spread_bps": 7.965,
-        "as_of": "2026-03-05T16:45:02.012902Z"
+        "spread_bps": 7.984,
+        "as_of": "2026-03-05T17:00:02.447494Z"
       }
     ],
     "liquidations": [
@@ -672,33 +672,33 @@
         "symbol": "BTC",
         "window": "1h",
         "long_liq_usd": 0.0,
-        "short_liq_usd": 1052215.59,
-        "total_liq_usd": 1052215.59,
-        "as_of": "2026-03-05T16:45:02.011742Z"
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.317595Z"
       },
       {
         "symbol": "ETH",
         "window": "1h",
-        "long_liq_usd": 15462.94,
-        "short_liq_usd": 21368.49,
-        "total_liq_usd": 36831.43,
-        "as_of": "2026-03-05T16:45:02.012040Z"
+        "long_liq_usd": 0.0,
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.418834Z"
       },
       {
         "symbol": "SOL",
         "window": "1h",
-        "long_liq_usd": 1627.69,
-        "short_liq_usd": 3893.3,
-        "total_liq_usd": 5520.99,
-        "as_of": "2026-03-05T16:45:02.012333Z"
+        "long_liq_usd": 0.0,
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.445862Z"
       },
       {
         "symbol": "LINK",
         "window": "1h",
         "long_liq_usd": 0.0,
-        "short_liq_usd": 365.97,
-        "total_liq_usd": 365.97,
-        "as_of": "2026-03-05T16:45:02.012527Z"
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.446031Z"
       },
       {
         "symbol": "AVAX",
@@ -706,15 +706,15 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T16:45:02.012651Z"
+        "as_of": "2026-03-05T17:00:02.446197Z"
       },
       {
         "symbol": "XRP",
         "window": "1h",
         "long_liq_usd": 0.0,
-        "short_liq_usd": 7149.23,
-        "total_liq_usd": 7149.23,
-        "as_of": "2026-03-05T16:45:02.012703Z"
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.446354Z"
       },
       {
         "symbol": "ADA",
@@ -722,15 +722,15 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T16:45:02.012759Z"
+        "as_of": "2026-03-05T17:00:02.447038Z"
       },
       {
         "symbol": "DOGE",
         "window": "1h",
         "long_liq_usd": 0.0,
-        "short_liq_usd": 9566.66,
-        "total_liq_usd": 9566.66,
-        "as_of": "2026-03-05T16:45:02.012812Z"
+        "short_liq_usd": 0.0,
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T17:00:02.447211Z"
       },
       {
         "symbol": "BNB",
@@ -738,7 +738,7 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T16:45:02.012865Z"
+        "as_of": "2026-03-05T17:00:02.447375Z"
       },
       {
         "symbol": "OP",
@@ -746,10 +746,24 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T16:45:02.012916Z"
+        "as_of": "2026-03-05T17:00:02.447532Z"
       }
     ],
     "news": [
+      {
+        "source": "cointelegraph.com",
+        "headline": "SoFi taps BitGo to provide infrastructure for bank-issued stablecoin",
+        "sentiment": -1.0,
+        "url": "https://cointelegraph.com/news/sofi-bitgo-bank-issued-stablecoin-sofiusd?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-03-05T16:42:24Z"
+      },
+      {
+        "source": "www.coindesk.com",
+        "headline": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
+        "sentiment": 0.0,
+        "url": "https://www.coindesk.com/business/2026/03/05/sanctions-evasions-using-crypto-increased-by-700-in-2025-chainalysis",
+        "published_at": "2026-03-05T16:52:09Z"
+      },
       {
         "source": "cointelegraph.com",
         "headline": "FBI arrests custody company CEO\u2018s son over alleged $46M crypto theft",
@@ -759,10 +773,10 @@
       },
       {
         "source": "www.coindesk.com",
-        "headline": "Crypto for Advisors: Tokenization offers always-on global investment access",
+        "headline": "CleanSpark sold 97% of February bitcoin production to fund AI pivot",
         "sentiment": 0.0,
-        "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/crypto-for-advisors-tokenization-offers-always-on-global-investment-access",
-        "published_at": "2026-03-05T16:00:00Z"
+        "url": "https://www.coindesk.com/markets/2026/03/05/cleanspark-sold-97-of-february-bitcoin-production-to-fund-ai-pivot",
+        "published_at": "2026-03-05T16:47:44Z"
       },
       {
         "source": "cointelegraph.com",
@@ -773,10 +787,10 @@
       },
       {
         "source": "www.coindesk.com",
-        "headline": "Bitcoin pulls back to near $71,000 even as software sector soars",
+        "headline": "Crypto for Advisors: Tokenization offers always-on global investment access",
         "sentiment": 0.0,
-        "url": "https://www.coindesk.com/markets/2026/03/05/bitcoin-pulls-back-to-usd71-000-even-as-software-sector-soars",
-        "published_at": "2026-03-05T15:57:23Z"
+        "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/crypto-for-advisors-tokenization-offers-always-on-global-investment-access",
+        "published_at": "2026-03-05T16:00:00Z"
       },
       {
         "source": "cointelegraph.com",
@@ -787,10 +801,10 @@
       },
       {
         "source": "www.coindesk.com",
-        "headline": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
-        "sentiment": -1.0,
-        "url": "https://www.coindesk.com/coindesk-indices/2026/03/05/coindesk-20-performance-update-stellar-xlm-drops-3-5-as-nearly-all-assets-decline",
-        "published_at": "2026-03-05T14:13:31Z"
+        "headline": "Bitcoin pulls back to near $71,000 even as software sector soars",
+        "sentiment": 0.0,
+        "url": "https://www.coindesk.com/markets/2026/03/05/bitcoin-pulls-back-to-usd71-000-even-as-software-sector-soars",
+        "published_at": "2026-03-05T15:57:23Z"
       },
       {
         "source": "cointelegraph.com",
@@ -801,82 +815,82 @@
       },
       {
         "source": "www.coindesk.com",
-        "headline": "Core Scientific secures up to $1 billion loan facility from Morgan Stanley",
-        "sentiment": 0.0,
-        "url": "https://www.coindesk.com/markets/2026/03/05/core-scientific-secures-up-to-usd1-billion-loan-facility-from-morgan-stanley",
-        "published_at": "2026-03-05T13:52:37Z"
+        "headline": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
+        "sentiment": -1.0,
+        "url": "https://www.coindesk.com/coindesk-indices/2026/03/05/coindesk-20-performance-update-stellar-xlm-drops-3-5-as-nearly-all-assets-decline",
+        "published_at": "2026-03-05T14:13:31Z"
       }
     ],
     "social_sentiment": [
       {
         "symbol": "BTC",
         "platform": "reddit",
-        "score": -0.133,
+        "score": -0.12,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.011819Z"
+        "as_of": "2026-03-05T17:00:02.364157Z"
       },
       {
         "symbol": "ETH",
         "platform": "reddit",
         "score": -0.1,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012094Z"
+        "as_of": "2026-03-05T17:00:02.426728Z"
       },
       {
         "symbol": "SOL",
         "platform": "reddit",
         "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012386Z"
+        "as_of": "2026-03-05T17:00:02.445913Z"
       },
       {
         "symbol": "LINK",
         "platform": "reddit",
-        "score": -0.02,
+        "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012581Z"
+        "as_of": "2026-03-05T17:00:02.446075Z"
       },
       {
         "symbol": "AVAX",
         "platform": "reddit",
         "score": 0.0,
         "mentions": 4,
-        "as_of": "2026-03-05T16:45:02.012666Z"
+        "as_of": "2026-03-05T17:00:02.446243Z"
       },
       {
         "symbol": "XRP",
         "platform": "reddit",
         "score": 0.0,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012717Z"
+        "as_of": "2026-03-05T17:00:02.446410Z"
       },
       {
         "symbol": "ADA",
         "platform": "reddit",
         "score": -0.06,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012773Z"
+        "as_of": "2026-03-05T17:00:02.447087Z"
       },
       {
         "symbol": "DOGE",
         "platform": "reddit",
         "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012826Z"
+        "as_of": "2026-03-05T17:00:02.447251Z"
       },
       {
         "symbol": "BNB",
         "platform": "reddit",
         "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012878Z"
+        "as_of": "2026-03-05T17:00:02.447419Z"
       },
       {
         "symbol": "OP",
         "platform": "reddit",
-        "score": -0.14,
+        "score": -0.12,
         "mentions": 50,
-        "as_of": "2026-03-05T16:45:02.012930Z"
+        "as_of": "2026-03-05T17:00:02.447575Z"
       }
     ],
     "onchain_metrics": [
@@ -885,14 +899,14 @@
         "active_addresses": 697294,
         "exchange_netflow": -2372253739.96,
         "mvrv": 1.33246,
-        "as_of": "2026-03-05T16:45:02.011880Z"
+        "as_of": "2026-03-05T17:00:02.394285Z"
       },
       {
         "symbol": "ETH",
         "active_addresses": 909701,
         "exchange_netflow": 62029077.4,
         "mvrv": 0.960529,
-        "as_of": "2026-03-05T16:45:02.012171Z"
+        "as_of": "2026-03-05T17:00:02.445688Z"
       }
     ],
     "macro_indicators": [
@@ -901,41 +915,42 @@
         "dxy": 117.822,
         "us10y": 4.06,
         "spx_fut": 6869.5,
-        "as_of": "2026-03-05T16:45:02.013038Z"
+        "as_of": "2026-03-05T17:00:02.448271Z"
       }
     ],
     "llm_sentiment": {
-      "updated_at": "2026-03-05T17:06:07.607555+01:00",
+      "updated_at": "2026-03-05T18:00:10.357288+01:00",
       "slot_key": "2026-03-05@13",
-      "source": "cache",
+      "source": "llm",
       "model": "gpt-5.3-codex",
       "reasoning_effort": "high",
-      "token_usage": null,
+      "token_usage": 2590,
       "error": "",
       "news": {
-        "score": 0.0,
-        "bias": "neutral",
-        "confidence": 0.95,
-        "count": 8,
-        "summary": "news_avg=0.000 count=8"
+        "score": -0.1,
+        "bias": "bearish",
+        "confidence": 0.42,
+        "count": 10,
+        "summary": "Flux d\u2019actualites globalement mitige mais legerement negatif: hausse des cas d\u2019evasion de sanctions, arrestation liee a un vol crypto et recul de plusieurs actifs, malgre quelqu..."
       },
       "reddit": {
-        "score": -0.047,
-        "bias": "neutral",
-        "confidence": 0.62,
-        "count": 100,
-        "summary": "reddit_avg=-0.047 mentions=100"
+        "score": -0.06,
+        "bias": "bearish",
+        "confidence": 0.68,
+        "count": 454,
+        "summary": "Sentiment Reddit legerement negatif et assez coherent sur les majors: BTC, ETH, OP, ADA, SOL et DOGE en territoire negatif; seule BNB ressort legerement positive, XRP/AVAX neutres."
       },
       "combined": {
-        "score": -0.021,
-        "bias": "neutral",
-        "confidence": 0.77,
-        "summary": "combined=-0.021 from news+reddit"
+        "score": -0.07,
+        "bias": "bearish",
+        "confidence": 0.61,
+        "summary": "Sentiment crypto global legerement bearish sur ce slot: la tonalite sociale negative moderee confirme un flux news plutot risque-off, sans signal de panique mais avec biais prud...",
+        "count": 0
       },
       "meta": {
         "skills_used": {
-          "news_sentiment": 0,
-          "reddit_sentiment": 0
+          "news_sentiment": 1,
+          "reddit_sentiment": 1
         }
       },
       "next_slot_local": "2026-03-05T20:00:00+01:00"
@@ -951,19 +966,19 @@
         "output": {
           "symbol": "BTC",
           "timeframe": "15m",
-          "price": 71371.3,
-          "price_change_24h_pct": -2.416,
-          "volume": 76247.46,
-          "funding_rate": -1.1e-05,
-          "open_interest": 6143125632.24,
-          "ta_ret6_pct": 0.13,
-          "ta_ret24_pct": -2.749,
-          "ta_vol12_pct": 0.61,
-          "ta_rsi14": 36.1,
-          "ta_ema_gap_pct": -0.55,
+          "price": 71292.88,
+          "price_change_24h_pct": -2.71,
+          "volume": 59246.19,
+          "funding_rate": -1.3e-05,
+          "open_interest": 6127354760.89,
+          "ta_ret6_pct": -0.23,
+          "ta_ret24_pct": -2.593,
+          "ta_vol12_pct": 0.601,
+          "ta_rsi14": 35.3,
+          "ta_ema_gap_pct": -0.556,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.011535Z"
+          "as_of": "2026-03-05T17:00:02.104297Z"
         }
       },
       {
@@ -975,50 +990,50 @@
           "symbol": "BTC",
           "bids": [
             {
-              "price": 71371.29,
-              "size": 0.56391
+              "price": 71312.19,
+              "size": 0.59415
             },
             {
-              "price": 71371.28,
-              "size": 0.00204
+              "price": 71312.18,
+              "size": 0.00197
             },
             {
-              "price": 71371.08,
+              "price": 71312.17,
               "size": 0.00016
             },
             {
-              "price": 71370.88,
+              "price": 71312.16,
               "size": 0.00016
             },
             {
-              "price": 71370.15,
+              "price": 71311.93,
               "size": 8e-05
             }
           ],
           "asks": [
             {
-              "price": 71371.3,
-              "size": 1.11294
+              "price": 71312.2,
+              "size": 2.86449
             },
             {
-              "price": 71371.31,
-              "size": 0.0005
+              "price": 71312.21,
+              "size": 0.13717
             },
             {
-              "price": 71371.65,
-              "size": 0.00016
+              "price": 71312.71,
+              "size": 0.00026
             },
             {
-              "price": 71371.73,
+              "price": 71312.8,
               "size": 8e-05
             },
             {
-              "price": 71372.0,
-              "size": 0.00106
+              "price": 71313.07,
+              "size": 0.00016
             }
           ],
           "spread_bps": 0.0014,
-          "as_of": "2026-03-05T16:45:02.011656Z"
+          "as_of": "2026-03-05T17:00:02.205433Z"
         }
       },
       {
@@ -1031,9 +1046,9 @@
           "symbol": "BTC",
           "window": "1h",
           "long_liq_usd": 0.0,
-          "short_liq_usd": 1052215.59,
-          "total_liq_usd": 1052215.59,
-          "as_of": "2026-03-05T16:45:02.011742Z"
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.317595Z"
         }
       },
       {
@@ -1044,9 +1059,9 @@
         "output": {
           "symbol": "BTC",
           "platform": "reddit",
-          "score": -0.133,
+          "score": -0.12,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.011819Z"
+          "as_of": "2026-03-05T17:00:02.364157Z"
         }
       },
       {
@@ -1059,7 +1074,7 @@
           "active_addresses": 697294,
           "exchange_netflow": -2372253739.96,
           "mvrv": 1.33246,
-          "as_of": "2026-03-05T16:45:02.011880Z"
+          "as_of": "2026-03-05T17:00:02.394285Z"
         }
       },
       {
@@ -1071,19 +1086,19 @@
         "output": {
           "symbol": "ETH",
           "timeframe": "15m",
-          "price": 2080.26,
-          "price_change_24h_pct": -3.066,
-          "volume": 123293.93,
-          "funding_rate": -4e-06,
-          "open_interest": 4212560273.02,
-          "ta_ret6_pct": 0.308,
-          "ta_ret24_pct": -3.52,
-          "ta_vol12_pct": 0.727,
-          "ta_rsi14": 35.9,
-          "ta_ema_gap_pct": -0.693,
+          "price": 2080.04,
+          "price_change_24h_pct": -2.89,
+          "volume": 63284.37,
+          "funding_rate": -1e-06,
+          "open_interest": 4211781305.76,
+          "ta_ret6_pct": -0.05,
+          "ta_ret24_pct": -3.299,
+          "ta_vol12_pct": 0.719,
+          "ta_rsi14": 36.8,
+          "ta_ema_gap_pct": -0.678,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.011939Z"
+          "as_of": "2026-03-05T17:00:02.394360Z"
         }
       },
       {
@@ -1095,50 +1110,50 @@
           "symbol": "ETH",
           "bids": [
             {
-              "price": 2080.25,
-              "size": 7.264
+              "price": 2080.32,
+              "size": 1.4812
             },
             {
-              "price": 2080.24,
-              "size": 0.1282
+              "price": 2080.31,
+              "size": 0.0825
             },
             {
-              "price": 2080.23,
-              "size": 0.0101
-            },
-            {
-              "price": 2080.22,
-              "size": 0.3793
-            },
-            {
-              "price": 2080.21,
-              "size": 0.0025
-            }
-          ],
-          "asks": [
-            {
-              "price": 2080.26,
-              "size": 5.724
-            },
-            {
-              "price": 2080.27,
-              "size": 0.015
-            },
-            {
-              "price": 2080.28,
+              "price": 2080.3,
               "size": 0.0076
             },
             {
               "price": 2080.29,
-              "size": 2.0564
+              "size": 0.3793
             },
             {
-              "price": 2080.3,
+              "price": 2080.28,
+              "size": 0.005
+            }
+          ],
+          "asks": [
+            {
+              "price": 2080.33,
+              "size": 29.7994
+            },
+            {
+              "price": 2080.35,
+              "size": 0.7621
+            },
+            {
+              "price": 2080.36,
+              "size": 0.7271
+            },
+            {
+              "price": 2080.37,
+              "size": 0.5841
+            },
+            {
+              "price": 2080.38,
               "size": 0.005
             }
           ],
           "spread_bps": 0.0481,
-          "as_of": "2026-03-05T16:45:02.011986Z"
+          "as_of": "2026-03-05T17:00:02.413757Z"
         }
       },
       {
@@ -1150,10 +1165,10 @@
         "output": {
           "symbol": "ETH",
           "window": "1h",
-          "long_liq_usd": 15462.94,
-          "short_liq_usd": 21368.49,
-          "total_liq_usd": 36831.43,
-          "as_of": "2026-03-05T16:45:02.012040Z"
+          "long_liq_usd": 0.0,
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.418834Z"
         }
       },
       {
@@ -1166,7 +1181,7 @@
           "platform": "reddit",
           "score": -0.1,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012094Z"
+          "as_of": "2026-03-05T17:00:02.426728Z"
         }
       },
       {
@@ -1179,7 +1194,7 @@
           "active_addresses": 909701,
           "exchange_netflow": 62029077.4,
           "mvrv": 0.960529,
-          "as_of": "2026-03-05T16:45:02.012171Z"
+          "as_of": "2026-03-05T17:00:02.445688Z"
         }
       },
       {
@@ -1191,19 +1206,19 @@
         "output": {
           "symbol": "SOL",
           "timeframe": "15m",
-          "price": 88.89,
-          "price_change_24h_pct": -2.918,
-          "volume": 37356.49,
-          "funding_rate": -0.000103,
-          "open_interest": 818223207.22,
-          "ta_ret6_pct": -0.202,
-          "ta_ret24_pct": -4.058,
-          "ta_vol12_pct": 0.845,
-          "ta_rsi14": 34.1,
-          "ta_ema_gap_pct": -0.763,
+          "price": 88.94,
+          "price_change_24h_pct": -2.808,
+          "volume": 34313.02,
+          "funding_rate": -9.9e-05,
+          "open_interest": 820643904.85,
+          "ta_ret6_pct": -0.537,
+          "ta_ret24_pct": -3.703,
+          "ta_vol12_pct": 0.841,
+          "ta_rsi14": 36.4,
+          "ta_ema_gap_pct": -0.75,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012230Z"
+          "as_of": "2026-03-05T17:00:02.445764Z"
         }
       },
       {
@@ -1215,50 +1230,50 @@
           "symbol": "SOL",
           "bids": [
             {
-              "price": 88.84,
-              "size": 61.374
+              "price": 88.92,
+              "size": 6.87
             },
             {
-              "price": 88.83,
-              "size": 780.82
+              "price": 88.91,
+              "size": 353.794
             },
             {
-              "price": 88.82,
-              "size": 2525.452
+              "price": 88.9,
+              "size": 589.802
             },
             {
-              "price": 88.81,
-              "size": 129.067
+              "price": 88.89,
+              "size": 676.59
             },
             {
-              "price": 88.8,
-              "size": 186.89
+              "price": 88.88,
+              "size": 1481.836
             }
           ],
           "asks": [
             {
-              "price": 88.85,
-              "size": 891.454
+              "price": 88.93,
+              "size": 778.363
             },
             {
-              "price": 88.86,
-              "size": 591.749
+              "price": 88.94,
+              "size": 879.105
             },
             {
-              "price": 88.87,
-              "size": 941.054
+              "price": 88.95,
+              "size": 539.397
             },
             {
-              "price": 88.88,
-              "size": 887.213
+              "price": 88.96,
+              "size": 569.167
             },
             {
-              "price": 88.89,
-              "size": 854.318
+              "price": 88.97,
+              "size": 580.554
             }
           ],
-          "spread_bps": 1.1256,
-          "as_of": "2026-03-05T16:45:02.012280Z"
+          "spread_bps": 1.1245,
+          "as_of": "2026-03-05T17:00:02.445819Z"
         }
       },
       {
@@ -1270,10 +1285,10 @@
         "output": {
           "symbol": "SOL",
           "window": "1h",
-          "long_liq_usd": 1627.69,
-          "short_liq_usd": 3893.3,
-          "total_liq_usd": 5520.99,
-          "as_of": "2026-03-05T16:45:02.012333Z"
+          "long_liq_usd": 0.0,
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.445862Z"
         }
       },
       {
@@ -1286,7 +1301,7 @@
           "platform": "reddit",
           "score": -0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012386Z"
+          "as_of": "2026-03-05T17:00:02.445913Z"
         }
       },
       {
@@ -1299,18 +1314,18 @@
           "symbol": "LINK",
           "timeframe": "15m",
           "price": 9.19,
-          "price_change_24h_pct": -2.957,
+          "price_change_24h_pct": -3.062,
           "volume": 0.0,
-          "funding_rate": -6.6e-05,
-          "open_interest": 79220279.55,
-          "ta_ret6_pct": -0.109,
-          "ta_ret24_pct": -2.648,
-          "ta_vol12_pct": 0.666,
-          "ta_rsi14": 32.3,
-          "ta_ema_gap_pct": -0.516,
+          "funding_rate": -5.6e-05,
+          "open_interest": 79140941.18,
+          "ta_ret6_pct": -0.541,
+          "ta_ret24_pct": -2.545,
+          "ta_vol12_pct": 0.658,
+          "ta_rsi14": 34.5,
+          "ta_ema_gap_pct": -0.523,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012433Z"
+          "as_of": "2026-03-05T17:00:02.445952Z"
         }
       },
       {
@@ -1322,50 +1337,50 @@
           "symbol": "LINK",
           "bids": [
             {
-              "price": 9.19,
-              "size": 1888.63
-            },
-            {
               "price": 9.18,
-              "size": 18634.18
+              "size": 2542.87
             },
             {
               "price": 9.17,
-              "size": 31955.47
+              "size": 11280.39
             },
             {
               "price": 9.16,
-              "size": 18675.63
+              "size": 15352.65
             },
             {
               "price": 9.15,
-              "size": 22081.38
+              "size": 12599.44
+            },
+            {
+              "price": 9.14,
+              "size": 7202.18
             }
           ],
           "asks": [
             {
+              "price": 9.19,
+              "size": 5891.09
+            },
+            {
               "price": 9.2,
-              "size": 8656.91
+              "size": 14580.67
             },
             {
               "price": 9.21,
-              "size": 12605.84
+              "size": 12846.81
             },
             {
               "price": 9.22,
-              "size": 10917.11
+              "size": 15801.29
             },
             {
               "price": 9.23,
-              "size": 26691.6
-            },
-            {
-              "price": 9.24,
-              "size": 12346.04
+              "size": 12219.77
             }
           ],
-          "spread_bps": 10.8755,
-          "as_of": "2026-03-05T16:45:02.012480Z"
+          "spread_bps": 10.8873,
+          "as_of": "2026-03-05T17:00:02.445994Z"
         }
       },
       {
@@ -1378,9 +1393,9 @@
           "symbol": "LINK",
           "window": "1h",
           "long_liq_usd": 0.0,
-          "short_liq_usd": 365.97,
-          "total_liq_usd": 365.97,
-          "as_of": "2026-03-05T16:45:02.012527Z"
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.446031Z"
         }
       },
       {
@@ -1391,9 +1406,9 @@
         "output": {
           "symbol": "LINK",
           "platform": "reddit",
-          "score": -0.02,
+          "score": -0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012581Z"
+          "as_of": "2026-03-05T17:00:02.446075Z"
         }
       },
       {
@@ -1406,18 +1421,18 @@
           "symbol": "AVAX",
           "timeframe": "15m",
           "price": 9.38,
-          "price_change_24h_pct": -2.292,
-          "volume": 814.28,
-          "funding_rate": 3e-06,
-          "open_interest": 81292970.64,
-          "ta_ret6_pct": 0.214,
-          "ta_ret24_pct": -1.883,
-          "ta_vol12_pct": 0.531,
-          "ta_rsi14": 44.0,
-          "ta_ema_gap_pct": -0.271,
+          "price_change_24h_pct": -2.088,
+          "volume": 0.0,
+          "funding_rate": 2e-06,
+          "open_interest": 81306571.64,
+          "ta_ret6_pct": -0.425,
+          "ta_ret24_pct": -1.471,
+          "ta_vol12_pct": 0.525,
+          "ta_rsi14": 45.8,
+          "ta_ema_gap_pct": -0.267,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012627Z"
+          "as_of": "2026-03-05T17:00:02.446116Z"
         }
       },
       {
@@ -1429,50 +1444,50 @@
           "symbol": "AVAX",
           "bids": [
             {
-              "price": 9.38,
-              "size": 2410.08
-            },
-            {
               "price": 9.37,
-              "size": 7499.81
+              "size": 2431.0
             },
             {
               "price": 9.36,
-              "size": 8508.28
+              "size": 7774.52
             },
             {
               "price": 9.35,
-              "size": 17780.48
+              "size": 7297.15
             },
             {
               "price": 9.34,
-              "size": 17177.53
+              "size": 22411.12
+            },
+            {
+              "price": 9.33,
+              "size": 3504.55
             }
           ],
           "asks": [
             {
+              "price": 9.38,
+              "size": 2345.36
+            },
+            {
               "price": 9.39,
-              "size": 3651.32
+              "size": 8326.85
             },
             {
               "price": 9.4,
-              "size": 7845.49
+              "size": 10855.17
             },
             {
               "price": 9.41,
-              "size": 10473.36
+              "size": 18557.66
             },
             {
               "price": 9.42,
-              "size": 25003.16
-            },
-            {
-              "price": 9.43,
-              "size": 22120.84
+              "size": 15516.01
             }
           ],
-          "spread_bps": 10.6553,
-          "as_of": "2026-03-05T16:45:02.012639Z"
+          "spread_bps": 10.6667,
+          "as_of": "2026-03-05T17:00:02.446157Z"
         }
       },
       {
@@ -1487,7 +1502,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T16:45:02.012651Z"
+          "as_of": "2026-03-05T17:00:02.446197Z"
         }
       },
       {
@@ -1500,7 +1515,7 @@
           "platform": "reddit",
           "score": 0.0,
           "mentions": 4,
-          "as_of": "2026-03-05T16:45:02.012666Z"
+          "as_of": "2026-03-05T17:00:02.446243Z"
         }
       },
       {
@@ -1512,19 +1527,19 @@
         "output": {
           "symbol": "XRP",
           "timeframe": "15m",
-          "price": 1.4124,
-          "price_change_24h_pct": -2.694,
-          "volume": 9172.68,
-          "funding_rate": -1.2e-05,
-          "open_interest": 399835398.08,
-          "ta_ret6_pct": 0.042,
-          "ta_ret24_pct": -2.445,
-          "ta_vol12_pct": 0.666,
-          "ta_rsi14": 41.0,
-          "ta_ema_gap_pct": -0.401,
+          "price": 1.411,
+          "price_change_24h_pct": -2.649,
+          "volume": 12325.27,
+          "funding_rate": -3e-06,
+          "open_interest": 400211081.46,
+          "ta_ret6_pct": -0.311,
+          "ta_ret24_pct": -2.333,
+          "ta_vol12_pct": 0.662,
+          "ta_rsi14": 41.1,
+          "ta_ema_gap_pct": -0.406,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012679Z"
+          "as_of": "2026-03-05T17:00:02.446279Z"
         }
       },
       {
@@ -1536,50 +1551,50 @@
           "symbol": "XRP",
           "bids": [
             {
-              "price": 1.4124,
-              "size": 13899.7
+              "price": 1.4111,
+              "size": 37534.2
             },
             {
-              "price": 1.4123,
-              "size": 21671.3
+              "price": 1.411,
+              "size": 86604.7
             },
             {
-              "price": 1.4122,
-              "size": 28373.2
+              "price": 1.4109,
+              "size": 2161.6
             },
             {
-              "price": 1.4121,
-              "size": 37411.7
+              "price": 1.4108,
+              "size": 11651.9
             },
             {
-              "price": 1.412,
-              "size": 56899.5
+              "price": 1.4107,
+              "size": 35086.1
             }
           ],
           "asks": [
             {
-              "price": 1.4125,
-              "size": 3162.0
+              "price": 1.4112,
+              "size": 777.1
             },
             {
-              "price": 1.4126,
-              "size": 2034.6
+              "price": 1.4113,
+              "size": 35.5
             },
             {
-              "price": 1.4127,
-              "size": 7819.9
+              "price": 1.4114,
+              "size": 2122.1
             },
             {
-              "price": 1.4128,
-              "size": 6447.2
+              "price": 1.4115,
+              "size": 19690.3
             },
             {
-              "price": 1.4129,
-              "size": 8686.2
+              "price": 1.4116,
+              "size": 28224.0
             }
           ],
-          "spread_bps": 0.708,
-          "as_of": "2026-03-05T16:45:02.012691Z"
+          "spread_bps": 0.7086,
+          "as_of": "2026-03-05T17:00:02.446317Z"
         }
       },
       {
@@ -1592,9 +1607,9 @@
           "symbol": "XRP",
           "window": "1h",
           "long_liq_usd": 0.0,
-          "short_liq_usd": 7149.23,
-          "total_liq_usd": 7149.23,
-          "as_of": "2026-03-05T16:45:02.012703Z"
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.446354Z"
         }
       },
       {
@@ -1607,7 +1622,7 @@
           "platform": "reddit",
           "score": 0.0,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012717Z"
+          "as_of": "2026-03-05T17:00:02.446410Z"
         }
       },
       {
@@ -1619,19 +1634,19 @@
         "output": {
           "symbol": "ADA",
           "timeframe": "15m",
-          "price": 0.2693,
-          "price_change_24h_pct": -3.959,
-          "volume": 0.0,
-          "funding_rate": -0.000118,
-          "open_interest": 79484343.65,
-          "ta_ret6_pct": -0.517,
-          "ta_ret24_pct": -2.674,
-          "ta_vol12_pct": 0.718,
-          "ta_rsi14": 34.0,
-          "ta_ema_gap_pct": -0.558,
+          "price": 0.2688,
+          "price_change_24h_pct": -4.17,
+          "volume": 284.13,
+          "funding_rate": -0.000114,
+          "open_interest": 79692792.61,
+          "ta_ret6_pct": -1.031,
+          "ta_ret24_pct": -2.679,
+          "ta_vol12_pct": 0.711,
+          "ta_rsi14": 35.2,
+          "ta_ema_gap_pct": -0.592,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012733Z"
+          "as_of": "2026-03-05T17:00:02.446935Z"
         }
       },
       {
@@ -1643,50 +1658,50 @@
           "symbol": "ADA",
           "bids": [
             {
-              "price": 0.2692,
-              "size": 43948.4
-            },
-            {
-              "price": 0.2691,
-              "size": 113051.3
-            },
-            {
-              "price": 0.269,
-              "size": 139448.4
-            },
-            {
-              "price": 0.2689,
-              "size": 156113.9
-            },
-            {
               "price": 0.2688,
-              "size": 167005.5
+              "size": 10893.2
+            },
+            {
+              "price": 0.2687,
+              "size": 99224.4
+            },
+            {
+              "price": 0.2686,
+              "size": 434430.1
+            },
+            {
+              "price": 0.2685,
+              "size": 118922.2
+            },
+            {
+              "price": 0.2684,
+              "size": 58520.4
             }
           ],
           "asks": [
             {
+              "price": 0.2689,
+              "size": 84419.3
+            },
+            {
+              "price": 0.269,
+              "size": 97803.7
+            },
+            {
+              "price": 0.2691,
+              "size": 84570.7
+            },
+            {
+              "price": 0.2692,
+              "size": 175143.4
+            },
+            {
               "price": 0.2693,
-              "size": 17751.8
-            },
-            {
-              "price": 0.2694,
-              "size": 124266.4
-            },
-            {
-              "price": 0.2695,
-              "size": 257166.5
-            },
-            {
-              "price": 0.2696,
-              "size": 182529.1
-            },
-            {
-              "price": 0.2697,
-              "size": 290686.8
+              "size": 262508.6
             }
           ],
-          "spread_bps": 3.714,
-          "as_of": "2026-03-05T16:45:02.012746Z"
+          "spread_bps": 3.7195,
+          "as_of": "2026-03-05T17:00:02.446990Z"
         }
       },
       {
@@ -1701,7 +1716,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T16:45:02.012759Z"
+          "as_of": "2026-03-05T17:00:02.447038Z"
         }
       },
       {
@@ -1714,7 +1729,7 @@
           "platform": "reddit",
           "score": -0.06,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012773Z"
+          "as_of": "2026-03-05T17:00:02.447087Z"
         }
       },
       {
@@ -1727,18 +1742,18 @@
           "symbol": "DOGE",
           "timeframe": "15m",
           "price": 0.0939,
-          "price_change_24h_pct": -4.651,
-          "volume": 8253.35,
-          "funding_rate": -5.7e-05,
-          "open_interest": 177720047.68,
-          "ta_ret6_pct": -0.392,
-          "ta_ret24_pct": -3.88,
-          "ta_vol12_pct": 0.579,
-          "ta_rsi14": 35.1,
-          "ta_ema_gap_pct": -0.716,
+          "price_change_24h_pct": -5.78,
+          "volume": 1948.5,
+          "funding_rate": -4.9e-05,
+          "open_interest": 177199150.58,
+          "ta_ret6_pct": -0.371,
+          "ta_ret24_pct": -3.722,
+          "ta_vol12_pct": 0.57,
+          "ta_rsi14": 39.8,
+          "ta_ema_gap_pct": -0.7,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012786Z"
+          "as_of": "2026-03-05T17:00:02.447128Z"
         }
       },
       {
@@ -1751,49 +1766,49 @@
           "bids": [
             {
               "price": 0.0939,
-              "size": 93153.0
+              "size": 255676.0
             },
             {
               "price": 0.0939,
-              "size": 212167.0
+              "size": 255165.0
             },
             {
               "price": 0.0939,
-              "size": 691394.0
+              "size": 652967.0
             },
             {
               "price": 0.0939,
-              "size": 648445.0
+              "size": 500593.0
             },
             {
               "price": 0.0939,
-              "size": 563908.0
+              "size": 655395.0
             }
           ],
           "asks": [
             {
               "price": 0.0939,
-              "size": 230.0
+              "size": 52560.0
             },
             {
               "price": 0.0939,
-              "size": 33030.0
+              "size": 284.0
             },
             {
               "price": 0.0939,
-              "size": 227733.0
+              "size": 93148.0
             },
             {
               "price": 0.0939,
-              "size": 541856.0
+              "size": 226612.0
             },
             {
-              "price": 0.094,
-              "size": 188154.0
+              "price": 0.0939,
+              "size": 626713.0
             }
           ],
           "spread_bps": 0.0,
-          "as_of": "2026-03-05T16:45:02.012799Z"
+          "as_of": "2026-03-05T17:00:02.447164Z"
         }
       },
       {
@@ -1806,9 +1821,9 @@
           "symbol": "DOGE",
           "window": "1h",
           "long_liq_usd": 0.0,
-          "short_liq_usd": 9566.66,
-          "total_liq_usd": 9566.66,
-          "as_of": "2026-03-05T16:45:02.012812Z"
+          "short_liq_usd": 0.0,
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T17:00:02.447211Z"
         }
       },
       {
@@ -1821,7 +1836,7 @@
           "platform": "reddit",
           "score": -0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012826Z"
+          "as_of": "2026-03-05T17:00:02.447251Z"
         }
       },
       {
@@ -1833,19 +1848,19 @@
         "output": {
           "symbol": "BNB",
           "timeframe": "15m",
-          "price": 652.44,
-          "price_change_24h_pct": -1.075,
-          "volume": 8040.21,
+          "price": 652.57,
+          "price_change_24h_pct": -1.058,
+          "volume": 4933.44,
           "funding_rate": 0.0,
-          "open_interest": 326412084.86,
-          "ta_ret6_pct": 0.372,
-          "ta_ret24_pct": -1.734,
+          "open_interest": 326489430.6,
+          "ta_ret6_pct": 0.195,
+          "ta_ret24_pct": -1.48,
           "ta_vol12_pct": 0.428,
-          "ta_rsi14": 42.1,
-          "ta_ema_gap_pct": -0.241,
+          "ta_rsi14": 43.3,
+          "ta_ema_gap_pct": -0.223,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012839Z"
+          "as_of": "2026-03-05T17:00:02.447295Z"
         }
       },
       {
@@ -1857,50 +1872,50 @@
           "symbol": "BNB",
           "bids": [
             {
-              "price": 652.44,
-              "size": 5.161
+              "price": 652.56,
+              "size": 2.574
             },
             {
-              "price": 652.43,
-              "size": 0.928
+              "price": 652.55,
+              "size": 0.017
             },
             {
-              "price": 652.42,
-              "size": 0.928
+              "price": 652.54,
+              "size": 0.112
             },
             {
-              "price": 652.41,
+              "price": 652.53,
+              "size": 0.009
+            },
+            {
+              "price": 652.52,
               "size": 0.018
-            },
-            {
-              "price": 652.4,
-              "size": 0.027
             }
           ],
           "asks": [
             {
-              "price": 652.45,
-              "size": 20.575
+              "price": 652.57,
+              "size": 22.903
             },
             {
-              "price": 652.46,
-              "size": 1.662
+              "price": 652.58,
+              "size": 7.771
             },
             {
-              "price": 652.47,
-              "size": 9.211
+              "price": 652.59,
+              "size": 3.814
             },
             {
-              "price": 652.48,
-              "size": 4.09
+              "price": 652.6,
+              "size": 2.321
             },
             {
-              "price": 652.49,
-              "size": 0.018
+              "price": 652.61,
+              "size": 4.902
             }
           ],
-          "spread_bps": 0.1533,
-          "as_of": "2026-03-05T16:45:02.012852Z"
+          "spread_bps": 0.1532,
+          "as_of": "2026-03-05T17:00:02.447333Z"
         }
       },
       {
@@ -1915,7 +1930,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T16:45:02.012865Z"
+          "as_of": "2026-03-05T17:00:02.447375Z"
         }
       },
       {
@@ -1928,7 +1943,7 @@
           "platform": "reddit",
           "score": 0.02,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012878Z"
+          "as_of": "2026-03-05T17:00:02.447419Z"
         }
       },
       {
@@ -1940,19 +1955,19 @@
         "output": {
           "symbol": "OP",
           "timeframe": "15m",
-          "price": 0.1255,
-          "price_change_24h_pct": -3.238,
+          "price": 0.1253,
+          "price_change_24h_pct": -3.392,
           "volume": 0.0,
-          "funding_rate": -0.000162,
-          "open_interest": 17805959.28,
-          "ta_ret6_pct": -1.259,
-          "ta_ret24_pct": -3.462,
-          "ta_vol12_pct": 0.807,
-          "ta_rsi14": 39.0,
-          "ta_ema_gap_pct": -0.6,
+          "funding_rate": -0.000158,
+          "open_interest": 17790439.56,
+          "ta_ret6_pct": -1.879,
+          "ta_ret24_pct": -3.168,
+          "ta_vol12_pct": 0.782,
+          "ta_rsi14": 39.8,
+          "ta_ema_gap_pct": -0.651,
           "ta_trend": "down",
           "ta_candles_count": 1000,
-          "as_of": "2026-03-05T16:45:02.012890Z"
+          "as_of": "2026-03-05T17:00:02.447459Z"
         }
       },
       {
@@ -1964,50 +1979,50 @@
           "symbol": "OP",
           "bids": [
             {
-              "price": 0.1255,
-              "size": 13536.32
-            },
-            {
-              "price": 0.1254,
-              "size": 54934.49
-            },
-            {
-              "price": 0.1253,
-              "size": 121226.09
-            },
-            {
               "price": 0.1252,
-              "size": 80734.25
+              "size": 15547.55
             },
             {
               "price": 0.1251,
-              "size": 92001.13
+              "size": 78610.24
+            },
+            {
+              "price": 0.125,
+              "size": 74646.7
+            },
+            {
+              "price": 0.1249,
+              "size": 118170.4
+            },
+            {
+              "price": 0.1248,
+              "size": 33266.45
             }
           ],
           "asks": [
             {
+              "price": 0.1253,
+              "size": 17648.14
+            },
+            {
+              "price": 0.1254,
+              "size": 58609.46
+            },
+            {
+              "price": 0.1255,
+              "size": 99132.63
+            },
+            {
               "price": 0.1256,
-              "size": 29627.08
+              "size": 50366.32
             },
             {
               "price": 0.1257,
-              "size": 72944.23
-            },
-            {
-              "price": 0.1258,
-              "size": 96497.75
-            },
-            {
-              "price": 0.1259,
-              "size": 98921.86
-            },
-            {
-              "price": 0.126,
-              "size": 28614.94
+              "size": 49148.75
             }
           ],
-          "spread_bps": 7.965,
-          "as_of": "2026-03-05T16:45:02.012902Z"
+          "spread_bps": 7.984,
+          "as_of": "2026-03-05T17:00:02.447494Z"
         }
       },
       {
@@ -2022,7 +2037,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T16:45:02.012916Z"
+          "as_of": "2026-03-05T17:00:02.447532Z"
         }
       },
       {
@@ -2033,16 +2048,44 @@
         "output": {
           "symbol": "OP",
           "platform": "reddit",
-          "score": -0.14,
+          "score": -0.12,
           "mentions": 50,
-          "as_of": "2026-03-05T16:45:02.012930Z"
+          "as_of": "2026-03-05T17:00:02.447575Z"
         }
       },
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
+          "limit": 10,
           "offset": 0
+        },
+        "output": {
+          "source": "cointelegraph.com",
+          "headline": "SoFi taps BitGo to provide infrastructure for bank-issued stablecoin",
+          "sentiment": -1.0,
+          "url": "https://cointelegraph.com/news/sofi-bitgo-bank-issued-stablecoin-sofiusd?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published_at": "2026-03-05T16:42:24Z"
+        }
+      },
+      {
+        "skill": "get_crypto_news",
+        "input": {
+          "limit": 10,
+          "offset": 1
+        },
+        "output": {
+          "source": "www.coindesk.com",
+          "headline": "Sanctions evasions using crypto increased by 700% in 2025: Chainalysis",
+          "sentiment": 0.0,
+          "url": "https://www.coindesk.com/business/2026/03/05/sanctions-evasions-using-crypto-increased-by-700-in-2025-chainalysis",
+          "published_at": "2026-03-05T16:52:09Z"
+        }
+      },
+      {
+        "skill": "get_crypto_news",
+        "input": {
+          "limit": 10,
+          "offset": 2
         },
         "output": {
           "source": "cointelegraph.com",
@@ -2055,22 +2098,22 @@
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 1
+          "limit": 10,
+          "offset": 3
         },
         "output": {
           "source": "www.coindesk.com",
-          "headline": "Crypto for Advisors: Tokenization offers always-on global investment access",
+          "headline": "CleanSpark sold 97% of February bitcoin production to fund AI pivot",
           "sentiment": 0.0,
-          "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/crypto-for-advisors-tokenization-offers-always-on-global-investment-access",
-          "published_at": "2026-03-05T16:00:00Z"
+          "url": "https://www.coindesk.com/markets/2026/03/05/cleanspark-sold-97-of-february-bitcoin-production-to-fund-ai-pivot",
+          "published_at": "2026-03-05T16:47:44Z"
         }
       },
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 2
+          "limit": 10,
+          "offset": 4
         },
         "output": {
           "source": "cointelegraph.com",
@@ -2083,22 +2126,22 @@
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 3
+          "limit": 10,
+          "offset": 5
         },
         "output": {
           "source": "www.coindesk.com",
-          "headline": "Bitcoin pulls back to near $71,000 even as software sector soars",
+          "headline": "Crypto for Advisors: Tokenization offers always-on global investment access",
           "sentiment": 0.0,
-          "url": "https://www.coindesk.com/markets/2026/03/05/bitcoin-pulls-back-to-usd71-000-even-as-software-sector-soars",
-          "published_at": "2026-03-05T15:57:23Z"
+          "url": "https://www.coindesk.com/coindesk-indices/2026/03/04/crypto-for-advisors-tokenization-offers-always-on-global-investment-access",
+          "published_at": "2026-03-05T16:00:00Z"
         }
       },
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 4
+          "limit": 10,
+          "offset": 6
         },
         "output": {
           "source": "cointelegraph.com",
@@ -2111,22 +2154,22 @@
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 5
+          "limit": 10,
+          "offset": 7
         },
         "output": {
           "source": "www.coindesk.com",
-          "headline": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
-          "sentiment": -1.0,
-          "url": "https://www.coindesk.com/coindesk-indices/2026/03/05/coindesk-20-performance-update-stellar-xlm-drops-3-5-as-nearly-all-assets-decline",
-          "published_at": "2026-03-05T14:13:31Z"
+          "headline": "Bitcoin pulls back to near $71,000 even as software sector soars",
+          "sentiment": 0.0,
+          "url": "https://www.coindesk.com/markets/2026/03/05/bitcoin-pulls-back-to-usd71-000-even-as-software-sector-soars",
+          "published_at": "2026-03-05T15:57:23Z"
         }
       },
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 6
+          "limit": 10,
+          "offset": 8
         },
         "output": {
           "source": "cointelegraph.com",
@@ -2139,15 +2182,15 @@
       {
         "skill": "get_crypto_news",
         "input": {
-          "limit": 8,
-          "offset": 7
+          "limit": 10,
+          "offset": 9
         },
         "output": {
           "source": "www.coindesk.com",
-          "headline": "Core Scientific secures up to $1 billion loan facility from Morgan Stanley",
-          "sentiment": 0.0,
-          "url": "https://www.coindesk.com/markets/2026/03/05/core-scientific-secures-up-to-usd1-billion-loan-facility-from-morgan-stanley",
-          "published_at": "2026-03-05T13:52:37Z"
+          "headline": "CoinDesk 20 performance update: Stellar (XLM) drops 3.5% as nearly all assets decline",
+          "sentiment": -1.0,
+          "url": "https://www.coindesk.com/coindesk-indices/2026/03/05/coindesk-20-performance-update-stellar-xlm-drops-3-5-as-nearly-all-assets-decline",
+          "published_at": "2026-03-05T14:13:31Z"
         }
       },
       {
@@ -2160,16 +2203,16 @@
           "dxy": 117.822,
           "us10y": 4.06,
           "spx_fut": 6869.5,
-          "as_of": "2026-03-05T16:45:02.013038Z"
+          "as_of": "2026-03-05T17:00:02.448271Z"
         }
       }
     ],
     "system_kpis": {
-      "skill_calls": 51,
-      "skill_success": 51,
+      "skill_calls": 53,
+      "skill_success": 53,
       "skill_failures": 0,
-      "tick_duration_ms": 4433.13,
-      "snapshot_size_bytes": 29787
+      "tick_duration_ms": 33412.44,
+      "snapshot_size_bytes": 31438
     }
   },
   "portfolios": [
@@ -2223,34 +2266,34 @@
     }
   ],
   "competition": {
-    "updated_at": "2026-03-05T16:45:07.622293+00:00",
-    "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+    "updated_at": "2026-03-05T17:00:45.212356+00:00",
+    "tick_id": "a299ac426ba14f62a633cfd23be41f57",
     "analyst_count": 4,
     "worker_results": [
       {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.562010Z"
+          "confidence": 0.54,
+          "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:41.688754Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-05T16:45:06.541522Z",
+          "updated_at": "2026-03-05T17:00:35.711899Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -2260,34 +2303,34 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.562901Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Combined news score -0.07 and RSI 35.3 show weak momentum\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\aggressive\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0f3-7be1-9fde-e858fb682366\n--------\nuser\nA=aggressive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"AVAX\",-0.184,\"s\",-0.425,0.525,45.8,-0.267,2e-06,81306571.64],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing JSON response with hold order**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Combined news score -0.07 and RSI 35.3 show weak momentum\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f428",
+        "updated_at": "2026-03-05T17:00:41.691637Z"
       },
       {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.560402Z"
+          "confidence": 0.54,
+          "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:42.247326Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-05T16:45:06.541467Z",
+          "updated_at": "2026-03-05T17:00:35.711150Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -2297,34 +2340,34 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.562182Z"
+        "codex_stdout": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.54,\n      \"reason\": \"Sentiment score -0.07 neutral/bearish; maintain zero exposure\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\defensive\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b113-7c03-aa58-3408ce2eb1b4\n--------\nuser\nA=defensive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85],[\"BTC\",-0.162,\"s\",-0.23,0.601,35.3,-0.556,-1.3e-05,6127354760.89]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing final JSON response**\ncodex\n{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.54,\n      \"reason\": \"Sentiment score -0.07 neutral/bearish; maintain zero exposure\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}\ntokens used\n2\u202f277",
+        "updated_at": "2026-03-05T17:00:42.248415Z"
       },
       {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.560087Z"
+          "confidence": 0.45,
+          "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:45.134376Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-05T16:45:06.541467Z",
+          "updated_at": "2026-03-05T17:00:35.708451Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -2334,34 +2377,34 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.565733Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"sentiment -0.07 and RSI 35.3 imply cautious stance\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"p\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\quant\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0c5-7c70-b937-d905afe8b40b\n--------\nuser\nA=quant T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Composing final JSON output**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"sentiment -0.07 and RSI 35.3 imply cautious stance\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"p\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f934",
+        "updated_at": "2026-03-05T17:00:45.136516Z"
       },
       {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.572653Z"
+          "confidence": 0.54,
+          "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:44.121530Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_mean_reversion",
-          "updated_at": "2026-03-05T16:45:06.542415Z",
+          "updated_at": "2026-03-05T17:00:35.710830Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -2371,9 +2414,9 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.573586Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news -0.07 + RSI 35.3 keep flat pending clearer trend\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\mean_reversion\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0ee-7ce2-8c81-f9b014081bde\n--------\nuser\nA=mean_reversion T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing final JSON output**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news -0.07 + RSI 35.3 keep flat pending clearer trend\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f465",
+        "updated_at": "2026-03-05T17:00:44.124823Z"
       }
     ],
     "ranking": [
@@ -2659,6 +2702,22 @@
         "BNB": 652.44,
         "OP": 0.1255
       }
+    },
+    {
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "as_of": "2026-03-05T17:00:02.101575+00:00",
+      "prices": {
+        "BTC": 71292.88,
+        "ETH": 2080.04,
+        "SOL": 88.94,
+        "LINK": 9.19,
+        "AVAX": 9.38,
+        "XRP": 1.411,
+        "ADA": 0.2688,
+        "DOGE": 0.0939,
+        "BNB": 652.57,
+        "OP": 0.1253
+      }
     }
   ],
   "agent_views": [
@@ -2669,27 +2728,27 @@
       "latest_result": {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.562010Z"
+          "confidence": 0.54,
+          "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:41.688754Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-05T16:45:06.541522Z",
+          "updated_at": "2026-03-05T17:00:35.711899Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -2699,13 +2758,13 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.562901Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Combined news score -0.07 and RSI 35.3 show weak momentum\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\aggressive\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0f3-7be1-9fde-e858fb682366\n--------\nuser\nA=aggressive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,DOGE,AVAX max_alloc=0.35 lev_max=3.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"AVAX\",-0.184,\"s\",-0.425,0.525,45.8,-0.267,2e-06,81306571.64],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing JSON response with hold order**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"Combined news score -0.07 and RSI 35.3 show weak momentum\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f428",
+        "updated_at": "2026-03-05T17:00:41.691637Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_aggressive",
-        "updated_at": "2026-03-05T16:45:06.541522Z",
+        "updated_at": "2026-03-05T17:00:35.711899Z",
         "initial_balance_usd": 100.0,
         "cash_balance_usd": 100.0,
         "realized_pnl_usd": 0.0,
@@ -3338,6 +3397,70 @@
               "skills_both_used": false
             }
           }
+        },
+        {
+          "ts": "2026-03-05T17:00:41.706552+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "decision": {
+            "analyst_id": "aggressive",
+            "portfolio_id": "analyst_aggressive",
+            "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+            "source": "codex_cli",
+            "created_at": "2026-03-05T17:00:41.688754Z"
+          },
+          "codex": {
+            "token_usage": 2428,
+            "input_token_usage": 2357,
+            "output_token_usage": 71,
+            "token_usage_total_source": "stderr",
+            "token_usage_input_source": "derived_from_total",
+            "token_usage_output_source": "estimated_from_stdout",
+            "log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_17-00-41_2428_tokens.txt",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.54,
+                  "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "explanation": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+            "llm_skill_usage": {
+              "news_sentiment_declared": true,
+              "json_format_guard_declared": true,
+              "news_sentiment_used": true,
+              "json_format_guard_used": true,
+              "json_guard_present": true,
+              "json_guard_mode": "hold_only",
+              "json_guard_stop_loss_pct": 1.2,
+              "skills_trace_present": true,
+              "skills_both_used": true
+            }
+          }
         }
       ],
       "trades": [],
@@ -3506,6 +3629,17 @@
           "realized_pnl_usd": 0.0,
           "unrealized_pnl_usd": 0.0,
           "trade_count": 0
+        },
+        {
+          "ts": "2026-03-05T17:00:41.719697+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "equity_usd": 100.0,
+          "cash_balance_usd": 100.0,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": 0.0,
+          "trade_count": 0
         }
       ]
     },
@@ -3516,27 +3650,27 @@
       "latest_result": {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.560402Z"
+          "confidence": 0.54,
+          "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:42.247326Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-05T16:45:06.541467Z",
+          "updated_at": "2026-03-05T17:00:35.711150Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -3546,13 +3680,13 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.562182Z"
+        "codex_stdout": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.54,\n      \"reason\": \"Sentiment score -0.07 neutral/bearish; maintain zero exposure\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\defensive\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b113-7c03-aa58-3408ce2eb1b4\n--------\nuser\nA=defensive T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,BNB,XRP,SOL max_alloc=0.12 lev_max=1.50\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85],[\"BTC\",-0.162,\"s\",-0.23,0.601,35.3,-0.556,-1.3e-05,6127354760.89]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing final JSON response**\ncodex\n{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"BTC\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.54,\n      \"reason\": \"Sentiment score -0.07 neutral/bearish; maintain zero exposure\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}\ntokens used\n2\u202f277",
+        "updated_at": "2026-03-05T17:00:42.248415Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_defensive",
-        "updated_at": "2026-03-05T16:45:06.541467Z",
+        "updated_at": "2026-03-05T17:00:35.711150Z",
         "initial_balance_usd": 100.0,
         "cash_balance_usd": 100.0,
         "realized_pnl_usd": 0.0,
@@ -4188,6 +4322,70 @@
               "skills_both_used": false
             }
           }
+        },
+        {
+          "ts": "2026-03-05T17:00:42.250018+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "defensive",
+          "portfolio_id": "analyst_defensive",
+          "decision": {
+            "analyst_id": "defensive",
+            "portfolio_id": "analyst_defensive",
+            "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+            "source": "codex_cli",
+            "created_at": "2026-03-05T17:00:42.247326Z"
+          },
+          "codex": {
+            "token_usage": 2277,
+            "input_token_usage": 2175,
+            "output_token_usage": 102,
+            "token_usage_total_source": "stderr",
+            "token_usage_input_source": "derived_from_total",
+            "token_usage_output_source": "estimated_from_stdout",
+            "log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_17-00-42_2277_tokens.txt",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.54,
+                  "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "explanation": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+            "llm_skill_usage": {
+              "news_sentiment_declared": true,
+              "json_format_guard_declared": true,
+              "news_sentiment_used": true,
+              "json_format_guard_used": true,
+              "json_guard_present": true,
+              "json_guard_mode": "hold_only",
+              "json_guard_stop_loss_pct": 1.2,
+              "skills_trace_present": true,
+              "skills_both_used": true
+            }
+          }
         }
       ],
       "trades": [],
@@ -4356,6 +4554,17 @@
           "realized_pnl_usd": 0.0,
           "unrealized_pnl_usd": 0.0,
           "trade_count": 0
+        },
+        {
+          "ts": "2026-03-05T17:00:42.260099+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "analyst_id": "defensive",
+          "portfolio_id": "analyst_defensive",
+          "equity_usd": 100.0,
+          "cash_balance_usd": 100.0,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": 0.0,
+          "trade_count": 0
         }
       ]
     },
@@ -4366,27 +4575,27 @@
       "latest_result": {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.572653Z"
+          "confidence": 0.54,
+          "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:44.121530Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_mean_reversion",
-          "updated_at": "2026-03-05T16:45:06.542415Z",
+          "updated_at": "2026-03-05T17:00:35.710830Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -4396,13 +4605,13 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.573586Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news -0.07 + RSI 35.3 keep flat pending clearer trend\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\mean_reversion\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0ee-7ce2-8c81-f9b014081bde\n--------\nuser\nA=mean_reversion T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,XRP max_alloc=0.18 lev_max=1.80\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Preparing final JSON output**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.54,\"reason\":\"news -0.07 + RSI 35.3 keep flat pending clearer trend\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f465",
+        "updated_at": "2026-03-05T17:00:44.124823Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_mean_reversion",
-        "updated_at": "2026-03-05T16:45:06.542415Z",
+        "updated_at": "2026-03-05T17:00:35.710830Z",
         "initial_balance_usd": 100.0,
         "cash_balance_usd": 100.0,
         "realized_pnl_usd": 0.0,
@@ -5046,6 +5255,70 @@
               "skills_both_used": false
             }
           }
+        },
+        {
+          "ts": "2026-03-05T17:00:44.143039+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "mean_reversion",
+          "portfolio_id": "analyst_mean_reversion",
+          "decision": {
+            "analyst_id": "mean_reversion",
+            "portfolio_id": "analyst_mean_reversion",
+            "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+            "source": "codex_cli",
+            "created_at": "2026-03-05T17:00:44.121530Z"
+          },
+          "codex": {
+            "token_usage": 2465,
+            "input_token_usage": 2395,
+            "output_token_usage": 70,
+            "token_usage_total_source": "stderr",
+            "token_usage_input_source": "derived_from_total",
+            "token_usage_output_source": "estimated_from_stdout",
+            "log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_17-00-44_2465_tokens.txt",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.54,
+                  "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "explanation": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+            "llm_skill_usage": {
+              "news_sentiment_declared": true,
+              "json_format_guard_declared": true,
+              "news_sentiment_used": true,
+              "json_format_guard_used": true,
+              "json_guard_present": true,
+              "json_guard_mode": "hold_only",
+              "json_guard_stop_loss_pct": 1.2,
+              "skills_trace_present": true,
+              "skills_both_used": true
+            }
+          }
         }
       ],
       "trades": [],
@@ -5214,6 +5487,17 @@
           "realized_pnl_usd": 0.0,
           "unrealized_pnl_usd": 0.0,
           "trade_count": 0
+        },
+        {
+          "ts": "2026-03-05T17:00:44.154300+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "analyst_id": "mean_reversion",
+          "portfolio_id": "analyst_mean_reversion",
+          "equity_usd": 100.0,
+          "cash_balance_usd": 100.0,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": 0.0,
+          "trade_count": 0
         }
       ]
     },
@@ -5224,27 +5508,27 @@
       "latest_result": {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+        "tick_id": "a299ac426ba14f62a633cfd23be41f57",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "474d832ed4c04d6ebcc2f9cff32f5af4",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-05T16:45:06.560087Z"
+          "confidence": 0.45,
+          "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+          "source": "codex_cli",
+          "created_at": "2026-03-05T17:00:45.134376Z"
         },
         "trade_executed": false,
         "fill": null,
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-05T16:45:06.541467Z",
+          "updated_at": "2026-03-05T17:00:35.708451Z",
           "initial_balance_usd": 100.0,
           "cash_balance_usd": 100.0,
           "realized_pnl_usd": 0.0,
@@ -5254,13 +5538,13 @@
           "trade_count": 0,
           "positions": {}
         },
-        "codex_stdout": null,
-        "codex_stderr": null,
-        "updated_at": "2026-03-05T16:45:06.565733Z"
+        "codex_stdout": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"sentiment -0.07 and RSI 35.3 imply cautious stance\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"p\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+        "codex_stderr": "OpenAI Codex v0.106.0 (research preview)\n--------\nworkdir: C:\\Users\\Tiffen\\AppData\\Local\\Temp\\cortex_codex_exec\\quant\nmodel: gpt-5.1-codex-mini\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: high\nreasoning summaries: none\nsession id: 019cbef1-b0c5-7c70-b937-d905afe8b40b\n--------\nuser\nA=quant T=a299ac426ba14f62a633cfd23be41f57 actifs=BTC,ETH,SOL,LINK,BNB max_alloc=0.22 lev_max=2.00\nJSON strict uniquement.\nSkills deterministes=get_market_data,get_orderbook,get_liquidations,get_crypto_news,get_social_sentiment,get_onchain_metrics,get_macro_indicators\nSkills LLM=news_sentiment,json_format_guard\nRegle separation: deterministic skills collectent la data; LLM skills interpretent/formatent.\njson_format_guard: utilise snapshot.ls.jf et produis directement un JSON final valide.\nInterdiction: n'execute aucun outil/commande (exec,shell,powershell,bash,python,ls,pwd,mcp).\nLes skills sont deja pre-calcules dans snapshot et snapshot.ls; ne tente aucun appel externe.\nNe renvoie aucun champ 'notes' et aucun texte hors JSON final.\nskill_docs={\"news_sentiment\":\"# llm_skill: news_sentiment Purpose: - Convert latest news rows into a compact sentiment signal for decision support. Input: - `snapshot.n` rows like `[sentiment, source, headline]`. Output: - `score` in `[-1, 1]` - `bias` in `{bullish, bearish, neutral}` - `confidence` in `[0...\",\"json_format_guard\":\"# llm_skill: json_format_guard Purpose: - Guarantee final output is strict JSON and executable by the trading worker parser. Required shape: ```json { \\\"orders\\\": [ { \\\"action\\\": \\\"long|short|hold\\\", \\\"symbol\\\": \\\"BTC\\\", \\\"allocation_pct\\\": 0.10, \\\"leverage\\\": 1.0, \\\"confidence\\\": 0.60, \\\"reas...\"}\nTrace obligatoire: meta.skills_used.news_sentiment=1 et meta.skills_used.json_format_guard=1.\n{\"orders\":[{\"action\":\"long|short|hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.10,\"leverage\":1.0,\"confidence\":0.60,\"reason\":\"FR court\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\nRegles: max3 ordres; symbole autorise; hold=>allocation_pct=0/leverage=1; qty auto; reason<=90c avec metrique concrete; JSON uniquement.\nGuard obligatoire: mode=hold_only + stop_loss_pct(%) pour cooldown entre 2 appels LLM.\nSchema: pf=etat portefeuille; p=open trades; t=3 derniers trades; d=3 dernieres decisions.\nsnapshot={\"s\":[[\"LINK\",-0.185,\"s\",-0.541,0.658,34.5,-0.523,-5.6e-05,79140941.18],[\"SOL\",-0.163,\"s\",-0.537,0.841,36.4,-0.75,-9.9e-05,820643904.85]],\"p\":[],\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"m\":{\"t\":\"d\",\"v\":\"m\",\"r6\":-0.23,\"r24\":-2.593,\"rsi\":35.3,\"eg\":-0.556},\"sent\":{\"sc\":-0.07,\"tr\":\"f\",\"nb\":\"s\"},\"n\":[[-0.07,\"shared_llm\",\"news=-0.100 reddit=-0.060 combined=-0.070\"]],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"ls\":{\"ns\":{\"score\":-0.07,\"bias\":\"neutral\",\"confidence\":0.54,\"top\":[{\"s\":-0.07,\"h\":\"news=-0.100 reddit=-0.060 combined=-0.070\"}]},\"jf\":{\"required\":1,\"retry\":0}}}\nmcp startup: no servers\n\nthinking\n**Composing final JSON output**\ncodex\n{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"sentiment -0.07 and RSI 35.3 imply cautious stance\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"pf\":{\"eq\":100.0,\"ca\":100.0,\"rp\":0.0,\"up\":0.0,\"gx\":0.0,\"r\":0.0,\"op\":0,\"tc\":0},\"p\":[],\"t\":[],\"d\":[[\"hold\",null,0.0,1.0,\"cooldown_guard\"],[\"hold\",null,0.0,1.0,\"codex_cli\"],[\"hold\",null,0.0,1.0,\"cooldown_guard\"]],\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}\ntokens used\n2\u202f934",
+        "updated_at": "2026-03-05T17:00:45.136516Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_quant",
-        "updated_at": "2026-03-05T16:45:06.541467Z",
+        "updated_at": "2026-03-05T17:00:35.708451Z",
         "initial_balance_usd": 100.0,
         "cash_balance_usd": 100.0,
         "realized_pnl_usd": 0.0,
@@ -5920,6 +6204,105 @@
               "skills_both_used": false
             }
           }
+        },
+        {
+          "ts": "2026-03-05T17:00:45.142127+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "quant",
+          "portfolio_id": "analyst_quant",
+          "decision": {
+            "analyst_id": "quant",
+            "portfolio_id": "analyst_quant",
+            "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+            "source": "codex_cli",
+            "created_at": "2026-03-05T17:00:45.134376Z"
+          },
+          "codex": {
+            "token_usage": 2934,
+            "input_token_usage": 2812,
+            "output_token_usage": 122,
+            "token_usage_total_source": "stderr",
+            "token_usage_input_source": "derived_from_total",
+            "token_usage_output_source": "estimated_from_stdout",
+            "log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_17-00-45_2934_tokens.txt",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.45,
+                  "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "pf": {
+                "eq": 100.0,
+                "ca": 100.0,
+                "rp": 0.0,
+                "up": 0.0,
+                "gx": 0.0,
+                "r": 0.0,
+                "op": 0,
+                "tc": 0
+              },
+              "p": [],
+              "t": [],
+              "d": [
+                [
+                  "hold",
+                  null,
+                  0.0,
+                  1.0,
+                  "cooldown_guard"
+                ],
+                [
+                  "hold",
+                  null,
+                  0.0,
+                  1.0,
+                  "codex_cli"
+                ],
+                [
+                  "hold",
+                  null,
+                  0.0,
+                  1.0,
+                  "cooldown_guard"
+                ]
+              ],
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "explanation": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+            "llm_skill_usage": {
+              "news_sentiment_declared": true,
+              "json_format_guard_declared": true,
+              "news_sentiment_used": true,
+              "json_format_guard_used": true,
+              "json_guard_present": true,
+              "json_guard_mode": "hold_only",
+              "json_guard_stop_loss_pct": 1.2,
+              "skills_trace_present": true,
+              "skills_both_used": true
+            }
+          }
         }
       ],
       "trades": [],
@@ -6088,11 +6471,278 @@
           "realized_pnl_usd": 0.0,
           "unrealized_pnl_usd": 0.0,
           "trade_count": 0
+        },
+        {
+          "ts": "2026-03-05T17:00:45.156993+00:00",
+          "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+          "analyst_id": "quant",
+          "portfolio_id": "analyst_quant",
+          "equity_usd": 100.0,
+          "cash_balance_usd": 100.0,
+          "realized_pnl_usd": 0.0,
+          "unrealized_pnl_usd": 0.0,
+          "trade_count": 0
         }
       ]
     }
   ],
   "llm_call_journal": [
+    {
+      "ts": "2026-03-05T17:00:45.160374+00:00",
+      "analyst_id": "quant",
+      "portfolio_id": "analyst_quant",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "llm_gate_reasons": [
+        "signal_conflict"
+      ],
+      "llm_signal_assets_top": [
+        "LINK",
+        "SOL"
+      ],
+      "llm_signal_assets_universe": [
+        "LINK",
+        "SOL",
+        "BTC",
+        "ETH",
+        "BNB"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 2934,
+      "codex_input_token_usage": 2812,
+      "codex_output_token_usage": 122,
+      "codex_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_17-00-45_2934_tokens.txt",
+      "codex_explanation": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+      "decision_reason": "sentiment -0.07 and RSI 35.3 imply cautious stance",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "sentiment -0.07 and RSI 35.3 imply cautious stance"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "pf": {
+          "eq": 100.0,
+          "ca": 100.0,
+          "rp": 0.0,
+          "up": 0.0,
+          "gx": 0.0,
+          "r": 0.0,
+          "op": 0,
+          "tc": 0
+        },
+        "p": [],
+        "t": [],
+        "d": [
+          [
+            "hold",
+            null,
+            0.0,
+            1.0,
+            "cooldown_guard"
+          ],
+          [
+            "hold",
+            null,
+            0.0,
+            1.0,
+            "codex_cli"
+          ],
+          [
+            "hold",
+            null,
+            0.0,
+            1.0,
+            "cooldown_guard"
+          ]
+        ],
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-05T17:00:44.161025+00:00",
+      "analyst_id": "mean_reversion",
+      "portfolio_id": "analyst_mean_reversion",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "llm_gate_reasons": [
+        "signal_conflict"
+      ],
+      "llm_signal_assets_top": [
+        "LINK",
+        "SOL"
+      ],
+      "llm_signal_assets_universe": [
+        "LINK",
+        "SOL",
+        "BTC",
+        "XRP",
+        "ETH"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 2465,
+      "codex_input_token_usage": 2395,
+      "codex_output_token_usage": 70,
+      "codex_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_17-00-44_2465_tokens.txt",
+      "codex_explanation": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+      "decision_reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "news -0.07 + RSI 35.3 keep flat pending clearer trend"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-05T17:00:42.261820+00:00",
+      "analyst_id": "defensive",
+      "portfolio_id": "analyst_defensive",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "llm_gate_reasons": [
+        "signal_conflict"
+      ],
+      "llm_signal_assets_top": [
+        "SOL",
+        "BTC"
+      ],
+      "llm_signal_assets_universe": [
+        "SOL",
+        "BTC",
+        "XRP",
+        "ETH",
+        "BNB"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 2277,
+      "codex_input_token_usage": 2175,
+      "codex_output_token_usage": 102,
+      "codex_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_17-00-42_2277_tokens.txt",
+      "codex_explanation": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+      "decision_reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "Sentiment score -0.07 neutral/bearish; maintain zero exposure"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-05T17:00:41.722568+00:00",
+      "analyst_id": "aggressive",
+      "portfolio_id": "analyst_aggressive",
+      "tick_id": "a299ac426ba14f62a633cfd23be41f57",
+      "llm_gate_reasons": [
+        "strong_signal",
+        "signal_conflict"
+      ],
+      "llm_signal_assets_top": [
+        "AVAX",
+        "SOL"
+      ],
+      "llm_signal_assets_universe": [
+        "AVAX",
+        "SOL",
+        "BTC",
+        "DOGE",
+        "ETH"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 2428,
+      "codex_input_token_usage": 2357,
+      "codex_output_token_usage": 71,
+      "codex_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_17-00-41_2428_tokens.txt",
+      "codex_explanation": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+      "decision_reason": "Combined news score -0.07 and RSI 35.3 show weak momentum",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.54,
+            "reason": "Combined news score -0.07 and RSI 35.3 show weak momentum"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
     {
       "ts": "2026-03-05T16:30:13.903704+00:00",
       "analyst_id": "quant",
