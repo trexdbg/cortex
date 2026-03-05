@@ -1,108 +1,108 @@
 {
-  "updated_at": "2026-03-05T03:31:25.321419+00:00",
+  "updated_at": "2026-03-05T03:46:24.320217+00:00",
   "snapshot": {
-    "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
-    "as_of": "2026-03-05T03:31:19.620117Z",
+    "tick_id": "872ffab2bd924db19846fc4f060feac6",
+    "as_of": "2026-03-05T03:46:19.620635Z",
     "market_data": [
       {
         "symbol": "BTC",
         "timeframe": "15m",
-        "price": 72482.42,
-        "price_change_24h_pct": 6.691,
-        "volume": 930536.57,
+        "price": 72408.44,
+        "price_change_24h_pct": 7.118,
+        "volume": 682170.09,
         "funding_rate": 3.8e-05,
-        "open_interest": 6629939414.08,
-        "as_of": "2026-03-05T03:31:19.620940Z"
+        "open_interest": 6620355948.09,
+        "as_of": "2026-03-05T03:46:19.621462Z"
       },
       {
         "symbol": "ETH",
         "timeframe": "15m",
-        "price": 2113.0,
-        "price_change_24h_pct": 7.554,
-        "volume": 275162.16,
-        "funding_rate": -2.5e-05,
-        "open_interest": 4512629631.17,
-        "as_of": "2026-03-05T03:31:19.621346Z"
+        "price": 2111.98,
+        "price_change_24h_pct": 8.053,
+        "volume": 826474.88,
+        "funding_rate": -2.3e-05,
+        "open_interest": 4514945419.53,
+        "as_of": "2026-03-05T03:46:19.621899Z"
       },
       {
         "symbol": "SOL",
         "timeframe": "15m",
-        "price": 89.98,
-        "price_change_24h_pct": 4.458,
-        "volume": 674399.31,
-        "funding_rate": -4.5e-05,
-        "open_interest": 875685688.43,
-        "as_of": "2026-03-05T03:31:19.621641Z"
+        "price": 89.99,
+        "price_change_24h_pct": 5.227,
+        "volume": 578616.74,
+        "funding_rate": -4.7e-05,
+        "open_interest": 874571564.88,
+        "as_of": "2026-03-05T03:46:19.622196Z"
       },
       {
         "symbol": "LINK",
         "timeframe": "15m",
-        "price": 9.24,
-        "price_change_24h_pct": 5.479,
-        "volume": 13705.85,
-        "funding_rate": 7.2e-05,
-        "open_interest": 80436292.03,
-        "as_of": "2026-03-05T03:31:19.621844Z"
+        "price": 9.26,
+        "price_change_24h_pct": 6.315,
+        "volume": 5357.5,
+        "funding_rate": 7e-05,
+        "open_interest": 80613423.93,
+        "as_of": "2026-03-05T03:46:19.622407Z"
       },
       {
         "symbol": "AVAX",
         "timeframe": "15m",
         "price": 9.45,
-        "price_change_24h_pct": 3.166,
-        "volume": 244.47,
-        "funding_rate": 9.6e-05,
-        "open_interest": 84210462.0,
-        "as_of": "2026-03-05T03:31:19.622041Z"
+        "price_change_24h_pct": 3.392,
+        "volume": 10536.81,
+        "funding_rate": 8.8e-05,
+        "open_interest": 84240541.35,
+        "as_of": "2026-03-05T03:46:19.622610Z"
       },
       {
         "symbol": "XRP",
         "timeframe": "15m",
-        "price": 1.418,
-        "price_change_24h_pct": 4.65,
-        "volume": 95407.81,
-        "funding_rate": 9.5e-05,
-        "open_interest": 413940474.12,
-        "as_of": "2026-03-05T03:31:19.622241Z"
+        "price": 1.4185,
+        "price_change_24h_pct": 5.191,
+        "volume": 161322.22,
+        "funding_rate": 9.1e-05,
+        "open_interest": 412972386.18,
+        "as_of": "2026-03-05T03:46:19.622823Z"
       },
       {
         "symbol": "ADA",
         "timeframe": "15m",
         "price": 0.2738,
-        "price_change_24h_pct": 4.106,
-        "volume": 10251.38,
+        "price_change_24h_pct": 4.584,
+        "volume": 17886.96,
         "funding_rate": 0.0001,
-        "open_interest": 85824532.08,
-        "as_of": "2026-03-05T03:31:19.622431Z"
+        "open_interest": 85749911.17,
+        "as_of": "2026-03-05T03:46:19.623018Z"
       },
       {
         "symbol": "DOGE",
         "timeframe": "15m",
-        "price": 0.0962,
-        "price_change_24h_pct": 7.631,
-        "volume": 51354.46,
+        "price": 0.096,
+        "price_change_24h_pct": 7.885,
+        "volume": 68171.46,
         "funding_rate": 0.0001,
-        "open_interest": 189709096.6,
-        "as_of": "2026-03-05T03:31:19.622623Z"
+        "open_interest": 189304377.92,
+        "as_of": "2026-03-05T03:46:19.623218Z"
       },
       {
         "symbol": "BNB",
         "timeframe": "15m",
-        "price": 653.17,
-        "price_change_24h_pct": 3.599,
-        "volume": 38685.34,
+        "price": 653.52,
+        "price_change_24h_pct": 4.133,
+        "volume": 61007.8,
         "funding_rate": 0.0,
-        "open_interest": 333091807.69,
-        "as_of": "2026-03-05T03:31:19.622817Z"
+        "open_interest": 332999377.64,
+        "as_of": "2026-03-05T03:46:19.623426Z"
       },
       {
         "symbol": "OP",
         "timeframe": "15m",
-        "price": 0.1282,
-        "price_change_24h_pct": 1.104,
-        "volume": 791.88,
+        "price": 0.1278,
+        "price_change_24h_pct": 1.188,
+        "volume": 3616.33,
         "funding_rate": 0.0001,
-        "open_interest": 18953722.35,
-        "as_of": "2026-03-05T03:31:19.623004Z"
+        "open_interest": 18962932.36,
+        "as_of": "2026-03-05T03:46:19.623620Z"
       }
     ],
     "orderbooks": [
@@ -110,517 +110,517 @@
         "symbol": "BTC",
         "bids": [
           {
-            "price": 72482.42,
-            "size": 1.35927
+            "price": 72408.43,
+            "size": 1.48033
           },
           {
-            "price": 72482.41,
-            "size": 0.00055
+            "price": 72408.42,
+            "size": 0.0005
           },
           {
-            "price": 72481.5,
-            "size": 0.00235
+            "price": 72408.41,
+            "size": 0.00972
           },
           {
-            "price": 72480.88,
+            "price": 72408.4,
+            "size": 0.05032
+          },
+          {
+            "price": 72408.37,
             "size": 8e-05
-          },
-          {
-            "price": 72480.83,
-            "size": 7e-05
           }
         ],
         "asks": [
           {
-            "price": 72482.43,
-            "size": 1.23893
+            "price": 72408.44,
+            "size": 1.08184
           },
           {
-            "price": 72482.44,
-            "size": 0.00042
+            "price": 72408.45,
+            "size": 0.01499
           },
           {
-            "price": 72482.51,
-            "size": 0.00357
+            "price": 72408.46,
+            "size": 0.03901
           },
           {
-            "price": 72482.66,
+            "price": 72408.7,
             "size": 7e-05
           },
           {
-            "price": 72482.96,
+            "price": 72408.79,
             "size": 7e-05
           }
         ],
         "spread_bps": 0.0014,
-        "as_of": "2026-03-05T03:31:19.621065Z"
+        "as_of": "2026-03-05T03:46:19.621581Z"
       },
       {
         "symbol": "ETH",
         "bids": [
           {
-            "price": 2112.99,
-            "size": 0.0529
+            "price": 2111.97,
+            "size": 3.5262
           },
           {
-            "price": 2112.98,
-            "size": 0.0365
+            "price": 2111.94,
+            "size": 0.0073
           },
           {
-            "price": 2112.97,
-            "size": 0.0074
+            "price": 2111.93,
+            "size": 0.0233
           },
           {
-            "price": 2112.93,
-            "size": 0.0146
+            "price": 2111.9,
+            "size": 0.0025
           },
           {
-            "price": 2112.92,
-            "size": 0.005
+            "price": 2111.89,
+            "size": 0.0102
           }
         ],
         "asks": [
           {
-            "price": 2113.0,
-            "size": 8.086
+            "price": 2111.98,
+            "size": 5.6248
           },
           {
-            "price": 2113.01,
+            "price": 2112.0,
             "size": 0.0024
           },
           {
-            "price": 2113.02,
+            "price": 2112.02,
+            "size": 0.0049
+          },
+          {
+            "price": 2112.03,
             "size": 0.0403
           },
           {
-            "price": 2113.03,
-            "size": 0.0048
-          },
-          {
-            "price": 2113.04,
-            "size": 1.2226
+            "price": 2112.04,
+            "size": 0.0286
           }
         ],
         "spread_bps": 0.0473,
-        "as_of": "2026-03-05T03:31:19.621416Z"
+        "as_of": "2026-03-05T03:46:19.621952Z"
       },
       {
         "symbol": "SOL",
         "bids": [
           {
+            "price": 89.98,
+            "size": 121.456
+          },
+          {
             "price": 89.97,
-            "size": 422.237
+            "size": 204.768
           },
           {
             "price": 89.96,
-            "size": 658.346
+            "size": 328.075
           },
           {
             "price": 89.95,
-            "size": 954.775
+            "size": 427.03
           },
           {
             "price": 89.94,
-            "size": 2459.444
-          },
-          {
-            "price": 89.93,
-            "size": 5987.432
+            "size": 516.175
           }
         ],
         "asks": [
           {
-            "price": 89.98,
-            "size": 233.237
-          },
-          {
             "price": 89.99,
-            "size": 467.3
+            "size": 540.754
           },
           {
             "price": 90.0,
-            "size": 660.855
+            "size": 565.643
           },
           {
             "price": 90.01,
-            "size": 520.531
+            "size": 707.131
           },
           {
             "price": 90.02,
-            "size": 687.81
+            "size": 1249.322
+          },
+          {
+            "price": 90.03,
+            "size": 2094.843
           }
         ],
-        "spread_bps": 1.1114,
-        "as_of": "2026-03-05T03:31:19.621692Z"
+        "spread_bps": 1.1113,
+        "as_of": "2026-03-05T03:46:19.622249Z"
       },
       {
         "symbol": "LINK",
         "bids": [
           {
+            "price": 9.25,
+            "size": 7288.29
+          },
+          {
             "price": 9.24,
-            "size": 2720.49
+            "size": 14574.37
           },
           {
             "price": 9.23,
-            "size": 14825.04
+            "size": 18554.69
           },
           {
             "price": 9.22,
-            "size": 18227.41
+            "size": 16646.75
           },
           {
             "price": 9.21,
-            "size": 51190.99
-          },
-          {
-            "price": 9.2,
-            "size": 38644.43
+            "size": 65422.0
           }
         ],
         "asks": [
           {
-            "price": 9.25,
-            "size": 8871.13
-          },
-          {
             "price": 9.26,
-            "size": 16795.81
+            "size": 4311.2
           },
           {
             "price": 9.27,
-            "size": 21050.98
+            "size": 19165.8
           },
           {
             "price": 9.28,
-            "size": 32998.06
+            "size": 21318.24
           },
           {
             "price": 9.29,
-            "size": 17952.82
+            "size": 28690.44
+          },
+          {
+            "price": 9.3,
+            "size": 17974.28
           }
         ],
-        "spread_bps": 10.8167,
-        "as_of": "2026-03-05T03:31:19.621891Z"
+        "spread_bps": 10.805,
+        "as_of": "2026-03-05T03:46:19.622455Z"
       },
       {
         "symbol": "AVAX",
         "bids": [
           {
             "price": 9.44,
-            "size": 2988.95
+            "size": 4001.94
           },
           {
             "price": 9.43,
-            "size": 14528.93
+            "size": 10840.85
           },
           {
             "price": 9.42,
-            "size": 28446.77
+            "size": 15653.08
           },
           {
             "price": 9.41,
-            "size": 11236.46
+            "size": 29401.23
           },
           {
             "price": 9.4,
-            "size": 9583.38
+            "size": 13578.35
           }
         ],
         "asks": [
           {
             "price": 9.45,
-            "size": 4948.71
+            "size": 4750.16
           },
           {
             "price": 9.46,
-            "size": 8925.02
+            "size": 11569.87
           },
           {
             "price": 9.47,
-            "size": 10447.49
+            "size": 18055.22
           },
           {
             "price": 9.48,
-            "size": 18395.28
+            "size": 32932.58
           },
           {
             "price": 9.49,
-            "size": 26296.52
+            "size": 6850.12
           }
         ],
         "spread_bps": 10.5876,
-        "as_of": "2026-03-05T03:31:19.622092Z"
+        "as_of": "2026-03-05T03:46:19.622673Z"
       },
       {
         "symbol": "XRP",
         "bids": [
           {
-            "price": 1.4179,
-            "size": 13419.4
+            "price": 1.4184,
+            "size": 14962.1
           },
           {
-            "price": 1.4178,
-            "size": 23870.6
+            "price": 1.4183,
+            "size": 23928.2
           },
           {
-            "price": 1.4177,
-            "size": 13025.3
+            "price": 1.4182,
+            "size": 44548.4
           },
           {
-            "price": 1.4176,
-            "size": 5824.3
+            "price": 1.4181,
+            "size": 95345.9
           },
           {
-            "price": 1.4175,
-            "size": 11945.9
+            "price": 1.418,
+            "size": 88693.4
           }
         ],
         "asks": [
           {
-            "price": 1.418,
-            "size": 11192.5
+            "price": 1.4185,
+            "size": 4319.3
           },
           {
-            "price": 1.4181,
-            "size": 14363.2
+            "price": 1.4186,
+            "size": 899.2
           },
           {
-            "price": 1.4182,
-            "size": 21114.7
+            "price": 1.4187,
+            "size": 1186.5
           },
           {
-            "price": 1.4183,
-            "size": 20220.2
+            "price": 1.4188,
+            "size": 1991.4
           },
           {
-            "price": 1.4184,
-            "size": 19529.7
+            "price": 1.4189,
+            "size": 13036.8
           }
         ],
-        "spread_bps": 0.7052,
-        "as_of": "2026-03-05T03:31:19.622287Z"
+        "spread_bps": 0.705,
+        "as_of": "2026-03-05T03:46:19.622870Z"
       },
       {
         "symbol": "ADA",
         "bids": [
           {
             "price": 0.2738,
-            "size": 17631.3
+            "size": 46082.2
           },
           {
             "price": 0.2737,
-            "size": 112250.8
+            "size": 142801.3
           },
           {
             "price": 0.2736,
-            "size": 111299.4
+            "size": 112976.0
           },
           {
             "price": 0.2735,
-            "size": 153453.2
+            "size": 139789.4
           },
           {
             "price": 0.2734,
-            "size": 192159.4
+            "size": 199386.9
           }
         ],
         "asks": [
           {
             "price": 0.2739,
-            "size": 74239.5
+            "size": 39729.9
           },
           {
             "price": 0.274,
-            "size": 130889.0
+            "size": 93677.9
           },
           {
             "price": 0.2741,
-            "size": 132338.7
+            "size": 133113.9
           },
           {
             "price": 0.2742,
-            "size": 109568.3
+            "size": 109189.7
           },
           {
             "price": 0.2743,
-            "size": 132824.8
+            "size": 73403.4
           }
         ],
         "spread_bps": 3.6516,
-        "as_of": "2026-03-05T03:31:19.622479Z"
+        "as_of": "2026-03-05T03:46:19.623066Z"
       },
       {
         "symbol": "DOGE",
         "bids": [
           {
-            "price": 0.0962,
-            "size": 229330.0
+            "price": 0.096,
+            "size": 58485.0
           },
           {
-            "price": 0.0962,
-            "size": 130466.0
+            "price": 0.096,
+            "size": 140029.0
           },
           {
-            "price": 0.0962,
-            "size": 60544.0
+            "price": 0.096,
+            "size": 254435.0
           },
           {
-            "price": 0.0961,
-            "size": 211514.0
+            "price": 0.096,
+            "size": 406339.0
           },
           {
-            "price": 0.0961,
-            "size": 449106.0
+            "price": 0.096,
+            "size": 581751.0
           }
         ],
         "asks": [
           {
-            "price": 0.0962,
-            "size": 1628.0
+            "price": 0.096,
+            "size": 90148.0
           },
           {
-            "price": 0.0962,
-            "size": 24295.0
+            "price": 0.0961,
+            "size": 61334.0
           },
           {
-            "price": 0.0962,
-            "size": 50364.0
+            "price": 0.0961,
+            "size": 55909.0
           },
           {
-            "price": 0.0962,
-            "size": 220907.0
+            "price": 0.0961,
+            "size": 129929.0
           },
           {
-            "price": 0.0962,
-            "size": 550697.0
+            "price": 0.0961,
+            "size": 251552.0
           }
         ],
         "spread_bps": 0.0,
-        "as_of": "2026-03-05T03:31:19.622669Z"
+        "as_of": "2026-03-05T03:46:19.623265Z"
       },
       {
         "symbol": "BNB",
         "bids": [
           {
-            "price": 653.17,
-            "size": 12.841
+            "price": 653.51,
+            "size": 29.751
           },
           {
-            "price": 653.16,
-            "size": 1.829
+            "price": 653.5,
+            "size": 17.66
           },
           {
-            "price": 653.15,
-            "size": 1.689
+            "price": 653.49,
+            "size": 8.557
           },
           {
-            "price": 653.14,
-            "size": 1.689
+            "price": 653.48,
+            "size": 3.793
           },
           {
-            "price": 653.13,
-            "size": 0.009
+            "price": 653.47,
+            "size": 14.575
           }
         ],
         "asks": [
           {
-            "price": 653.18,
-            "size": 2.803
+            "price": 653.52,
+            "size": 1.018
           },
           {
-            "price": 653.19,
-            "size": 0.017
+            "price": 653.53,
+            "size": 0.617
           },
           {
-            "price": 653.2,
-            "size": 1.782
+            "price": 653.54,
+            "size": 0.018
           },
           {
-            "price": 653.21,
-            "size": 0.009
+            "price": 653.55,
+            "size": 1.4
           },
           {
-            "price": 653.22,
-            "size": 0.026
+            "price": 653.56,
+            "size": 4.607
           }
         ],
-        "spread_bps": 0.1531,
-        "as_of": "2026-03-05T03:31:19.622862Z"
+        "spread_bps": 0.153,
+        "as_of": "2026-03-05T03:46:19.623473Z"
       },
       {
         "symbol": "OP",
         "bids": [
           {
-            "price": 0.1281,
-            "size": 34680.35
-          },
-          {
-            "price": 0.128,
-            "size": 130405.9
-          },
-          {
-            "price": 0.1279,
-            "size": 229879.46
-          },
-          {
-            "price": 0.1278,
-            "size": 119598.44
-          },
-          {
             "price": 0.1277,
-            "size": 142417.06
+            "size": 31005.44
+          },
+          {
+            "price": 0.1276,
+            "size": 140548.13
+          },
+          {
+            "price": 0.1275,
+            "size": 102121.7
+          },
+          {
+            "price": 0.1274,
+            "size": 52995.72
+          },
+          {
+            "price": 0.1273,
+            "size": 78213.01
           }
         ],
         "asks": [
           {
+            "price": 0.1278,
+            "size": 8319.35
+          },
+          {
+            "price": 0.1279,
+            "size": 114129.96
+          },
+          {
+            "price": 0.128,
+            "size": 152901.42
+          },
+          {
+            "price": 0.1281,
+            "size": 145189.12
+          },
+          {
             "price": 0.1282,
-            "size": 5612.13
-          },
-          {
-            "price": 0.1283,
-            "size": 64897.76
-          },
-          {
-            "price": 0.1284,
-            "size": 96555.06
-          },
-          {
-            "price": 0.1285,
-            "size": 96883.87
-          },
-          {
-            "price": 0.1286,
-            "size": 157648.68
+            "size": 90485.52
           }
         ],
-        "spread_bps": 7.8034,
-        "as_of": "2026-03-05T03:31:19.623049Z"
+        "spread_bps": 7.8278,
+        "as_of": "2026-03-05T03:46:19.623668Z"
       }
     ],
     "liquidations": [
       {
         "symbol": "BTC",
         "window": "1h",
-        "long_liq_usd": 147517.55,
+        "long_liq_usd": 72.25,
         "short_liq_usd": 40097.47,
-        "total_liq_usd": 187615.02,
-        "as_of": "2026-03-05T03:31:19.621149Z"
+        "total_liq_usd": 40169.72,
+        "as_of": "2026-03-05T03:46:19.621665Z"
       },
       {
         "symbol": "ETH",
         "window": "1h",
-        "long_liq_usd": 11108.97,
+        "long_liq_usd": 1783.57,
         "short_liq_usd": 0.0,
-        "total_liq_usd": 11108.97,
-        "as_of": "2026-03-05T03:31:19.621463Z"
+        "total_liq_usd": 1783.57,
+        "as_of": "2026-03-05T03:46:19.621999Z"
       },
       {
         "symbol": "SOL",
         "window": "1h",
-        "long_liq_usd": 2022.02,
+        "long_liq_usd": 12992.08,
         "short_liq_usd": 0.0,
-        "total_liq_usd": 2022.02,
-        "as_of": "2026-03-05T03:31:19.621741Z"
+        "total_liq_usd": 12992.08,
+        "as_of": "2026-03-05T03:46:19.622300Z"
       },
       {
         "symbol": "LINK",
@@ -628,7 +628,7 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T03:31:19.621939Z"
+        "as_of": "2026-03-05T03:46:19.622503Z"
       },
       {
         "symbol": "AVAX",
@@ -636,31 +636,31 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T03:31:19.622140Z"
+        "as_of": "2026-03-05T03:46:19.622722Z"
       },
       {
         "symbol": "XRP",
         "window": "1h",
-        "long_liq_usd": 181.4,
+        "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
-        "total_liq_usd": 181.4,
-        "as_of": "2026-03-05T03:31:19.622334Z"
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T03:46:19.622916Z"
       },
       {
         "symbol": "ADA",
         "window": "1h",
-        "long_liq_usd": 12.73,
+        "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
-        "total_liq_usd": 12.73,
-        "as_of": "2026-03-05T03:31:19.622526Z"
+        "total_liq_usd": 0.0,
+        "as_of": "2026-03-05T03:46:19.623115Z"
       },
       {
         "symbol": "DOGE",
         "window": "1h",
-        "long_liq_usd": 36765.36,
-        "short_liq_usd": 0.0,
-        "total_liq_usd": 36765.36,
-        "as_of": "2026-03-05T03:31:19.622716Z"
+        "long_liq_usd": 5912.63,
+        "short_liq_usd": 721.58,
+        "total_liq_usd": 6634.21,
+        "as_of": "2026-03-05T03:46:19.623313Z"
       },
       {
         "symbol": "BNB",
@@ -668,7 +668,7 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T03:31:19.622907Z"
+        "as_of": "2026-03-05T03:46:19.623520Z"
       },
       {
         "symbol": "OP",
@@ -676,16 +676,16 @@
         "long_liq_usd": 0.0,
         "short_liq_usd": 0.0,
         "total_liq_usd": 0.0,
-        "as_of": "2026-03-05T03:31:19.623133Z"
+        "as_of": "2026-03-05T03:46:19.623716Z"
       }
     ],
     "news": [
       {
         "source": "cointelegraph.com",
-        "headline": "Big Tech signs Trump pledge to cover their own AI energy costs",
+        "headline": "Coinbase, Microsoft and Europol take down phishing service \u2018Tycoon 2FA\u2019",
         "sentiment": 0.0,
-        "url": "https://cointelegraph.com/news/big-tech-signs-trump-pledge-to-cover-their-own-ai-energy-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published_at": "2026-03-05T03:20:24Z"
+        "url": "https://cointelegraph.com/news/coinbase-microsoft-and-europol-take-down-phishing-service-tycoon-2fa?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-03-05T03:40:03Z"
       },
       {
         "source": "www.coindesk.com",
@@ -696,10 +696,10 @@
       },
       {
         "source": "cointelegraph.com",
-        "headline": "Zerohash joins surging list of crypto firms vying for a bank charter",
-        "sentiment": -1.0,
-        "url": "https://cointelegraph.com/news/zerohash-applies-us-national-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published_at": "2026-03-05T03:15:56Z"
+        "headline": "Big Tech signs Trump pledge to cover their own AI energy costs",
+        "sentiment": 0.0,
+        "url": "https://cointelegraph.com/news/big-tech-signs-trump-pledge-to-cover-their-own-ai-energy-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-03-05T03:20:24Z"
       },
       {
         "source": "www.coindesk.com",
@@ -710,10 +710,10 @@
       },
       {
         "source": "cointelegraph.com",
-        "headline": "Star Trek\u2019s Captain Kirk shows off X Money as limited beta goes live",
-        "sentiment": 0.0,
-        "url": "https://cointelegraph.com/news/elon-musk-taps-captain-kirk-for-x-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published_at": "2026-03-05T01:51:45Z"
+        "headline": "Zerohash joins surging list of crypto firms vying for a bank charter",
+        "sentiment": -1.0,
+        "url": "https://cointelegraph.com/news/zerohash-applies-us-national-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-03-05T03:15:56Z"
       },
       {
         "source": "www.coindesk.com",
@@ -724,10 +724,10 @@
       },
       {
         "source": "cointelegraph.com",
-        "headline": "Bitcoin\u2019s bullish momentum accelerates but topping $78K remains a challenge",
-        "sentiment": 1.0,
-        "url": "https://cointelegraph.com/news/bitcoins-bullish-momentum-accelerates-but-topping-78k-remains-a-challenge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "published_at": "2026-03-04T21:30:00Z"
+        "headline": "Star Trek\u2019s Captain Kirk shows off X Money as limited beta goes live",
+        "sentiment": 0.0,
+        "url": "https://cointelegraph.com/news/elon-musk-taps-captain-kirk-for-x-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-03-05T01:51:45Z"
       },
       {
         "source": "www.coindesk.com",
@@ -741,72 +741,72 @@
       {
         "symbol": "BTC",
         "platform": "reddit",
-        "score": 0.0,
+        "score": -0.06,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.621238Z"
+        "as_of": "2026-03-05T03:46:19.621757Z"
       },
       {
         "symbol": "ETH",
         "platform": "reddit",
-        "score": 0.04,
+        "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.621514Z"
+        "as_of": "2026-03-05T03:46:19.622076Z"
       },
       {
         "symbol": "SOL",
         "platform": "reddit",
         "score": -0.1,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.621794Z"
+        "as_of": "2026-03-05T03:46:19.622357Z"
       },
       {
         "symbol": "LINK",
         "platform": "reddit",
-        "score": 0.0,
+        "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.621993Z"
+        "as_of": "2026-03-05T03:46:19.622562Z"
       },
       {
         "symbol": "AVAX",
         "platform": "reddit",
         "score": 0.0,
         "mentions": 5,
-        "as_of": "2026-03-05T03:31:19.622193Z"
+        "as_of": "2026-03-05T03:46:19.622776Z"
       },
       {
         "symbol": "XRP",
         "platform": "reddit",
         "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.622386Z"
+        "as_of": "2026-03-05T03:46:19.622970Z"
       },
       {
         "symbol": "ADA",
         "platform": "reddit",
         "score": -0.08,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.622578Z"
+        "as_of": "2026-03-05T03:46:19.623170Z"
       },
       {
         "symbol": "DOGE",
         "platform": "reddit",
         "score": 0.04,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.622771Z"
+        "as_of": "2026-03-05T03:46:19.623378Z"
       },
       {
         "symbol": "BNB",
         "platform": "reddit",
         "score": 0.1,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.622957Z"
+        "as_of": "2026-03-05T03:46:19.623573Z"
       },
       {
         "symbol": "OP",
         "platform": "reddit",
         "score": -0.02,
         "mentions": 50,
-        "as_of": "2026-03-05T03:31:19.623188Z"
+        "as_of": "2026-03-05T03:46:19.623770Z"
       }
     ],
     "onchain_metrics": [
@@ -815,14 +815,14 @@
         "active_addresses": 697294,
         "exchange_netflow": -2372253739.96,
         "mvrv": 1.33246,
-        "as_of": "2026-03-05T03:31:19.621293Z"
+        "as_of": "2026-03-05T03:46:19.621811Z"
       },
       {
         "symbol": "ETH",
         "active_addresses": 909701,
         "exchange_netflow": 62029077.4,
         "mvrv": 0.960529,
-        "as_of": "2026-03-05T03:31:19.621588Z"
+        "as_of": "2026-03-05T03:46:19.622142Z"
       }
     ],
     "macro_indicators": [
@@ -831,7 +831,7 @@
         "dxy": 117.822,
         "us10y": 4.06,
         "spx_fut": 6869.5,
-        "as_of": "2026-03-05T03:31:19.623605Z"
+        "as_of": "2026-03-05T03:46:19.624199Z"
       }
     ],
     "failures": [],
@@ -845,12 +845,12 @@
         "output": {
           "symbol": "BTC",
           "timeframe": "15m",
-          "price": 72482.42,
-          "price_change_24h_pct": 6.691,
-          "volume": 930536.57,
+          "price": 72408.44,
+          "price_change_24h_pct": 7.118,
+          "volume": 682170.09,
           "funding_rate": 3.8e-05,
-          "open_interest": 6629939414.08,
-          "as_of": "2026-03-05T03:31:19.620940Z"
+          "open_interest": 6620355948.09,
+          "as_of": "2026-03-05T03:46:19.621462Z"
         }
       },
       {
@@ -862,50 +862,50 @@
           "symbol": "BTC",
           "bids": [
             {
-              "price": 72482.42,
-              "size": 1.35927
+              "price": 72408.43,
+              "size": 1.48033
             },
             {
-              "price": 72482.41,
-              "size": 0.00055
+              "price": 72408.42,
+              "size": 0.0005
             },
             {
-              "price": 72481.5,
-              "size": 0.00235
+              "price": 72408.41,
+              "size": 0.00972
             },
             {
-              "price": 72480.88,
+              "price": 72408.4,
+              "size": 0.05032
+            },
+            {
+              "price": 72408.37,
               "size": 8e-05
-            },
-            {
-              "price": 72480.83,
-              "size": 7e-05
             }
           ],
           "asks": [
             {
-              "price": 72482.43,
-              "size": 1.23893
+              "price": 72408.44,
+              "size": 1.08184
             },
             {
-              "price": 72482.44,
-              "size": 0.00042
+              "price": 72408.45,
+              "size": 0.01499
             },
             {
-              "price": 72482.51,
-              "size": 0.00357
+              "price": 72408.46,
+              "size": 0.03901
             },
             {
-              "price": 72482.66,
+              "price": 72408.7,
               "size": 7e-05
             },
             {
-              "price": 72482.96,
+              "price": 72408.79,
               "size": 7e-05
             }
           ],
           "spread_bps": 0.0014,
-          "as_of": "2026-03-05T03:31:19.621065Z"
+          "as_of": "2026-03-05T03:46:19.621581Z"
         }
       },
       {
@@ -917,10 +917,10 @@
         "output": {
           "symbol": "BTC",
           "window": "1h",
-          "long_liq_usd": 147517.55,
+          "long_liq_usd": 72.25,
           "short_liq_usd": 40097.47,
-          "total_liq_usd": 187615.02,
-          "as_of": "2026-03-05T03:31:19.621149Z"
+          "total_liq_usd": 40169.72,
+          "as_of": "2026-03-05T03:46:19.621665Z"
         }
       },
       {
@@ -931,9 +931,9 @@
         "output": {
           "symbol": "BTC",
           "platform": "reddit",
-          "score": 0.0,
+          "score": -0.06,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.621238Z"
+          "as_of": "2026-03-05T03:46:19.621757Z"
         }
       },
       {
@@ -946,7 +946,7 @@
           "active_addresses": 697294,
           "exchange_netflow": -2372253739.96,
           "mvrv": 1.33246,
-          "as_of": "2026-03-05T03:31:19.621293Z"
+          "as_of": "2026-03-05T03:46:19.621811Z"
         }
       },
       {
@@ -958,12 +958,12 @@
         "output": {
           "symbol": "ETH",
           "timeframe": "15m",
-          "price": 2113.0,
-          "price_change_24h_pct": 7.554,
-          "volume": 275162.16,
-          "funding_rate": -2.5e-05,
-          "open_interest": 4512629631.17,
-          "as_of": "2026-03-05T03:31:19.621346Z"
+          "price": 2111.98,
+          "price_change_24h_pct": 8.053,
+          "volume": 826474.88,
+          "funding_rate": -2.3e-05,
+          "open_interest": 4514945419.53,
+          "as_of": "2026-03-05T03:46:19.621899Z"
         }
       },
       {
@@ -975,50 +975,50 @@
           "symbol": "ETH",
           "bids": [
             {
-              "price": 2112.99,
-              "size": 0.0529
+              "price": 2111.97,
+              "size": 3.5262
             },
             {
-              "price": 2112.98,
-              "size": 0.0365
+              "price": 2111.94,
+              "size": 0.0073
             },
             {
-              "price": 2112.97,
-              "size": 0.0074
+              "price": 2111.93,
+              "size": 0.0233
             },
             {
-              "price": 2112.93,
-              "size": 0.0146
+              "price": 2111.9,
+              "size": 0.0025
             },
             {
-              "price": 2112.92,
-              "size": 0.005
+              "price": 2111.89,
+              "size": 0.0102
             }
           ],
           "asks": [
             {
-              "price": 2113.0,
-              "size": 8.086
+              "price": 2111.98,
+              "size": 5.6248
             },
             {
-              "price": 2113.01,
+              "price": 2112.0,
               "size": 0.0024
             },
             {
-              "price": 2113.02,
+              "price": 2112.02,
+              "size": 0.0049
+            },
+            {
+              "price": 2112.03,
               "size": 0.0403
             },
             {
-              "price": 2113.03,
-              "size": 0.0048
-            },
-            {
-              "price": 2113.04,
-              "size": 1.2226
+              "price": 2112.04,
+              "size": 0.0286
             }
           ],
           "spread_bps": 0.0473,
-          "as_of": "2026-03-05T03:31:19.621416Z"
+          "as_of": "2026-03-05T03:46:19.621952Z"
         }
       },
       {
@@ -1030,10 +1030,10 @@
         "output": {
           "symbol": "ETH",
           "window": "1h",
-          "long_liq_usd": 11108.97,
+          "long_liq_usd": 1783.57,
           "short_liq_usd": 0.0,
-          "total_liq_usd": 11108.97,
-          "as_of": "2026-03-05T03:31:19.621463Z"
+          "total_liq_usd": 1783.57,
+          "as_of": "2026-03-05T03:46:19.621999Z"
         }
       },
       {
@@ -1044,9 +1044,9 @@
         "output": {
           "symbol": "ETH",
           "platform": "reddit",
-          "score": 0.04,
+          "score": 0.02,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.621514Z"
+          "as_of": "2026-03-05T03:46:19.622076Z"
         }
       },
       {
@@ -1059,7 +1059,7 @@
           "active_addresses": 909701,
           "exchange_netflow": 62029077.4,
           "mvrv": 0.960529,
-          "as_of": "2026-03-05T03:31:19.621588Z"
+          "as_of": "2026-03-05T03:46:19.622142Z"
         }
       },
       {
@@ -1071,12 +1071,12 @@
         "output": {
           "symbol": "SOL",
           "timeframe": "15m",
-          "price": 89.98,
-          "price_change_24h_pct": 4.458,
-          "volume": 674399.31,
-          "funding_rate": -4.5e-05,
-          "open_interest": 875685688.43,
-          "as_of": "2026-03-05T03:31:19.621641Z"
+          "price": 89.99,
+          "price_change_24h_pct": 5.227,
+          "volume": 578616.74,
+          "funding_rate": -4.7e-05,
+          "open_interest": 874571564.88,
+          "as_of": "2026-03-05T03:46:19.622196Z"
         }
       },
       {
@@ -1088,50 +1088,50 @@
           "symbol": "SOL",
           "bids": [
             {
+              "price": 89.98,
+              "size": 121.456
+            },
+            {
               "price": 89.97,
-              "size": 422.237
+              "size": 204.768
             },
             {
               "price": 89.96,
-              "size": 658.346
+              "size": 328.075
             },
             {
               "price": 89.95,
-              "size": 954.775
+              "size": 427.03
             },
             {
               "price": 89.94,
-              "size": 2459.444
-            },
-            {
-              "price": 89.93,
-              "size": 5987.432
+              "size": 516.175
             }
           ],
           "asks": [
             {
-              "price": 89.98,
-              "size": 233.237
-            },
-            {
               "price": 89.99,
-              "size": 467.3
+              "size": 540.754
             },
             {
               "price": 90.0,
-              "size": 660.855
+              "size": 565.643
             },
             {
               "price": 90.01,
-              "size": 520.531
+              "size": 707.131
             },
             {
               "price": 90.02,
-              "size": 687.81
+              "size": 1249.322
+            },
+            {
+              "price": 90.03,
+              "size": 2094.843
             }
           ],
-          "spread_bps": 1.1114,
-          "as_of": "2026-03-05T03:31:19.621692Z"
+          "spread_bps": 1.1113,
+          "as_of": "2026-03-05T03:46:19.622249Z"
         }
       },
       {
@@ -1143,10 +1143,10 @@
         "output": {
           "symbol": "SOL",
           "window": "1h",
-          "long_liq_usd": 2022.02,
+          "long_liq_usd": 12992.08,
           "short_liq_usd": 0.0,
-          "total_liq_usd": 2022.02,
-          "as_of": "2026-03-05T03:31:19.621741Z"
+          "total_liq_usd": 12992.08,
+          "as_of": "2026-03-05T03:46:19.622300Z"
         }
       },
       {
@@ -1159,7 +1159,7 @@
           "platform": "reddit",
           "score": -0.1,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.621794Z"
+          "as_of": "2026-03-05T03:46:19.622357Z"
         }
       },
       {
@@ -1171,12 +1171,12 @@
         "output": {
           "symbol": "LINK",
           "timeframe": "15m",
-          "price": 9.24,
-          "price_change_24h_pct": 5.479,
-          "volume": 13705.85,
-          "funding_rate": 7.2e-05,
-          "open_interest": 80436292.03,
-          "as_of": "2026-03-05T03:31:19.621844Z"
+          "price": 9.26,
+          "price_change_24h_pct": 6.315,
+          "volume": 5357.5,
+          "funding_rate": 7e-05,
+          "open_interest": 80613423.93,
+          "as_of": "2026-03-05T03:46:19.622407Z"
         }
       },
       {
@@ -1188,50 +1188,50 @@
           "symbol": "LINK",
           "bids": [
             {
+              "price": 9.25,
+              "size": 7288.29
+            },
+            {
               "price": 9.24,
-              "size": 2720.49
+              "size": 14574.37
             },
             {
               "price": 9.23,
-              "size": 14825.04
+              "size": 18554.69
             },
             {
               "price": 9.22,
-              "size": 18227.41
+              "size": 16646.75
             },
             {
               "price": 9.21,
-              "size": 51190.99
-            },
-            {
-              "price": 9.2,
-              "size": 38644.43
+              "size": 65422.0
             }
           ],
           "asks": [
             {
-              "price": 9.25,
-              "size": 8871.13
-            },
-            {
               "price": 9.26,
-              "size": 16795.81
+              "size": 4311.2
             },
             {
               "price": 9.27,
-              "size": 21050.98
+              "size": 19165.8
             },
             {
               "price": 9.28,
-              "size": 32998.06
+              "size": 21318.24
             },
             {
               "price": 9.29,
-              "size": 17952.82
+              "size": 28690.44
+            },
+            {
+              "price": 9.3,
+              "size": 17974.28
             }
           ],
-          "spread_bps": 10.8167,
-          "as_of": "2026-03-05T03:31:19.621891Z"
+          "spread_bps": 10.805,
+          "as_of": "2026-03-05T03:46:19.622455Z"
         }
       },
       {
@@ -1246,7 +1246,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T03:31:19.621939Z"
+          "as_of": "2026-03-05T03:46:19.622503Z"
         }
       },
       {
@@ -1257,9 +1257,9 @@
         "output": {
           "symbol": "LINK",
           "platform": "reddit",
-          "score": 0.0,
+          "score": -0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.621993Z"
+          "as_of": "2026-03-05T03:46:19.622562Z"
         }
       },
       {
@@ -1272,11 +1272,11 @@
           "symbol": "AVAX",
           "timeframe": "15m",
           "price": 9.45,
-          "price_change_24h_pct": 3.166,
-          "volume": 244.47,
-          "funding_rate": 9.6e-05,
-          "open_interest": 84210462.0,
-          "as_of": "2026-03-05T03:31:19.622041Z"
+          "price_change_24h_pct": 3.392,
+          "volume": 10536.81,
+          "funding_rate": 8.8e-05,
+          "open_interest": 84240541.35,
+          "as_of": "2026-03-05T03:46:19.622610Z"
         }
       },
       {
@@ -1289,49 +1289,49 @@
           "bids": [
             {
               "price": 9.44,
-              "size": 2988.95
+              "size": 4001.94
             },
             {
               "price": 9.43,
-              "size": 14528.93
+              "size": 10840.85
             },
             {
               "price": 9.42,
-              "size": 28446.77
+              "size": 15653.08
             },
             {
               "price": 9.41,
-              "size": 11236.46
+              "size": 29401.23
             },
             {
               "price": 9.4,
-              "size": 9583.38
+              "size": 13578.35
             }
           ],
           "asks": [
             {
               "price": 9.45,
-              "size": 4948.71
+              "size": 4750.16
             },
             {
               "price": 9.46,
-              "size": 8925.02
+              "size": 11569.87
             },
             {
               "price": 9.47,
-              "size": 10447.49
+              "size": 18055.22
             },
             {
               "price": 9.48,
-              "size": 18395.28
+              "size": 32932.58
             },
             {
               "price": 9.49,
-              "size": 26296.52
+              "size": 6850.12
             }
           ],
           "spread_bps": 10.5876,
-          "as_of": "2026-03-05T03:31:19.622092Z"
+          "as_of": "2026-03-05T03:46:19.622673Z"
         }
       },
       {
@@ -1346,7 +1346,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T03:31:19.622140Z"
+          "as_of": "2026-03-05T03:46:19.622722Z"
         }
       },
       {
@@ -1359,7 +1359,7 @@
           "platform": "reddit",
           "score": 0.0,
           "mentions": 5,
-          "as_of": "2026-03-05T03:31:19.622193Z"
+          "as_of": "2026-03-05T03:46:19.622776Z"
         }
       },
       {
@@ -1371,12 +1371,12 @@
         "output": {
           "symbol": "XRP",
           "timeframe": "15m",
-          "price": 1.418,
-          "price_change_24h_pct": 4.65,
-          "volume": 95407.81,
-          "funding_rate": 9.5e-05,
-          "open_interest": 413940474.12,
-          "as_of": "2026-03-05T03:31:19.622241Z"
+          "price": 1.4185,
+          "price_change_24h_pct": 5.191,
+          "volume": 161322.22,
+          "funding_rate": 9.1e-05,
+          "open_interest": 412972386.18,
+          "as_of": "2026-03-05T03:46:19.622823Z"
         }
       },
       {
@@ -1388,50 +1388,50 @@
           "symbol": "XRP",
           "bids": [
             {
-              "price": 1.4179,
-              "size": 13419.4
+              "price": 1.4184,
+              "size": 14962.1
             },
             {
-              "price": 1.4178,
-              "size": 23870.6
+              "price": 1.4183,
+              "size": 23928.2
             },
             {
-              "price": 1.4177,
-              "size": 13025.3
+              "price": 1.4182,
+              "size": 44548.4
             },
             {
-              "price": 1.4176,
-              "size": 5824.3
+              "price": 1.4181,
+              "size": 95345.9
             },
             {
-              "price": 1.4175,
-              "size": 11945.9
+              "price": 1.418,
+              "size": 88693.4
             }
           ],
           "asks": [
             {
-              "price": 1.418,
-              "size": 11192.5
+              "price": 1.4185,
+              "size": 4319.3
             },
             {
-              "price": 1.4181,
-              "size": 14363.2
+              "price": 1.4186,
+              "size": 899.2
             },
             {
-              "price": 1.4182,
-              "size": 21114.7
+              "price": 1.4187,
+              "size": 1186.5
             },
             {
-              "price": 1.4183,
-              "size": 20220.2
+              "price": 1.4188,
+              "size": 1991.4
             },
             {
-              "price": 1.4184,
-              "size": 19529.7
+              "price": 1.4189,
+              "size": 13036.8
             }
           ],
-          "spread_bps": 0.7052,
-          "as_of": "2026-03-05T03:31:19.622287Z"
+          "spread_bps": 0.705,
+          "as_of": "2026-03-05T03:46:19.622870Z"
         }
       },
       {
@@ -1443,10 +1443,10 @@
         "output": {
           "symbol": "XRP",
           "window": "1h",
-          "long_liq_usd": 181.4,
+          "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
-          "total_liq_usd": 181.4,
-          "as_of": "2026-03-05T03:31:19.622334Z"
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T03:46:19.622916Z"
         }
       },
       {
@@ -1459,7 +1459,7 @@
           "platform": "reddit",
           "score": -0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.622386Z"
+          "as_of": "2026-03-05T03:46:19.622970Z"
         }
       },
       {
@@ -1472,11 +1472,11 @@
           "symbol": "ADA",
           "timeframe": "15m",
           "price": 0.2738,
-          "price_change_24h_pct": 4.106,
-          "volume": 10251.38,
+          "price_change_24h_pct": 4.584,
+          "volume": 17886.96,
           "funding_rate": 0.0001,
-          "open_interest": 85824532.08,
-          "as_of": "2026-03-05T03:31:19.622431Z"
+          "open_interest": 85749911.17,
+          "as_of": "2026-03-05T03:46:19.623018Z"
         }
       },
       {
@@ -1489,49 +1489,49 @@
           "bids": [
             {
               "price": 0.2738,
-              "size": 17631.3
+              "size": 46082.2
             },
             {
               "price": 0.2737,
-              "size": 112250.8
+              "size": 142801.3
             },
             {
               "price": 0.2736,
-              "size": 111299.4
+              "size": 112976.0
             },
             {
               "price": 0.2735,
-              "size": 153453.2
+              "size": 139789.4
             },
             {
               "price": 0.2734,
-              "size": 192159.4
+              "size": 199386.9
             }
           ],
           "asks": [
             {
               "price": 0.2739,
-              "size": 74239.5
+              "size": 39729.9
             },
             {
               "price": 0.274,
-              "size": 130889.0
+              "size": 93677.9
             },
             {
               "price": 0.2741,
-              "size": 132338.7
+              "size": 133113.9
             },
             {
               "price": 0.2742,
-              "size": 109568.3
+              "size": 109189.7
             },
             {
               "price": 0.2743,
-              "size": 132824.8
+              "size": 73403.4
             }
           ],
           "spread_bps": 3.6516,
-          "as_of": "2026-03-05T03:31:19.622479Z"
+          "as_of": "2026-03-05T03:46:19.623066Z"
         }
       },
       {
@@ -1543,10 +1543,10 @@
         "output": {
           "symbol": "ADA",
           "window": "1h",
-          "long_liq_usd": 12.73,
+          "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
-          "total_liq_usd": 12.73,
-          "as_of": "2026-03-05T03:31:19.622526Z"
+          "total_liq_usd": 0.0,
+          "as_of": "2026-03-05T03:46:19.623115Z"
         }
       },
       {
@@ -1559,7 +1559,7 @@
           "platform": "reddit",
           "score": -0.08,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.622578Z"
+          "as_of": "2026-03-05T03:46:19.623170Z"
         }
       },
       {
@@ -1571,12 +1571,12 @@
         "output": {
           "symbol": "DOGE",
           "timeframe": "15m",
-          "price": 0.0962,
-          "price_change_24h_pct": 7.631,
-          "volume": 51354.46,
+          "price": 0.096,
+          "price_change_24h_pct": 7.885,
+          "volume": 68171.46,
           "funding_rate": 0.0001,
-          "open_interest": 189709096.6,
-          "as_of": "2026-03-05T03:31:19.622623Z"
+          "open_interest": 189304377.92,
+          "as_of": "2026-03-05T03:46:19.623218Z"
         }
       },
       {
@@ -1588,50 +1588,50 @@
           "symbol": "DOGE",
           "bids": [
             {
-              "price": 0.0962,
-              "size": 229330.0
+              "price": 0.096,
+              "size": 58485.0
             },
             {
-              "price": 0.0962,
-              "size": 130466.0
+              "price": 0.096,
+              "size": 140029.0
             },
             {
-              "price": 0.0962,
-              "size": 60544.0
+              "price": 0.096,
+              "size": 254435.0
             },
             {
-              "price": 0.0961,
-              "size": 211514.0
+              "price": 0.096,
+              "size": 406339.0
             },
             {
-              "price": 0.0961,
-              "size": 449106.0
+              "price": 0.096,
+              "size": 581751.0
             }
           ],
           "asks": [
             {
-              "price": 0.0962,
-              "size": 1628.0
+              "price": 0.096,
+              "size": 90148.0
             },
             {
-              "price": 0.0962,
-              "size": 24295.0
+              "price": 0.0961,
+              "size": 61334.0
             },
             {
-              "price": 0.0962,
-              "size": 50364.0
+              "price": 0.0961,
+              "size": 55909.0
             },
             {
-              "price": 0.0962,
-              "size": 220907.0
+              "price": 0.0961,
+              "size": 129929.0
             },
             {
-              "price": 0.0962,
-              "size": 550697.0
+              "price": 0.0961,
+              "size": 251552.0
             }
           ],
           "spread_bps": 0.0,
-          "as_of": "2026-03-05T03:31:19.622669Z"
+          "as_of": "2026-03-05T03:46:19.623265Z"
         }
       },
       {
@@ -1643,10 +1643,10 @@
         "output": {
           "symbol": "DOGE",
           "window": "1h",
-          "long_liq_usd": 36765.36,
-          "short_liq_usd": 0.0,
-          "total_liq_usd": 36765.36,
-          "as_of": "2026-03-05T03:31:19.622716Z"
+          "long_liq_usd": 5912.63,
+          "short_liq_usd": 721.58,
+          "total_liq_usd": 6634.21,
+          "as_of": "2026-03-05T03:46:19.623313Z"
         }
       },
       {
@@ -1659,7 +1659,7 @@
           "platform": "reddit",
           "score": 0.04,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.622771Z"
+          "as_of": "2026-03-05T03:46:19.623378Z"
         }
       },
       {
@@ -1671,12 +1671,12 @@
         "output": {
           "symbol": "BNB",
           "timeframe": "15m",
-          "price": 653.17,
-          "price_change_24h_pct": 3.599,
-          "volume": 38685.34,
+          "price": 653.52,
+          "price_change_24h_pct": 4.133,
+          "volume": 61007.8,
           "funding_rate": 0.0,
-          "open_interest": 333091807.69,
-          "as_of": "2026-03-05T03:31:19.622817Z"
+          "open_interest": 332999377.64,
+          "as_of": "2026-03-05T03:46:19.623426Z"
         }
       },
       {
@@ -1688,50 +1688,50 @@
           "symbol": "BNB",
           "bids": [
             {
-              "price": 653.17,
-              "size": 12.841
+              "price": 653.51,
+              "size": 29.751
             },
             {
-              "price": 653.16,
-              "size": 1.829
+              "price": 653.5,
+              "size": 17.66
             },
             {
-              "price": 653.15,
-              "size": 1.689
+              "price": 653.49,
+              "size": 8.557
             },
             {
-              "price": 653.14,
-              "size": 1.689
+              "price": 653.48,
+              "size": 3.793
             },
             {
-              "price": 653.13,
-              "size": 0.009
+              "price": 653.47,
+              "size": 14.575
             }
           ],
           "asks": [
             {
-              "price": 653.18,
-              "size": 2.803
+              "price": 653.52,
+              "size": 1.018
             },
             {
-              "price": 653.19,
-              "size": 0.017
+              "price": 653.53,
+              "size": 0.617
             },
             {
-              "price": 653.2,
-              "size": 1.782
+              "price": 653.54,
+              "size": 0.018
             },
             {
-              "price": 653.21,
-              "size": 0.009
+              "price": 653.55,
+              "size": 1.4
             },
             {
-              "price": 653.22,
-              "size": 0.026
+              "price": 653.56,
+              "size": 4.607
             }
           ],
-          "spread_bps": 0.1531,
-          "as_of": "2026-03-05T03:31:19.622862Z"
+          "spread_bps": 0.153,
+          "as_of": "2026-03-05T03:46:19.623473Z"
         }
       },
       {
@@ -1746,7 +1746,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T03:31:19.622907Z"
+          "as_of": "2026-03-05T03:46:19.623520Z"
         }
       },
       {
@@ -1759,7 +1759,7 @@
           "platform": "reddit",
           "score": 0.1,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.622957Z"
+          "as_of": "2026-03-05T03:46:19.623573Z"
         }
       },
       {
@@ -1771,12 +1771,12 @@
         "output": {
           "symbol": "OP",
           "timeframe": "15m",
-          "price": 0.1282,
-          "price_change_24h_pct": 1.104,
-          "volume": 791.88,
+          "price": 0.1278,
+          "price_change_24h_pct": 1.188,
+          "volume": 3616.33,
           "funding_rate": 0.0001,
-          "open_interest": 18953722.35,
-          "as_of": "2026-03-05T03:31:19.623004Z"
+          "open_interest": 18962932.36,
+          "as_of": "2026-03-05T03:46:19.623620Z"
         }
       },
       {
@@ -1788,50 +1788,50 @@
           "symbol": "OP",
           "bids": [
             {
-              "price": 0.1281,
-              "size": 34680.35
-            },
-            {
-              "price": 0.128,
-              "size": 130405.9
-            },
-            {
-              "price": 0.1279,
-              "size": 229879.46
-            },
-            {
-              "price": 0.1278,
-              "size": 119598.44
-            },
-            {
               "price": 0.1277,
-              "size": 142417.06
+              "size": 31005.44
+            },
+            {
+              "price": 0.1276,
+              "size": 140548.13
+            },
+            {
+              "price": 0.1275,
+              "size": 102121.7
+            },
+            {
+              "price": 0.1274,
+              "size": 52995.72
+            },
+            {
+              "price": 0.1273,
+              "size": 78213.01
             }
           ],
           "asks": [
             {
+              "price": 0.1278,
+              "size": 8319.35
+            },
+            {
+              "price": 0.1279,
+              "size": 114129.96
+            },
+            {
+              "price": 0.128,
+              "size": 152901.42
+            },
+            {
+              "price": 0.1281,
+              "size": 145189.12
+            },
+            {
               "price": 0.1282,
-              "size": 5612.13
-            },
-            {
-              "price": 0.1283,
-              "size": 64897.76
-            },
-            {
-              "price": 0.1284,
-              "size": 96555.06
-            },
-            {
-              "price": 0.1285,
-              "size": 96883.87
-            },
-            {
-              "price": 0.1286,
-              "size": 157648.68
+              "size": 90485.52
             }
           ],
-          "spread_bps": 7.8034,
-          "as_of": "2026-03-05T03:31:19.623049Z"
+          "spread_bps": 7.8278,
+          "as_of": "2026-03-05T03:46:19.623668Z"
         }
       },
       {
@@ -1846,7 +1846,7 @@
           "long_liq_usd": 0.0,
           "short_liq_usd": 0.0,
           "total_liq_usd": 0.0,
-          "as_of": "2026-03-05T03:31:19.623133Z"
+          "as_of": "2026-03-05T03:46:19.623716Z"
         }
       },
       {
@@ -1859,7 +1859,7 @@
           "platform": "reddit",
           "score": -0.02,
           "mentions": 50,
-          "as_of": "2026-03-05T03:31:19.623188Z"
+          "as_of": "2026-03-05T03:46:19.623770Z"
         }
       },
       {
@@ -1870,10 +1870,10 @@
         },
         "output": {
           "source": "cointelegraph.com",
-          "headline": "Big Tech signs Trump pledge to cover their own AI energy costs",
+          "headline": "Coinbase, Microsoft and Europol take down phishing service \u2018Tycoon 2FA\u2019",
           "sentiment": 0.0,
-          "url": "https://cointelegraph.com/news/big-tech-signs-trump-pledge-to-cover-their-own-ai-energy-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "published_at": "2026-03-05T03:20:24Z"
+          "url": "https://cointelegraph.com/news/coinbase-microsoft-and-europol-take-down-phishing-service-tycoon-2fa?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published_at": "2026-03-05T03:40:03Z"
         }
       },
       {
@@ -1898,10 +1898,10 @@
         },
         "output": {
           "source": "cointelegraph.com",
-          "headline": "Zerohash joins surging list of crypto firms vying for a bank charter",
-          "sentiment": -1.0,
-          "url": "https://cointelegraph.com/news/zerohash-applies-us-national-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "published_at": "2026-03-05T03:15:56Z"
+          "headline": "Big Tech signs Trump pledge to cover their own AI energy costs",
+          "sentiment": 0.0,
+          "url": "https://cointelegraph.com/news/big-tech-signs-trump-pledge-to-cover-their-own-ai-energy-costs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published_at": "2026-03-05T03:20:24Z"
         }
       },
       {
@@ -1926,10 +1926,10 @@
         },
         "output": {
           "source": "cointelegraph.com",
-          "headline": "Star Trek\u2019s Captain Kirk shows off X Money as limited beta goes live",
-          "sentiment": 0.0,
-          "url": "https://cointelegraph.com/news/elon-musk-taps-captain-kirk-for-x-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "published_at": "2026-03-05T01:51:45Z"
+          "headline": "Zerohash joins surging list of crypto firms vying for a bank charter",
+          "sentiment": -1.0,
+          "url": "https://cointelegraph.com/news/zerohash-applies-us-national-bank-charter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published_at": "2026-03-05T03:15:56Z"
         }
       },
       {
@@ -1954,10 +1954,10 @@
         },
         "output": {
           "source": "cointelegraph.com",
-          "headline": "Bitcoin\u2019s bullish momentum accelerates but topping $78K remains a challenge",
-          "sentiment": 1.0,
-          "url": "https://cointelegraph.com/news/bitcoins-bullish-momentum-accelerates-but-topping-78k-remains-a-challenge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "published_at": "2026-03-04T21:30:00Z"
+          "headline": "Star Trek\u2019s Captain Kirk shows off X Money as limited beta goes live",
+          "sentiment": 0.0,
+          "url": "https://cointelegraph.com/news/elon-musk-taps-captain-kirk-for-x-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "published_at": "2026-03-05T01:51:45Z"
         }
       },
       {
@@ -1984,7 +1984,7 @@
           "dxy": 117.822,
           "us10y": 4.06,
           "spx_fut": 6869.5,
-          "as_of": "2026-03-05T03:31:19.623605Z"
+          "as_of": "2026-03-05T03:46:19.624199Z"
         }
       }
     ],
@@ -1992,75 +1992,75 @@
       "skill_calls": 51,
       "skill_success": 51,
       "skill_failures": 0,
-      "tick_duration_ms": 5104.19,
-      "snapshot_size_bytes": 26553
+      "tick_duration_ms": 4118.04,
+      "snapshot_size_bytes": 26499
     }
   },
   "portfolios": [
     {
       "portfolio_id": "analyst_aggressive",
-      "updated_at": "2026-03-05T03:31:24.840882Z",
+      "updated_at": "2026-03-05T03:46:23.854045Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": -128.408849,
+      "cash_balance_usd": -133.448068,
       "realized_pnl_usd": 2.400042,
-      "unrealized_pnl_usd": 4.537471,
-      "total_fees_usd": 0.390709,
-      "equity_usd": 106.546804,
-      "trade_count": 42,
+      "unrealized_pnl_usd": 4.948696,
+      "total_fees_usd": 0.398458,
+      "equity_usd": 106.95028,
+      "trade_count": 43,
       "positions": {
         "ETH": {
           "symbol": "ETH",
           "net_quantity": -0.05591757,
           "avg_entry_price": 2163.231719,
-          "mark_price": 2113.0,
+          "mark_price": 2111.98,
           "leverage": 2.8,
-          "notional_exposure_usd": 118.153825,
-          "unrealized_pnl_usd": 2.808836
+          "notional_exposure_usd": 118.096789,
+          "unrealized_pnl_usd": 2.865872
         },
         "BTC": {
           "symbol": "BTC",
           "net_quantity": 0.00084717,
           "avg_entry_price": 73210.834026,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.8,
-          "notional_exposure_usd": 61.404932,
-          "unrealized_pnl_usd": -0.617091
+          "notional_exposure_usd": 61.342258,
+          "unrealized_pnl_usd": -0.679764
         },
         "DOGE": {
           "symbol": "DOGE",
-          "net_quantity": -2295.69868207,
-          "avg_entry_price": 0.09718,
-          "mark_price": 0.0962,
-          "leverage": 1.6195,
-          "notional_exposure_usd": 220.846213,
-          "unrealized_pnl_usd": 2.248652
+          "net_quantity": -2497.60063485,
+          "avg_entry_price": 0.097081,
+          "mark_price": 0.096,
+          "leverage": 1.69,
+          "notional_exposure_usd": 239.769661,
+          "unrealized_pnl_usd": 2.699031
         },
         "SOL": {
           "symbol": "SOL",
           "net_quantity": -0.05019122,
           "avg_entry_price": 90.572481,
-          "mark_price": 89.98,
+          "mark_price": 89.99,
           "leverage": 1.9255,
-          "notional_exposure_usd": 4.516206,
-          "unrealized_pnl_usd": 0.029737
+          "notional_exposure_usd": 4.516708,
+          "unrealized_pnl_usd": 0.029235
         },
         "XRP": {
           "symbol": "XRP",
           "net_quantity": 10.12460961,
           "avg_entry_price": 1.400752,
-          "mark_price": 1.418,
+          "mark_price": 1.4185,
           "leverage": 3.0,
-          "notional_exposure_usd": 14.356696,
-          "unrealized_pnl_usd": 0.174629
+          "notional_exposure_usd": 14.361759,
+          "unrealized_pnl_usd": 0.179692
         },
         "OP": {
           "symbol": "OP",
           "net_quantity": 95.19082759,
           "avg_entry_price": 0.130563,
-          "mark_price": 0.1282,
+          "mark_price": 0.1278,
           "leverage": 3.0,
-          "notional_exposure_usd": 12.203464,
-          "unrealized_pnl_usd": -0.224936
+          "notional_exposure_usd": 12.165388,
+          "unrealized_pnl_usd": -0.263012
         },
         "AVAX": {
           "symbol": "AVAX",
@@ -2075,99 +2075,99 @@
     },
     {
       "portfolio_id": "analyst_defensive",
-      "updated_at": "2026-03-05T03:31:24.861617Z",
+      "updated_at": "2026-03-05T03:46:23.833384Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": 18.253674,
+      "cash_balance_usd": 11.499161,
       "realized_pnl_usd": -0.216702,
-      "unrealized_pnl_usd": 0.589786,
-      "total_fees_usd": 0.084393,
-      "equity_usd": 100.288691,
-      "trade_count": 20,
+      "unrealized_pnl_usd": 0.55293,
+      "total_fees_usd": 0.089203,
+      "equity_usd": 100.247025,
+      "trade_count": 21,
       "positions": {
         "BTC": {
           "symbol": "BTC",
           "net_quantity": -6.979e-05,
           "avg_entry_price": 72462.480738,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.3885,
-          "notional_exposure_usd": 5.058548,
-          "unrealized_pnl_usd": -0.001392
+          "notional_exposure_usd": 5.053385,
+          "unrealized_pnl_usd": 0.003772
         },
         "SOL": {
           "symbol": "SOL",
           "net_quantity": -0.10164,
           "avg_entry_price": 90.144708,
-          "mark_price": 89.98,
+          "mark_price": 89.99,
           "leverage": 1.5,
-          "notional_exposure_usd": 9.145567,
-          "unrealized_pnl_usd": 0.016741
+          "notional_exposure_usd": 9.146584,
+          "unrealized_pnl_usd": 0.015725
         },
         "XRP": {
           "symbol": "XRP",
           "net_quantity": -63.78521229,
           "avg_entry_price": 1.426459,
-          "mark_price": 1.418,
+          "mark_price": 1.4185,
           "leverage": 1.5,
-          "notional_exposure_usd": 90.447431,
-          "unrealized_pnl_usd": 0.539573
+          "notional_exposure_usd": 90.479324,
+          "unrealized_pnl_usd": 0.507667
         },
         "ETH": {
           "symbol": "ETH",
-          "net_quantity": -0.00188674,
-          "avg_entry_price": 2133.13886,
-          "mark_price": 2113.0,
-          "leverage": 1.0,
-          "notional_exposure_usd": 3.986682,
-          "unrealized_pnl_usd": 0.037997
+          "net_quantity": -0.00758318,
+          "avg_entry_price": 2116.640191,
+          "mark_price": 2111.98,
+          "leverage": 1.5,
+          "notional_exposure_usd": 16.015524,
+          "unrealized_pnl_usd": 0.035339
         },
         "BNB": {
           "symbol": "BNB",
           "net_quantity": -0.01839451,
           "avg_entry_price": 652.999676,
-          "mark_price": 653.17,
+          "mark_price": 653.52,
           "leverage": 1.5,
-          "notional_exposure_usd": 12.014742,
-          "unrealized_pnl_usd": -0.003133
+          "notional_exposure_usd": 12.02118,
+          "unrealized_pnl_usd": -0.009571
         }
       }
     },
     {
       "portfolio_id": "analyst_funding_carry",
-      "updated_at": "2026-03-05T03:31:24.828545Z",
+      "updated_at": "2026-03-05T03:46:23.834623Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": -4.553731,
+      "cash_balance_usd": -15.268846,
       "realized_pnl_usd": -0.046298,
-      "unrealized_pnl_usd": 0.211388,
-      "total_fees_usd": 0.166989,
-      "equity_usd": 99.998101,
-      "trade_count": 32,
+      "unrealized_pnl_usd": 0.180033,
+      "total_fees_usd": 0.172985,
+      "equity_usd": 99.96075,
+      "trade_count": 33,
       "positions": {
         "ETH": {
           "symbol": "ETH",
-          "net_quantity": -0.00040254,
-          "avg_entry_price": 2127.516879,
-          "mark_price": 2113.0,
-          "leverage": 1.3,
-          "notional_exposure_usd": 0.850567,
-          "unrealized_pnl_usd": 0.005844
+          "net_quantity": -0.00750289,
+          "avg_entry_price": 2112.117891,
+          "mark_price": 2111.98,
+          "leverage": 1.4,
+          "notional_exposure_usd": 15.845954,
+          "unrealized_pnl_usd": 0.001035
         },
         "BTC": {
           "symbol": "BTC",
           "net_quantity": 4.289e-05,
           "avg_entry_price": 73643.39238,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.0,
-          "notional_exposure_usd": 3.108771,
-          "unrealized_pnl_usd": -0.049794
+          "notional_exposure_usd": 3.105598,
+          "unrealized_pnl_usd": -0.052967
         },
         "XRP": {
           "symbol": "XRP",
           "net_quantity": -46.708491,
           "avg_entry_price": 1.421786,
-          "mark_price": 1.418,
+          "mark_price": 1.4185,
           "leverage": 1.4,
-          "notional_exposure_usd": 66.23264,
-          "unrealized_pnl_usd": 0.176857
+          "notional_exposure_usd": 66.255994,
+          "unrealized_pnl_usd": 0.153484
         },
         "ADA": {
           "symbol": "ADA",
@@ -2182,157 +2182,157 @@
     },
     {
       "portfolio_id": "analyst_mean_reversion",
-      "updated_at": "2026-03-05T03:31:24.843543Z",
+      "updated_at": "2026-03-05T03:46:23.858742Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": -3.409567,
-      "realized_pnl_usd": -0.11474,
-      "unrealized_pnl_usd": 1.597038,
-      "total_fees_usd": 0.126532,
-      "equity_usd": 101.355766,
-      "trade_count": 21,
+      "cash_balance_usd": 2.64629,
+      "realized_pnl_usd": 0.720573,
+      "unrealized_pnl_usd": 0.649656,
+      "total_fees_usd": 0.13361,
+      "equity_usd": 101.23662,
+      "trade_count": 22,
       "positions": {
         "ETH": {
           "symbol": "ETH",
-          "net_quantity": 0.00607977,
-          "avg_entry_price": 1974.022653,
-          "mark_price": 2113.0,
-          "leverage": 1.4,
-          "notional_exposure_usd": 12.846554,
-          "unrealized_pnl_usd": 0.84495
+          "net_quantity": -0.00230111,
+          "avg_entry_price": 2111.414932,
+          "mark_price": 2111.98,
+          "leverage": 1.6465,
+          "notional_exposure_usd": 4.859898,
+          "unrealized_pnl_usd": -0.0013
         },
         "BTC": {
           "symbol": "BTC",
           "net_quantity": -0.00067002,
           "avg_entry_price": 73053.400481,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.3885,
-          "notional_exposure_usd": 48.564671,
-          "unrealized_pnl_usd": 0.382568
+          "notional_exposure_usd": 48.515103,
+          "unrealized_pnl_usd": 0.432136
         },
         "SOL": {
           "symbol": "SOL",
           "net_quantity": 0.0026004,
           "avg_entry_price": 91.337663,
-          "mark_price": 89.98,
+          "mark_price": 89.99,
           "leverage": 1.5,
-          "notional_exposure_usd": 0.233984,
-          "unrealized_pnl_usd": -0.00353
+          "notional_exposure_usd": 0.23401,
+          "unrealized_pnl_usd": -0.003504
         },
         "LINK": {
           "symbol": "LINK",
           "net_quantity": -6.86133112,
           "avg_entry_price": 9.282879,
-          "mark_price": 9.24,
+          "mark_price": 9.26,
           "leverage": 1.8,
-          "notional_exposure_usd": 63.3987,
-          "unrealized_pnl_usd": 0.294207
+          "notional_exposure_usd": 63.535926,
+          "unrealized_pnl_usd": 0.15698
         },
         "XRP": {
           "symbol": "XRP",
           "net_quantity": -26.9794297,
           "avg_entry_price": 1.420922,
-          "mark_price": 1.418,
+          "mark_price": 1.4185,
           "leverage": 1.516,
-          "notional_exposure_usd": 38.256831,
-          "unrealized_pnl_usd": 0.078842
+          "notional_exposure_usd": 38.270321,
+          "unrealized_pnl_usd": 0.065344
         }
       }
     },
     {
       "portfolio_id": "analyst_quant",
-      "updated_at": "2026-03-05T03:31:24.872541Z",
+      "updated_at": "2026-03-05T03:46:23.874327Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": -46.616672,
-      "realized_pnl_usd": -0.62299,
-      "unrealized_pnl_usd": 2.295925,
-      "total_fees_usd": 0.167254,
-      "equity_usd": 101.50568,
-      "trade_count": 28,
+      "cash_balance_usd": -38.572854,
+      "realized_pnl_usd": 0.061221,
+      "unrealized_pnl_usd": 1.179066,
+      "total_fees_usd": 0.174321,
+      "equity_usd": 101.065966,
+      "trade_count": 29,
       "positions": {
         "ETH": {
           "symbol": "ETH",
-          "net_quantity": 0.00695531,
-          "avg_entry_price": 2013.341517,
-          "mark_price": 2113.0,
-          "leverage": 1.4,
-          "notional_exposure_usd": 14.69657,
-          "unrealized_pnl_usd": 0.693156
+          "net_quantity": -0.00141124,
+          "avg_entry_price": 2111.714021,
+          "mark_price": 2111.98,
+          "leverage": 1.6465,
+          "notional_exposure_usd": 2.980511,
+          "unrealized_pnl_usd": -0.000375
         },
         "BTC": {
           "symbol": "BTC",
           "net_quantity": 0.00038996,
           "avg_entry_price": 73243.665936,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.309,
-          "notional_exposure_usd": 28.265245,
-          "unrealized_pnl_usd": -0.296855
+          "notional_exposure_usd": 28.236395,
+          "unrealized_pnl_usd": -0.325705
         },
         "SOL": {
           "symbol": "SOL",
           "net_quantity": -0.088252,
           "avg_entry_price": 89.955754,
-          "mark_price": 89.98,
+          "mark_price": 89.99,
           "leverage": 1.4365,
-          "notional_exposure_usd": 7.940915,
-          "unrealized_pnl_usd": -0.00214
+          "notional_exposure_usd": 7.941797,
+          "unrealized_pnl_usd": -0.003022
         },
         "LINK": {
           "symbol": "LINK",
           "net_quantity": -20.00116223,
           "avg_entry_price": 9.342575,
-          "mark_price": 9.24,
+          "mark_price": 9.26,
           "leverage": 1.813,
-          "notional_exposure_usd": 184.810739,
-          "unrealized_pnl_usd": 2.051619
+          "notional_exposure_usd": 185.210762,
+          "unrealized_pnl_usd": 1.651596
         },
         "BNB": {
           "symbol": "BNB",
           "net_quantity": 0.01836333,
           "avg_entry_price": 661.33055,
-          "mark_price": 653.17,
+          "mark_price": 653.52,
           "leverage": 1.4,
-          "notional_exposure_usd": 11.994376,
-          "unrealized_pnl_usd": -0.149855
+          "notional_exposure_usd": 12.000803,
+          "unrealized_pnl_usd": -0.143428
         }
       }
     },
     {
       "portfolio_id": "analyst_swing",
-      "updated_at": "2026-03-05T03:31:24.821037Z",
+      "updated_at": "2026-03-05T03:46:23.833346Z",
       "initial_balance_usd": 100.0,
-      "cash_balance_usd": -40.375819,
+      "cash_balance_usd": -51.666444,
       "realized_pnl_usd": -0.136561,
-      "unrealized_pnl_usd": 1.547394,
-      "total_fees_usd": 0.143451,
-      "equity_usd": 101.267382,
-      "trade_count": 22,
+      "unrealized_pnl_usd": 1.150501,
+      "total_fees_usd": 0.1505,
+      "equity_usd": 100.86344,
+      "trade_count": 23,
       "positions": {
         "BTC": {
           "symbol": "BTC",
           "net_quantity": 0.000373,
           "avg_entry_price": 73272.247142,
-          "mark_price": 72482.42,
+          "mark_price": 72408.44,
           "leverage": 1.309,
-          "notional_exposure_usd": 27.035943,
-          "unrealized_pnl_usd": -0.294606
+          "notional_exposure_usd": 27.008348,
+          "unrealized_pnl_usd": -0.3222
         },
         "SOL": {
           "symbol": "SOL",
           "net_quantity": -0.16442835,
           "avg_entry_price": 89.963003,
-          "mark_price": 89.98,
+          "mark_price": 89.99,
           "leverage": 1.4365,
-          "notional_exposure_usd": 14.795263,
-          "unrealized_pnl_usd": -0.002795
+          "notional_exposure_usd": 14.796907,
+          "unrealized_pnl_usd": -0.004439
         },
         "LINK": {
           "symbol": "LINK",
           "net_quantity": -17.67909576,
           "avg_entry_price": 9.330902,
-          "mark_price": 9.24,
+          "mark_price": 9.26,
           "leverage": 1.813,
-          "notional_exposure_usd": 163.354845,
-          "unrealized_pnl_usd": 1.607065
+          "notional_exposure_usd": 163.708427,
+          "unrealized_pnl_usd": 1.253483
         },
         "AVAX": {
           "symbol": "AVAX",
@@ -2342,114 +2342,123 @@
           "leverage": 1.5415,
           "notional_exposure_usd": 31.736145,
           "unrealized_pnl_usd": 0.237729
+        },
+        "ETH": {
+          "symbol": "ETH",
+          "net_quantity": -0.00835076,
+          "avg_entry_price": 2110.294888,
+          "mark_price": 2111.98,
+          "leverage": 1.6465,
+          "notional_exposure_usd": 17.636638,
+          "unrealized_pnl_usd": -0.014072
         }
       }
     }
   ],
   "competition": {
-    "updated_at": "2026-03-05T03:31:25.019616+00:00",
-    "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+    "updated_at": "2026-03-05T03:46:24.064719+00:00",
+    "tick_id": "872ffab2bd924db19846fc4f060feac6",
     "analyst_count": 6,
     "worker_results": [
       {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
           "symbol": "DOGE",
-          "allocation_pct": 0.17086,
-          "leverage": 1.6195,
-          "confidence": 0.6565,
-          "reason": "Signal quant DOGE=-0.41, decision locale.",
+          "allocation_pct": 0.1812,
+          "leverage": 1.69,
+          "confidence": 0.68,
+          "reason": "Signal quant DOGE=-0.46, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.840540Z"
+          "created_at": "2026-03-05T03:46:23.853680Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_aggressive",
-          "client_order_id": "e942dca9243240abbc7ac2ccc28abe48",
+          "client_order_id": "65a2db6520294d0ab3ab76b146383bd9",
           "symbol": "DOGE",
           "side": "sell",
-          "quantity": 189.27030176,
-          "reference_price": 0.0962,
-          "executed_price": 0.096139,
-          "notional_usd": 18.196212,
-          "fee_paid_usd": 0.007278,
-          "slippage_bps": 6.366212,
-          "leverage": 1.6195,
+          "quantity": 201.90195278,
+          "reference_price": 0.096,
+          "executed_price": 0.095951,
+          "notional_usd": 19.372641,
+          "fee_paid_usd": 0.007749,
+          "slippage_bps": 5.131661,
+          "leverage": 1.69,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.840720Z"
+          "executed_at": "2026-03-05T03:46:23.853876Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-05T03:31:24.840882Z",
+          "updated_at": "2026-03-05T03:46:23.854045Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -128.408849,
+          "cash_balance_usd": -133.448068,
           "realized_pnl_usd": 2.400042,
-          "unrealized_pnl_usd": 4.537471,
-          "total_fees_usd": 0.390709,
-          "equity_usd": 106.546804,
-          "trade_count": 42,
+          "unrealized_pnl_usd": 4.948696,
+          "total_fees_usd": 0.398458,
+          "equity_usd": 106.95028,
+          "trade_count": 43,
           "positions": {
             "ETH": {
               "symbol": "ETH",
               "net_quantity": -0.05591757,
               "avg_entry_price": 2163.231719,
-              "mark_price": 2113.0,
+              "mark_price": 2111.98,
               "leverage": 2.8,
-              "notional_exposure_usd": 118.153825,
-              "unrealized_pnl_usd": 2.808836
+              "notional_exposure_usd": 118.096789,
+              "unrealized_pnl_usd": 2.865872
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.00084717,
               "avg_entry_price": 73210.834026,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.8,
-              "notional_exposure_usd": 61.404932,
-              "unrealized_pnl_usd": -0.617091
+              "notional_exposure_usd": 61.342258,
+              "unrealized_pnl_usd": -0.679764
             },
             "DOGE": {
               "symbol": "DOGE",
-              "net_quantity": -2295.69868207,
-              "avg_entry_price": 0.09718,
-              "mark_price": 0.0962,
-              "leverage": 1.6195,
-              "notional_exposure_usd": 220.846213,
-              "unrealized_pnl_usd": 2.248652
+              "net_quantity": -2497.60063485,
+              "avg_entry_price": 0.097081,
+              "mark_price": 0.096,
+              "leverage": 1.69,
+              "notional_exposure_usd": 239.769661,
+              "unrealized_pnl_usd": 2.699031
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.05019122,
               "avg_entry_price": 90.572481,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.9255,
-              "notional_exposure_usd": 4.516206,
-              "unrealized_pnl_usd": 0.029737
+              "notional_exposure_usd": 4.516708,
+              "unrealized_pnl_usd": 0.029235
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": 10.12460961,
               "avg_entry_price": 1.400752,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 3.0,
-              "notional_exposure_usd": 14.356696,
-              "unrealized_pnl_usd": 0.174629
+              "notional_exposure_usd": 14.361759,
+              "unrealized_pnl_usd": 0.179692
             },
             "OP": {
               "symbol": "OP",
               "net_quantity": 95.19082759,
               "avg_entry_price": 0.130563,
-              "mark_price": 0.1282,
+              "mark_price": 0.1278,
               "leverage": 3.0,
-              "notional_exposure_usd": 12.203464,
-              "unrealized_pnl_usd": -0.224936
+              "notional_exposure_usd": 12.165388,
+              "unrealized_pnl_usd": -0.263012
             },
             "AVAX": {
               "symbol": "AVAX",
@@ -2464,177 +2473,177 @@
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.964121Z"
+        "updated_at": "2026-03-05T03:46:24.014392Z"
       },
       {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
+          "symbol": "ETH",
           "allocation_pct": 0.12,
           "leverage": 1.5,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.859886Z"
+          "created_at": "2026-03-05T03:46:23.833051Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_defensive",
-          "client_order_id": "6b1847f14fe34d2bbb607ffccad6cc4e",
-          "symbol": "XRP",
+          "client_order_id": "29998191e8d549aaba1dfe27ad08892f",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 8.48787013,
-          "reference_price": 1.418,
-          "executed_price": 1.417431,
-          "notional_usd": 12.03097,
-          "fee_paid_usd": 0.004812,
-          "slippage_bps": 4.013284,
+          "quantity": 0.00569644,
+          "reference_price": 2111.98,
+          "executed_price": 2111.175603,
+          "notional_usd": 12.026185,
+          "fee_paid_usd": 0.00481,
+          "slippage_bps": 3.808733,
           "leverage": 1.5,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.860070Z"
+          "executed_at": "2026-03-05T03:46:23.833232Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-05T03:31:24.861617Z",
+          "updated_at": "2026-03-05T03:46:23.833384Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": 18.253674,
+          "cash_balance_usd": 11.499161,
           "realized_pnl_usd": -0.216702,
-          "unrealized_pnl_usd": 0.589786,
-          "total_fees_usd": 0.084393,
-          "equity_usd": 100.288691,
-          "trade_count": 20,
+          "unrealized_pnl_usd": 0.55293,
+          "total_fees_usd": 0.089203,
+          "equity_usd": 100.247025,
+          "trade_count": 21,
           "positions": {
             "BTC": {
               "symbol": "BTC",
               "net_quantity": -6.979e-05,
               "avg_entry_price": 72462.480738,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.3885,
-              "notional_exposure_usd": 5.058548,
-              "unrealized_pnl_usd": -0.001392
+              "notional_exposure_usd": 5.053385,
+              "unrealized_pnl_usd": 0.003772
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.10164,
               "avg_entry_price": 90.144708,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.5,
-              "notional_exposure_usd": 9.145567,
-              "unrealized_pnl_usd": 0.016741
+              "notional_exposure_usd": 9.146584,
+              "unrealized_pnl_usd": 0.015725
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -63.78521229,
               "avg_entry_price": 1.426459,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.5,
-              "notional_exposure_usd": 90.447431,
-              "unrealized_pnl_usd": 0.539573
+              "notional_exposure_usd": 90.479324,
+              "unrealized_pnl_usd": 0.507667
             },
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": -0.00188674,
-              "avg_entry_price": 2133.13886,
-              "mark_price": 2113.0,
-              "leverage": 1.0,
-              "notional_exposure_usd": 3.986682,
-              "unrealized_pnl_usd": 0.037997
+              "net_quantity": -0.00758318,
+              "avg_entry_price": 2116.640191,
+              "mark_price": 2111.98,
+              "leverage": 1.5,
+              "notional_exposure_usd": 16.015524,
+              "unrealized_pnl_usd": 0.035339
             },
             "BNB": {
               "symbol": "BNB",
               "net_quantity": -0.01839451,
               "avg_entry_price": 652.999676,
-              "mark_price": 653.17,
+              "mark_price": 653.52,
               "leverage": 1.5,
-              "notional_exposure_usd": 12.014742,
-              "unrealized_pnl_usd": -0.003133
+              "notional_exposure_usd": 12.02118,
+              "unrealized_pnl_usd": -0.009571
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.943129Z"
+        "updated_at": "2026-03-05T03:46:23.897550Z"
       },
       {
         "analyst_id": "swing",
         "portfolio_id": "analyst_swing",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "SOL",
-          "allocation_pct": 0.14401999999999998,
-          "leverage": 1.4365,
-          "confidence": 0.5955,
-          "reason": "Signal quant SOL=-0.29, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.820754Z"
+          "created_at": "2026-03-05T03:46:23.833032Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_swing",
-          "client_order_id": "3830c0d9abbd4b16b376e9a4f56b8a28",
-          "symbol": "SOL",
+          "client_order_id": "8aa11e5176c54746b032adbdd7b20205",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 0.16210487,
-          "reference_price": 89.98,
-          "executed_price": 89.944538,
-          "notional_usd": 14.580448,
-          "fee_paid_usd": 0.005832,
-          "slippage_bps": 3.941112,
-          "leverage": 1.4365,
+          "quantity": 0.00835076,
+          "reference_price": 2111.98,
+          "executed_price": 2110.294888,
+          "notional_usd": 17.622566,
+          "fee_paid_usd": 0.007049,
+          "slippage_bps": 7.978826,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.820924Z"
+          "executed_at": "2026-03-05T03:46:23.833220Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_swing",
-          "updated_at": "2026-03-05T03:31:24.821037Z",
+          "updated_at": "2026-03-05T03:46:23.833346Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -40.375819,
+          "cash_balance_usd": -51.666444,
           "realized_pnl_usd": -0.136561,
-          "unrealized_pnl_usd": 1.547394,
-          "total_fees_usd": 0.143451,
-          "equity_usd": 101.267382,
-          "trade_count": 22,
+          "unrealized_pnl_usd": 1.150501,
+          "total_fees_usd": 0.1505,
+          "equity_usd": 100.86344,
+          "trade_count": 23,
           "positions": {
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.000373,
               "avg_entry_price": 73272.247142,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.309,
-              "notional_exposure_usd": 27.035943,
-              "unrealized_pnl_usd": -0.294606
+              "notional_exposure_usd": 27.008348,
+              "unrealized_pnl_usd": -0.3222
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.16442835,
               "avg_entry_price": 89.963003,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.4365,
-              "notional_exposure_usd": 14.795263,
-              "unrealized_pnl_usd": -0.002795
+              "notional_exposure_usd": 14.796907,
+              "unrealized_pnl_usd": -0.004439
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -17.67909576,
               "avg_entry_price": 9.330902,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.813,
-              "notional_exposure_usd": 163.354845,
-              "unrealized_pnl_usd": 1.607065
+              "notional_exposure_usd": 163.708427,
+              "unrealized_pnl_usd": 1.253483
             },
             "AVAX": {
               "symbol": "AVAX",
@@ -2644,279 +2653,288 @@
               "leverage": 1.5415,
               "notional_exposure_usd": 31.736145,
               "unrealized_pnl_usd": 0.237729
+            },
+            "ETH": {
+              "symbol": "ETH",
+              "net_quantity": -0.00835076,
+              "avg_entry_price": 2110.294888,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 17.636638,
+              "unrealized_pnl_usd": -0.014072
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.936823Z"
+        "updated_at": "2026-03-05T03:46:23.918322Z"
       },
       {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "SOL",
-          "allocation_pct": 0.14401999999999998,
-          "leverage": 1.4365,
-          "confidence": 0.5955,
-          "reason": "Signal quant SOL=-0.29, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.872208Z"
+          "created_at": "2026-03-05T03:46:23.873983Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_quant",
-          "client_order_id": "13a82d7252594444bdda7aad80b62b35",
-          "symbol": "SOL",
+          "client_order_id": "9c29cb8d9df141d2ab109e602d37447f",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 0.16248341,
-          "reference_price": 89.98,
-          "executed_price": 89.955754,
-          "notional_usd": 14.616318,
-          "fee_paid_usd": 0.005847,
-          "slippage_bps": 2.694562,
-          "leverage": 1.4365,
+          "quantity": 0.00836655,
+          "reference_price": 2111.98,
+          "executed_price": 2111.714021,
+          "notional_usd": 17.667761,
+          "fee_paid_usd": 0.007067,
+          "slippage_bps": 1.259381,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.872389Z"
+          "executed_at": "2026-03-05T03:46:23.874188Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-05T03:31:24.872541Z",
+          "updated_at": "2026-03-05T03:46:23.874327Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -46.616672,
-          "realized_pnl_usd": -0.62299,
-          "unrealized_pnl_usd": 2.295925,
-          "total_fees_usd": 0.167254,
-          "equity_usd": 101.50568,
-          "trade_count": 28,
+          "cash_balance_usd": -38.572854,
+          "realized_pnl_usd": 0.061221,
+          "unrealized_pnl_usd": 1.179066,
+          "total_fees_usd": 0.174321,
+          "equity_usd": 101.065966,
+          "trade_count": 29,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 0.00695531,
-              "avg_entry_price": 2013.341517,
-              "mark_price": 2113.0,
-              "leverage": 1.4,
-              "notional_exposure_usd": 14.69657,
-              "unrealized_pnl_usd": 0.693156
+              "net_quantity": -0.00141124,
+              "avg_entry_price": 2111.714021,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 2.980511,
+              "unrealized_pnl_usd": -0.000375
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.00038996,
               "avg_entry_price": 73243.665936,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.309,
-              "notional_exposure_usd": 28.265245,
-              "unrealized_pnl_usd": -0.296855
+              "notional_exposure_usd": 28.236395,
+              "unrealized_pnl_usd": -0.325705
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.088252,
               "avg_entry_price": 89.955754,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.4365,
-              "notional_exposure_usd": 7.940915,
-              "unrealized_pnl_usd": -0.00214
+              "notional_exposure_usd": 7.941797,
+              "unrealized_pnl_usd": -0.003022
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -20.00116223,
               "avg_entry_price": 9.342575,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.813,
-              "notional_exposure_usd": 184.810739,
-              "unrealized_pnl_usd": 2.051619
+              "notional_exposure_usd": 185.210762,
+              "unrealized_pnl_usd": 1.651596
             },
             "BNB": {
               "symbol": "BNB",
               "net_quantity": 0.01836333,
               "avg_entry_price": 661.33055,
-              "mark_price": 653.17,
+              "mark_price": 653.52,
               "leverage": 1.4,
-              "notional_exposure_usd": 11.994376,
-              "unrealized_pnl_usd": -0.149855
+              "notional_exposure_usd": 12.000803,
+              "unrealized_pnl_usd": -0.143428
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.948551Z"
+        "updated_at": "2026-03-05T03:46:23.940562Z"
       },
       {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
-          "allocation_pct": 0.15567999999999999,
-          "leverage": 1.516,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.843215Z"
+          "created_at": "2026-03-05T03:46:23.858418Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_mean_reversion",
-          "client_order_id": "f8aac1228b3048a6b3ba2f739b64e486",
-          "symbol": "XRP",
+          "client_order_id": "d99e607de2224d5da0b1db3188464b92",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 11.12840823,
-          "reference_price": 1.418,
-          "executed_price": 1.41798,
-          "notional_usd": 15.779861,
-          "fee_paid_usd": 0.006312,
-          "slippage_bps": 0.140363,
-          "leverage": 1.516,
+          "quantity": 0.00838088,
+          "reference_price": 2111.98,
+          "executed_price": 2111.414932,
+          "notional_usd": 17.695515,
+          "fee_paid_usd": 0.007078,
+          "slippage_bps": 2.675536,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.843406Z"
+          "executed_at": "2026-03-05T03:46:23.858612Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_mean_reversion",
-          "updated_at": "2026-03-05T03:31:24.843543Z",
+          "updated_at": "2026-03-05T03:46:23.858742Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -3.409567,
-          "realized_pnl_usd": -0.11474,
-          "unrealized_pnl_usd": 1.597038,
-          "total_fees_usd": 0.126532,
-          "equity_usd": 101.355766,
-          "trade_count": 21,
+          "cash_balance_usd": 2.64629,
+          "realized_pnl_usd": 0.720573,
+          "unrealized_pnl_usd": 0.649656,
+          "total_fees_usd": 0.13361,
+          "equity_usd": 101.23662,
+          "trade_count": 22,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 0.00607977,
-              "avg_entry_price": 1974.022653,
-              "mark_price": 2113.0,
-              "leverage": 1.4,
-              "notional_exposure_usd": 12.846554,
-              "unrealized_pnl_usd": 0.84495
+              "net_quantity": -0.00230111,
+              "avg_entry_price": 2111.414932,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 4.859898,
+              "unrealized_pnl_usd": -0.0013
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": -0.00067002,
               "avg_entry_price": 73053.400481,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.3885,
-              "notional_exposure_usd": 48.564671,
-              "unrealized_pnl_usd": 0.382568
+              "notional_exposure_usd": 48.515103,
+              "unrealized_pnl_usd": 0.432136
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": 0.0026004,
               "avg_entry_price": 91.337663,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.5,
-              "notional_exposure_usd": 0.233984,
-              "unrealized_pnl_usd": -0.00353
+              "notional_exposure_usd": 0.23401,
+              "unrealized_pnl_usd": -0.003504
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -6.86133112,
               "avg_entry_price": 9.282879,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.8,
-              "notional_exposure_usd": 63.3987,
-              "unrealized_pnl_usd": 0.294207
+              "notional_exposure_usd": 63.535926,
+              "unrealized_pnl_usd": 0.15698
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -26.9794297,
               "avg_entry_price": 1.420922,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.516,
-              "notional_exposure_usd": 38.256831,
-              "unrealized_pnl_usd": 0.078842
+              "notional_exposure_usd": 38.270321,
+              "unrealized_pnl_usd": 0.065344
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.949073Z"
+        "updated_at": "2026-03-05T03:46:23.945024Z"
       },
       {
         "analyst_id": "funding_carry",
         "portfolio_id": "analyst_funding_carry",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "funding_carry",
           "portfolio_id": "analyst_funding_carry",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
+          "symbol": "ETH",
           "allocation_pct": 0.15,
           "leverage": 1.4,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.828249Z"
+          "created_at": "2026-03-05T03:46:23.834317Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_funding_carry",
-          "client_order_id": "64ff44c0b67945a49959d0dc53c89f43",
-          "symbol": "XRP",
+          "client_order_id": "e109b09c4d4344aa954f9c098e1966c7",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 10.57980497,
-          "reference_price": 1.418,
-          "executed_price": 1.417024,
-          "notional_usd": 14.991834,
-          "fee_paid_usd": 0.005997,
-          "slippage_bps": 6.885064,
+          "quantity": 0.00710035,
+          "reference_price": 2111.98,
+          "executed_price": 2111.244877,
+          "notional_usd": 14.990578,
+          "fee_paid_usd": 0.005996,
+          "slippage_bps": 3.480731,
           "leverage": 1.4,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.828429Z"
+          "executed_at": "2026-03-05T03:46:23.834509Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_funding_carry",
-          "updated_at": "2026-03-05T03:31:24.828545Z",
+          "updated_at": "2026-03-05T03:46:23.834623Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -4.553731,
+          "cash_balance_usd": -15.268846,
           "realized_pnl_usd": -0.046298,
-          "unrealized_pnl_usd": 0.211388,
-          "total_fees_usd": 0.166989,
-          "equity_usd": 99.998101,
-          "trade_count": 32,
+          "unrealized_pnl_usd": 0.180033,
+          "total_fees_usd": 0.172985,
+          "equity_usd": 99.96075,
+          "trade_count": 33,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": -0.00040254,
-              "avg_entry_price": 2127.516879,
-              "mark_price": 2113.0,
-              "leverage": 1.3,
-              "notional_exposure_usd": 0.850567,
-              "unrealized_pnl_usd": 0.005844
+              "net_quantity": -0.00750289,
+              "avg_entry_price": 2112.117891,
+              "mark_price": 2111.98,
+              "leverage": 1.4,
+              "notional_exposure_usd": 15.845954,
+              "unrealized_pnl_usd": 0.001035
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 4.289e-05,
               "avg_entry_price": 73643.39238,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.0,
-              "notional_exposure_usd": 3.108771,
-              "unrealized_pnl_usd": -0.049794
+              "notional_exposure_usd": 3.105598,
+              "unrealized_pnl_usd": -0.052967
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -46.708491,
               "avg_entry_price": 1.421786,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.4,
-              "notional_exposure_usd": 66.23264,
-              "unrealized_pnl_usd": 0.176857
+              "notional_exposure_usd": 66.255994,
+              "unrealized_pnl_usd": 0.153484
             },
             "ADA": {
               "symbol": "ADA",
@@ -2931,7 +2949,7 @@
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.924957Z"
+        "updated_at": "2026-03-05T03:46:23.911819Z"
       }
     ],
     "ranking": [
@@ -2939,60 +2957,60 @@
         "analyst_id": "aggressive",
         "display_name": "Analyst Aggressive",
         "portfolio_id": "analyst_aggressive",
-        "equity_usd": 106.546804,
-        "trade_count": 42,
+        "equity_usd": 106.95028,
+        "trade_count": 43,
         "realized_pnl_usd": 2.400042,
-        "unrealized_pnl_usd": 4.537471,
+        "unrealized_pnl_usd": 4.948696,
         "rank": 1
-      },
-      {
-        "analyst_id": "quant",
-        "display_name": "Analyst Quant",
-        "portfolio_id": "analyst_quant",
-        "equity_usd": 101.50568,
-        "trade_count": 28,
-        "realized_pnl_usd": -0.62299,
-        "unrealized_pnl_usd": 2.295925,
-        "rank": 2
       },
       {
         "analyst_id": "mean_reversion",
         "display_name": "Analyst Mean Reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "equity_usd": 101.355766,
-        "trade_count": 21,
-        "realized_pnl_usd": -0.11474,
-        "unrealized_pnl_usd": 1.597038,
+        "equity_usd": 101.23662,
+        "trade_count": 22,
+        "realized_pnl_usd": 0.720573,
+        "unrealized_pnl_usd": 0.649656,
+        "rank": 2
+      },
+      {
+        "analyst_id": "quant",
+        "display_name": "Analyst Quant",
+        "portfolio_id": "analyst_quant",
+        "equity_usd": 101.065966,
+        "trade_count": 29,
+        "realized_pnl_usd": 0.061221,
+        "unrealized_pnl_usd": 1.179066,
         "rank": 3
       },
       {
         "analyst_id": "swing",
         "display_name": "Analyst Swing",
         "portfolio_id": "analyst_swing",
-        "equity_usd": 101.267382,
-        "trade_count": 22,
+        "equity_usd": 100.86344,
+        "trade_count": 23,
         "realized_pnl_usd": -0.136561,
-        "unrealized_pnl_usd": 1.547394,
+        "unrealized_pnl_usd": 1.150501,
         "rank": 4
       },
       {
         "analyst_id": "defensive",
         "display_name": "Analyst Defensive",
         "portfolio_id": "analyst_defensive",
-        "equity_usd": 100.288691,
-        "trade_count": 20,
+        "equity_usd": 100.247025,
+        "trade_count": 21,
         "realized_pnl_usd": -0.216702,
-        "unrealized_pnl_usd": 0.589786,
+        "unrealized_pnl_usd": 0.55293,
         "rank": 5
       },
       {
         "analyst_id": "funding_carry",
         "display_name": "Analyst Funding Carry",
         "portfolio_id": "analyst_funding_carry",
-        "equity_usd": 99.998101,
-        "trade_count": 32,
+        "equity_usd": 99.96075,
+        "trade_count": 33,
         "realized_pnl_usd": -0.046298,
-        "unrealized_pnl_usd": 0.211388,
+        "unrealized_pnl_usd": 0.180033,
         "rank": 6
       }
     ]
@@ -3749,6 +3767,22 @@
         "BNB": 653.17,
         "OP": 0.1282
       }
+    },
+    {
+      "tick_id": "872ffab2bd924db19846fc4f060feac6",
+      "as_of": "2026-03-05T03:46:19.620635+00:00",
+      "prices": {
+        "BTC": 72408.44,
+        "ETH": 2111.98,
+        "SOL": 89.99,
+        "LINK": 9.26,
+        "AVAX": 9.45,
+        "XRP": 1.4185,
+        "ADA": 0.2738,
+        "DOGE": 0.096,
+        "BNB": 653.52,
+        "OP": 0.1278
+      }
     }
   ],
   "agent_views": [
@@ -3759,102 +3793,102 @@
       "latest_result": {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
           "symbol": "DOGE",
-          "allocation_pct": 0.17086,
-          "leverage": 1.6195,
-          "confidence": 0.6565,
-          "reason": "Signal quant DOGE=-0.41, decision locale.",
+          "allocation_pct": 0.1812,
+          "leverage": 1.69,
+          "confidence": 0.68,
+          "reason": "Signal quant DOGE=-0.46, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.840540Z"
+          "created_at": "2026-03-05T03:46:23.853680Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_aggressive",
-          "client_order_id": "e942dca9243240abbc7ac2ccc28abe48",
+          "client_order_id": "65a2db6520294d0ab3ab76b146383bd9",
           "symbol": "DOGE",
           "side": "sell",
-          "quantity": 189.27030176,
-          "reference_price": 0.0962,
-          "executed_price": 0.096139,
-          "notional_usd": 18.196212,
-          "fee_paid_usd": 0.007278,
-          "slippage_bps": 6.366212,
-          "leverage": 1.6195,
+          "quantity": 201.90195278,
+          "reference_price": 0.096,
+          "executed_price": 0.095951,
+          "notional_usd": 19.372641,
+          "fee_paid_usd": 0.007749,
+          "slippage_bps": 5.131661,
+          "leverage": 1.69,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.840720Z"
+          "executed_at": "2026-03-05T03:46:23.853876Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_aggressive",
-          "updated_at": "2026-03-05T03:31:24.840882Z",
+          "updated_at": "2026-03-05T03:46:23.854045Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -128.408849,
+          "cash_balance_usd": -133.448068,
           "realized_pnl_usd": 2.400042,
-          "unrealized_pnl_usd": 4.537471,
-          "total_fees_usd": 0.390709,
-          "equity_usd": 106.546804,
-          "trade_count": 42,
+          "unrealized_pnl_usd": 4.948696,
+          "total_fees_usd": 0.398458,
+          "equity_usd": 106.95028,
+          "trade_count": 43,
           "positions": {
             "ETH": {
               "symbol": "ETH",
               "net_quantity": -0.05591757,
               "avg_entry_price": 2163.231719,
-              "mark_price": 2113.0,
+              "mark_price": 2111.98,
               "leverage": 2.8,
-              "notional_exposure_usd": 118.153825,
-              "unrealized_pnl_usd": 2.808836
+              "notional_exposure_usd": 118.096789,
+              "unrealized_pnl_usd": 2.865872
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.00084717,
               "avg_entry_price": 73210.834026,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.8,
-              "notional_exposure_usd": 61.404932,
-              "unrealized_pnl_usd": -0.617091
+              "notional_exposure_usd": 61.342258,
+              "unrealized_pnl_usd": -0.679764
             },
             "DOGE": {
               "symbol": "DOGE",
-              "net_quantity": -2295.69868207,
-              "avg_entry_price": 0.09718,
-              "mark_price": 0.0962,
-              "leverage": 1.6195,
-              "notional_exposure_usd": 220.846213,
-              "unrealized_pnl_usd": 2.248652
+              "net_quantity": -2497.60063485,
+              "avg_entry_price": 0.097081,
+              "mark_price": 0.096,
+              "leverage": 1.69,
+              "notional_exposure_usd": 239.769661,
+              "unrealized_pnl_usd": 2.699031
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.05019122,
               "avg_entry_price": 90.572481,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.9255,
-              "notional_exposure_usd": 4.516206,
-              "unrealized_pnl_usd": 0.029737
+              "notional_exposure_usd": 4.516708,
+              "unrealized_pnl_usd": 0.029235
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": 10.12460961,
               "avg_entry_price": 1.400752,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 3.0,
-              "notional_exposure_usd": 14.356696,
-              "unrealized_pnl_usd": 0.174629
+              "notional_exposure_usd": 14.361759,
+              "unrealized_pnl_usd": 0.179692
             },
             "OP": {
               "symbol": "OP",
               "net_quantity": 95.19082759,
               "avg_entry_price": 0.130563,
-              "mark_price": 0.1282,
+              "mark_price": 0.1278,
               "leverage": 3.0,
-              "notional_exposure_usd": 12.203464,
-              "unrealized_pnl_usd": -0.224936
+              "notional_exposure_usd": 12.165388,
+              "unrealized_pnl_usd": -0.263012
             },
             "AVAX": {
               "symbol": "AVAX",
@@ -3869,72 +3903,72 @@
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.964121Z"
+        "updated_at": "2026-03-05T03:46:24.014392Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_aggressive",
-        "updated_at": "2026-03-05T03:31:24.840882Z",
+        "updated_at": "2026-03-05T03:46:23.854045Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": -128.408849,
+        "cash_balance_usd": -133.448068,
         "realized_pnl_usd": 2.400042,
-        "unrealized_pnl_usd": 4.537471,
-        "total_fees_usd": 0.390709,
-        "equity_usd": 106.546804,
-        "trade_count": 42,
+        "unrealized_pnl_usd": 4.948696,
+        "total_fees_usd": 0.398458,
+        "equity_usd": 106.95028,
+        "trade_count": 43,
         "positions": {
           "ETH": {
             "symbol": "ETH",
             "net_quantity": -0.05591757,
             "avg_entry_price": 2163.231719,
-            "mark_price": 2113.0,
+            "mark_price": 2111.98,
             "leverage": 2.8,
-            "notional_exposure_usd": 118.153825,
-            "unrealized_pnl_usd": 2.808836
+            "notional_exposure_usd": 118.096789,
+            "unrealized_pnl_usd": 2.865872
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": 0.00084717,
             "avg_entry_price": 73210.834026,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.8,
-            "notional_exposure_usd": 61.404932,
-            "unrealized_pnl_usd": -0.617091
+            "notional_exposure_usd": 61.342258,
+            "unrealized_pnl_usd": -0.679764
           },
           "DOGE": {
             "symbol": "DOGE",
-            "net_quantity": -2295.69868207,
-            "avg_entry_price": 0.09718,
-            "mark_price": 0.0962,
-            "leverage": 1.6195,
-            "notional_exposure_usd": 220.846213,
-            "unrealized_pnl_usd": 2.248652
+            "net_quantity": -2497.60063485,
+            "avg_entry_price": 0.097081,
+            "mark_price": 0.096,
+            "leverage": 1.69,
+            "notional_exposure_usd": 239.769661,
+            "unrealized_pnl_usd": 2.699031
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.05019122,
             "avg_entry_price": 90.572481,
-            "mark_price": 89.98,
+            "mark_price": 89.99,
             "leverage": 1.9255,
-            "notional_exposure_usd": 4.516206,
-            "unrealized_pnl_usd": 0.029737
+            "notional_exposure_usd": 4.516708,
+            "unrealized_pnl_usd": 0.029235
           },
           "XRP": {
             "symbol": "XRP",
             "net_quantity": 10.12460961,
             "avg_entry_price": 1.400752,
-            "mark_price": 1.418,
+            "mark_price": 1.4185,
             "leverage": 3.0,
-            "notional_exposure_usd": 14.356696,
-            "unrealized_pnl_usd": 0.174629
+            "notional_exposure_usd": 14.361759,
+            "unrealized_pnl_usd": 0.179692
           },
           "OP": {
             "symbol": "OP",
             "net_quantity": 95.19082759,
             "avg_entry_price": 0.130563,
-            "mark_price": 0.1282,
+            "mark_price": 0.1278,
             "leverage": 3.0,
-            "notional_exposure_usd": 12.203464,
-            "unrealized_pnl_usd": -0.224936
+            "notional_exposure_usd": 12.165388,
+            "unrealized_pnl_usd": -0.263012
           },
           "AVAX": {
             "symbol": "AVAX",
@@ -5939,6 +5973,33 @@
             "response_payload": null,
             "explanation": "Signal quant DOGE=-0.41, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:24.015480+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "decision": {
+            "analyst_id": "aggressive",
+            "portfolio_id": "analyst_aggressive",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "DOGE",
+            "allocation_pct": 0.1812,
+            "leverage": 1.69,
+            "confidence": 0.68,
+            "reason": "Signal quant DOGE=-0.46, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.853680Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant DOGE=-0.46, decision locale."
+          }
         }
       ],
       "trades": [
@@ -7215,6 +7276,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.840720Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:24.016793+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "transition": "add",
+          "position_before_qty": -2295.69868207,
+          "position_after_qty": -2497.60063485,
+          "decision_action": "short",
+          "decision_confidence": 0.68,
+          "decision_reason": "Signal quant DOGE=-0.46, decision locale.",
+          "decision_explanation": "Signal quant DOGE=-0.46, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_aggressive",
+            "client_order_id": "65a2db6520294d0ab3ab76b146383bd9",
+            "symbol": "DOGE",
+            "side": "sell",
+            "quantity": 201.90195278,
+            "reference_price": 0.096,
+            "executed_price": 0.095951,
+            "notional_usd": 19.372641,
+            "fee_paid_usd": 0.007749,
+            "slippage_bps": 5.131661,
+            "leverage": 1.69,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.853876Z"
+          }
         }
       ],
       "equity_history": [
@@ -7734,6 +7826,17 @@
           "realized_pnl_usd": 2.400042,
           "unrealized_pnl_usd": 4.537471,
           "trade_count": 42
+        },
+        {
+          "ts": "2026-03-05T03:46:24.016226+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "aggressive",
+          "portfolio_id": "analyst_aggressive",
+          "equity_usd": 106.95028,
+          "cash_balance_usd": -133.448068,
+          "realized_pnl_usd": 2.400042,
+          "unrealized_pnl_usd": 4.948696,
+          "trade_count": 43
         }
       ]
     },
@@ -7744,155 +7847,155 @@
       "latest_result": {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
+          "symbol": "ETH",
           "allocation_pct": 0.12,
           "leverage": 1.5,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.859886Z"
+          "created_at": "2026-03-05T03:46:23.833051Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_defensive",
-          "client_order_id": "6b1847f14fe34d2bbb607ffccad6cc4e",
-          "symbol": "XRP",
+          "client_order_id": "29998191e8d549aaba1dfe27ad08892f",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 8.48787013,
-          "reference_price": 1.418,
-          "executed_price": 1.417431,
-          "notional_usd": 12.03097,
-          "fee_paid_usd": 0.004812,
-          "slippage_bps": 4.013284,
+          "quantity": 0.00569644,
+          "reference_price": 2111.98,
+          "executed_price": 2111.175603,
+          "notional_usd": 12.026185,
+          "fee_paid_usd": 0.00481,
+          "slippage_bps": 3.808733,
           "leverage": 1.5,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.860070Z"
+          "executed_at": "2026-03-05T03:46:23.833232Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_defensive",
-          "updated_at": "2026-03-05T03:31:24.861617Z",
+          "updated_at": "2026-03-05T03:46:23.833384Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": 18.253674,
+          "cash_balance_usd": 11.499161,
           "realized_pnl_usd": -0.216702,
-          "unrealized_pnl_usd": 0.589786,
-          "total_fees_usd": 0.084393,
-          "equity_usd": 100.288691,
-          "trade_count": 20,
+          "unrealized_pnl_usd": 0.55293,
+          "total_fees_usd": 0.089203,
+          "equity_usd": 100.247025,
+          "trade_count": 21,
           "positions": {
             "BTC": {
               "symbol": "BTC",
               "net_quantity": -6.979e-05,
               "avg_entry_price": 72462.480738,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.3885,
-              "notional_exposure_usd": 5.058548,
-              "unrealized_pnl_usd": -0.001392
+              "notional_exposure_usd": 5.053385,
+              "unrealized_pnl_usd": 0.003772
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.10164,
               "avg_entry_price": 90.144708,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.5,
-              "notional_exposure_usd": 9.145567,
-              "unrealized_pnl_usd": 0.016741
+              "notional_exposure_usd": 9.146584,
+              "unrealized_pnl_usd": 0.015725
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -63.78521229,
               "avg_entry_price": 1.426459,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.5,
-              "notional_exposure_usd": 90.447431,
-              "unrealized_pnl_usd": 0.539573
+              "notional_exposure_usd": 90.479324,
+              "unrealized_pnl_usd": 0.507667
             },
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": -0.00188674,
-              "avg_entry_price": 2133.13886,
-              "mark_price": 2113.0,
-              "leverage": 1.0,
-              "notional_exposure_usd": 3.986682,
-              "unrealized_pnl_usd": 0.037997
+              "net_quantity": -0.00758318,
+              "avg_entry_price": 2116.640191,
+              "mark_price": 2111.98,
+              "leverage": 1.5,
+              "notional_exposure_usd": 16.015524,
+              "unrealized_pnl_usd": 0.035339
             },
             "BNB": {
               "symbol": "BNB",
               "net_quantity": -0.01839451,
               "avg_entry_price": 652.999676,
-              "mark_price": 653.17,
+              "mark_price": 653.52,
               "leverage": 1.5,
-              "notional_exposure_usd": 12.014742,
-              "unrealized_pnl_usd": -0.003133
+              "notional_exposure_usd": 12.02118,
+              "unrealized_pnl_usd": -0.009571
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.943129Z"
+        "updated_at": "2026-03-05T03:46:23.897550Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_defensive",
-        "updated_at": "2026-03-05T03:31:24.861617Z",
+        "updated_at": "2026-03-05T03:46:23.833384Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 18.253674,
+        "cash_balance_usd": 11.499161,
         "realized_pnl_usd": -0.216702,
-        "unrealized_pnl_usd": 0.589786,
-        "total_fees_usd": 0.084393,
-        "equity_usd": 100.288691,
-        "trade_count": 20,
+        "unrealized_pnl_usd": 0.55293,
+        "total_fees_usd": 0.089203,
+        "equity_usd": 100.247025,
+        "trade_count": 21,
         "positions": {
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -6.979e-05,
             "avg_entry_price": 72462.480738,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.3885,
-            "notional_exposure_usd": 5.058548,
-            "unrealized_pnl_usd": -0.001392
+            "notional_exposure_usd": 5.053385,
+            "unrealized_pnl_usd": 0.003772
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.10164,
             "avg_entry_price": 90.144708,
-            "mark_price": 89.98,
+            "mark_price": 89.99,
             "leverage": 1.5,
-            "notional_exposure_usd": 9.145567,
-            "unrealized_pnl_usd": 0.016741
+            "notional_exposure_usd": 9.146584,
+            "unrealized_pnl_usd": 0.015725
           },
           "XRP": {
             "symbol": "XRP",
             "net_quantity": -63.78521229,
             "avg_entry_price": 1.426459,
-            "mark_price": 1.418,
+            "mark_price": 1.4185,
             "leverage": 1.5,
-            "notional_exposure_usd": 90.447431,
-            "unrealized_pnl_usd": 0.539573
+            "notional_exposure_usd": 90.479324,
+            "unrealized_pnl_usd": 0.507667
           },
           "ETH": {
             "symbol": "ETH",
-            "net_quantity": -0.00188674,
-            "avg_entry_price": 2133.13886,
-            "mark_price": 2113.0,
-            "leverage": 1.0,
-            "notional_exposure_usd": 3.986682,
-            "unrealized_pnl_usd": 0.037997
+            "net_quantity": -0.00758318,
+            "avg_entry_price": 2116.640191,
+            "mark_price": 2111.98,
+            "leverage": 1.5,
+            "notional_exposure_usd": 16.015524,
+            "unrealized_pnl_usd": 0.035339
           },
           "BNB": {
             "symbol": "BNB",
             "net_quantity": -0.01839451,
             "avg_entry_price": 652.999676,
-            "mark_price": 653.17,
+            "mark_price": 653.52,
             "leverage": 1.5,
-            "notional_exposure_usd": 12.014742,
-            "unrealized_pnl_usd": -0.003133
+            "notional_exposure_usd": 12.02118,
+            "unrealized_pnl_usd": -0.009571
           }
         }
       },
@@ -9535,6 +9638,33 @@
             "response_payload": null,
             "explanation": "Signal quant XRP=-0.34, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.899077+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "defensive",
+          "portfolio_id": "analyst_defensive",
+          "decision": {
+            "analyst_id": "defensive",
+            "portfolio_id": "analyst_defensive",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "ETH",
+            "allocation_pct": 0.12,
+            "leverage": 1.5,
+            "confidence": 0.6655,
+            "reason": "Signal quant ETH=-0.43, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.833051Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant ETH=-0.43, decision locale."
+          }
         }
       ],
       "trades": [
@@ -10155,6 +10285,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.860070Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.900669+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "defensive",
+          "portfolio_id": "analyst_defensive",
+          "transition": "add",
+          "position_before_qty": -0.00188674,
+          "position_after_qty": -0.00758318,
+          "decision_action": "short",
+          "decision_confidence": 0.6655,
+          "decision_reason": "Signal quant ETH=-0.43, decision locale.",
+          "decision_explanation": "Signal quant ETH=-0.43, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_defensive",
+            "client_order_id": "29998191e8d549aaba1dfe27ad08892f",
+            "symbol": "ETH",
+            "side": "sell",
+            "quantity": 0.00569644,
+            "reference_price": 2111.98,
+            "executed_price": 2111.175603,
+            "notional_usd": 12.026185,
+            "fee_paid_usd": 0.00481,
+            "slippage_bps": 3.808733,
+            "leverage": 1.5,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.833232Z"
+          }
         }
       ],
       "equity_history": [
@@ -10674,6 +10835,17 @@
           "realized_pnl_usd": -0.216702,
           "unrealized_pnl_usd": 0.589786,
           "trade_count": 20
+        },
+        {
+          "ts": "2026-03-05T03:46:23.899907+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "defensive",
+          "portfolio_id": "analyst_defensive",
+          "equity_usd": 100.247025,
+          "cash_balance_usd": 11.499161,
+          "realized_pnl_usd": -0.216702,
+          "unrealized_pnl_usd": 0.55293,
+          "trade_count": 21
         }
       ]
     },
@@ -10684,75 +10856,75 @@
       "latest_result": {
         "analyst_id": "funding_carry",
         "portfolio_id": "analyst_funding_carry",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "funding_carry",
           "portfolio_id": "analyst_funding_carry",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
+          "symbol": "ETH",
           "allocation_pct": 0.15,
           "leverage": 1.4,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.828249Z"
+          "created_at": "2026-03-05T03:46:23.834317Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_funding_carry",
-          "client_order_id": "64ff44c0b67945a49959d0dc53c89f43",
-          "symbol": "XRP",
+          "client_order_id": "e109b09c4d4344aa954f9c098e1966c7",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 10.57980497,
-          "reference_price": 1.418,
-          "executed_price": 1.417024,
-          "notional_usd": 14.991834,
-          "fee_paid_usd": 0.005997,
-          "slippage_bps": 6.885064,
+          "quantity": 0.00710035,
+          "reference_price": 2111.98,
+          "executed_price": 2111.244877,
+          "notional_usd": 14.990578,
+          "fee_paid_usd": 0.005996,
+          "slippage_bps": 3.480731,
           "leverage": 1.4,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.828429Z"
+          "executed_at": "2026-03-05T03:46:23.834509Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_funding_carry",
-          "updated_at": "2026-03-05T03:31:24.828545Z",
+          "updated_at": "2026-03-05T03:46:23.834623Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -4.553731,
+          "cash_balance_usd": -15.268846,
           "realized_pnl_usd": -0.046298,
-          "unrealized_pnl_usd": 0.211388,
-          "total_fees_usd": 0.166989,
-          "equity_usd": 99.998101,
-          "trade_count": 32,
+          "unrealized_pnl_usd": 0.180033,
+          "total_fees_usd": 0.172985,
+          "equity_usd": 99.96075,
+          "trade_count": 33,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": -0.00040254,
-              "avg_entry_price": 2127.516879,
-              "mark_price": 2113.0,
-              "leverage": 1.3,
-              "notional_exposure_usd": 0.850567,
-              "unrealized_pnl_usd": 0.005844
+              "net_quantity": -0.00750289,
+              "avg_entry_price": 2112.117891,
+              "mark_price": 2111.98,
+              "leverage": 1.4,
+              "notional_exposure_usd": 15.845954,
+              "unrealized_pnl_usd": 0.001035
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 4.289e-05,
               "avg_entry_price": 73643.39238,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.0,
-              "notional_exposure_usd": 3.108771,
-              "unrealized_pnl_usd": -0.049794
+              "notional_exposure_usd": 3.105598,
+              "unrealized_pnl_usd": -0.052967
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -46.708491,
               "avg_entry_price": 1.421786,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.4,
-              "notional_exposure_usd": 66.23264,
-              "unrealized_pnl_usd": 0.176857
+              "notional_exposure_usd": 66.255994,
+              "unrealized_pnl_usd": 0.153484
             },
             "ADA": {
               "symbol": "ADA",
@@ -10767,45 +10939,45 @@
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.924957Z"
+        "updated_at": "2026-03-05T03:46:23.911819Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_funding_carry",
-        "updated_at": "2026-03-05T03:31:24.828545Z",
+        "updated_at": "2026-03-05T03:46:23.834623Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": -4.553731,
+        "cash_balance_usd": -15.268846,
         "realized_pnl_usd": -0.046298,
-        "unrealized_pnl_usd": 0.211388,
-        "total_fees_usd": 0.166989,
-        "equity_usd": 99.998101,
-        "trade_count": 32,
+        "unrealized_pnl_usd": 0.180033,
+        "total_fees_usd": 0.172985,
+        "equity_usd": 99.96075,
+        "trade_count": 33,
         "positions": {
           "ETH": {
             "symbol": "ETH",
-            "net_quantity": -0.00040254,
-            "avg_entry_price": 2127.516879,
-            "mark_price": 2113.0,
-            "leverage": 1.3,
-            "notional_exposure_usd": 0.850567,
-            "unrealized_pnl_usd": 0.005844
+            "net_quantity": -0.00750289,
+            "avg_entry_price": 2112.117891,
+            "mark_price": 2111.98,
+            "leverage": 1.4,
+            "notional_exposure_usd": 15.845954,
+            "unrealized_pnl_usd": 0.001035
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": 4.289e-05,
             "avg_entry_price": 73643.39238,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.0,
-            "notional_exposure_usd": 3.108771,
-            "unrealized_pnl_usd": -0.049794
+            "notional_exposure_usd": 3.105598,
+            "unrealized_pnl_usd": -0.052967
           },
           "XRP": {
             "symbol": "XRP",
             "net_quantity": -46.708491,
             "avg_entry_price": 1.421786,
-            "mark_price": 1.418,
+            "mark_price": 1.4185,
             "leverage": 1.4,
-            "notional_exposure_usd": 66.23264,
-            "unrealized_pnl_usd": 0.176857
+            "notional_exposure_usd": 66.255994,
+            "unrealized_pnl_usd": 0.153484
           },
           "ADA": {
             "symbol": "ADA",
@@ -12605,6 +12777,33 @@
             "response_payload": null,
             "explanation": "Signal quant XRP=-0.34, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.913721+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "funding_carry",
+          "portfolio_id": "analyst_funding_carry",
+          "decision": {
+            "analyst_id": "funding_carry",
+            "portfolio_id": "analyst_funding_carry",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "ETH",
+            "allocation_pct": 0.15,
+            "leverage": 1.4,
+            "confidence": 0.6655,
+            "reason": "Signal quant ETH=-0.43, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.834317Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant ETH=-0.43, decision locale."
+          }
         }
       ],
       "trades": [
@@ -13583,6 +13782,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.828429Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.915452+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "funding_carry",
+          "portfolio_id": "analyst_funding_carry",
+          "transition": "add",
+          "position_before_qty": -0.00040254,
+          "position_after_qty": -0.00750289,
+          "decision_action": "short",
+          "decision_confidence": 0.6655,
+          "decision_reason": "Signal quant ETH=-0.43, decision locale.",
+          "decision_explanation": "Signal quant ETH=-0.43, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_funding_carry",
+            "client_order_id": "e109b09c4d4344aa954f9c098e1966c7",
+            "symbol": "ETH",
+            "side": "sell",
+            "quantity": 0.00710035,
+            "reference_price": 2111.98,
+            "executed_price": 2111.244877,
+            "notional_usd": 14.990578,
+            "fee_paid_usd": 0.005996,
+            "slippage_bps": 3.480731,
+            "leverage": 1.4,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.834509Z"
+          }
         }
       ],
       "equity_history": [
@@ -14102,6 +14332,17 @@
           "realized_pnl_usd": -0.046298,
           "unrealized_pnl_usd": 0.211388,
           "trade_count": 32
+        },
+        {
+          "ts": "2026-03-05T03:46:23.914671+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "funding_carry",
+          "portfolio_id": "analyst_funding_carry",
+          "equity_usd": 99.96075,
+          "cash_balance_usd": -15.268846,
+          "realized_pnl_usd": -0.046298,
+          "unrealized_pnl_usd": 0.180033,
+          "trade_count": 33
         }
       ]
     },
@@ -14112,155 +14353,155 @@
       "latest_result": {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "XRP",
-          "allocation_pct": 0.15567999999999999,
-          "leverage": 1.516,
-          "confidence": 0.622,
-          "reason": "Signal quant XRP=-0.34, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.843215Z"
+          "created_at": "2026-03-05T03:46:23.858418Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_mean_reversion",
-          "client_order_id": "f8aac1228b3048a6b3ba2f739b64e486",
-          "symbol": "XRP",
+          "client_order_id": "d99e607de2224d5da0b1db3188464b92",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 11.12840823,
-          "reference_price": 1.418,
-          "executed_price": 1.41798,
-          "notional_usd": 15.779861,
-          "fee_paid_usd": 0.006312,
-          "slippage_bps": 0.140363,
-          "leverage": 1.516,
+          "quantity": 0.00838088,
+          "reference_price": 2111.98,
+          "executed_price": 2111.414932,
+          "notional_usd": 17.695515,
+          "fee_paid_usd": 0.007078,
+          "slippage_bps": 2.675536,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.843406Z"
+          "executed_at": "2026-03-05T03:46:23.858612Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_mean_reversion",
-          "updated_at": "2026-03-05T03:31:24.843543Z",
+          "updated_at": "2026-03-05T03:46:23.858742Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -3.409567,
-          "realized_pnl_usd": -0.11474,
-          "unrealized_pnl_usd": 1.597038,
-          "total_fees_usd": 0.126532,
-          "equity_usd": 101.355766,
-          "trade_count": 21,
+          "cash_balance_usd": 2.64629,
+          "realized_pnl_usd": 0.720573,
+          "unrealized_pnl_usd": 0.649656,
+          "total_fees_usd": 0.13361,
+          "equity_usd": 101.23662,
+          "trade_count": 22,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 0.00607977,
-              "avg_entry_price": 1974.022653,
-              "mark_price": 2113.0,
-              "leverage": 1.4,
-              "notional_exposure_usd": 12.846554,
-              "unrealized_pnl_usd": 0.84495
+              "net_quantity": -0.00230111,
+              "avg_entry_price": 2111.414932,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 4.859898,
+              "unrealized_pnl_usd": -0.0013
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": -0.00067002,
               "avg_entry_price": 73053.400481,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.3885,
-              "notional_exposure_usd": 48.564671,
-              "unrealized_pnl_usd": 0.382568
+              "notional_exposure_usd": 48.515103,
+              "unrealized_pnl_usd": 0.432136
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": 0.0026004,
               "avg_entry_price": 91.337663,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.5,
-              "notional_exposure_usd": 0.233984,
-              "unrealized_pnl_usd": -0.00353
+              "notional_exposure_usd": 0.23401,
+              "unrealized_pnl_usd": -0.003504
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -6.86133112,
               "avg_entry_price": 9.282879,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.8,
-              "notional_exposure_usd": 63.3987,
-              "unrealized_pnl_usd": 0.294207
+              "notional_exposure_usd": 63.535926,
+              "unrealized_pnl_usd": 0.15698
             },
             "XRP": {
               "symbol": "XRP",
               "net_quantity": -26.9794297,
               "avg_entry_price": 1.420922,
-              "mark_price": 1.418,
+              "mark_price": 1.4185,
               "leverage": 1.516,
-              "notional_exposure_usd": 38.256831,
-              "unrealized_pnl_usd": 0.078842
+              "notional_exposure_usd": 38.270321,
+              "unrealized_pnl_usd": 0.065344
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.949073Z"
+        "updated_at": "2026-03-05T03:46:23.945024Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_mean_reversion",
-        "updated_at": "2026-03-05T03:31:24.843543Z",
+        "updated_at": "2026-03-05T03:46:23.858742Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": -3.409567,
-        "realized_pnl_usd": -0.11474,
-        "unrealized_pnl_usd": 1.597038,
-        "total_fees_usd": 0.126532,
-        "equity_usd": 101.355766,
-        "trade_count": 21,
+        "cash_balance_usd": 2.64629,
+        "realized_pnl_usd": 0.720573,
+        "unrealized_pnl_usd": 0.649656,
+        "total_fees_usd": 0.13361,
+        "equity_usd": 101.23662,
+        "trade_count": 22,
         "positions": {
           "ETH": {
             "symbol": "ETH",
-            "net_quantity": 0.00607977,
-            "avg_entry_price": 1974.022653,
-            "mark_price": 2113.0,
-            "leverage": 1.4,
-            "notional_exposure_usd": 12.846554,
-            "unrealized_pnl_usd": 0.84495
+            "net_quantity": -0.00230111,
+            "avg_entry_price": 2111.414932,
+            "mark_price": 2111.98,
+            "leverage": 1.6465,
+            "notional_exposure_usd": 4.859898,
+            "unrealized_pnl_usd": -0.0013
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -0.00067002,
             "avg_entry_price": 73053.400481,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.3885,
-            "notional_exposure_usd": 48.564671,
-            "unrealized_pnl_usd": 0.382568
+            "notional_exposure_usd": 48.515103,
+            "unrealized_pnl_usd": 0.432136
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": 0.0026004,
             "avg_entry_price": 91.337663,
-            "mark_price": 89.98,
+            "mark_price": 89.99,
             "leverage": 1.5,
-            "notional_exposure_usd": 0.233984,
-            "unrealized_pnl_usd": -0.00353
+            "notional_exposure_usd": 0.23401,
+            "unrealized_pnl_usd": -0.003504
           },
           "LINK": {
             "symbol": "LINK",
             "net_quantity": -6.86133112,
             "avg_entry_price": 9.282879,
-            "mark_price": 9.24,
+            "mark_price": 9.26,
             "leverage": 1.8,
-            "notional_exposure_usd": 63.3987,
-            "unrealized_pnl_usd": 0.294207
+            "notional_exposure_usd": 63.535926,
+            "unrealized_pnl_usd": 0.15698
           },
           "XRP": {
             "symbol": "XRP",
             "net_quantity": -26.9794297,
             "avg_entry_price": 1.420922,
-            "mark_price": 1.418,
+            "mark_price": 1.4185,
             "leverage": 1.516,
-            "notional_exposure_usd": 38.256831,
-            "unrealized_pnl_usd": 0.078842
+            "notional_exposure_usd": 38.270321,
+            "unrealized_pnl_usd": 0.065344
           }
         }
       },
@@ -15919,6 +16160,33 @@
             "response_payload": null,
             "explanation": "Signal quant XRP=-0.34, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.947215+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "mean_reversion",
+          "portfolio_id": "analyst_mean_reversion",
+          "decision": {
+            "analyst_id": "mean_reversion",
+            "portfolio_id": "analyst_mean_reversion",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "ETH",
+            "allocation_pct": 0.17482,
+            "leverage": 1.6465,
+            "confidence": 0.6655,
+            "reason": "Signal quant ETH=-0.43, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.858418Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant ETH=-0.43, decision locale."
+          }
         }
       ],
       "trades": [
@@ -16568,6 +16836,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.843406Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.949415+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "mean_reversion",
+          "portfolio_id": "analyst_mean_reversion",
+          "transition": "flip",
+          "position_before_qty": 0.00607977,
+          "position_after_qty": -0.00230111,
+          "decision_action": "short",
+          "decision_confidence": 0.6655,
+          "decision_reason": "Signal quant ETH=-0.43, decision locale.",
+          "decision_explanation": "Signal quant ETH=-0.43, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_mean_reversion",
+            "client_order_id": "d99e607de2224d5da0b1db3188464b92",
+            "symbol": "ETH",
+            "side": "sell",
+            "quantity": 0.00838088,
+            "reference_price": 2111.98,
+            "executed_price": 2111.414932,
+            "notional_usd": 17.695515,
+            "fee_paid_usd": 0.007078,
+            "slippage_bps": 2.675536,
+            "leverage": 1.6465,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.858612Z"
+          }
         }
       ],
       "equity_history": [
@@ -17087,6 +17386,17 @@
           "realized_pnl_usd": -0.11474,
           "unrealized_pnl_usd": 1.597038,
           "trade_count": 21
+        },
+        {
+          "ts": "2026-03-05T03:46:23.948290+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "mean_reversion",
+          "portfolio_id": "analyst_mean_reversion",
+          "equity_usd": 101.23662,
+          "cash_balance_usd": 2.64629,
+          "realized_pnl_usd": 0.720573,
+          "unrealized_pnl_usd": 0.649656,
+          "trade_count": 22
         }
       ]
     },
@@ -17097,155 +17407,155 @@
       "latest_result": {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "SOL",
-          "allocation_pct": 0.14401999999999998,
-          "leverage": 1.4365,
-          "confidence": 0.5955,
-          "reason": "Signal quant SOL=-0.29, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.872208Z"
+          "created_at": "2026-03-05T03:46:23.873983Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_quant",
-          "client_order_id": "13a82d7252594444bdda7aad80b62b35",
-          "symbol": "SOL",
+          "client_order_id": "9c29cb8d9df141d2ab109e602d37447f",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 0.16248341,
-          "reference_price": 89.98,
-          "executed_price": 89.955754,
-          "notional_usd": 14.616318,
-          "fee_paid_usd": 0.005847,
-          "slippage_bps": 2.694562,
-          "leverage": 1.4365,
+          "quantity": 0.00836655,
+          "reference_price": 2111.98,
+          "executed_price": 2111.714021,
+          "notional_usd": 17.667761,
+          "fee_paid_usd": 0.007067,
+          "slippage_bps": 1.259381,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.872389Z"
+          "executed_at": "2026-03-05T03:46:23.874188Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_quant",
-          "updated_at": "2026-03-05T03:31:24.872541Z",
+          "updated_at": "2026-03-05T03:46:23.874327Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -46.616672,
-          "realized_pnl_usd": -0.62299,
-          "unrealized_pnl_usd": 2.295925,
-          "total_fees_usd": 0.167254,
-          "equity_usd": 101.50568,
-          "trade_count": 28,
+          "cash_balance_usd": -38.572854,
+          "realized_pnl_usd": 0.061221,
+          "unrealized_pnl_usd": 1.179066,
+          "total_fees_usd": 0.174321,
+          "equity_usd": 101.065966,
+          "trade_count": 29,
           "positions": {
             "ETH": {
               "symbol": "ETH",
-              "net_quantity": 0.00695531,
-              "avg_entry_price": 2013.341517,
-              "mark_price": 2113.0,
-              "leverage": 1.4,
-              "notional_exposure_usd": 14.69657,
-              "unrealized_pnl_usd": 0.693156
+              "net_quantity": -0.00141124,
+              "avg_entry_price": 2111.714021,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 2.980511,
+              "unrealized_pnl_usd": -0.000375
             },
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.00038996,
               "avg_entry_price": 73243.665936,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.309,
-              "notional_exposure_usd": 28.265245,
-              "unrealized_pnl_usd": -0.296855
+              "notional_exposure_usd": 28.236395,
+              "unrealized_pnl_usd": -0.325705
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.088252,
               "avg_entry_price": 89.955754,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.4365,
-              "notional_exposure_usd": 7.940915,
-              "unrealized_pnl_usd": -0.00214
+              "notional_exposure_usd": 7.941797,
+              "unrealized_pnl_usd": -0.003022
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -20.00116223,
               "avg_entry_price": 9.342575,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.813,
-              "notional_exposure_usd": 184.810739,
-              "unrealized_pnl_usd": 2.051619
+              "notional_exposure_usd": 185.210762,
+              "unrealized_pnl_usd": 1.651596
             },
             "BNB": {
               "symbol": "BNB",
               "net_quantity": 0.01836333,
               "avg_entry_price": 661.33055,
-              "mark_price": 653.17,
+              "mark_price": 653.52,
               "leverage": 1.4,
-              "notional_exposure_usd": 11.994376,
-              "unrealized_pnl_usd": -0.149855
+              "notional_exposure_usd": 12.000803,
+              "unrealized_pnl_usd": -0.143428
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.948551Z"
+        "updated_at": "2026-03-05T03:46:23.940562Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_quant",
-        "updated_at": "2026-03-05T03:31:24.872541Z",
+        "updated_at": "2026-03-05T03:46:23.874327Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": -46.616672,
-        "realized_pnl_usd": -0.62299,
-        "unrealized_pnl_usd": 2.295925,
-        "total_fees_usd": 0.167254,
-        "equity_usd": 101.50568,
-        "trade_count": 28,
+        "cash_balance_usd": -38.572854,
+        "realized_pnl_usd": 0.061221,
+        "unrealized_pnl_usd": 1.179066,
+        "total_fees_usd": 0.174321,
+        "equity_usd": 101.065966,
+        "trade_count": 29,
         "positions": {
           "ETH": {
             "symbol": "ETH",
-            "net_quantity": 0.00695531,
-            "avg_entry_price": 2013.341517,
-            "mark_price": 2113.0,
-            "leverage": 1.4,
-            "notional_exposure_usd": 14.69657,
-            "unrealized_pnl_usd": 0.693156
+            "net_quantity": -0.00141124,
+            "avg_entry_price": 2111.714021,
+            "mark_price": 2111.98,
+            "leverage": 1.6465,
+            "notional_exposure_usd": 2.980511,
+            "unrealized_pnl_usd": -0.000375
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": 0.00038996,
             "avg_entry_price": 73243.665936,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.309,
-            "notional_exposure_usd": 28.265245,
-            "unrealized_pnl_usd": -0.296855
+            "notional_exposure_usd": 28.236395,
+            "unrealized_pnl_usd": -0.325705
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.088252,
             "avg_entry_price": 89.955754,
-            "mark_price": 89.98,
+            "mark_price": 89.99,
             "leverage": 1.4365,
-            "notional_exposure_usd": 7.940915,
-            "unrealized_pnl_usd": -0.00214
+            "notional_exposure_usd": 7.941797,
+            "unrealized_pnl_usd": -0.003022
           },
           "LINK": {
             "symbol": "LINK",
             "net_quantity": -20.00116223,
             "avg_entry_price": 9.342575,
-            "mark_price": 9.24,
+            "mark_price": 9.26,
             "leverage": 1.813,
-            "notional_exposure_usd": 184.810739,
-            "unrealized_pnl_usd": 2.051619
+            "notional_exposure_usd": 185.210762,
+            "unrealized_pnl_usd": 1.651596
           },
           "BNB": {
             "symbol": "BNB",
             "net_quantity": 0.01836333,
             "avg_entry_price": 661.33055,
-            "mark_price": 653.17,
+            "mark_price": 653.52,
             "leverage": 1.4,
-            "notional_exposure_usd": 11.994376,
-            "unrealized_pnl_usd": -0.149855
+            "notional_exposure_usd": 12.000803,
+            "unrealized_pnl_usd": -0.143428
           }
         }
       },
@@ -19032,6 +19342,33 @@
             "response_payload": null,
             "explanation": "Signal quant SOL=-0.29, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.942248+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "quant",
+          "portfolio_id": "analyst_quant",
+          "decision": {
+            "analyst_id": "quant",
+            "portfolio_id": "analyst_quant",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "ETH",
+            "allocation_pct": 0.17482,
+            "leverage": 1.6465,
+            "confidence": 0.6655,
+            "reason": "Signal quant ETH=-0.43, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.873983Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant ETH=-0.43, decision locale."
+          }
         }
       ],
       "trades": [
@@ -19892,6 +20229,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.872389Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.944022+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "quant",
+          "portfolio_id": "analyst_quant",
+          "transition": "flip",
+          "position_before_qty": 0.00695531,
+          "position_after_qty": -0.00141124,
+          "decision_action": "short",
+          "decision_confidence": 0.6655,
+          "decision_reason": "Signal quant ETH=-0.43, decision locale.",
+          "decision_explanation": "Signal quant ETH=-0.43, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_quant",
+            "client_order_id": "9c29cb8d9df141d2ab109e602d37447f",
+            "symbol": "ETH",
+            "side": "sell",
+            "quantity": 0.00836655,
+            "reference_price": 2111.98,
+            "executed_price": 2111.714021,
+            "notional_usd": 17.667761,
+            "fee_paid_usd": 0.007067,
+            "slippage_bps": 1.259381,
+            "leverage": 1.6465,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.874188Z"
+          }
         }
       ],
       "equity_history": [
@@ -20411,6 +20779,17 @@
           "realized_pnl_usd": -0.62299,
           "unrealized_pnl_usd": 2.295925,
           "trade_count": 28
+        },
+        {
+          "ts": "2026-03-05T03:46:23.943205+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "quant",
+          "portfolio_id": "analyst_quant",
+          "equity_usd": 101.065966,
+          "cash_balance_usd": -38.572854,
+          "realized_pnl_usd": 0.061221,
+          "unrealized_pnl_usd": 1.179066,
+          "trade_count": 29
         }
       ]
     },
@@ -20421,75 +20800,75 @@
       "latest_result": {
         "analyst_id": "swing",
         "portfolio_id": "analyst_swing",
-        "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+        "tick_id": "872ffab2bd924db19846fc4f060feac6",
         "status": "ok",
         "message": "worker completed decisions=1 trades=1",
         "decision": {
           "analyst_id": "swing",
           "portfolio_id": "analyst_swing",
-          "tick_id": "28081d9cf69e471fafa38cd25d1a3bc4",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
           "action": "short",
-          "symbol": "SOL",
-          "allocation_pct": 0.14401999999999998,
-          "leverage": 1.4365,
-          "confidence": 0.5955,
-          "reason": "Signal quant SOL=-0.29, decision locale.",
+          "symbol": "ETH",
+          "allocation_pct": 0.17482,
+          "leverage": 1.6465,
+          "confidence": 0.6655,
+          "reason": "Signal quant ETH=-0.43, decision locale.",
           "source": "heuristic_fallback",
-          "created_at": "2026-03-05T03:31:24.820754Z"
+          "created_at": "2026-03-05T03:46:23.833032Z"
         },
         "trade_executed": true,
         "fill": {
           "portfolio_id": "analyst_swing",
-          "client_order_id": "3830c0d9abbd4b16b376e9a4f56b8a28",
-          "symbol": "SOL",
+          "client_order_id": "8aa11e5176c54746b032adbdd7b20205",
+          "symbol": "ETH",
           "side": "sell",
-          "quantity": 0.16210487,
-          "reference_price": 89.98,
-          "executed_price": 89.944538,
-          "notional_usd": 14.580448,
-          "fee_paid_usd": 0.005832,
-          "slippage_bps": 3.941112,
-          "leverage": 1.4365,
+          "quantity": 0.00835076,
+          "reference_price": 2111.98,
+          "executed_price": 2110.294888,
+          "notional_usd": 17.622566,
+          "fee_paid_usd": 0.007049,
+          "slippage_bps": 7.978826,
+          "leverage": 1.6465,
           "dry_run": true,
-          "executed_at": "2026-03-05T03:31:24.820924Z"
+          "executed_at": "2026-03-05T03:46:23.833220Z"
         },
         "portfolio": {
           "portfolio_id": "analyst_swing",
-          "updated_at": "2026-03-05T03:31:24.821037Z",
+          "updated_at": "2026-03-05T03:46:23.833346Z",
           "initial_balance_usd": 100.0,
-          "cash_balance_usd": -40.375819,
+          "cash_balance_usd": -51.666444,
           "realized_pnl_usd": -0.136561,
-          "unrealized_pnl_usd": 1.547394,
-          "total_fees_usd": 0.143451,
-          "equity_usd": 101.267382,
-          "trade_count": 22,
+          "unrealized_pnl_usd": 1.150501,
+          "total_fees_usd": 0.1505,
+          "equity_usd": 100.86344,
+          "trade_count": 23,
           "positions": {
             "BTC": {
               "symbol": "BTC",
               "net_quantity": 0.000373,
               "avg_entry_price": 73272.247142,
-              "mark_price": 72482.42,
+              "mark_price": 72408.44,
               "leverage": 1.309,
-              "notional_exposure_usd": 27.035943,
-              "unrealized_pnl_usd": -0.294606
+              "notional_exposure_usd": 27.008348,
+              "unrealized_pnl_usd": -0.3222
             },
             "SOL": {
               "symbol": "SOL",
               "net_quantity": -0.16442835,
               "avg_entry_price": 89.963003,
-              "mark_price": 89.98,
+              "mark_price": 89.99,
               "leverage": 1.4365,
-              "notional_exposure_usd": 14.795263,
-              "unrealized_pnl_usd": -0.002795
+              "notional_exposure_usd": 14.796907,
+              "unrealized_pnl_usd": -0.004439
             },
             "LINK": {
               "symbol": "LINK",
               "net_quantity": -17.67909576,
               "avg_entry_price": 9.330902,
-              "mark_price": 9.24,
+              "mark_price": 9.26,
               "leverage": 1.813,
-              "notional_exposure_usd": 163.354845,
-              "unrealized_pnl_usd": 1.607065
+              "notional_exposure_usd": 163.708427,
+              "unrealized_pnl_usd": 1.253483
             },
             "AVAX": {
               "symbol": "AVAX",
@@ -20499,50 +20878,59 @@
               "leverage": 1.5415,
               "notional_exposure_usd": 31.736145,
               "unrealized_pnl_usd": 0.237729
+            },
+            "ETH": {
+              "symbol": "ETH",
+              "net_quantity": -0.00835076,
+              "avg_entry_price": 2110.294888,
+              "mark_price": 2111.98,
+              "leverage": 1.6465,
+              "notional_exposure_usd": 17.636638,
+              "unrealized_pnl_usd": -0.014072
             }
           }
         },
         "codex_stdout": null,
         "codex_stderr": null,
-        "updated_at": "2026-03-05T03:31:24.936823Z"
+        "updated_at": "2026-03-05T03:46:23.918322Z"
       },
       "portfolio": {
         "portfolio_id": "analyst_swing",
-        "updated_at": "2026-03-05T03:31:24.821037Z",
+        "updated_at": "2026-03-05T03:46:23.833346Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": -40.375819,
+        "cash_balance_usd": -51.666444,
         "realized_pnl_usd": -0.136561,
-        "unrealized_pnl_usd": 1.547394,
-        "total_fees_usd": 0.143451,
-        "equity_usd": 101.267382,
-        "trade_count": 22,
+        "unrealized_pnl_usd": 1.150501,
+        "total_fees_usd": 0.1505,
+        "equity_usd": 100.86344,
+        "trade_count": 23,
         "positions": {
           "BTC": {
             "symbol": "BTC",
             "net_quantity": 0.000373,
             "avg_entry_price": 73272.247142,
-            "mark_price": 72482.42,
+            "mark_price": 72408.44,
             "leverage": 1.309,
-            "notional_exposure_usd": 27.035943,
-            "unrealized_pnl_usd": -0.294606
+            "notional_exposure_usd": 27.008348,
+            "unrealized_pnl_usd": -0.3222
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.16442835,
             "avg_entry_price": 89.963003,
-            "mark_price": 89.98,
+            "mark_price": 89.99,
             "leverage": 1.4365,
-            "notional_exposure_usd": 14.795263,
-            "unrealized_pnl_usd": -0.002795
+            "notional_exposure_usd": 14.796907,
+            "unrealized_pnl_usd": -0.004439
           },
           "LINK": {
             "symbol": "LINK",
             "net_quantity": -17.67909576,
             "avg_entry_price": 9.330902,
-            "mark_price": 9.24,
+            "mark_price": 9.26,
             "leverage": 1.813,
-            "notional_exposure_usd": 163.354845,
-            "unrealized_pnl_usd": 1.607065
+            "notional_exposure_usd": 163.708427,
+            "unrealized_pnl_usd": 1.253483
           },
           "AVAX": {
             "symbol": "AVAX",
@@ -20552,6 +20940,15 @@
             "leverage": 1.5415,
             "notional_exposure_usd": 31.736145,
             "unrealized_pnl_usd": 0.237729
+          },
+          "ETH": {
+            "symbol": "ETH",
+            "net_quantity": -0.00835076,
+            "avg_entry_price": 2110.294888,
+            "mark_price": 2111.98,
+            "leverage": 1.6465,
+            "notional_exposure_usd": 17.636638,
+            "unrealized_pnl_usd": -0.014072
           }
         }
       },
@@ -22210,6 +22607,33 @@
             "response_payload": null,
             "explanation": "Signal quant SOL=-0.29, decision locale."
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.920188+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "swing",
+          "portfolio_id": "analyst_swing",
+          "decision": {
+            "analyst_id": "swing",
+            "portfolio_id": "analyst_swing",
+            "tick_id": "872ffab2bd924db19846fc4f060feac6",
+            "action": "short",
+            "symbol": "ETH",
+            "allocation_pct": 0.17482,
+            "leverage": 1.6465,
+            "confidence": 0.6655,
+            "reason": "Signal quant ETH=-0.43, decision locale.",
+            "source": "heuristic_fallback",
+            "created_at": "2026-03-05T03:46:23.833032Z"
+          },
+          "codex": {
+            "token_usage": null,
+            "log_path": null,
+            "response_payload": null,
+            "explanation": "Signal quant ETH=-0.43, decision locale."
+          }
         }
       ],
       "trades": [
@@ -22890,6 +23314,37 @@
             "dry_run": true,
             "executed_at": "2026-03-05T03:31:24.820924Z"
           }
+        },
+        {
+          "ts": "2026-03-05T03:46:23.921773+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "decision_index": 0,
+          "decision_count": 1,
+          "analyst_id": "swing",
+          "portfolio_id": "analyst_swing",
+          "transition": "entry",
+          "position_before_qty": 0.0,
+          "position_after_qty": -0.00835076,
+          "decision_action": "short",
+          "decision_confidence": 0.6655,
+          "decision_reason": "Signal quant ETH=-0.43, decision locale.",
+          "decision_explanation": "Signal quant ETH=-0.43, decision locale.",
+          "codex_token_usage": null,
+          "fill": {
+            "portfolio_id": "analyst_swing",
+            "client_order_id": "8aa11e5176c54746b032adbdd7b20205",
+            "symbol": "ETH",
+            "side": "sell",
+            "quantity": 0.00835076,
+            "reference_price": 2111.98,
+            "executed_price": 2110.294888,
+            "notional_usd": 17.622566,
+            "fee_paid_usd": 0.007049,
+            "slippage_bps": 7.978826,
+            "leverage": 1.6465,
+            "dry_run": true,
+            "executed_at": "2026-03-05T03:46:23.833220Z"
+          }
         }
       ],
       "equity_history": [
@@ -23409,6 +23864,17 @@
           "realized_pnl_usd": -0.136561,
           "unrealized_pnl_usd": 1.547394,
           "trade_count": 22
+        },
+        {
+          "ts": "2026-03-05T03:46:23.921025+00:00",
+          "tick_id": "872ffab2bd924db19846fc4f060feac6",
+          "analyst_id": "swing",
+          "portfolio_id": "analyst_swing",
+          "equity_usd": 100.86344,
+          "cash_balance_usd": -51.666444,
+          "realized_pnl_usd": -0.136561,
+          "unrealized_pnl_usd": 1.150501,
+          "trade_count": 23
         }
       ]
     }
