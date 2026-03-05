@@ -194,28 +194,59 @@
         const payload = row.codex_response_payload && typeof row.codex_response_payload === "object"
           ? row.codex_response_payload
           : null;
-        const pushUnique = (acc, value) => {
+        const normalizeSymbol = (value) => {
           const v = String(value || "").trim().toUpperCase();
-          if (!v || v === "NULL" || v === "-") return;
+          if (!v || v === "NULL" || v === "-") return "";
+          return v;
+        };
+        const normalizeReason = (value) => {
+          const text = String(value || "").replace(/\s+/g, " ").trim();
+          return text || "-";
+        };
+        const pushUnique = (acc, value) => {
+          const v = normalizeSymbol(value);
+          if (!v) return;
           if (!acc.includes(v)) acc.push(v);
         };
-        const symbols = [];
+
+        const analyzedSymbols = [];
         if (Array.isArray(row.llm_signal_assets_universe)) {
-          for (const s of row.llm_signal_assets_universe) pushUnique(symbols, s);
+          for (const s of row.llm_signal_assets_universe) pushUnique(analyzedSymbols, s);
+        } else if (Array.isArray(row.llm_signal_assets_top)) {
+          for (const s of row.llm_signal_assets_top) pushUnique(analyzedSymbols, s);
         }
-        if (!symbols.length && Array.isArray(payload?.orders)) {
-          for (const order of payload.orders) pushUnique(symbols, order?.symbol);
-        }
-        if (!symbols.length) pushUnique(symbols, row.decision_symbol);
-        const symbol = symbols.length ? symbols.join(",") : "-";
-        const reasonRaw =
+
+        const fallbackReason = normalizeReason(
           row.decision_reason ??
           row.codex_explanation ??
           payload?.reason ??
-          (Array.isArray(payload?.orders) && payload.orders.length ? payload.orders[0]?.reason : null) ??
-          "-";
-        const reason = String(reasonRaw).replace(/\s+/g, " ").trim() || "-";
-        return `[${symbol};${reason}]`;
+          "-"
+        );
+
+        const orderPairs = [];
+        if (Array.isArray(payload?.orders)) {
+          for (const order of payload.orders) {
+            if (!order || typeof order !== "object") continue;
+            const symbol = normalizeSymbol(order.symbol) || "-";
+            const reason = normalizeReason(order.reason ?? fallbackReason);
+            orderPairs.push(`[${symbol};${reason}]`);
+          }
+        }
+
+        const lines = [];
+        if (analyzedSymbols.length) {
+          lines.push(`analyse: ${analyzedSymbols.join(",")}`);
+        }
+        if (orderPairs.length) {
+          lines.push(`ordres: ${orderPairs.join(" | ")}`);
+          return lines.join("\n");
+        }
+
+        const decisionSymbol =
+          normalizeSymbol(row.decision_symbol) ||
+          (analyzedSymbols.length === 1 ? analyzedSymbols[0] : "-");
+        lines.push(`decision: [${decisionSymbol};${fallbackReason}]`);
+        return lines.join("\n");
       }
 
       function renderLlmJournal(data) {
