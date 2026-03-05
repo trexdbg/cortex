@@ -458,6 +458,20 @@
         return parts.length ? parts.join("\n\n") : (fallback || "No explanation available");
       }
 
+      function formatTokenUsageLabel(total, input, output) {
+        const hasInput = input !== null && input !== undefined;
+        const hasOutput = output !== null && output !== undefined;
+        const hasTotal = total !== null && total !== undefined;
+        if (hasInput || hasOutput) {
+          const inputText = hasInput ? fmtN(input, 0) : "?";
+          const outputText = hasOutput ? fmtN(output, 0) : "?";
+          const totalText = hasTotal ? ` | total ${fmtN(total, 0)}` : "";
+          return `Tokens in/out: ${inputText}/${outputText}${totalText}`;
+        }
+        if (hasTotal) return `Tokens: ${fmtN(total, 0)}`;
+        return "";
+      }
+
       function renderTradeFocus(view, trade, byTick, marketHistory) {
         const root = document.getElementById("trade-focus");
         const meta = document.getElementById("trade-meta");
@@ -482,6 +496,8 @@
         const qty = num(fill.quantity) || 0;
         const conf = trade.decision_confidence ?? decision.confidence;
         const tokens = drow?.codex?.token_usage ?? trade.codex_token_usage ?? null;
+        const tokensInput = drow?.codex?.input_token_usage ?? trade.codex_input_token_usage ?? null;
+        const tokensOutput = drow?.codex?.output_token_usage ?? trade.codex_output_token_usage ?? null;
         const logPath = drow?.codex?.log_path || "";
         const mark = num((view.portfolio?.positions || {})[symbol]?.mark_price);
         const pnl = px !== null && mark !== null ? (mark - px) * qty * (side === "BUY" ? 1 : -1) : null;
@@ -508,7 +524,7 @@
         reasonEl.textContent = cleanText(fallback);
         codexEl.textContent = cleanText(codexExplanation(drow, trade, fallback));
         codexMeta.textContent = [
-          tokens !== null && tokens !== undefined ? `Tokens: ${tokens}` : "",
+          formatTokenUsageLabel(tokens, tokensInput, tokensOutput),
           windowData.source === "market_history" ? "Source chart: market_history" : "Source chart: trades",
           logPath ? `Log: ${logPath}` : "",
         ].filter(Boolean).join(" | ");
