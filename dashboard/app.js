@@ -691,7 +691,8 @@
 
       async function loadState() {
         try {
-          const res = await fetch("./data/system_state.json", { cache: "no-store" });
+          const stateUrl = `./data/system_state.json?v=${Date.now()}`;
+          const res = await fetch(stateUrl, { cache: "no-store" });
           if (!res.ok) { document.getElementById("updated-at").textContent = "State file not found"; return; }
           stateCache = await res.json();
           const updated = fmtTs(stateCache.updated_at);
