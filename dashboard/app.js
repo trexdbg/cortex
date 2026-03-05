@@ -194,19 +194,25 @@
         const payload = row.codex_response_payload && typeof row.codex_response_payload === "object"
           ? row.codex_response_payload
           : null;
-        const firstOrder = payload && Array.isArray(payload.orders) && payload.orders.length
-          ? payload.orders[0]
-          : null;
-        const symbol = String(
-          row.decision_symbol ??
-          firstOrder?.symbol ??
-          "-"
-        ).trim() || "-";
+        const pushUnique = (acc, value) => {
+          const v = String(value || "").trim().toUpperCase();
+          if (!v || v === "NULL" || v === "-") return;
+          if (!acc.includes(v)) acc.push(v);
+        };
+        const symbols = [];
+        if (Array.isArray(row.llm_signal_assets_universe)) {
+          for (const s of row.llm_signal_assets_universe) pushUnique(symbols, s);
+        }
+        if (!symbols.length && Array.isArray(payload?.orders)) {
+          for (const order of payload.orders) pushUnique(symbols, order?.symbol);
+        }
+        if (!symbols.length) pushUnique(symbols, row.decision_symbol);
+        const symbol = symbols.length ? symbols.join(",") : "-";
         const reasonRaw =
           row.decision_reason ??
           row.codex_explanation ??
           payload?.reason ??
-          firstOrder?.reason ??
+          (Array.isArray(payload?.orders) && payload.orders.length ? payload.orders[0]?.reason : null) ??
           "-";
         const reason = String(reasonRaw).replace(/\s+/g, " ").trim() || "-";
         return `[${symbol};${reason}]`;
