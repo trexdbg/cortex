@@ -277,10 +277,13 @@
 
         if (symbolsForDecision.length) {
           const perSymbol = [];
+          const hasExplicitPerSymbol = explicitBySymbol.size > 0;
           for (const symbol of symbolsForDecision) {
             const explicit = explicitBySymbol.get(symbol);
             if (explicit) {
               perSymbol.push(`[${symbol};${explicit.action};${explicit.reason}]`);
+            } else if (hasExplicitPerSymbol) {
+              perSymbol.push(`[${symbol};NO_ORDER;pas d'ordre explicite pour ce symbole]`);
             } else if (fallbackAction === "HOLD") {
               perSymbol.push(`[${symbol};HOLD;${fallbackReason}]`);
             } else {
