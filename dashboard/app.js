@@ -222,14 +222,21 @@
           payload?.reason ??
           "-"
         );
+        const fallbackAction = String(row.decision_action || "hold").trim().toUpperCase() || "HOLD";
 
-        const orderPairs = [];
+        const explicitOrders = [];
+        const explicitBySymbol = new Map();
         if (Array.isArray(payload?.orders)) {
           for (const order of payload.orders) {
             if (!order || typeof order !== "object") continue;
             const symbol = normalizeSymbol(order.symbol) || "-";
+            const action = String(order.action || fallbackAction).trim().toUpperCase() || fallbackAction;
             const reason = normalizeReason(order.reason ?? fallbackReason);
-            orderPairs.push(`[${symbol};${reason}]`);
+            const token = `[${symbol};${action};${reason}]`;
+            explicitOrders.push(token);
+            if (symbol !== "-" && !explicitBySymbol.has(symbol)) {
+              explicitBySymbol.set(symbol, { action, reason });
+            }
           }
         }
 
@@ -237,15 +244,37 @@
         if (analyzedSymbols.length) {
           lines.push(`analyse: ${analyzedSymbols.join(",")}`);
         }
-        if (orderPairs.length) {
-          lines.push(`ordres: ${orderPairs.join(" | ")}`);
+
+        if (explicitOrders.length) {
+          lines.push(`ordres_explicites: ${explicitOrders.join(" | ")}`);
+        }
+
+        const symbolsForDecision = analyzedSymbols.length
+          ? analyzedSymbols
+          : Array.from(explicitBySymbol.keys());
+        if (!symbolsForDecision.length) {
+          const decisionSymbol = normalizeSymbol(row.decision_symbol);
+          if (decisionSymbol) symbolsForDecision.push(decisionSymbol);
+        }
+
+        if (symbolsForDecision.length) {
+          const perSymbol = [];
+          for (const symbol of symbolsForDecision) {
+            const explicit = explicitBySymbol.get(symbol);
+            if (explicit) {
+              perSymbol.push(`[${symbol};${explicit.action};${explicit.reason}]`);
+            } else if (fallbackAction === "HOLD") {
+              perSymbol.push(`[${symbol};HOLD;${fallbackReason}]`);
+            } else {
+              perSymbol.push(`[${symbol};NO_ORDER;pas d'ordre explicite]`);
+            }
+          }
+          lines.push(`decisions_par_symbole: ${perSymbol.join(" | ")}`);
           return lines.join("\n");
         }
 
-        const decisionSymbol =
-          normalizeSymbol(row.decision_symbol) ||
-          (analyzedSymbols.length === 1 ? analyzedSymbols[0] : "-");
-        lines.push(`decision: [${decisionSymbol};${fallbackReason}]`);
+        const decisionSymbol = normalizeSymbol(row.decision_symbol) || "-";
+        lines.push(`decision: [${decisionSymbol};${fallbackAction};${fallbackReason}]`);
         return lines.join("\n");
       }
 
