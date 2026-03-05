@@ -349,7 +349,7 @@
         body.innerHTML = "";
         const rows = (data.llm_call_journal || []).slice(0, 160);
         if (!rows.length) {
-          body.innerHTML = '<tr><td colspan="4" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
+          body.innerHTML = '<tr><td colspan="5" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
           return;
         }
         const shortReason = (value, maxChars = 220) => {
@@ -358,6 +358,10 @@
           if (text.length <= maxChars) return text;
           return `${text.slice(0, maxChars - 3).trim()}...`;
         };
+        const multilineReason = (value) => shortReason(value, 260)
+          .replace(/\s*\|\s*/g, " |\n")
+          .replace(/;\s+/g, ";\n")
+          .replace(/\.\s+/g, ".\n");
         const pickSymbol = (row, detail) => {
           const candidates = [];
           const add = (value) => {
@@ -396,14 +400,15 @@
         for (const row of rows) {
           const detail = llmDetail(data, row.analyst_id, row.tick_id);
           const symbol = pickSymbol(row, detail);
-          const workerReason = workerReasonFor(row, detail, symbol);
-          const arbiterReason = shortReason(findArbiterReason(detail, symbol), 240);
+          const workerReason = multilineReason(workerReasonFor(row, detail, symbol));
+          const arbiterReason = multilineReason(findArbiterReason(detail, symbol));
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td>${fmtTs(row.ts)}</td>
+            <td>${esc(row.analyst_id || "-")}</td>
             <td>${esc(symbol)}</td>
-            <td>${esc(workerReason)}</td>
-            <td>${esc(arbiterReason)}</td>
+            <td><div class="llm-reason-cell">${esc(workerReason)}</div></td>
+            <td><div class="llm-reason-cell">${esc(arbiterReason)}</div></td>
           `;
           tr.addEventListener("click", () => {
             if (!row.analyst_id) return;
@@ -772,7 +777,7 @@
         const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
         const arbiterRejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
         const arbiterReason = cleanText(findArbiterReason(detail, symbol));
-        reasonEl.textContent = workerReason;
+        reasonEl.textContent = arbiterReason;
         codexEl.textContent = arbiterReason;
         codexMeta.textContent = [
           formatTokenUsageLabel(tokens, tokensInput, tokensOutput),
