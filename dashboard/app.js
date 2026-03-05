@@ -190,6 +190,44 @@
         }
       }
 
+      function renderLlmJournal(data) {
+        const body = document.getElementById("llm-journal-body");
+        if (!body) return;
+        body.innerHTML = "";
+        const rows = (data.llm_call_journal || []).slice(0, 160);
+        if (!rows.length) {
+          body.innerHTML = '<tr><td colspan="7" class="muted">Aucun appel LLM sur la fenetre 3 jours</td></tr>';
+          return;
+        }
+        for (const row of rows) {
+          const action = String(row.decision_action || "-").toUpperCase();
+          const source = row.decision_source ? ` (${row.decision_source})` : "";
+          const reasons = Array.isArray(row.llm_gate_reasons) ? row.llm_gate_reasons.join(", ") : "-";
+          const tokens = formatTokenUsageLabel(
+            row.codex_token_usage ?? null,
+            row.codex_input_token_usage ?? null,
+            row.codex_output_token_usage ?? null
+          ) || "-";
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${fmtTs(row.ts)}</td>
+            <td>${esc(row.analyst_id || "-")}</td>
+            <td class="mono">${esc(row.tick_id || "-")}</td>
+            <td>${esc(action + source)}</td>
+            <td>${esc(reasons)}</td>
+            <td>${esc(tokens)}</td>
+            <td>${esc(row.codex_reasoning_effort || "-")}</td>
+          `;
+          tr.addEventListener("click", () => {
+            if (!row.analyst_id) return;
+            selectedAnalystId = row.analyst_id;
+            selectedTradeKey = null;
+            renderAll();
+          });
+          body.appendChild(tr);
+        }
+      }
+
       function renderRanking(rows) {
         const body = document.getElementById("ranking-body");
         body.innerHTML = "";
@@ -636,6 +674,7 @@
         const rows = buildRankingRows(stateCache);
         renderGlobal(rows);
         renderMarketContext(stateCache.snapshot);
+        renderLlmJournal(stateCache);
         if (!selectedAnalystId && rows.length) selectedAnalystId = rows[0].analyst_id;
         if (selectedAnalystId && !rows.some((r) => r.analyst_id === selectedAnalystId)) { selectedAnalystId = rows.length ? rows[0].analyst_id : null; selectedTradeKey = null; }
         renderRanking(rows);
