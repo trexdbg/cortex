@@ -57,6 +57,21 @@
         if (transition === "unchanged") return { label: "INCHANGE", cls: "" };
         return { label: transition ? transition.toUpperCase() : "-", cls: "" };
       };
+      const executionIntentLabel = (trade) => {
+        const raw = String(trade?.execution_intent || "").trim().toLowerCase();
+        if (raw === "open") return "OPEN";
+        if (raw === "add") return "ADD";
+        if (raw === "reduce") return "REDUCE";
+        if (raw === "close") return "CLOSE";
+        if (raw === "hold") return "HOLD";
+        if (raw === "blocked") return "BLOCKED";
+        const transition = String(trade?.transition || "").trim().toLowerCase();
+        if (transition === "entry") return "OPEN";
+        if (transition === "add") return "ADD";
+        if (transition === "reduce") return "REDUCE";
+        if (transition === "exit") return "CLOSE";
+        return "-";
+      };
 
       function nonZeroPositions(portfolio) {
         return Object.values(portfolio?.positions || {}).filter((p) => Math.abs(num(p?.net_quantity) || 0) > 0);
@@ -344,8 +359,12 @@
             "Aucun output worker"
           );
           const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
-          const arbiterDecision = arbiterOrders.length
-            ? prettyJson(arbiterOrders, "[]")
+          const arbiterRejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
+          const arbiterDecision = (arbiterOrders.length || arbiterRejections.length)
+            ? prettyJson({
+                orders: arbiterOrders,
+                rejections: arbiterRejections,
+              }, "{}")
             : "Aucune decision arbitre pour cet analyste sur ce tick";
           const tr = document.createElement("tr");
           tr.innerHTML = `
@@ -362,6 +381,21 @@
           });
           body.appendChild(tr);
         }
+      }
+
+      function findArbiterReason(detail, symbol) {
+        const wanted = String(symbol || "").trim().toUpperCase();
+        const orders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
+        const rejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
+        const matchOrder = orders.find((row) => String(row?.symbol || "").trim().toUpperCase() === wanted) || orders[0];
+        if (matchOrder && String(matchOrder.reason || "").trim()) {
+          return String(matchOrder.reason).trim();
+        }
+        const matchReject = rejections.find((row) => String(row?.symbol || "").trim().toUpperCase() === wanted) || rejections[0];
+        if (matchReject && String(matchReject.reason || "").trim()) {
+          return `Rejet arbitre: ${String(matchReject.reason).trim()}`;
+        }
+        return "Aucune raison arbitre";
       }
 
       function renderRanking(rows) {
@@ -666,6 +700,7 @@
         const posBefore = positionSideFromQty(beforeQty);
         const posAfter = positionSideFromQty(afterQty);
         const lifecycle = tradeLifecycle(trade);
+        const executionIntent = executionIntentLabel(trade);
         const px = num(fill.executed_price);
         const qty = num(fill.quantity) || 0;
         const conf = trade.decision_confidence ?? decision.confidence;
@@ -683,6 +718,7 @@
           ["Position", `${posBefore} -> ${posAfter}`, positionSideClass(posAfter)],
           ["Etat", lifecycle.label, lifecycle.cls],
           ["Transition", trade.transition || "-", ""],
+          ["Intent", executionIntent, ""],
           ["Executed", fmtTs(fill.executed_at || trade.ts), ""],
           ["Price", fmtM(px, 4), ""],
           ["Quantity", fmtN(qty, 6), ""],
@@ -696,11 +732,16 @@
         ];
         meta.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
 
-        const workerPrompt = detail?.worker_prompt || "Aucun prompt worker LLM pour ce tick";
-        const arbiterPrompt = arbiter?.prompt || "Aucun prompt arbitre pour ce tick";
+        const workerReason = cleanText(
+          trade?.decision_reason ||
+          decision?.reason ||
+          codexExplanation(drow, trade, "Aucune raison worker")
+        );
         const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
-        reasonEl.textContent = cleanText(workerPrompt);
-        codexEl.textContent = cleanText(arbiterPrompt);
+        const arbiterRejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
+        const arbiterReason = cleanText(findArbiterReason(detail, symbol));
+        reasonEl.textContent = workerReason;
+        codexEl.textContent = arbiterReason;
         codexMeta.textContent = [
           formatTokenUsageLabel(tokens, tokensInput, tokensOutput),
           detail?.worker_log_path ? `Worker log: ${detail.worker_log_path}` : "",
@@ -708,13 +749,19 @@
           logPath ? `Decision log: ${logPath}` : "",
           arbiter?.log_path ? `Arbitre log: ${arbiter.log_path}` : "",
           arbiterOrders.length ? `Decision arbitre: ${arbiterOrders.length}` : "Aucune decision arbitre",
+          arbiterRejections.length ? `Rejets arbitre: ${arbiterRejections.length}` : "",
         ].filter(Boolean).join(" | ");
         codexJson.textContent = [
           "=== worker_output ===",
           prettyJson(detail?.worker_output ?? drow?.codex?.response_payload ?? null, "Aucun output worker"),
           "",
           "=== arbiter_decision ===",
-          prettyJson(arbiterOrders.length ? arbiterOrders : null, "Aucune decision arbitre"),
+          prettyJson(
+            arbiterOrders.length || arbiterRejections.length
+              ? { orders: arbiterOrders, rejections: arbiterRejections }
+              : null,
+            "Aucune decision arbitre"
+          ),
           "",
           "=== arbiter_output ===",
           prettyJson(arbiter?.output || null, "Aucun output arbitre"),
@@ -773,7 +820,7 @@
         const trades = (view.trades || []).slice(-TRADE_HISTORY_LIMIT).reverse();
         const byTick = new Map((view.decisions || []).map((r) => [r.tick_id, r]));
         if (!trades.length) {
-          body.innerHTML = '<tr><td colspan="11" class="muted">No executed trade yet</td></tr>';
+          body.innerHTML = '<tr><td colspan="12" class="muted">No executed trade yet</td></tr>';
           renderTradeFocus(data, view, null, byTick, marketHistory);
           return;
         }
@@ -788,9 +835,10 @@
           const posBefore = positionSideFromQty(beforeQty);
           const posAfter = positionSideFromQty(afterQty);
           const lifecycle = tradeLifecycle(trd);
+          const executionIntent = executionIntentLabel(trd);
           const row = document.createElement("tr");
           if (key === selectedTradeKey) row.classList.add("active");
-          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td class="${positionSideClass(posAfter)}">${posBefore} -> ${posAfter}</td><td class="${lifecycle.cls}">${lifecycle.label}</td><td>${esc(String(trd.transition || "-").toUpperCase())}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
+          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td class="${positionSideClass(posAfter)}">${posBefore} -> ${posAfter}</td><td class="${lifecycle.cls}">${lifecycle.label}</td><td>${esc(String(trd.transition || "-").toUpperCase())}</td><td>${esc(executionIntent)}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
           row.addEventListener("click", () => { selectedTradeKey = key; renderAll(); });
           body.appendChild(row);
         }

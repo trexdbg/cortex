@@ -131,7 +131,7 @@
               <div class="bhead">Trade History (click for deep dive)</div>
               <div class="table">
                 <table class="trades">
-                  <thead><tr><th>Time</th><th>Symbol</th><th>Ordre</th><th>Position</th><th>Etat</th><th>Transition</th><th>Allocation</th><th>Conf</th><th>Price</th><th>Notional</th><th>Fee</th></tr></thead>
+                  <thead><tr><th>Time</th><th>Symbol</th><th>Ordre</th><th>Position</th><th>Etat</th><th>Transition</th><th>Intent</th><th>Allocation</th><th>Conf</th><th>Price</th><th>Notional</th><th>Fee</th></tr></thead>
                   <tbody id="trades-body"></tbody>
                 </table>
               </div>
@@ -140,9 +140,9 @@
             <div class="focus" id="trade-focus" style="display:none;">
               <div id="trade-meta" class="grid" style="margin-bottom:10px;"></div>
               <div class="fgrid">
-                <div class="ftext"><h4>Prompt Worker</h4><div class="body" id="trade-reason">-</div></div>
+                <div class="ftext"><h4>Raison Worker</h4><div class="body" id="trade-reason">-</div></div>
                 <div class="ftext">
-                  <h4>Prompt Arbitre</h4>
+                  <h4>Raison Arbitre</h4>
                   <div class="body" id="trade-codex">-</div>
                   <div class="muted" id="trade-codex-meta" style="margin-top:8px;font-size:.73rem;"></div>
                 </div>
