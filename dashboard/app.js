@@ -343,6 +343,19 @@
         return lines.join("\n");
       }
 
+      function findWorkerReason(detail, symbol, ...fallbacks) {
+        const wanted = String(symbol || "").trim().toUpperCase();
+        const orders = Array.isArray(detail?.worker_orders) ? detail.worker_orders : [];
+        const matchOrder = orders.find((row) => String(row?.symbol || "").trim().toUpperCase() === wanted) || orders[0];
+        if (matchOrder && String(matchOrder.reason || "").trim()) {
+          return String(matchOrder.reason).trim();
+        }
+        for (const fallback of fallbacks) {
+          if (String(fallback || "").trim()) return String(fallback).trim();
+        }
+        return "Aucune raison worker";
+      }
+
       function renderLlmJournal(data) {
         const body = document.getElementById("llm-journal-body");
         if (!body) return;
@@ -383,24 +396,15 @@
           }
           return candidates[0] || "-";
         };
-        const workerReasonFor = (row, detail, symbol) => {
-          const wanted = String(symbol || "").trim().toUpperCase();
-          const workerOrders = Array.isArray(detail?.worker_orders) ? detail.worker_orders : [];
-          const bySymbol = workerOrders.find((item) => String(item?.symbol || "").trim().toUpperCase() === wanted);
-          const anyOrder = workerOrders[0];
-          const raw = (
-            bySymbol?.reason ||
-            anyOrder?.reason ||
-            row?.decision_reason ||
-            row?.codex_explanation ||
-            "Aucune raison worker"
-          );
-          return shortReason(raw);
-        };
         for (const row of rows) {
           const detail = llmDetail(data, row.analyst_id, row.tick_id);
           const symbol = pickSymbol(row, detail);
-          const workerReason = multilineReason(workerReasonFor(row, detail, symbol));
+          const workerReason = multilineReason(shortReason(findWorkerReason(
+            detail,
+            symbol,
+            row?.decision_reason,
+            row?.codex_explanation
+          )));
           const arbiterReason = multilineReason(findArbiterReason(detail, symbol));
           const tr = document.createElement("tr");
           tr.innerHTML = `
@@ -769,15 +773,17 @@
         ];
         meta.innerHTML = cards.map(([k, v, c]) => `<div class="card"><div class="k">${k}</div><div class="v ${c}">${esc(v)}</div></div>`).join("");
 
-        const workerReason = cleanText(
-          trade?.decision_reason ||
-          decision?.reason ||
+        const workerReason = cleanText(findWorkerReason(
+          detail,
+          symbol,
+          trade?.decision_reason,
+          decision?.reason,
           codexExplanation(drow, trade, "Aucune raison worker")
-        );
+        ));
         const arbiterOrders = Array.isArray(detail?.arbiter_orders) ? detail.arbiter_orders : [];
         const arbiterRejections = Array.isArray(detail?.arbiter_rejections) ? detail.arbiter_rejections : [];
         const arbiterReason = cleanText(findArbiterReason(detail, symbol));
-        reasonEl.textContent = arbiterReason;
+        reasonEl.textContent = workerReason;
         codexEl.textContent = arbiterReason;
         codexMeta.textContent = [
           formatTokenUsageLabel(tokens, tokensInput, tokensOutput),
