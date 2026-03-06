@@ -58,3 +58,52 @@
       @media (max-width:1240px){.layout{grid-template-columns:1fr}}
       @media (max-width:1240px){.llm-journal-table th:nth-child(4),.llm-journal-table td:nth-child(4),.llm-journal-table th:nth-child(5),.llm-journal-table td:nth-child(5){min-width:220px}}
       @media (max-width:920px){.dgrid,.fgrid,.alloc{grid-template-columns:1fr}}
+      @media (max-width:760px){
+        .top{padding:12px 12px 4px;flex-direction:column;align-items:flex-start}
+        .layout{padding:8px 12px 12px;gap:10px}
+        .inner{padding:8px}
+        .head{padding:10px}
+        .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+        .chart{height:230px}
+        .table{border:1px solid var(--line);border-radius:10px;background:#fff}
+        .table-llm{border:none}
+        .llm-journal-table,.llm-journal-table thead,.llm-journal-table tbody,.llm-journal-table tr,.llm-journal-table td{display:block;width:100%}
+        .llm-journal-table thead{display:none}
+        .llm-journal-table tbody{display:grid;gap:8px}
+        .llm-journal-table tr{border:1px solid var(--line);border-radius:10px;background:#fdfefe;padding:4px 0}
+        .llm-journal-table td{white-space:normal;border-bottom:none;padding:6px 10px;display:grid;grid-template-columns:minmax(88px,34%) 1fr;gap:8px;align-items:start}
+        .llm-journal-table td::before{content:attr(data-label);font-size:.66rem;font-weight:700;color:#4d606e;letter-spacing:.01em;text-transform:uppercase}
+        .llm-journal-table td[colspan]{display:block;grid-template-columns:1fr}
+        .llm-journal-table td[colspan]::before{content:none}
+        .llm-reason-cell{font-size:.74rem;line-height:1.42}
+        .ranking-table,.ranking-table thead,.ranking-table tbody,.ranking-table tr,.ranking-table td{display:block;width:100%}
+        .ranking-table thead{display:none}
+        .ranking-table tbody{display:grid;gap:8px}
+        .ranking-table tr{border:1px solid var(--line);border-radius:10px;background:#fdfefe;padding:4px 0}
+        .ranking-table tr.selected{background:#daf4ee}
+        .ranking-table td{white-space:normal;border-bottom:none;padding:6px 10px;display:grid;grid-template-columns:minmax(92px,36%) 1fr;gap:8px;align-items:start}
+        .ranking-table td::before{content:attr(data-label);font-size:.66rem;font-weight:700;color:#4d606e;letter-spacing:.01em;text-transform:uppercase}
+        .ranking-table td[colspan]{display:block;grid-template-columns:1fr}
+        .ranking-table td[colspan]::before{content:none}
+        table.trades,table.trades thead,table.trades tbody,table.trades tr,table.trades td{display:block;width:100%}
+        table.trades thead{display:none}
+        table.trades tbody{display:grid;gap:8px}
+        table.trades tr{border:1px solid var(--line);border-radius:10px;background:#fdfefe;padding:4px 0}
+        table.trades tr.active{background:#e6f4f0}
+        table.trades td{white-space:normal;border-bottom:none;padding:6px 10px;display:grid;grid-template-columns:minmax(92px,36%) 1fr;gap:8px;align-items:start}
+        table.trades td::before{content:attr(data-label);font-size:.66rem;font-weight:700;color:#4d606e;letter-spacing:.01em;text-transform:uppercase}
+        table.trades td[colspan]{display:block;grid-template-columns:1fr}
+        table.trades td[colspan]::before{content:none}
+        .ftext .body{font-size:.76rem}
+        #trade-codex-meta{line-height:1.35}
+      }
+      @media (max-width:520px){
+        .grid{grid-template-columns:1fr}
+        .title{font-size:1.1rem}
+        .sub,.updated{font-size:.75rem}
+        .chart{height:210px}
+        .ranking-table td,
+        table.trades td,.llm-journal-table td{grid-template-columns:1fr;gap:4px;padding:7px 9px}
+        .ranking-table td::before,
+        table.trades td::before,.llm-journal-table td::before{font-size:.64rem}
+      }

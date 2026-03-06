@@ -408,11 +408,11 @@
           const arbiterReason = multilineReason(findArbiterReason(detail, symbol));
           const tr = document.createElement("tr");
           tr.innerHTML = `
-            <td>${fmtTs(row.ts)}</td>
-            <td>${esc(row.analyst_id || "-")}</td>
-            <td>${esc(symbol)}</td>
-            <td><div class="llm-reason-cell">${esc(workerReason)}</div></td>
-            <td><div class="llm-reason-cell">${esc(arbiterReason)}</div></td>
+            <td data-label="Date / Heure">${fmtTs(row.ts)}</td>
+            <td data-label="Analyste">${esc(row.analyst_id || "-")}</td>
+            <td data-label="Symbol">${esc(symbol)}</td>
+            <td data-label="Reason Worker"><div class="llm-reason-cell">${esc(workerReason)}</div></td>
+            <td data-label="Reason Arbitre"><div class="llm-reason-cell">${esc(arbiterReason)}</div></td>
           `;
           tr.addEventListener("click", () => {
             if (!row.analyst_id) return;
@@ -450,14 +450,14 @@
           const tr = document.createElement("tr");
           if (row.analyst_id === selectedAnalystId) tr.classList.add("selected");
           tr.innerHTML = `
-            <td><strong>${row.rank || "-"}</strong></td>
-            <td>${esc(row.display_name || row.analyst_id || "-")}</td>
-            <td class="${cssSign(row.return_pct)}">${fmtM(row.equity_usd)}</td>
-            <td class="${cssSign(row.return_pct)}">${fmtSP(row.return_pct, 2)}</td>
-            <td class="${row.risk_pct > 100 ? "warn" : ""}">${fmtP(row.risk_pct, 1)}</td>
-            <td>${row.trade_count || 0}</td>
-            <td>${esc(String(row.last_action || "-").toUpperCase())} ${esc(row.last_symbol || "")}</td>
-            <td>${row.confidence === undefined ? "-" : fmtP((num(row.confidence) || 0) * 100, 1)}</td>`;
+            <td data-label="#">${row.rank || "-"}</td>
+            <td data-label="Analyst">${esc(row.display_name || row.analyst_id || "-")}</td>
+            <td data-label="Equity" class="${cssSign(row.return_pct)}">${fmtM(row.equity_usd)}</td>
+            <td data-label="Return" class="${cssSign(row.return_pct)}">${fmtSP(row.return_pct, 2)}</td>
+            <td data-label="Open Risk" class="${row.risk_pct > 100 ? "warn" : ""}">${fmtP(row.risk_pct, 1)}</td>
+            <td data-label="Trades">${row.trade_count || 0}</td>
+            <td data-label="Last Decision">${esc(String(row.last_action || "-").toUpperCase())} ${esc(row.last_symbol || "")}</td>
+            <td data-label="Confidence">${row.confidence === undefined ? "-" : fmtP((num(row.confidence) || 0) * 100, 1)}</td>`;
           tr.addEventListener("click", () => { selectedAnalystId = row.analyst_id; selectedTradeKey = null; renderAll(); });
           body.appendChild(tr);
         }
@@ -881,7 +881,7 @@
           const executionIntent = executionIntentLabel(trd);
           const row = document.createElement("tr");
           if (key === selectedTradeKey) row.classList.add("active");
-          row.innerHTML = `<td>${fmtTs(fill.executed_at || trd.ts)}</td><td>${esc(fill.symbol || "-")}</td><td class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td class="${positionSideClass(posAfter)}">${posBefore} -> ${posAfter}</td><td class="${lifecycle.cls}">${lifecycle.label}</td><td>${esc(String(trd.transition || "-").toUpperCase())}</td><td>${esc(executionIntent)}</td><td>${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td>${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td>${fmtM(fill.executed_price, 4)}</td><td>${fmtM(fill.notional_usd)}</td><td>${fmtM(fill.fee_paid_usd, 4)}</td>`;
+          row.innerHTML = `<td data-label="Time">${fmtTs(fill.executed_at || trd.ts)}</td><td data-label="Symbol">${esc(fill.symbol || "-")}</td><td data-label="Ordre" class="${side === "BUY" ? "buy" : side === "SELL" ? "sell" : ""}">${side}</td><td data-label="Position" class="${positionSideClass(posAfter)}">${posBefore} -> ${posAfter}</td><td data-label="Etat" class="${lifecycle.cls}">${lifecycle.label}</td><td data-label="Transition">${esc(String(trd.transition || "-").toUpperCase())}</td><td data-label="Intent">${esc(executionIntent)}</td><td data-label="Allocation">${decision.allocation_pct === undefined ? "-" : fmtP((num(decision.allocation_pct) || 0) * 100, 1)}</td><td data-label="Conf">${trd.decision_confidence === undefined ? "-" : fmtP((num(trd.decision_confidence) || 0) * 100, 1)}</td><td data-label="Price">${fmtM(fill.executed_price, 4)}</td><td data-label="Notional">${fmtM(fill.notional_usd)}</td><td data-label="Fee">${fmtM(fill.fee_paid_usd, 4)}</td>`;
           row.addEventListener("click", () => { selectedTradeKey = key; renderAll(); });
           body.appendChild(row);
         }
