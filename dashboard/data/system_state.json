@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-06T16:31:45.755525+00:00",
+  "updated_at": "2026-03-06T16:45:08.255280+00:00",
   "snapshot": {
-    "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
-    "as_of": "2026-03-06T16:30:02.052501Z",
+    "tick_id": "be7b23599b41481b858eed173b3e84aa",
+    "as_of": "2026-03-06T16:45:02.005815Z",
     "system_kpis": {
       "skill_calls": 43,
       "skill_success": 43,
       "skill_failures": 0,
-      "tick_duration_ms": 4778.16,
-      "snapshot_size_bytes": 1491422
+      "tick_duration_ms": 4635.88,
+      "snapshot_size_bytes": 1344352
     },
     "llm_sentiment": {
       "updated_at": "2026-03-05T20:00:08.570814+01:00",
@@ -146,73 +146,73 @@
     "market_data": [
       {
         "symbol": "BTC",
-        "price": 68537.47,
-        "price_change_24h_pct": -3.463,
-        "funding_rate": -1.4e-05,
-        "open_interest": 5732588996.67
+        "price": 68592.18,
+        "price_change_24h_pct": -3.894,
+        "funding_rate": -1.3e-05,
+        "open_interest": 5734609631.21
       },
       {
         "symbol": "ETH",
-        "price": 1974.82,
-        "price_change_24h_pct": -4.709,
-        "funding_rate": -0.0001,
-        "open_interest": 3910877907.19
+        "price": 1975.18,
+        "price_change_24h_pct": -5.06,
+        "funding_rate": -9.8e-05,
+        "open_interest": 3914079238.0
       },
       {
         "symbol": "SOL",
-        "price": 84.64,
-        "price_change_24h_pct": -4.285,
-        "funding_rate": -0.000145,
-        "open_interest": 789718995.78
+        "price": 84.66,
+        "price_change_24h_pct": -4.759,
+        "funding_rate": -0.000153,
+        "open_interest": 790564152.17
       },
       {
         "symbol": "LINK",
-        "price": 8.75,
-        "price_change_24h_pct": -4.367,
-        "funding_rate": -0.000145,
-        "open_interest": 75198579.49
+        "price": 8.77,
+        "price_change_24h_pct": -4.57,
+        "funding_rate": -0.000147,
+        "open_interest": 75385083.04
       },
       {
         "symbol": "AVAX",
-        "price": 8.96,
-        "price_change_24h_pct": -4.171,
-        "funding_rate": -0.000247,
-        "open_interest": 74020513.28
+        "price": 9.0,
+        "price_change_24h_pct": -4.153,
+        "funding_rate": -0.000251,
+        "open_interest": 74525301.0
       },
       {
         "symbol": "XRP",
-        "price": 1.3586,
-        "price_change_24h_pct": -3.364,
-        "funding_rate": -0.000143,
-        "open_interest": 368786597.55
+        "price": 1.3609,
+        "price_change_24h_pct": -3.646,
+        "funding_rate": -0.000151,
+        "open_interest": 369051727.51
       },
       {
         "symbol": "ADA",
-        "price": 0.2577,
-        "price_change_24h_pct": -3.807,
-        "funding_rate": -0.000227,
-        "open_interest": 82287457.46
+        "price": 0.2586,
+        "price_change_24h_pct": -3.973,
+        "funding_rate": -0.000237,
+        "open_interest": 82604108.73
       },
       {
         "symbol": "DOGE",
-        "price": 0.0907,
-        "price_change_24h_pct": -3.068,
+        "price": 0.091,
+        "price_change_24h_pct": -3.152,
         "funding_rate": -0.000131,
-        "open_interest": 167270459.32
+        "open_interest": 167094357.64
       },
       {
         "symbol": "BNB",
-        "price": 629.57,
-        "price_change_24h_pct": -3.176,
+        "price": 630.58,
+        "price_change_24h_pct": -3.352,
         "funding_rate": 0.0,
-        "open_interest": 311497139.93
+        "open_interest": 312324653.41
       },
       {
         "symbol": "OP",
-        "price": 0.119,
-        "price_change_24h_pct": -4.647,
-        "funding_rate": -3.6e-05,
-        "open_interest": 17024057.09
+        "price": 0.1191,
+        "price_change_24h_pct": -5.1,
+        "funding_rate": -3.3e-05,
+        "open_interest": 17056021.06
       }
     ],
     "news": [
@@ -291,72 +291,72 @@
       {
         "symbol": "BTC",
         "platform": "reddit",
-        "score": -0.04,
+        "score": 0.0,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.153142Z"
+        "as_of": "2026-03-06T16:45:02.010045Z"
       },
       {
         "symbol": "ETH",
         "platform": "reddit",
-        "score": -0.3,
+        "score": -0.26,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.189853Z"
+        "as_of": "2026-03-06T16:45:02.010128Z"
       },
       {
         "symbol": "SOL",
         "platform": "reddit",
-        "score": -0.18,
+        "score": -0.14,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.193999Z"
+        "as_of": "2026-03-06T16:45:02.010204Z"
       },
       {
         "symbol": "LINK",
         "platform": "reddit",
-        "score": -0.06,
+        "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.194116Z"
+        "as_of": "2026-03-06T16:45:02.010259Z"
       },
       {
         "symbol": "AVAX",
         "platform": "reddit",
         "score": 0.167,
         "mentions": 6,
-        "as_of": "2026-03-06T16:30:02.194228Z"
+        "as_of": "2026-03-06T16:45:02.010320Z"
       },
       {
         "symbol": "XRP",
         "platform": "reddit",
         "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.194340Z"
+        "as_of": "2026-03-06T16:45:02.010375Z"
       },
       {
         "symbol": "ADA",
         "platform": "reddit",
-        "score": -0.08,
+        "score": -0.06,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.194451Z"
+        "as_of": "2026-03-06T16:45:02.010427Z"
       },
       {
         "symbol": "DOGE",
         "platform": "reddit",
         "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.194975Z"
+        "as_of": "2026-03-06T16:45:02.010479Z"
       },
       {
         "symbol": "BNB",
         "platform": "reddit",
         "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.195333Z"
+        "as_of": "2026-03-06T16:45:02.010528Z"
       },
       {
         "symbol": "OP",
         "platform": "reddit",
-        "score": -0.08,
+        "score": -0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T16:30:02.195456Z"
+        "as_of": "2026-03-06T16:45:02.010579Z"
       }
     ],
     "macro_indicators": [
@@ -365,7 +365,7 @@
         "dxy": 117.822,
         "us10y": 4.09,
         "spx_fut": 6830.71,
-        "as_of": "2026-03-06T16:30:02.195489Z"
+        "as_of": "2026-03-06T16:45:02.010593Z"
       }
     ],
     "failures": []
@@ -506,8 +506,8 @@
     }
   ],
   "competition": {
-    "updated_at": "2026-03-06T16:31:45.432009+00:00",
-    "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+    "updated_at": "2026-03-06T16:45:07.991427+00:00",
+    "tick_id": "be7b23599b41481b858eed173b3e84aa",
     "analyst_count": 4,
     "data_health": {
       "status": "ok",
@@ -526,7 +526,7 @@
     },
     "trade_arbiter": {
       "enabled": true,
-      "status": "no_final_orders",
+      "status": "no_candidates",
       "selected_count": 0,
       "executed_count": 0,
       "data_health_status": "ok",
@@ -537,40 +537,40 @@
         "analyst_id": "aggressive",
         "display_name": "Analyst Aggressive",
         "portfolio_id": "analyst_aggressive",
-        "equity_usd": 102.59287,
+        "equity_usd": 102.460389,
         "trade_count": 4,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 2.620875,
+        "unrealized_pnl_usd": 2.488394,
         "rank": 1
       },
       {
         "analyst_id": "quant",
         "display_name": "Analyst Quant",
         "portfolio_id": "analyst_quant",
-        "equity_usd": 101.325708,
+        "equity_usd": 101.308622,
         "trade_count": 5,
         "realized_pnl_usd": -0.046739,
-        "unrealized_pnl_usd": 1.393878,
+        "unrealized_pnl_usd": 1.376792,
         "rank": 2
       },
       {
         "analyst_id": "mean_reversion",
         "display_name": "Analyst Mean Reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "equity_usd": 100.935367,
+        "equity_usd": 100.920124,
         "trade_count": 3,
         "realized_pnl_usd": 0.049657,
-        "unrealized_pnl_usd": 0.895715,
+        "unrealized_pnl_usd": 0.880472,
         "rank": 3
       },
       {
         "analyst_id": "defensive",
         "display_name": "Analyst Defensive",
         "portfolio_id": "analyst_defensive",
-        "equity_usd": 100.204385,
+        "equity_usd": 100.199445,
         "trade_count": 1,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.206943,
+        "unrealized_pnl_usd": 0.202003,
         "rank": 4
       }
     ]
@@ -1599,6 +1599,22 @@
         "BNB": 629.57,
         "OP": 0.119
       }
+    },
+    {
+      "tick_id": "be7b23599b41481b858eed173b3e84aa",
+      "as_of": "2026-03-06T16:45:02.005815+00:00",
+      "prices": {
+        "BTC": 68592.18,
+        "ETH": 1975.18,
+        "SOL": 84.66,
+        "LINK": 8.77,
+        "AVAX": 9.0,
+        "XRP": 1.3609,
+        "ADA": 0.2586,
+        "DOGE": 0.091,
+        "BNB": 630.58,
+        "OP": 0.1191
+      }
     }
   ],
   "agent_views": [
@@ -1609,90 +1625,65 @@
       "latest_result": {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+        "tick_id": "be7b23599b41481b858eed173b3e84aa",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.33,
-          "reason": "news -0.31 bearish, keep BTC short intact",
-          "source": "codex_cli",
-          "created_at": "2026-03-06T16:30:40.032469Z"
+          "confidence": 0.0,
+          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+          "source": "cooldown_guard",
+          "created_at": "2026-03-06T16:45:06.894631Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_aggressive",
-        "updated_at": "2026-03-06T16:30:08.236187Z",
+        "updated_at": "2026-03-06T16:45:06.864959Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 69.589187,
+        "cash_balance_usd": 69.390629,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 2.620875,
+        "unrealized_pnl_usd": 2.488394,
         "total_fees_usd": 0.028005,
-        "equity_usd": 102.59287,
+        "equity_usd": 102.460389,
         "trade_count": 4,
         "positions": {
           "DOGE": {
             "symbol": "DOGE",
             "net_quantity": -383.26672751,
             "avg_entry_price": 0.09391,
-            "mark_price": 0.0907,
+            "mark_price": 0.091,
             "leverage": 2.0,
-            "notional_exposure_usd": 34.762292,
-            "unrealized_pnl_usd": 1.230286
+            "notional_exposure_usd": 34.877272,
+            "unrealized_pnl_usd": 1.115306
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.17962694,
             "avg_entry_price": 89.053466,
-            "mark_price": 84.64,
+            "mark_price": 84.66,
             "leverage": 2.2,
-            "notional_exposure_usd": 15.203624,
-            "unrealized_pnl_usd": 0.792777
+            "notional_exposure_usd": 15.207217,
+            "unrealized_pnl_usd": 0.789185
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -0.00025422,
             "avg_entry_price": 70889.019515,
-            "mark_price": 68537.47,
+            "mark_price": 68592.18,
             "leverage": 2.0,
-            "notional_exposure_usd": 17.423596,
-            "unrealized_pnl_usd": 0.597811
+            "notional_exposure_usd": 17.437504,
+            "unrealized_pnl_usd": 0.583903
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T16:15:07.382122+00:00",
-          "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.0,
-            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "source": "cooldown_guard",
-            "created_at": "2026-03-05T16:15:07.376553Z"
-          },
-          "codex": {
-            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "response_payload": null,
-            "token_usage": null,
-            "input_token_usage": null,
-            "output_token_usage": null,
-            "log_path": null
-          }
-        },
         {
           "ts": "2026-03-05T16:30:12.489368+00:00",
           "tick_id": "701b6424a7e44d97a246ab15ef492fac",
@@ -3844,6 +3835,31 @@
             "output_token_usage": 140,
             "log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-06_16-30-40_8736_tokens.txt"
           }
+        },
+        {
+          "ts": "2026-03-06T16:45:06.896475+00:00",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
+          "decision": {
+            "analyst_id": "aggressive",
+            "portfolio_id": "analyst_aggressive",
+            "tick_id": "be7b23599b41481b858eed173b3e84aa",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.0,
+            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "source": "cooldown_guard",
+            "created_at": "2026-03-06T16:45:06.894631Z"
+          },
+          "codex": {
+            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "response_payload": null,
+            "token_usage": null,
+            "input_token_usage": null,
+            "output_token_usage": null,
+            "log_path": null
+          }
         }
       ],
       "trades": [
@@ -4240,6 +4256,10 @@
         {
           "ts": "2026-03-06T16:30:40.036494+00:00",
           "equity_usd": 102.59287
+        },
+        {
+          "ts": "2026-03-06T16:45:06.898327+00:00",
+          "equity_usd": 102.460389
         }
       ]
     },
@@ -4250,83 +4270,47 @@
       "latest_result": {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+        "tick_id": "be7b23599b41481b858eed173b3e84aa",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.45,
-          "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
-          "source": "codex_cli",
-          "created_at": "2026-03-06T16:30:22.245624Z"
+          "confidence": 0.0,
+          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+          "source": "cooldown_guard",
+          "created_at": "2026-03-06T16:45:06.881165Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_defensive",
-        "updated_at": "2026-03-06T16:30:08.236153Z",
+        "updated_at": "2026-03-06T16:45:06.865027Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 94.578082,
+        "cash_balance_usd": 94.568651,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.206943,
+        "unrealized_pnl_usd": 0.202003,
         "total_fees_usd": 0.002558,
-        "equity_usd": 100.204385,
+        "equity_usd": 100.199445,
         "trade_count": 1,
         "positions": {
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -9.03e-05,
             "avg_entry_price": 70829.200441,
-            "mark_price": 68537.47,
+            "mark_price": 68592.18,
             "leverage": 1.1,
-            "notional_exposure_usd": 6.188934,
-            "unrealized_pnl_usd": 0.206943
+            "notional_exposure_usd": 6.193874,
+            "unrealized_pnl_usd": 0.202003
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T13:30:26.856814+00:00",
-          "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.82,
-            "reason": "Cooldown: r6=-0.56%, RSI=45.3, sentiment=-0.046",
-            "source": "codex_cli",
-            "created_at": "2026-03-05T13:30:26.854802Z"
-          },
-          "codex": {
-            "explanation": "Cooldown: r6=-0.56%, RSI=45.3, sentiment=-0.046",
-            "response_payload": {
-              "orders": [
-                {
-                  "action": "hold",
-                  "symbol": null,
-                  "allocation_pct": 0.0,
-                  "leverage": 1.0,
-                  "confidence": 0.82,
-                  "reason": "Cooldown: r6=-0.56%, RSI=45.3, sentiment=-0.046"
-                }
-              ]
-            },
-            "token_usage": 2038,
-            "input_token_usage": 1986,
-            "output_token_usage": 52,
-            "log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_13-30-26_2038_tokens.txt"
-          }
-        },
         {
           "ts": "2026-03-05T13:45:07.326797+00:00",
           "tick_id": "6fa065aaf9954c7890dbd4935517ea7b",
@@ -6281,6 +6265,31 @@
             "output_token_usage": 71,
             "log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-06_16-30-22_3176_tokens.txt"
           }
+        },
+        {
+          "ts": "2026-03-06T16:45:06.882916+00:00",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
+          "decision": {
+            "analyst_id": "defensive",
+            "portfolio_id": "analyst_defensive",
+            "tick_id": "be7b23599b41481b858eed173b3e84aa",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.0,
+            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "source": "cooldown_guard",
+            "created_at": "2026-03-06T16:45:06.881165Z"
+          },
+          "codex": {
+            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "response_payload": null,
+            "token_usage": null,
+            "input_token_usage": null,
+            "output_token_usage": null,
+            "log_path": null
+          }
         }
       ],
       "trades": [
@@ -6602,6 +6611,10 @@
         {
           "ts": "2026-03-06T16:30:22.252389+00:00",
           "equity_usd": 100.204385
+        },
+        {
+          "ts": "2026-03-06T16:45:06.884899+00:00",
+          "equity_usd": 100.199445
         }
       ]
     },
@@ -6612,81 +6625,56 @@
       "latest_result": {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+        "tick_id": "be7b23599b41481b858eed173b3e84aa",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.45,
-          "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
-          "source": "codex_cli",
-          "created_at": "2026-03-06T16:30:28.335363Z"
+          "confidence": 0.0,
+          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+          "source": "cooldown_guard",
+          "created_at": "2026-03-06T16:45:06.883213Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_mean_reversion",
-        "updated_at": "2026-03-06T16:30:08.236172Z",
+        "updated_at": "2026-03-06T16:45:06.864947Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 87.301641,
+        "cash_balance_usd": 87.271726,
         "realized_pnl_usd": 0.049657,
-        "unrealized_pnl_usd": 0.895715,
+        "unrealized_pnl_usd": 0.880472,
         "total_fees_usd": 0.010005,
-        "equity_usd": 100.935367,
+        "equity_usd": 100.920124,
         "trade_count": 3,
         "positions": {
           "LINK": {
             "symbol": "LINK",
             "net_quantity": -0.63855479,
             "avg_entry_price": 9.295932,
-            "mark_price": 8.75,
+            "mark_price": 8.77,
             "leverage": 1.0,
-            "notional_exposure_usd": 5.587354,
-            "unrealized_pnl_usd": 0.348607
+            "notional_exposure_usd": 5.600126,
+            "unrealized_pnl_usd": 0.335836
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.12358557,
             "avg_entry_price": 89.066949,
-            "mark_price": 84.64,
+            "mark_price": 84.66,
             "leverage": 1.3,
-            "notional_exposure_usd": 10.460283,
-            "unrealized_pnl_usd": 0.547107
+            "notional_exposure_usd": 10.462754,
+            "unrealized_pnl_usd": 0.544635
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T14:35:27.503332+00:00",
-          "tick_id": "8c3c330a6d234fb7a7f1faa186e1068e",
-          "decision": {
-            "analyst_id": "mean_reversion",
-            "portfolio_id": "analyst_mean_reversion",
-            "tick_id": "8c3c330a6d234fb7a7f1faa186e1068e",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.0,
-            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "source": "cooldown_guard",
-            "created_at": "2026-03-05T14:35:27.501140Z"
-          },
-          "codex": {
-            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "response_payload": null,
-            "token_usage": null,
-            "input_token_usage": null,
-            "output_token_usage": null,
-            "log_path": null
-          }
-        },
         {
           "ts": "2026-03-05T14:45:14.656114+00:00",
           "tick_id": "a31f874e889742da8c23baee378c0044",
@@ -8723,6 +8711,31 @@
             "output_token_usage": 117,
             "log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-06_16-30-28_3930_tokens.txt"
           }
+        },
+        {
+          "ts": "2026-03-06T16:45:06.887949+00:00",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
+          "decision": {
+            "analyst_id": "mean_reversion",
+            "portfolio_id": "analyst_mean_reversion",
+            "tick_id": "be7b23599b41481b858eed173b3e84aa",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.0,
+            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "source": "cooldown_guard",
+            "created_at": "2026-03-06T16:45:06.883213Z"
+          },
+          "codex": {
+            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "response_payload": null,
+            "token_usage": null,
+            "input_token_usage": null,
+            "output_token_usage": null,
+            "log_path": null
+          }
         }
       ],
       "trades": [
@@ -9094,6 +9107,10 @@
         {
           "ts": "2026-03-06T16:30:28.339784+00:00",
           "equity_usd": 100.935367
+        },
+        {
+          "ts": "2026-03-06T16:45:06.889678+00:00",
+          "equity_usd": 100.920124
         }
       ]
     },
@@ -9104,90 +9121,65 @@
       "latest_result": {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+        "tick_id": "be7b23599b41481b858eed173b3e84aa",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
-          "action": "short",
-          "symbol": "BTC",
-          "allocation_pct": 0.15,
-          "leverage": 1.5,
-          "confidence": 0.65,
-          "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
-          "source": "codex_cli",
-          "created_at": "2026-03-06T16:30:27.720728Z"
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
+          "action": "hold",
+          "symbol": null,
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.0,
+          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+          "source": "cooldown_guard",
+          "created_at": "2026-03-06T16:45:06.895486Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_quant",
-        "updated_at": "2026-03-06T16:30:08.236187Z",
+        "updated_at": "2026-03-06T16:45:06.870702Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 76.640548,
+        "cash_balance_usd": 76.61096,
         "realized_pnl_usd": -0.046739,
-        "unrealized_pnl_usd": 1.393878,
+        "unrealized_pnl_usd": 1.376792,
         "total_fees_usd": 0.021431,
-        "equity_usd": 101.325708,
+        "equity_usd": 101.308622,
         "trade_count": 5,
         "positions": {
           "ETH": {
             "symbol": "ETH",
             "net_quantity": -0.00291012,
             "avg_entry_price": 2079.405266,
-            "mark_price": 1974.82,
+            "mark_price": 1975.18,
             "leverage": 1.0,
-            "notional_exposure_usd": 5.746963,
-            "unrealized_pnl_usd": 0.304356
+            "notional_exposure_usd": 5.748011,
+            "unrealized_pnl_usd": 0.303308
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.10778328,
             "avg_entry_price": 89.076269,
-            "mark_price": 84.64,
+            "mark_price": 84.66,
             "leverage": 1.4,
-            "notional_exposure_usd": 9.122777,
-            "unrealized_pnl_usd": 0.478156
+            "notional_exposure_usd": 9.124932,
+            "unrealized_pnl_usd": 0.476
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -0.00025374,
             "avg_entry_price": 70946.890373,
-            "mark_price": 68537.47,
+            "mark_price": 68592.18,
             "leverage": 1.4,
-            "notional_exposure_usd": 17.390698,
-            "unrealized_pnl_usd": 0.611366
+            "notional_exposure_usd": 17.40458,
+            "unrealized_pnl_usd": 0.597484
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T16:15:07.379389+00:00",
-          "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.0,
-            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "source": "cooldown_guard",
-            "created_at": "2026-03-05T16:15:07.376235Z"
-          },
-          "codex": {
-            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "response_payload": null,
-            "token_usage": null,
-            "input_token_usage": null,
-            "output_token_usage": null,
-            "log_path": null
-          }
-        },
         {
           "ts": "2026-03-05T16:30:13.900454+00:00",
           "tick_id": "701b6424a7e44d97a246ab15ef492fac",
@@ -11356,6 +11348,31 @@
             "output_token_usage": 71,
             "log_path": "data\\analysts\\quant\\logs_codex\\2026-03-06_16-30-27_4633_tokens.txt"
           }
+        },
+        {
+          "ts": "2026-03-06T16:45:06.898125+00:00",
+          "tick_id": "be7b23599b41481b858eed173b3e84aa",
+          "decision": {
+            "analyst_id": "quant",
+            "portfolio_id": "analyst_quant",
+            "tick_id": "be7b23599b41481b858eed173b3e84aa",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.0,
+            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "source": "cooldown_guard",
+            "created_at": "2026-03-06T16:45:06.895486Z"
+          },
+          "codex": {
+            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
+            "response_payload": null,
+            "token_usage": null,
+            "input_token_usage": null,
+            "output_token_usage": null,
+            "log_path": null
+          }
         }
       ],
       "trades": [
@@ -11777,6 +11794,10 @@
         {
           "ts": "2026-03-06T16:30:27.725018+00:00",
           "equity_usd": 101.325708
+        },
+        {
+          "ts": "2026-03-06T16:45:06.899785+00:00",
+          "equity_usd": 101.308622
         }
       ]
     }
@@ -20320,6 +20341,20 @@
       "prompt_path": "data\\tmp\\trade_arbiter\\prompts\\prompt_2026-03-06_16-30-40_27dd500c3da643b0b48e6a7c97c4c941.md",
       "log_path": "data\\logs\\trade_arbiter\\2026-03-06_16-30-40_27dd500c3da643b0b48e6a7c97c4c941.txt",
       "output": "{\"orders\":[{\"analyst_id\":\"quant\",\"portfolio_id\":\"analyst_quant\",\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.58,\"reason\":\"Tendance 15m reste baissiere avec prix sous EMA et sentiment negatif, mais RSI 28 et funding negatif signalent extension; position deja profitable, donc aucun ajout, taille maintenue.\"}],\"rejections\":[]}",
+      "orders": [],
+      "rejections": [],
+      "execution_rejections": []
+    },
+    "be7b23599b41481b858eed173b3e84aa": {
+      "ts": "2026-03-06T16:45:07.951750+00:00",
+      "tick_id": "be7b23599b41481b858eed173b3e84aa",
+      "status": "no_candidates",
+      "model": "gpt-5.3-codex",
+      "reasoning_effort": "high",
+      "token_usage": null,
+      "prompt_path": null,
+      "log_path": null,
+      "output": "",
       "orders": [],
       "rejections": [],
       "execution_rejections": []
