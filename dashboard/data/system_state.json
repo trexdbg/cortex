@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-06T06:15:09.414208+00:00",
+  "updated_at": "2026-03-06T16:31:45.755525+00:00",
   "snapshot": {
-    "tick_id": "40fa33085a414781b08294832316ffc3",
-    "as_of": "2026-03-06T06:15:02.038809Z",
+    "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+    "as_of": "2026-03-06T16:30:02.052501Z",
     "system_kpis": {
       "skill_calls": 43,
       "skill_success": 43,
       "skill_failures": 0,
-      "tick_duration_ms": 4662.89,
-      "snapshot_size_bytes": 1605988
+      "tick_duration_ms": 4778.16,
+      "snapshot_size_bytes": 1491422
     },
     "llm_sentiment": {
       "updated_at": "2026-03-05T20:00:08.570814+01:00",
@@ -127,7 +127,7 @@
           "summary": "Using blockchain technology, tokenization is creating a new, always-on investment market, giving people worldwide easy and fractional access to wealth-building assets."
         }
       ],
-      "next_slot_local": "2026-03-06T09:00:00+01:00"
+      "next_slot_local": "2026-03-06T19:00:00+01:00"
     },
     "data_health": {
       "status": "ok",
@@ -146,73 +146,73 @@
     "market_data": [
       {
         "symbol": "BTC",
-        "price": 70314.53,
-        "price_change_24h_pct": -2.558,
-        "funding_rate": -3.9e-05,
-        "open_interest": 5795879469.27
+        "price": 68537.47,
+        "price_change_24h_pct": -3.463,
+        "funding_rate": -1.4e-05,
+        "open_interest": 5732588996.67
       },
       {
         "symbol": "ETH",
-        "price": 2065.26,
-        "price_change_24h_pct": -2.345,
-        "funding_rate": -2e-06,
-        "open_interest": 4089636528.16
+        "price": 1974.82,
+        "price_change_24h_pct": -4.709,
+        "funding_rate": -0.0001,
+        "open_interest": 3910877907.19
       },
       {
         "symbol": "SOL",
-        "price": 87.76,
-        "price_change_24h_pct": -2.467,
-        "funding_rate": -5.1e-05,
-        "open_interest": 812834476.77
+        "price": 84.64,
+        "price_change_24h_pct": -4.285,
+        "funding_rate": -0.000145,
+        "open_interest": 789718995.78
       },
       {
         "symbol": "LINK",
-        "price": 9.19,
-        "price_change_24h_pct": -0.433,
-        "funding_rate": 1e-05,
-        "open_interest": 80210539.46
+        "price": 8.75,
+        "price_change_24h_pct": -4.367,
+        "funding_rate": -0.000145,
+        "open_interest": 75198579.49
       },
       {
         "symbol": "AVAX",
-        "price": 9.37,
-        "price_change_24h_pct": -0.107,
-        "funding_rate": -8.5e-05,
-        "open_interest": 82013988.99
+        "price": 8.96,
+        "price_change_24h_pct": -4.171,
+        "funding_rate": -0.000247,
+        "open_interest": 74020513.28
       },
       {
         "symbol": "XRP",
-        "price": 1.3982,
-        "price_change_24h_pct": -0.9,
-        "funding_rate": -3.3e-05,
-        "open_interest": 389398964.96
+        "price": 1.3586,
+        "price_change_24h_pct": -3.364,
+        "funding_rate": -0.000143,
+        "open_interest": 368786597.55
       },
       {
         "symbol": "ADA",
-        "price": 0.2685,
-        "price_change_24h_pct": -1.178,
-        "funding_rate": -5.9e-05,
-        "open_interest": 79011544.4
+        "price": 0.2577,
+        "price_change_24h_pct": -3.807,
+        "funding_rate": -0.000227,
+        "open_interest": 82287457.46
       },
       {
         "symbol": "DOGE",
-        "price": 0.0935,
-        "price_change_24h_pct": -2.155,
-        "funding_rate": -9.7e-05,
-        "open_interest": 176860919.07
+        "price": 0.0907,
+        "price_change_24h_pct": -3.068,
+        "funding_rate": -0.000131,
+        "open_interest": 167270459.32
       },
       {
         "symbol": "BNB",
-        "price": 644.22,
-        "price_change_24h_pct": -1.04,
+        "price": 629.57,
+        "price_change_24h_pct": -3.176,
         "funding_rate": 0.0,
-        "open_interest": 320437849.68
+        "open_interest": 311497139.93
       },
       {
         "symbol": "OP",
-        "price": 0.1265,
-        "price_change_24h_pct": -0.315,
-        "funding_rate": 6.5e-05,
-        "open_interest": 18211605.31
+        "price": 0.119,
+        "price_change_24h_pct": -4.647,
+        "funding_rate": -3.6e-05,
+        "open_interest": 17024057.09
       }
     ],
     "news": [
@@ -291,72 +291,72 @@
       {
         "symbol": "BTC",
         "platform": "reddit",
-        "score": 0.14,
+        "score": -0.04,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.136731Z"
+        "as_of": "2026-03-06T16:30:02.153142Z"
       },
       {
         "symbol": "ETH",
         "platform": "reddit",
-        "score": 0.0,
+        "score": -0.3,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.162579Z"
+        "as_of": "2026-03-06T16:30:02.189853Z"
       },
       {
         "symbol": "SOL",
         "platform": "reddit",
-        "score": 0.04,
+        "score": -0.18,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.170962Z"
+        "as_of": "2026-03-06T16:30:02.193999Z"
       },
       {
         "symbol": "LINK",
         "platform": "reddit",
-        "score": -0.08,
+        "score": -0.06,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.171106Z"
+        "as_of": "2026-03-06T16:30:02.194116Z"
       },
       {
         "symbol": "AVAX",
         "platform": "reddit",
-        "score": 0.111,
-        "mentions": 9,
-        "as_of": "2026-03-06T06:15:02.171247Z"
+        "score": 0.167,
+        "mentions": 6,
+        "as_of": "2026-03-06T16:30:02.194228Z"
       },
       {
         "symbol": "XRP",
         "platform": "reddit",
         "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.171385Z"
+        "as_of": "2026-03-06T16:30:02.194340Z"
       },
       {
         "symbol": "ADA",
         "platform": "reddit",
-        "score": -0.04,
+        "score": -0.08,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.171527Z"
+        "as_of": "2026-03-06T16:30:02.194451Z"
       },
       {
         "symbol": "DOGE",
         "platform": "reddit",
-        "score": -0.06,
+        "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.172106Z"
+        "as_of": "2026-03-06T16:30:02.194975Z"
       },
       {
         "symbol": "BNB",
         "platform": "reddit",
-        "score": 0.12,
+        "score": 0.02,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.172303Z"
+        "as_of": "2026-03-06T16:30:02.195333Z"
       },
       {
         "symbol": "OP",
         "platform": "reddit",
-        "score": -0.02,
+        "score": -0.08,
         "mentions": 50,
-        "as_of": "2026-03-06T06:15:02.172619Z"
+        "as_of": "2026-03-06T16:30:02.195456Z"
       }
     ],
     "macro_indicators": [
@@ -365,7 +365,7 @@
         "dxy": 117.822,
         "us10y": 4.09,
         "spx_fut": 6830.71,
-        "as_of": "2026-03-06T06:15:02.172701Z"
+        "as_of": "2026-03-06T16:30:02.195489Z"
       }
     ],
     "failures": []
@@ -506,8 +506,8 @@
     }
   ],
   "competition": {
-    "updated_at": "2026-03-06T06:15:09.131644+00:00",
-    "tick_id": "40fa33085a414781b08294832316ffc3",
+    "updated_at": "2026-03-06T16:31:45.432009+00:00",
+    "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
     "analyst_count": 4,
     "data_health": {
       "status": "ok",
@@ -526,7 +526,7 @@
     },
     "trade_arbiter": {
       "enabled": true,
-      "status": "no_candidates",
+      "status": "no_final_orders",
       "selected_count": 0,
       "executed_count": 0,
       "data_health_status": "ok",
@@ -537,40 +537,40 @@
         "analyst_id": "aggressive",
         "display_name": "Analyst Aggressive",
         "portfolio_id": "analyst_aggressive",
-        "equity_usd": 100.507522,
+        "equity_usd": 102.59287,
         "trade_count": 4,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.535527,
+        "unrealized_pnl_usd": 2.620875,
         "rank": 1
       },
       {
         "analyst_id": "quant",
         "display_name": "Analyst Quant",
         "portfolio_id": "analyst_quant",
-        "equity_usd": 100.275321,
+        "equity_usd": 101.325708,
         "trade_count": 5,
         "realized_pnl_usd": -0.046739,
-        "unrealized_pnl_usd": 0.343491,
+        "unrealized_pnl_usd": 1.393878,
         "rank": 2
       },
       {
         "analyst_id": "mean_reversion",
         "display_name": "Analyst Mean Reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "equity_usd": 100.268815,
+        "equity_usd": 100.935367,
         "trade_count": 3,
         "realized_pnl_usd": 0.049657,
-        "unrealized_pnl_usd": 0.229163,
+        "unrealized_pnl_usd": 0.895715,
         "rank": 3
       },
       {
         "analyst_id": "defensive",
         "display_name": "Analyst Defensive",
         "portfolio_id": "analyst_defensive",
-        "equity_usd": 100.043917,
+        "equity_usd": 100.204385,
         "trade_count": 1,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.046475,
+        "unrealized_pnl_usd": 0.206943,
         "rank": 4
       }
     ]
@@ -1583,6 +1583,22 @@
         "BNB": 644.22,
         "OP": 0.1265
       }
+    },
+    {
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "as_of": "2026-03-06T16:30:02.052501+00:00",
+      "prices": {
+        "BTC": 68537.47,
+        "ETH": 1974.82,
+        "SOL": 84.64,
+        "LINK": 8.75,
+        "AVAX": 8.96,
+        "XRP": 1.3586,
+        "ADA": 0.2577,
+        "DOGE": 0.0907,
+        "BNB": 629.57,
+        "OP": 0.119
+      }
     }
   ],
   "agent_views": [
@@ -1593,119 +1609,65 @@
       "latest_result": {
         "analyst_id": "aggressive",
         "portfolio_id": "analyst_aggressive",
-        "tick_id": "40fa33085a414781b08294832316ffc3",
+        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "aggressive",
           "portfolio_id": "analyst_aggressive",
-          "tick_id": "40fa33085a414781b08294832316ffc3",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-06T06:15:07.016356Z"
+          "confidence": 0.33,
+          "reason": "news -0.31 bearish, keep BTC short intact",
+          "source": "codex_cli",
+          "created_at": "2026-03-06T16:30:40.032469Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_aggressive",
-        "updated_at": "2026-03-06T06:15:06.988253Z",
+        "updated_at": "2026-03-06T16:30:08.236187Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 66.486641,
+        "cash_balance_usd": 69.589187,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.535527,
+        "unrealized_pnl_usd": 2.620875,
         "total_fees_usd": 0.028005,
-        "equity_usd": 100.507522,
+        "equity_usd": 102.59287,
         "trade_count": 4,
         "positions": {
           "DOGE": {
             "symbol": "DOGE",
             "net_quantity": -383.26672751,
             "avg_entry_price": 0.09391,
-            "mark_price": 0.0935,
+            "mark_price": 0.0907,
             "leverage": 2.0,
-            "notional_exposure_usd": 35.835439,
-            "unrealized_pnl_usd": 0.157139
+            "notional_exposure_usd": 34.762292,
+            "unrealized_pnl_usd": 1.230286
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.17962694,
             "avg_entry_price": 89.053466,
-            "mark_price": 87.76,
+            "mark_price": 84.64,
             "leverage": 2.2,
-            "notional_exposure_usd": 15.76406,
-            "unrealized_pnl_usd": 0.232341
+            "notional_exposure_usd": 15.203624,
+            "unrealized_pnl_usd": 0.792777
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -0.00025422,
             "avg_entry_price": 70889.019515,
-            "mark_price": 70314.53,
+            "mark_price": 68537.47,
             "leverage": 2.0,
-            "notional_exposure_usd": 17.87536,
-            "unrealized_pnl_usd": 0.146047
+            "notional_exposure_usd": 17.423596,
+            "unrealized_pnl_usd": 0.597811
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T15:45:26.853926+00:00",
-          "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
-          "decision": {
-            "analyst_id": "aggressive",
-            "portfolio_id": "analyst_aggressive",
-            "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.45,
-            "reason": "BTC RSI 30.1 and 24h -1.57%; wait for clearer momentum",
-            "source": "codex_cli",
-            "created_at": "2026-03-05T15:45:26.849561Z"
-          },
-          "codex": {
-            "explanation": "BTC RSI 30.1 and 24h -1.57%; wait for clearer momentum",
-            "response_payload": {
-              "orders": [
-                {
-                  "action": "hold",
-                  "symbol": "BTC",
-                  "allocation_pct": 0,
-                  "leverage": 1.0,
-                  "confidence": 0.45,
-                  "reason": "BTC RSI 30.1 and 24h -1.57%; wait for clearer momentum"
-                },
-                {
-                  "action": "hold",
-                  "symbol": "ETH",
-                  "allocation_pct": 0,
-                  "leverage": 1.0,
-                  "confidence": 0.42,
-                  "reason": "ETH 24h -1.756% and score -0.443; stay flat until bias flips"
-                }
-              ],
-              "guard": {
-                "mode": "hold_only",
-                "stop_loss_pct": 1.2
-              },
-              "meta": {
-                "skills_used": {
-                  "news_sentiment": 1,
-                  "json_format_guard": 1
-                }
-              }
-            },
-            "token_usage": 2756,
-            "input_token_usage": 2647,
-            "output_token_usage": 109,
-            "log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_15-45-26_2756_tokens.txt"
-          }
-        },
         {
           "ts": "2026-03-05T16:15:07.382122+00:00",
           "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
@@ -3820,6 +3782,68 @@
             "output_token_usage": null,
             "log_path": null
           }
+        },
+        {
+          "ts": "2026-03-06T16:30:40.034727+00:00",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "decision": {
+            "analyst_id": "aggressive",
+            "portfolio_id": "analyst_aggressive",
+            "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.33,
+            "reason": "news -0.31 bearish, keep BTC short intact",
+            "source": "codex_cli",
+            "created_at": "2026-03-06T16:30:40.032469Z"
+          },
+          "codex": {
+            "explanation": "news -0.31 bearish, keep BTC short intact",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.33,
+                  "reason": "news -0.31 bearish, keep BTC short intact"
+                },
+                {
+                  "action": "hold",
+                  "symbol": "SOL",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.34,
+                  "reason": "news -0.31 suggests keep SOL short momentum"
+                },
+                {
+                  "action": "hold",
+                  "symbol": "DOGE",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.32,
+                  "reason": "news -0.31 bias, let DOGE short ride existing edge"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "token_usage": 8736,
+            "input_token_usage": 8596,
+            "output_token_usage": 140,
+            "log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-06_16-30-40_8736_tokens.txt"
+          }
         }
       ],
       "trades": [
@@ -4212,6 +4236,10 @@
         {
           "ts": "2026-03-06T06:15:07.021976+00:00",
           "equity_usd": 100.507522
+        },
+        {
+          "ts": "2026-03-06T16:30:40.036494+00:00",
+          "equity_usd": 102.59287
         }
       ]
     },
@@ -4222,72 +4250,47 @@
       "latest_result": {
         "analyst_id": "defensive",
         "portfolio_id": "analyst_defensive",
-        "tick_id": "40fa33085a414781b08294832316ffc3",
+        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "defensive",
           "portfolio_id": "analyst_defensive",
-          "tick_id": "40fa33085a414781b08294832316ffc3",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-06T06:15:07.012025Z"
+          "confidence": 0.45,
+          "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
+          "source": "codex_cli",
+          "created_at": "2026-03-06T16:30:22.245624Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_defensive",
-        "updated_at": "2026-03-06T06:15:06.989146Z",
+        "updated_at": "2026-03-06T16:30:08.236153Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 94.271733,
+        "cash_balance_usd": 94.578082,
         "realized_pnl_usd": 0.0,
-        "unrealized_pnl_usd": 0.046475,
+        "unrealized_pnl_usd": 0.206943,
         "total_fees_usd": 0.002558,
-        "equity_usd": 100.043917,
+        "equity_usd": 100.204385,
         "trade_count": 1,
         "positions": {
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -9.03e-05,
             "avg_entry_price": 70829.200441,
-            "mark_price": 70314.53,
+            "mark_price": 68537.47,
             "leverage": 1.1,
-            "notional_exposure_usd": 6.349402,
-            "unrealized_pnl_usd": 0.046475
+            "notional_exposure_usd": 6.188934,
+            "unrealized_pnl_usd": 0.206943
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T13:15:21.019326+00:00",
-          "tick_id": "61c4658f92f045c18da859c7a14375d7",
-          "decision": {
-            "analyst_id": "defensive",
-            "portfolio_id": "analyst_defensive",
-            "tick_id": "61c4658f92f045c18da859c7a14375d7",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.0,
-            "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "source": "cooldown_guard",
-            "created_at": "2026-03-05T13:15:21.016946Z"
-          },
-          "codex": {
-            "explanation": "Cooldown actif: aucune condition stop-loss declenchee.",
-            "response_payload": null,
-            "token_usage": null,
-            "input_token_usage": null,
-            "output_token_usage": null,
-            "log_path": null
-          }
-        },
         {
           "ts": "2026-03-05T13:30:26.856814+00:00",
           "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
@@ -6232,6 +6235,52 @@
             "output_token_usage": null,
             "log_path": null
           }
+        },
+        {
+          "ts": "2026-03-06T16:30:22.250232+00:00",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "decision": {
+            "analyst_id": "defensive",
+            "portfolio_id": "analyst_defensive",
+            "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
+            "source": "codex_cli",
+            "created_at": "2026-03-06T16:30:22.245624Z"
+          },
+          "codex": {
+            "explanation": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.45,
+                  "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "token_usage": 3176,
+            "input_token_usage": 3105,
+            "output_token_usage": 71,
+            "log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-06_16-30-22_3176_tokens.txt"
+          }
         }
       ],
       "trades": [
@@ -6549,6 +6598,10 @@
         {
           "ts": "2026-03-06T06:15:07.016764+00:00",
           "equity_usd": 100.043917
+        },
+        {
+          "ts": "2026-03-06T16:30:22.252389+00:00",
+          "equity_usd": 100.204385
         }
       ]
     },
@@ -6559,92 +6612,56 @@
       "latest_result": {
         "analyst_id": "mean_reversion",
         "portfolio_id": "analyst_mean_reversion",
-        "tick_id": "40fa33085a414781b08294832316ffc3",
+        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "mean_reversion",
           "portfolio_id": "analyst_mean_reversion",
-          "tick_id": "40fa33085a414781b08294832316ffc3",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
           "action": "hold",
           "symbol": null,
           "allocation_pct": 0.0,
           "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-06T06:15:07.030743Z"
+          "confidence": 0.45,
+          "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
+          "source": "codex_cli",
+          "created_at": "2026-03-06T16:30:28.335363Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_mean_reversion",
-        "updated_at": "2026-03-06T06:15:06.991847Z",
+        "updated_at": "2026-03-06T16:30:08.236172Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 86.05752,
+        "cash_balance_usd": 87.301641,
         "realized_pnl_usd": 0.049657,
-        "unrealized_pnl_usd": 0.229163,
+        "unrealized_pnl_usd": 0.895715,
         "total_fees_usd": 0.010005,
-        "equity_usd": 100.268815,
+        "equity_usd": 100.935367,
         "trade_count": 3,
         "positions": {
           "LINK": {
             "symbol": "LINK",
             "net_quantity": -0.63855479,
             "avg_entry_price": 9.295932,
-            "mark_price": 9.19,
+            "mark_price": 8.75,
             "leverage": 1.0,
-            "notional_exposure_usd": 5.868319,
-            "unrealized_pnl_usd": 0.067643
+            "notional_exposure_usd": 5.587354,
+            "unrealized_pnl_usd": 0.348607
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.12358557,
             "avg_entry_price": 89.066949,
-            "mark_price": 87.76,
+            "mark_price": 84.64,
             "leverage": 1.3,
-            "notional_exposure_usd": 10.84587,
-            "unrealized_pnl_usd": 0.16152
+            "notional_exposure_usd": 10.460283,
+            "unrealized_pnl_usd": 0.547107
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T14:18:26.366357+00:00",
-          "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
-          "decision": {
-            "analyst_id": "mean_reversion",
-            "portfolio_id": "analyst_mean_reversion",
-            "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.0,
-            "reason": "Format guard fallback.",
-            "source": "codex_cli",
-            "created_at": "2026-03-05T14:18:26.362309Z"
-          },
-          "codex": {
-            "explanation": "Format guard fallback.",
-            "response_payload": {
-              "orders": [
-                {
-                  "action": "hold",
-                  "symbol": null,
-                  "allocation_pct": 0.0,
-                  "leverage": 1.0,
-                  "confidence": 0.0,
-                  "reason": "Format guard fallback."
-                }
-              ]
-            },
-            "token_usage": 2757,
-            "input_token_usage": 2668,
-            "output_token_usage": 89,
-            "log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_14-18-26_2757_tokens.txt"
-          }
-        },
         {
           "ts": "2026-03-05T14:35:27.503332+00:00",
           "tick_id": "8c3c330a6d234fb7a7f1faa186e1068e",
@@ -8652,6 +8669,60 @@
             "output_token_usage": null,
             "log_path": null
           }
+        },
+        {
+          "ts": "2026-03-06T16:30:28.337725+00:00",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "decision": {
+            "analyst_id": "mean_reversion",
+            "portfolio_id": "analyst_mean_reversion",
+            "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+            "action": "hold",
+            "symbol": null,
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
+            "source": "codex_cli",
+            "created_at": "2026-03-06T16:30:28.335363Z"
+          },
+          "codex": {
+            "explanation": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "hold",
+                  "symbol": "SOL",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.45,
+                  "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling"
+                },
+                {
+                  "action": "hold",
+                  "symbol": "LINK",
+                  "allocation_pct": 0.0,
+                  "leverage": 1.0,
+                  "confidence": 0.43,
+                  "reason": "Hold; combined news -0.31 with stretched delta, avoid adding to shorts"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "token_usage": 3930,
+            "input_token_usage": 3813,
+            "output_token_usage": 117,
+            "log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-06_16-30-28_3930_tokens.txt"
+          }
         }
       ],
       "trades": [
@@ -9019,6 +9090,10 @@
         {
           "ts": "2026-03-06T06:15:07.035680+00:00",
           "equity_usd": 100.268815
+        },
+        {
+          "ts": "2026-03-06T16:30:28.339784+00:00",
+          "equity_usd": 100.935367
         }
       ]
     },
@@ -9029,119 +9104,65 @@
       "latest_result": {
         "analyst_id": "quant",
         "portfolio_id": "analyst_quant",
-        "tick_id": "40fa33085a414781b08294832316ffc3",
+        "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
         "status": "ok",
         "message": "worker completed decisions=1 trades=0 (proposal_only)",
         "trade_executed": false,
         "decision": {
           "analyst_id": "quant",
           "portfolio_id": "analyst_quant",
-          "tick_id": "40fa33085a414781b08294832316ffc3",
-          "action": "hold",
-          "symbol": null,
-          "allocation_pct": 0.0,
-          "leverage": 1.0,
-          "confidence": 0.0,
-          "reason": "Cooldown actif: aucune condition stop-loss declenchee.",
-          "source": "cooldown_guard",
-          "created_at": "2026-03-06T06:15:07.012848Z"
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "action": "short",
+          "symbol": "BTC",
+          "allocation_pct": 0.15,
+          "leverage": 1.5,
+          "confidence": 0.65,
+          "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
+          "source": "codex_cli",
+          "created_at": "2026-03-06T16:30:27.720728Z"
         }
       },
       "portfolio": {
         "portfolio_id": "analyst_quant",
-        "updated_at": "2026-03-06T06:15:06.987572Z",
+        "updated_at": "2026-03-06T16:30:08.236187Z",
         "initial_balance_usd": 100.0,
-        "cash_balance_usd": 74.764689,
+        "cash_balance_usd": 76.640548,
         "realized_pnl_usd": -0.046739,
-        "unrealized_pnl_usd": 0.343491,
+        "unrealized_pnl_usd": 1.393878,
         "total_fees_usd": 0.021431,
-        "equity_usd": 100.275321,
+        "equity_usd": 101.325708,
         "trade_count": 5,
         "positions": {
           "ETH": {
             "symbol": "ETH",
             "net_quantity": -0.00291012,
             "avg_entry_price": 2079.405266,
-            "mark_price": 2065.26,
+            "mark_price": 1974.82,
             "leverage": 1.0,
-            "notional_exposure_usd": 6.010154,
-            "unrealized_pnl_usd": 0.041164
+            "notional_exposure_usd": 5.746963,
+            "unrealized_pnl_usd": 0.304356
           },
           "SOL": {
             "symbol": "SOL",
             "net_quantity": -0.10778328,
             "avg_entry_price": 89.076269,
-            "mark_price": 87.76,
+            "mark_price": 84.64,
             "leverage": 1.4,
-            "notional_exposure_usd": 9.459061,
-            "unrealized_pnl_usd": 0.141872
+            "notional_exposure_usd": 9.122777,
+            "unrealized_pnl_usd": 0.478156
           },
           "BTC": {
             "symbol": "BTC",
             "net_quantity": -0.00025374,
             "avg_entry_price": 70946.890373,
-            "mark_price": 70314.53,
+            "mark_price": 68537.47,
             "leverage": 1.4,
-            "notional_exposure_usd": 17.841609,
-            "unrealized_pnl_usd": 0.160455
+            "notional_exposure_usd": 17.390698,
+            "unrealized_pnl_usd": 0.611366
           }
         }
       },
       "decisions": [
-        {
-          "ts": "2026-03-05T15:45:24.080231+00:00",
-          "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
-          "decision": {
-            "analyst_id": "quant",
-            "portfolio_id": "analyst_quant",
-            "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
-            "action": "hold",
-            "symbol": null,
-            "allocation_pct": 0.0,
-            "leverage": 1.0,
-            "confidence": 0.3,
-            "reason": "news sentiment -0.017 and RSI 30.1 show caution",
-            "source": "codex_cli",
-            "created_at": "2026-03-05T15:45:24.069913Z"
-          },
-          "codex": {
-            "explanation": "news sentiment -0.017 and RSI 30.1 show caution",
-            "response_payload": {
-              "orders": [
-                {
-                  "action": "hold",
-                  "symbol": "BTC",
-                  "allocation_pct": 0.0,
-                  "leverage": 1.0,
-                  "confidence": 0.3,
-                  "reason": "news sentiment -0.017 and RSI 30.1 show caution"
-                },
-                {
-                  "action": "hold",
-                  "symbol": "ETH",
-                  "allocation_pct": 0.0,
-                  "leverage": 1.0,
-                  "confidence": 0.3,
-                  "reason": "ETH r6 -1.756 and sentiment -0.443 confirm weakness"
-                }
-              ],
-              "guard": {
-                "mode": "hold_only",
-                "stop_loss_pct": 1.2
-              },
-              "meta": {
-                "skills_used": {
-                  "news_sentiment": 1,
-                  "json_format_guard": 1
-                }
-              }
-            },
-            "token_usage": 2442,
-            "input_token_usage": 2336,
-            "output_token_usage": 106,
-            "log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_15-45-24_2442_tokens.txt"
-          }
-        },
         {
           "ts": "2026-03-05T16:15:07.379389+00:00",
           "tick_id": "6708f3921cdb4d44bb8464fc66846dc6",
@@ -11289,6 +11310,52 @@
             "output_token_usage": null,
             "log_path": null
           }
+        },
+        {
+          "ts": "2026-03-06T16:30:27.723023+00:00",
+          "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+          "decision": {
+            "analyst_id": "quant",
+            "portfolio_id": "analyst_quant",
+            "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+            "action": "short",
+            "symbol": "BTC",
+            "allocation_pct": 0.15,
+            "leverage": 1.5,
+            "confidence": 0.65,
+            "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
+            "source": "codex_cli",
+            "created_at": "2026-03-06T16:30:27.720728Z"
+          },
+          "codex": {
+            "explanation": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
+            "response_payload": {
+              "orders": [
+                {
+                  "action": "short",
+                  "symbol": "BTC",
+                  "allocation_pct": 0.15,
+                  "leverage": 1.5,
+                  "confidence": 0.65,
+                  "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short"
+                }
+              ],
+              "guard": {
+                "mode": "hold_only",
+                "stop_loss_pct": 1.2
+              },
+              "meta": {
+                "skills_used": {
+                  "news_sentiment": 1,
+                  "json_format_guard": 1
+                }
+              }
+            },
+            "token_usage": 4633,
+            "input_token_usage": 4562,
+            "output_token_usage": 71,
+            "log_path": "data\\analysts\\quant\\logs_codex\\2026-03-06_16-30-27_4633_tokens.txt"
+          }
         }
       ],
       "trades": [
@@ -11706,11 +11773,261 @@
         {
           "ts": "2026-03-06T06:15:07.018251+00:00",
           "equity_usd": 100.275321
+        },
+        {
+          "ts": "2026-03-06T16:30:27.725018+00:00",
+          "equity_usd": 101.325708
         }
       ]
     }
   ],
   "llm_call_journal": [
+    {
+      "ts": "2026-03-06T16:30:40.037970+00:00",
+      "analyst_id": "aggressive",
+      "portfolio_id": "analyst_aggressive",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "llm_gate_reasons": [
+        "signal_conflict",
+        "regime_change",
+        "position_review",
+        "max_open_positions"
+      ],
+      "llm_signal_assets_top": [
+        "BTC",
+        "DOGE"
+      ],
+      "llm_signal_assets_universe": [
+        "BTC",
+        "DOGE",
+        "SOL"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 8736,
+      "codex_input_token_usage": 8596,
+      "codex_output_token_usage": 140,
+      "codex_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-06_16-30-40_8736_tokens.txt",
+      "codex_explanation": "news -0.31 bearish, keep BTC short intact",
+      "decision_reason": "news -0.31 bearish, keep BTC short intact",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.33,
+            "reason": "news -0.31 bearish, keep BTC short intact"
+          },
+          {
+            "action": "hold",
+            "symbol": "SOL",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.34,
+            "reason": "news -0.31 suggests keep SOL short momentum"
+          },
+          {
+            "action": "hold",
+            "symbol": "DOGE",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.32,
+            "reason": "news -0.31 bias, let DOGE short ride existing edge"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-06T16:30:28.341514+00:00",
+      "analyst_id": "mean_reversion",
+      "portfolio_id": "analyst_mean_reversion",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "llm_gate_reasons": [
+        "strong_signal",
+        "signal_conflict",
+        "regime_change",
+        "max_open_positions"
+      ],
+      "llm_signal_assets_top": [
+        "LINK",
+        "SOL"
+      ],
+      "llm_signal_assets_universe": [
+        "LINK",
+        "SOL"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 3930,
+      "codex_input_token_usage": 3813,
+      "codex_output_token_usage": 117,
+      "codex_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-06_16-30-28_3930_tokens.txt",
+      "codex_explanation": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
+      "decision_reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "SOL",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling"
+          },
+          {
+            "action": "hold",
+            "symbol": "LINK",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.43,
+            "reason": "Hold; combined news -0.31 with stretched delta, avoid adding to shorts"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-06T16:30:27.726687+00:00",
+      "analyst_id": "quant",
+      "portfolio_id": "analyst_quant",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "llm_gate_reasons": [
+        "signal_conflict",
+        "regime_change",
+        "max_open_positions"
+      ],
+      "llm_signal_assets_top": [
+        "ETH",
+        "BTC"
+      ],
+      "llm_signal_assets_universe": [
+        "ETH",
+        "BTC",
+        "SOL"
+      ],
+      "decision_action": "short",
+      "decision_symbol": "BTC",
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 4633,
+      "codex_input_token_usage": 4562,
+      "codex_output_token_usage": 71,
+      "codex_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-06_16-30-27_4633_tokens.txt",
+      "codex_explanation": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
+      "decision_reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "short",
+            "symbol": "BTC",
+            "allocation_pct": 0.15,
+            "leverage": 1.5,
+            "confidence": 0.65,
+            "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
+    {
+      "ts": "2026-03-06T16:30:22.254095+00:00",
+      "analyst_id": "defensive",
+      "portfolio_id": "analyst_defensive",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "llm_gate_reasons": [
+        "signal_conflict",
+        "regime_change"
+      ],
+      "llm_signal_assets_top": [
+        "ETH",
+        "BTC"
+      ],
+      "llm_signal_assets_universe": [
+        "ETH",
+        "BTC",
+        "XRP",
+        "BNB",
+        "SOL"
+      ],
+      "decision_action": "hold",
+      "decision_symbol": null,
+      "decision_source": "codex_cli",
+      "llm_skill_news_sentiment_used": true,
+      "llm_skill_json_format_guard_used": true,
+      "llm_skill_both_used": true,
+      "codex_reasoning_effort": "high",
+      "codex_token_usage": 3176,
+      "codex_input_token_usage": 3105,
+      "codex_output_token_usage": 71,
+      "codex_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-06_16-30-22_3176_tokens.txt",
+      "codex_explanation": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
+      "decision_reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off",
+      "codex_response_payload": {
+        "orders": [
+          {
+            "action": "hold",
+            "symbol": "BTC",
+            "allocation_pct": 0.0,
+            "leverage": 1.0,
+            "confidence": 0.45,
+            "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off"
+          }
+        ],
+        "guard": {
+          "mode": "hold_only",
+          "stop_loss_pct": 1.2
+        },
+        "meta": {
+          "skills_used": {
+            "news_sentiment": 1,
+            "json_format_guard": 1
+          }
+        }
+      }
+    },
     {
       "ts": "2026-03-06T06:00:20.347581+00:00",
       "analyst_id": "quant",
@@ -16641,7 +16958,7 @@
       "tick_id": "f4e44d794cb34439acdeea02d8fbead9",
       "worker_ts": "2026-03-05T13:30:33.826403+00:00",
       "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-05_13-30-33_2503_tokens.txt",
-      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.8,\"reason\":\"Cooldown; r6=-0.56% et RSI=45.3, momentum insuffisant.\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.77,\"reason\":\"Cooldown; sentiment sc=-0.046 et tr=f, risque directionnel eleve.\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.75,\"reason\":\"Cooldown; r24=0.494% mais r6=-0.56%, signal mixte.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_output": "{\"orders\": [{\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.8, \"reason\": \"Cooldown; r6=-0.56% et RSI=45.3, momentum insuffisant.\"}, {\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.77, \"reason\": \"Cooldown; sentiment sc=-0.046 et tr=f, risque directionnel eleve.\"}, {\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.75, \"reason\": \"Cooldown; r24=0.494% mais r6=-0.56%, signal mixte.\"}]}",
       "worker_orders": [
         {
           "action": "hold",
@@ -17257,6 +17574,43 @@
       "arbiter_status": "no_final_orders",
       "arbiter_ts": "2026-03-06T05:46:06.100467+00:00"
     },
+    "aggressive|27dd500c3da643b0b48e6a7c97c4c941": {
+      "analyst_id": "aggressive",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "worker_ts": "2026-03-06T16:30:40.034727+00:00",
+      "worker_log_path": "data\\analysts\\aggressive\\logs_codex\\2026-03-06_16-30-40_8736_tokens.txt",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.33,\"reason\":\"news -0.31 bearish, keep BTC short intact\"},{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.34,\"reason\":\"news -0.31 suggests keep SOL short momentum\"},{\"action\":\"hold\",\"symbol\":\"DOGE\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.32,\"reason\":\"news -0.31 bias, let DOGE short ride existing edge\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.33,
+          "reason": "news -0.31 bearish, keep BTC short intact"
+        },
+        {
+          "action": "hold",
+          "symbol": "SOL",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.34,
+          "reason": "news -0.31 suggests keep SOL short momentum"
+        },
+        {
+          "action": "hold",
+          "symbol": "DOGE",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.32,
+          "reason": "news -0.31 bias, let DOGE short ride existing edge"
+        }
+      ],
+      "arbiter_orders": [],
+      "arbiter_rejections": [],
+      "arbiter_status": "no_final_orders",
+      "arbiter_ts": "2026-03-06T16:31:45.402104+00:00"
+    },
     "defensive|87e03576dc494f2daebffb82e5b55f34": {
       "analyst_id": "defensive",
       "tick_id": "87e03576dc494f2daebffb82e5b55f34",
@@ -17362,7 +17716,7 @@
       "tick_id": "f98208273ffe4d4cb07f6ae2f1a0d800",
       "worker_ts": "2026-03-05T15:45:25.870904+00:00",
       "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-05_15-45-25_2534_tokens.txt",
-      "worker_output": "{\n  \"orders\": [\n    {\n      \"action\": \"hold\",\n      \"symbol\": \"ETH\",\n      \"allocation_pct\": 0.0,\n      \"leverage\": 1.0,\n      \"confidence\": 0.35,\n      \"reason\": \"Score -0.017 and RSI 30.1 suggest caution\"\n    }\n  ],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"meta\": {\n    \"skills_used\": {\n      \"news_sentiment\": 1,\n      \"json_format_guard\": 1\n    }\n  }\n}",
+      "worker_output": "{\"orders\": [{\"action\": \"hold\", \"symbol\": \"ETH\", \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.35, \"reason\": \"Score -0.017 and RSI 30.1 suggest caution\"}], \"guard\": {\"mode\": \"hold_only\", \"stop_loss_pct\": 1.2}, \"meta\": {\"skills_used\": {\"news_sentiment\": 1, \"json_format_guard\": 1}}}",
       "worker_orders": [
         {
           "action": "hold",
@@ -17798,6 +18152,27 @@
       "arbiter_status": "no_final_orders",
       "arbiter_ts": "2026-03-06T05:46:06.100467+00:00"
     },
+    "defensive|27dd500c3da643b0b48e6a7c97c4c941": {
+      "analyst_id": "defensive",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "worker_ts": "2026-03-06T16:30:22.250232+00:00",
+      "worker_log_path": "data\\analysts\\defensive\\logs_codex\\2026-03-06_16-30-22_3176_tokens.txt",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"Hold BTC short; sentiment -0.31 + RSI28 favors risk-off\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "BTC",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "Hold BTC short; sentiment -0.31 + RSI28 favors risk-off"
+        }
+      ],
+      "arbiter_orders": [],
+      "arbiter_rejections": [],
+      "arbiter_status": "no_final_orders",
+      "arbiter_ts": "2026-03-06T16:31:45.402104+00:00"
+    },
     "mean_reversion|87e03576dc494f2daebffb82e5b55f34": {
       "analyst_id": "mean_reversion",
       "tick_id": "87e03576dc494f2daebffb82e5b55f34",
@@ -17869,7 +18244,7 @@
       "tick_id": "d427ccdcb6cd4731a55b054a7731328b",
       "worker_ts": "2026-03-05T14:18:26.366357+00:00",
       "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-05_14-18-26_2757_tokens.txt",
-      "worker_output": "{\n  \"orders\": [],\n  \"guard\": {\n    \"mode\": \"hold_only\",\n    \"stop_loss_pct\": 1.2\n  },\n  \"pf\": {\n    \"eq\": 100.0,\n    \"ca\": 100.0,\n    \"rp\": 0.0,\n    \"up\": 0.0,\n    \"gx\": 0.0,\n    \"r\": 0.0,\n    \"op\": 0,\n    \"tc\": 0\n  },\n  \"p\": [],\n  \"t\": [],\n  \"d\": [\n    [\n      \"hold\",\n      null,\n      0.0,\n      1.0,\n      \"RSI21.1 oversold; await bounce\"\n    ]\n  ]\n}",
+      "worker_output": "{\"orders\": [{\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.0, \"reason\": \"Format guard fallback.\"}]}",
       "worker_orders": [
         {
           "action": "hold",
@@ -18399,6 +18774,35 @@
       "arbiter_status": "no_final_orders",
       "arbiter_ts": "2026-03-06T05:46:06.100467+00:00"
     },
+    "mean_reversion|27dd500c3da643b0b48e6a7c97c4c941": {
+      "analyst_id": "mean_reversion",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "worker_ts": "2026-03-06T16:30:28.337725+00:00",
+      "worker_log_path": "data\\analysts\\mean_reversion\\logs_codex\\2026-03-06_16-30-28_3930_tokens.txt",
+      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"SOL\",\"allocation_pct\":0.00,\"leverage\":1.0,\"confidence\":0.45,\"reason\":\"Hold; RSI 28 + short bleeding, wait for mean reversion before scaling\"},{\"action\":\"hold\",\"symbol\":\"LINK\",\"allocation_pct\":0.00,\"leverage\":1.0,\"confidence\":0.43,\"reason\":\"Hold; combined news -0.31 with stretched delta, avoid adding to shorts\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "hold",
+          "symbol": "SOL",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.45,
+          "reason": "Hold; RSI 28 + short bleeding, wait for mean reversion before scaling"
+        },
+        {
+          "action": "hold",
+          "symbol": "LINK",
+          "allocation_pct": 0.0,
+          "leverage": 1.0,
+          "confidence": 0.43,
+          "reason": "Hold; combined news -0.31 with stretched delta, avoid adding to shorts"
+        }
+      ],
+      "arbiter_orders": [],
+      "arbiter_rejections": [],
+      "arbiter_status": "no_final_orders",
+      "arbiter_ts": "2026-03-06T16:31:45.402104+00:00"
+    },
     "quant|87e03576dc494f2daebffb82e5b55f34": {
       "analyst_id": "quant",
       "tick_id": "87e03576dc494f2daebffb82e5b55f34",
@@ -18491,7 +18895,7 @@
       "tick_id": "2d5bfbd77f594dfea43f4f30e9234794",
       "worker_ts": "2026-03-05T15:00:47.389017+00:00",
       "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-05_15-00-47_5908_tokens.txt",
-      "worker_output": "{\"orders\":[{\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.35,\"reason\":\"Sentiment -0.163 & RSI 45.2 keep BTC sidelined until trend strengthens.\"},{\"action\":\"hold\",\"symbol\":\"ETH\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.33,\"reason\":\"News skew -0.333 plus 24h return 0.026 argue for extra caution on ETH.\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2}}",
+      "worker_output": "{\"orders\": [{\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.35, \"reason\": \"Sentiment -0.163 & RSI 45.2 keep BTC sidelined until trend strengthens.\"}, {\"action\": \"hold\", \"symbol\": null, \"allocation_pct\": 0.0, \"leverage\": 1.0, \"confidence\": 0.33, \"reason\": \"News skew -0.333 plus 24h return 0.026 argue for extra caution on ETH.\"}]}",
       "worker_orders": [
         {
           "action": "hold",
@@ -19108,6 +19512,27 @@
       "arbiter_rejections": [],
       "arbiter_status": "no_candidates",
       "arbiter_ts": "2026-03-06T06:00:20.423834+00:00"
+    },
+    "quant|27dd500c3da643b0b48e6a7c97c4c941": {
+      "analyst_id": "quant",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "worker_ts": "2026-03-06T16:30:27.723023+00:00",
+      "worker_log_path": "data\\analysts\\quant\\logs_codex\\2026-03-06_16-30-27_4633_tokens.txt",
+      "worker_output": "{\"orders\":[{\"action\":\"short\",\"symbol\":\"BTC\",\"allocation_pct\":0.15,\"leverage\":1.5,\"confidence\":0.65,\"reason\":\"news sentiment -0.31 + RSI 28 signal bearish; DCA short\"}],\"guard\":{\"mode\":\"hold_only\",\"stop_loss_pct\":1.2},\"meta\":{\"skills_used\":{\"news_sentiment\":1,\"json_format_guard\":1}}}",
+      "worker_orders": [
+        {
+          "action": "short",
+          "symbol": "BTC",
+          "allocation_pct": 0.15,
+          "leverage": 1.5,
+          "confidence": 0.65,
+          "reason": "news sentiment -0.31 + RSI 28 signal bearish; DCA short"
+        }
+      ],
+      "arbiter_orders": [],
+      "arbiter_rejections": [],
+      "arbiter_status": "no_final_orders",
+      "arbiter_ts": "2026-03-06T16:31:45.402104+00:00"
     }
   },
   "arbiter_detail_index": {
@@ -19881,6 +20306,20 @@
       "prompt_path": null,
       "log_path": null,
       "output": "",
+      "orders": [],
+      "rejections": [],
+      "execution_rejections": []
+    },
+    "27dd500c3da643b0b48e6a7c97c4c941": {
+      "ts": "2026-03-06T16:31:45.402104+00:00",
+      "tick_id": "27dd500c3da643b0b48e6a7c97c4c941",
+      "status": "no_final_orders",
+      "model": "gpt-5.3-codex",
+      "reasoning_effort": "high",
+      "token_usage": 22825,
+      "prompt_path": "data\\tmp\\trade_arbiter\\prompts\\prompt_2026-03-06_16-30-40_27dd500c3da643b0b48e6a7c97c4c941.md",
+      "log_path": "data\\logs\\trade_arbiter\\2026-03-06_16-30-40_27dd500c3da643b0b48e6a7c97c4c941.txt",
+      "output": "{\"orders\":[{\"analyst_id\":\"quant\",\"portfolio_id\":\"analyst_quant\",\"action\":\"hold\",\"symbol\":\"BTC\",\"allocation_pct\":0.0,\"leverage\":1.0,\"confidence\":0.58,\"reason\":\"Tendance 15m reste baissiere avec prix sous EMA et sentiment negatif, mais RSI 28 et funding negatif signalent extension; position deja profitable, donc aucun ajout, taille maintenue.\"}],\"rejections\":[]}",
       "orders": [],
       "rejections": [],
       "execution_rejections": []
